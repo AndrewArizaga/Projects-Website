@@ -5,6 +5,7 @@ header {
     align-items: center;
     background-color: #000; /* Header background color */
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo on the left */
@@ -12,6 +13,7 @@ header h1 {
     margin: 0;
     font-size: 24px;
     color: #007bff; /* Blue color for the logo text */
+    font-family: 'Arial', sans-serif;
 }
 
 /* Navigation Tabs */
@@ -30,9 +32,13 @@ nav ul li a {
     text-decoration: none;
     color: #fff; /* White color for the links */
     font-size: 16px;
-    transition: color 0.3s;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     color: #007bff; /* Highlight color for hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
 }
