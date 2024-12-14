@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Andrew Arizaga</h1>
-            <p>Electrical Engineering Student | Robotics Enthusiast | Innovator</p>
+        <div class="nav-container">
+            <h1 class="logo">Andrew Arizaga</h1>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -24,37 +24,70 @@
     </header>
 
     <section id="hero">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Explore my work, skills, and projects in electrical engineering and robotics.</p>
+        <div class="hero-container">
+            <h2>Hi, I'm Andrew Arizaga</h2>
+            <p>An Electrical Engineering Student passionate about robotics, energy systems, and innovation.</p>
             <div class="btn-container">
-                <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
             </div>
         </div>
     </section>
 
-    <section id="featured-projects">
-        <div class="container">
+    <section id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p>I am an Electrical Engineering student with a passion for solving real-world challenges through technology. My expertise spans robotics, energy systems, and PCB design. I enjoy leading teams, such as my roles as Captain of the TMSR Solar Car Team and Project Manager for the TMBR Baja Racing Team. I strive to push the boundaries of innovation while mentoring peers and contributing to impactful projects.</p>
+            <p>With a strong foundation in software and hardware integration, I thrive on creating efficient systems that combine cutting-edge technologies with practical applications. My ultimate goal is to leave a lasting mark on the field of sustainable engineering and robotics.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Robotics Control System Design</h3>
-                    <p>Developed an advanced control system focusing on efficient navigation and motor control using Python and ROS.</p>
+                    <img src="robotics.jpg" alt="Robotics Control System">
+                    <h3>Robotics Control System</h3>
+                    <p>Developed advanced navigation and motor control using Python and ROS.</p>
                     <a href="#projects" class="btn-small">Learn More</a>
                 </div>
                 <div class="project-card">
-                    <h3>EV Charging Station Design</h3>
-                    <p>Designed an energy-efficient EV charging station using AutoCAD Electrical, enhancing power management capabilities.</p>
+                    <img src="ev_charging.jpg" alt="EV Charging Station">
+                    <h3>EV Charging Station</h3>
+                    <p>Designed an energy-efficient charging station with AutoCAD Electrical.</p>
                     <a href="#projects" class="btn-small">Learn More</a>
                 </div>
+                <div class="project-card">
+                    <img src="solar_car.jpg" alt="Solar Car Development">
+                    <h3>Solar Car Development</h3>
+                    <p>Led the design of the battery management system (BMS) for a solar-powered vehicle.</p>
+                    <a href="#projects" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Energy Management Engineering Intern</h3>
+                <p><strong>City of Brampton</strong> | May 2024 - Present</p>
+                <p>Contributed to the development of smart energy management systems for municipal buildings, optimizing energy usage and integrating renewable energy solutions.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Hardware Engineering Intern</h3>
+                <p><strong>Cence Power</strong> | Jan 2024 - Apr 2024</p>
+                <p>Worked on the design and testing of power electronics and embedded systems, enhancing the efficiency and reliability of hardware platforms.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+            <p>Made with ❤️ by Andrew Arizaga</p>
         </div>
     </footer>
 </body>
