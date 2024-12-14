@@ -4,25 +4,26 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #000; /* Header background color */
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px; /* Increased padding for a spacious look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: sticky; /* Makes the header stick to the top when scrolling */
-    top: 0; /* Ensures the sticky behavior starts at the top */
-    z-index: 1000; /* Ensures the header stays on top of other elements */
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 1000;
 }
 
-/* Logo on the left */
+/* Logo Section */
 header h1 {
     margin: 0;
-    font-size: 24px;
-    color: #007bff; /* Blue color for the logo text */
-    font-weight: bold; /* Makes the logo text bold */
+    font-size: 26px; /* Slightly larger for better focus */
+    color: #00aaff; /* Professional blue for the logo text */
+    font-weight: 700; /* Makes the logo text bold */
+    letter-spacing: 0.5px; /* Adds slight spacing for a modern feel */
 }
 
-/* Navigation Tabs */
+/* Navigation Section */
 nav {
-    margin-left: auto; /* Push the navigation to the right */
+    margin-left: auto;
 }
 
 nav ul {
@@ -30,45 +31,61 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 20px; /* Uniform spacing between navigation items */
 }
 
 nav ul li {
-    margin: 0 15px; /* Increased spacing between tabs for better readability */
+    position: relative; /* For advanced hover effects */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White color for the links */
+    color: #fff; /* White for the links */
     font-size: 16px;
+    font-weight: 500; /* Semi-bold for better readability */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transition */
-    padding: 5px 15px; /* Adds padding for better clickability */
-    border-radius: 5px; /* Adds rounded corners */
+    padding: 10px 15px; /* Better click area */
+    border-radius: 4px; /* Subtle rounding for modern style */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Highlight color for hover effect */
-    background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle background highlight */
+    color: #000; /* Text turns black */
+    background-color: #00aaff; /* Highlight blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds subtle shadow effect */
 }
 
-/* Optional Media Query for Mobile Responsiveness */
+/* Underline Hover Effect (Optional for Modern Look) */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #00aaff;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Full underline on hover */
+    left: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start; /* Aligns the logo and navigation vertically */
+        align-items: center;
     }
 
     nav ul {
-        flex-direction: column; /* Stacks navigation items vertically */
-        width: 100%; /* Makes the navigation full-width */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Adds vertical spacing between items */
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav ul li a {
-        text-align: left; /* Aligns text to the left in smaller screens */
-        padding: 10px 20px; /* Adjusts padding for better usability */
+        padding: 10px 20px;
+        text-align: center;
     }
 }
