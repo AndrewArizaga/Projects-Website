@@ -72,53 +72,54 @@ header::before {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 20px; /* Add vertical spacing */
-    background: linear-gradient(135deg, #1e1e1e 25%, #2b2b2b 100%);
-    color: #e0e0e0; /* Light gray for text */
-    position: relative;
+    padding: 100px 20px; /* Adds vertical spacing */
+    background: linear-gradient(135deg, #1e1e1e 25%, #2b2b2b 100%); /* Gradient background */
+    color: #e0e0e0; /* Light text for contrast */
+    position: relative; /* For optional overlays */
 }
 
-/* Hero Text Styling */
+/* Hero Text */
 .hero h2 {
     font-size: 3.5rem; /* Large title size */
-    color: #4fa7f0; /* Softer blue for the main title */
-    margin-bottom: 10px;
-    font-weight: 700; /* Bold text for emphasis */
-    letter-spacing: 2px; /* Modern spacing */
-    text-transform: uppercase;
+    color: #4fa7f0; /* Softer blue for the title */
+    margin-bottom: 10px; /* Space below the title */
+    font-weight: 700; /* Bold text */
+    letter-spacing: 2px; /* Spaced-out letters for style */
+    text-transform: uppercase; /* Capitalize all letters */
 }
 
 .hero p {
     font-size: 1.5rem; /* Subtitle size */
-    margin-bottom: 5px;
-    color: #eaeaea; /* Slightly lighter gray for emphasis */
-    font-weight: 500;
+    margin-bottom: 5px; /* Space between lines */
+    color: #eaeaea; /* Slightly lighter text */
+    font-weight: 500; /* Semi-bold for emphasis */
 }
 
 .hero .minors {
-    font-size: 1.2rem; /* Slightly smaller for minors */
+    font-size: 1.2rem; /* Smaller size for minors */
     color: #b0b0b0; /* Softer gray */
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space below minors */
 }
 
 /* Hero Buttons */
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 20px; /* Adds spacing above the buttons */
 }
 
 .hero-buttons .btn {
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 12px 25px; /* Adds padding inside the buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 1rem; /* Standard button font size */
+    font-weight: bold; /* Bold text for buttons */
     margin: 0 10px; /* Space between buttons */
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover transition */
 }
 
+/* Primary Button */
 .btn-primary {
-    background-color: #4fa7f0; /* Primary blue */
-    color: #000; /* Black text */
+    background-color: #4fa7f0; /* Primary blue color */
+    color: #000; /* Black text for contrast */
     border: none;
 }
 
@@ -127,14 +128,15 @@ header::before {
     color: #fff; /* White text on hover */
 }
 
+/* Secondary Button */
 .btn-secondary {
-    background-color: transparent;
+    background-color: transparent; /* Transparent background */
     color: #4fa7f0; /* Primary blue text */
-    border: 2px solid #4fa7f0;
+    border: 2px solid #4fa7f0; /* Blue border */
 }
 
 .btn-secondary:hover {
-    background-color: #4fa7f0; /* Fills with blue */
+    background-color: #4fa7f0; /* Fills with blue on hover */
     color: #fff; /* White text */
 }
 
@@ -147,6 +149,7 @@ header::before {
     width: 100%;
     height: 100%;
     background: url('https://www.transparenttextures.com/patterns/squares.png');
-    opacity: 0.05; /* Subtle texture overlay */
-    pointer-events: none;
+    opacity: 0.05; /* Very subtle texture overlay */
+    pointer-events: none; /* Allows interaction with underlying elements */
 }
+
