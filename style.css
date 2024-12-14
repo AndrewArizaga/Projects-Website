@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #000; /* Header background color */
-    padding: 15px 30px; /* Increased padding for spacing */
+    padding: 15px 30px; /* Padding for better spacing */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: sticky; /* Sticky header */
@@ -17,13 +17,14 @@ header h1 {
     margin: 0;
     font-size: 26px; /* Slightly larger for focus */
     color: #58a6ff; /* Softer shade of blue */
-    font-weight: 700; /* Makes the logo text bold */
-    letter-spacing: 0.5px; /* Adds spacing for modern style */
+    font-weight: 700; /* Bold for emphasis */
+    letter-spacing: 0.5px; /* Adds spacing for modern look */
 }
 
 /* Navigation Section */
 nav {
-    margin-left: auto; /* Ensures the navigation aligns to the right */
+    display: flex;
+    margin-left: auto; /* Ensures the navigation moves to the right */
 }
 
 nav ul {
@@ -35,7 +36,7 @@ nav ul {
 }
 
 nav ul li {
-    position: relative; /* For advanced hover effects */
+    position: relative; /* For hover effects */
 }
 
 nav ul li a {
@@ -55,7 +56,7 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect on hover */
 }
 
-/* Responsive Design for Smaller Screens */
+/* Adjustments for Responsiveness */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -64,7 +65,7 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: column;
-        gap: 10px; /* Smaller gap for stacked items */
+        gap: 10px;
     }
 
     nav ul li a {
