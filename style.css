@@ -4,72 +4,55 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #000; /* Header background color */
-    padding: 15px 30px; /* Padding for better spacing */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: sticky; /* Sticky header */
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo Section */
+/* Logo on the left */
 header h1 {
     margin: 0;
-    font-size: 26px; /* Slightly larger for focus */
-    color: #58a6ff; /* Softer shade of blue */
-    font-weight: 700; /* Bold for emphasis */
-    letter-spacing: 0.5px; /* Adds spacing for modern look */
+    font-size: 28px;
+    color: #4fa7f0; /* Softer blue for the logo text */
+    font-weight: bold;
 }
 
-/* Navigation Section */
+/* Navigation Tabs */
 nav {
-    display: flex;
-    margin-left: auto; /* Ensures the navigation moves to the right */
+    margin-left: auto; /* Push navigation to the right */
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end; /* Align to the right */
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 15px; /* Consistent spacing between navigation items */
 }
 
 nav ul li {
-    position: relative; /* For hover effects */
+    margin: 0 15px; /* Spacing between tabs */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White for the links */
+    color: #f8f8f8; /* Light color for the links */
     font-size: 16px;
-    font-weight: 500; /* Semi-bold for readability */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 8px 12px; /* Clickable padding */
-    border-radius: 4px; /* Rounded corners for modern look */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #000; /* Text turns black */
-    background-color: #58a6ff; /* Softer blue background on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect on hover */
+    color: #4fa7f0; /* Highlight color for hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Adjustments for Responsiveness */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li a {
-        padding: 10px 20px; /* Wider padding for mobile usability */
-        text-align: center;
-    }
+/* Add a bit of spacing between the navigation and the logo */
+header h1 + nav {
+    margin-left: auto;
 }
