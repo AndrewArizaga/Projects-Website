@@ -1,42 +1,38 @@
-/* Header Styling */
+/* Header Section */
 header {
     display: flex;
-    justify-content: space-between; /* Space between logo and tabs */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #000000;
-    border-bottom: 2px solid #007bff; /* Adds a blue underline */
+    background-color: #000; /* Header background color */
+    padding: 10px 20px;
 }
 
-/* Header Logo */
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007bff;
+/* Logo on the left */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff; /* Blue color for the logo text */
 }
 
 /* Navigation Tabs */
-nav {
+nav ul {
     display: flex;
-    justify-content: flex-end; /* Align tabs to the right */
-    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    margin: 0 10px; /* Spacing between tabs */
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    color: #fff; /* White color for the links */
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #007bff; /* Highlight tabs on hover */
-}
-
-/* Active Tab Styling */
-nav a.active {
-    color: #007bff;
-    font-weight: bold;
-    border-bottom: 2px solid #007bff; /* Adds an underline for the active tab */
+nav ul li a:hover {
+    color: #007bff; /* Highlight color for hover effect */
 }
