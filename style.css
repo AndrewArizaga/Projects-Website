@@ -211,3 +211,55 @@ header::before {
     vertical-align: middle;
     filter: invert(80%) sepia(20%) saturate(500%) hue-rotate(180deg) brightness(90%);
 }
+
+/*----------------------------------------------------------------------------------------*/
+
+/* Recent Projects Section */
+.projects {
+    padding: 60px 20px; /* Adds spacing around the section */
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #e0e0e0; /* Light text for readability */
+    text-align: center; /* Centers the section title */
+}
+
+/* Section Title */
+.projects h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #4fa7f0; /* Softer blue for emphasis */
+    margin-bottom: 20px; /* Adds space below the title */
+    text-decoration: underline; /* Highlights the section title */
+    text-transform: uppercase; /* Uppercase for bold, modern look */
+    letter-spacing: 1px;
+}
+
+/* Project Items Container */
+.project-item {
+    max-width: 800px; /* Ensures consistent width */
+    margin: 20px auto; /* Centers each project item */
+    background-color: #252525; /* Slightly lighter background for the cards */
+    border-radius: 8px; /* Rounds the edges */
+    padding: 20px; /* Adds padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: left; /* Aligns text to the left for clarity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect transitions */
+}
+
+/* Hover Effects */
+.project-item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Project Title */
+.project-item h3 {
+    font-size: 1.5rem; /* Slightly larger for project names */
+    color: #4fa7f0; /* Blue for emphasis */
+    margin-bottom: 10px; /* Adds spacing below the title */
+}
+
+/* Project Description */
+.project-item p {
+    font-size: 1rem; /* Standard font size for details */
+    line-height: 1.6; /* Improves readability */
+    color: #d0d0d0; /* Lighter gray for the description text */
+}
