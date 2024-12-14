@@ -120,59 +120,38 @@ nav ul li a:hover {
 
 /* About Me Section */
 .about {
-    padding: 60px 20px; /* Adds padding for spacing */
-    background-color: #1e1e1e; /* Dark background for contrast */
-    color: #e0e0e0; /* Light text for readability */
-    text-align: center;
+    background-color: #101010; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restrict the width for better readability */
+    text-align: left; /* Align text to the left */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
-/* Section Title */
 .about h2 {
-    font-size: 2.5rem; /* Larger font size for the heading */
-    color: #4fa7f0; /* Softer blue for emphasis */
-    margin-bottom: 20px; /* Adds space below the title */
-    text-decoration: underline; /* Highlights the section title */
-    text-transform: uppercase; /* Uppercase for a bold, modern look */
-    letter-spacing: 1px;
+    color: #58a6ff; /* Light blue heading */
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #58a6ff; /* Underline the heading */
+    padding-bottom: 5px;
 }
 
-/* Content Container */
+.about p {
+    line-height: 1.6; /* Improve text readability */
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
 .about-content {
-    max-width: 800px; /* Limits width for better readability */
-    margin: 0 auto; /* Centers the content */
-    text-align: justify; /* Justifies text for a clean layout */
-    line-height: 1.8; /* Improves readability */
-    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Paragraphs */
-.about-content p {
-    margin-bottom: 20px; /* Adds spacing between paragraphs */
-}
-
-/* Highlights for Important Words */
-.about-content .highlight-blue {
-    color: #4fa7f0; /* Highlights key terms in blue */
-    font-weight: bold; /* Emphasizes important points */
-}
-
-/* Optional Dividers Between Paragraphs */
-.about-content hr {
-    border: 0;
-    height: 1px;
-    background-color: #4fa7f0; /* Blue dividers for style */
-    margin: 30px 0; /* Adds space around the divider */
-    opacity: 0.6; /* Makes the divider subtle */
-}
-
-/* Optional Icon Styling (If Needed) */
-.about-content .icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-    filter: invert(80%) sepia(20%) saturate(500%) hue-rotate(180deg) brightness(90%);
+/* Optional styling for emphasis (e.g., bold or highlighted text) */
+.about-content strong {
+    color: #58a6ff;
+    font-weight: 600;
 }
 
 /*----------------------------------------------------------------------------------------*/
