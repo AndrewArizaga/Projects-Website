@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Arizaga Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,23 +27,27 @@
         <div class="container">
             <h2>Welcome to My Portfolio</h2>
             <p>Explore my work, skills, and projects in electrical engineering and robotics.</p>
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn">Contact Me</a>
+            <div class="btn-container">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
         </div>
     </section>
 
     <section id="featured-projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="project">
-                <h3>Robotics Control System Design</h3>
-                <p>Developed an advanced control system focusing on efficient navigation and motor control using Python and ROS.</p>
-                <a href="#projects" class="btn">Learn More</a>
-            </div>
-            <div class="project">
-                <h3>EV Charging Station Design</h3>
-                <p>Designed an energy-efficient EV charging station using AutoCAD Electrical, enhancing power management capabilities.</p>
-                <a href="#projects" class="btn">Learn More</a>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Robotics Control System Design</h3>
+                    <p>Developed an advanced control system focusing on efficient navigation and motor control using Python and ROS.</p>
+                    <a href="#projects" class="btn-small">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>EV Charging Station Design</h3>
+                    <p>Designed an energy-efficient EV charging station using AutoCAD Electrical, enhancing power management capabilities.</p>
+                    <a href="#projects" class="btn-small">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
