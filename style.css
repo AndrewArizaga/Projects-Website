@@ -72,7 +72,7 @@ header {
 /* Hero Section */
 #hero {
     height: 100vh;
-    background: linear-gradient(135deg, #1c1c1c, #333333);
+    background: #121212;
     color: #eaeaea;
     text-align: center;
     display: flex;
