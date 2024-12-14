@@ -362,3 +362,24 @@ header {
     font-size: 1.5rem; /* Larger size for bullet */
     vertical-align: middle; /* Align bullet vertically */
 }
+
+/*----------------------------------------------------------------------------*/
+
+/* Footer Section */
+footer {
+    background-color: #000; /* Dark footer background */
+    color: #e0e0e0; /* Light text for contrast */
+    text-align: center;
+    padding: 20px 10px; /* Add spacing inside the footer */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    border-top: 2px solid #4ba3f2; /* Subtle blue border on top */
+}
+
+footer p {
+    margin: 5px 0; /* Add some space between paragraphs */
+}
+
+footer p:nth-child(2) {
+    font-style: italic; /* Italicize the quirky message */
+    color: #4ba3f2; /* Highlight the quirky message in blue */
+}
