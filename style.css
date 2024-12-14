@@ -3,56 +3,77 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Header background color */
+    background: linear-gradient(135deg, #1a1a1a 25%, #2b2b2b 100%);
+    background-size: 200px 200px;
     padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
 }
 
 /* Logo on the left */
 header h1 {
     margin: 0;
     font-size: 28px;
-    color: #4fa7f0; /* Softer blue for the logo text */
+    color: #4db8ff; /* Softer blue */
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Navigation Tabs */
 nav {
-    margin-left: auto; /* Push navigation to the right */
+    margin-left: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* Align to the right */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px; /* Spacing between tabs */
+    margin: 0 20px; /* Spacing between tabs */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #f8f8f8; /* Light color for the links */
+    color: #ffffff;
     font-size: 16px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 8px 12px;
-    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-    color: #4fa7f0; /* Highlight color for hover effect */
+    color: #4db8ff; /* Softer blue highlight */
     background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05); /* Subtle scaling on hover */
 }
 
-/* Add a bit of spacing between the navigation and the logo */
-header h1 + nav {
-    margin-left: auto;
+/* Add a subtle square texture overlay */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/squares.png'); /* Free square texture */
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Ensures navigation stays aligned */
+header h1, nav {
+    flex-shrink: 0;
+}
+
+/* Adjust overall spacing */
+header h1 {
+    margin-right: auto;
 }
