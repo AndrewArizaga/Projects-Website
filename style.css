@@ -11,7 +11,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    position: relative;
 }
 
 /* Logo on the left */
@@ -36,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Spacing between tabs */
+    margin: 0 20px; /* Increased spacing for a clean layout */
 }
 
 nav ul li a {
@@ -50,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4db8ff; /* Softer blue highlight */
+    color: #4db8ff; /* Softer highlight */
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.05); /* Subtle scaling on hover */
 }
@@ -63,17 +62,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/squares.png'); /* Free square texture */
+    background: url('https://www.transparenttextures.com/patterns/squares.png');
     opacity: 0.1;
     pointer-events: none;
-}
-
-/* Ensures navigation stays aligned */
-header h1, nav {
-    flex-shrink: 0;
-}
-
-/* Adjust overall spacing */
-header h1 {
-    margin-right: auto;
 }
