@@ -17,56 +17,61 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    padding: 20px 30px;
+    background-color: #000; /* Black background for header */
+    padding: 20px 30px; /* Increased padding for more vertical height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo/Title Styling */
 header h1 {
-    font-size: 24px;
-    color: #4dabf7;
+    margin: 0;
+    font-size: 24px; /* Slightly larger font for emphasis */
+    color: #00aaff; /* Professional blue color */
     font-weight: bold;
+}
+
+/* Navigation Menu */
+nav {
+    margin-left: auto;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 18px; /* Increased spacing between links */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    transition: color 0.3s;
+    color: #fff; /* White for navigation links */
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 12px; /* Padding for better clickability */
+    border-radius: 4px;
 }
 
 nav ul li a:hover {
-    color: #4dabf7;
+    color: #00aaff; /* Hover effect with blue highlight */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
 }
 
-/* Contact Section */
-.contact-container {
-    padding: 50px 20px;
-    text-align: center;
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.contact-container h2 {
-    font-size: 36px;
-    color: #4dabf7;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #4dabf7;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 18px;
-    color: #dcdcdc;
-    margin-bottom: 30px;
+/* Optional: Add Texture Background */
+header {
+    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Contact Form */
