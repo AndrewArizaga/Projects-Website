@@ -101,6 +101,14 @@ header {
 .coursework-semester ul li {
     margin-bottom: 10px;
     color: #ffffff; /* White text for course names */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.coursework-semester ul li:hover {
+    color: #00aaff; /* Highlight course names on hover */
+    background-color: #333333; /* Subtle background highlight */
+    cursor: pointer;
+    transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 /* Subcategories for Each Semester */
@@ -127,10 +135,36 @@ header {
 
 .coursework-category ul li {
     margin-bottom: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
 }
 
-/* Add some hover effects for interactivity */
-.coursework-semester ul li:hover {
-    color: #00aaff; /* Highlight course names on hover */
+.coursework-category ul li:hover {
+    color: #00aaff;
+    background-color: #333333;
+    transform: scale(1.02);
     cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coursework-container {
+        padding: 30px;
+    }
+
+    .coursework-container h2 {
+        font-size: 28px;
+    }
+
+    .coursework-semester h3 {
+        font-size: 22px;
+    }
+
+    .coursework-category h4 {
+        font-size: 18px;
+    }
+
+    .coursework-semester ul li,
+    .coursework-category ul li {
+        font-size: 14px;
+    }
 }
