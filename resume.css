@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 30px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #4dabf7;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4dabf7;
+}
+
+/* Resume Section */
+.resume-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.resume-container h2 {
+    font-size: 36px;
+    color: #4dabf7;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4dabf7;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.resume-container p {
+    font-size: 18px;
+    color: #dcdcdc;
+    margin-bottom: 30px;
+}
+
+.resume-actions {
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    text-decoration: none;
+    background-color: #4dabf7;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background-color: #1c7ed6;
+    transform: translateY(-3px);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* PDF Viewer */
+.resume-viewer {
+    width: 80%;
+    height: 600px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #4dabf7;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+}
