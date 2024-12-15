@@ -74,7 +74,6 @@ nav ul li a:hover {
 .project-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #1e1e1e;
     border: 2px solid #4dabf7;
     border-radius: 8px;
@@ -111,7 +110,7 @@ nav ul li a:hover {
 }
 
 .project-image img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
