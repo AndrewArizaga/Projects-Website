@@ -244,58 +244,71 @@ nav ul li a:hover {
 /*-------------------------------------------------------------------*/
 
 /* Experience Section */
-#experience {
-    padding: 50px 20px;
+.experience-section {
+    padding: 40px 20px;
     background-color: #111;
     color: #fff;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-#experience h2 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 30px;
-    font-size: 36px;
-    border-bottom: 2px solid #007bff;
+.experience-section h2 {
+    font-size: 2.5em;
+    text-align: left;
+    color: #007BFF; /* Updated blue color to match other sections */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
     display: inline-block;
-    padding-bottom: 5px;
 }
 
-.experience-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
+.experience-container {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-.experience-item {
-    background: #222;
-    padding: 20px;
+.experience-box {
+    display: flex;
+    align-items: center;
+    background-color: #222;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 15px;
 }
 
-.experience-item:hover {
-    transform: translateY(-5px);
+.experience-content {
+    flex: 3;
+    padding: 10px;
 }
 
-.experience-item h3 {
-    color: #007bff;
-    font-size: 20px;
+.experience-title {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.experience-subtitle {
+    font-size: 1em;
+    font-style: italic;
+    color: #bbb;
     margin-bottom: 10px;
 }
 
-.experience-item p {
+.experience-description {
+    font-size: 1em;
     color: #ddd;
-    font-size: 16px;
     line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .experience-grid {
-        grid-template-columns: 1fr; /* Remains single column for smaller screens */
-    }
+.experience-image {
+    flex: 1;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.experience-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /*----------------------------------------------------------------*/
