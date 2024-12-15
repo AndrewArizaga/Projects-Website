@@ -57,7 +57,7 @@ header {
 
 /* Optional: Add Texture Background */
 header {
-    background-image: url('Octagon Background.jpeg'); /* Replace with actual path */
+    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
     background-size: cover;
     background-repeat: no-repeat;
 }
