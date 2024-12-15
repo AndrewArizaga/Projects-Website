@@ -51,48 +51,52 @@ nav ul li a:hover {
 /*-------------------------------------------------------------------*/
 
 /* Hero Section */
-/* Hero Section */
 .hero {
-    background: url('toronto-image.jpg') no-repeat center center/cover; /* Your Toronto image as background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('path-to-your-image.jpg') no-repeat center center/cover; /* Background image */
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
     position: relative;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin: 0 0 10px;
+    font-size: 4rem; /* Bigger font size */
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
 }
 
-.hero .degree {
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 1.2; /* Adjusted to bring the lines closer together */
-    font-weight: 500;
+.hero p {
+    font-size: 1.5rem; /* Slightly larger text for description */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #e0e0e0; /* Softer white */
 }
 
 .hero .buttons {
-    margin-top: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .hero .buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #007bff;
-    background-color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-    transition: background-color 0.3s, transform 0.3s;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Button color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .hero .buttons a:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------------------------------------------------------------*/
