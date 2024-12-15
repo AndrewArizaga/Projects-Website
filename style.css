@@ -53,61 +53,48 @@ nav ul li a:hover {
 /*-------------------------------------------------------------------*/
 
 /* Hero Section */
+/* Hero Section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
+    background: url('toronto-image.jpg') no-repeat center center/cover; /* Your Toronto image as background */
+    color: #fff;
     text-align: center;
-    color: #fff;
-    background-image: url('toronto-background.jpg'); /* Add your Toronto image here */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Parallax effect */
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Dark overlay effect */
-    padding: 0 20px;
+    padding: 100px 20px;
+    position: relative;
 }
 
-/* Hero Title */
 .hero h1 {
-    font-size: 50px;
+    font-size: 3rem;
+    margin: 0 0 10px;
     font-weight: bold;
-    color: #00aaff; /* Soft blue */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Shadow for text readability */
-    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Hero Subtitle */
-.hero h2 {
-    font-size: 24px;
-    color: #fff;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 40px;
+.hero .degree {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2; /* Adjusted to bring the lines closer together */
+    font-weight: 500;
 }
 
-/* Hero Buttons */
-.hero .hero-buttons {
-    display: flex;
-    gap: 20px;
+.hero .buttons {
+    margin-top: 20px;
 }
 
-.hero .hero-buttons a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #00aaff;
+.hero .buttons a {
+    display: inline-block;
     padding: 10px 20px;
+    font-size: 1rem;
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.hero .hero-buttons a:hover {
-    background-color: #008ecc;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+.hero .buttons a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 /*----------------------------------------------------------------------------------*/
