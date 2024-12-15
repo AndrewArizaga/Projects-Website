@@ -168,80 +168,94 @@ nav ul li a:hover {
 
 /* Recent Projects Section */
 #recent-projects {
-    padding: 40px 20px;
+    padding: 50px 5%;
     text-align: center;
-    background-color: #121212; /* Background color */
-    background-image: url('texture.png'); /* Add texture background (replace with your texture image path) */
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #121212; /* Dark background */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
+                      radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 25px 25px, 0 0; /* Creates hexagon pattern effect */
 }
 
+/* Recent Projects Title Styling */
 #recent-projects h2 {
-    font-size: 32px;
-    color: #00aaff; /* Softer blue for the section title */
+    font-size: 36px;
+    color: #00aaff; /* Soft blue for title */
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2); /* Subtle text shadow for style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    position: relative; /* Required for the underline styling */
+}
+
+#recent-projects h2::after {
+    content: "";
+    display: block;
+    width: 100px; /* Length of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #00aaff; /* Blue underline */
+    margin: 10px auto 0 auto;
+    border-radius: 2px; /* Rounded edges for underline */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for the underline */
 }
 
 /* Grid Layout */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for better visibility */
-    gap: 20px; /* Spacing between project boxes */
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Space between boxes */
     justify-items: center;
+    align-items: start;
+    padding: 0; /* Remove extra padding around the grid */
 }
 
 /* Project Box Styling */
 .project-box {
-    display: flex; /* Align text and image side by side */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white box */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* White highlight for borders */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Smaller and more condensed box size */
-    max-width: 500px; /* Limit width for larger screens */
+    display: flex; /* Align content horizontally */
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 90%; /* Adjusted width */
+    max-width: 320px; /* Limit box width */
+    aspect-ratio: 1 / 1; /* Ensures height is equal to width */
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-box:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); /* Enhanced highlight on hover */
-    background-color: rgba(255, 255, 255, 0.2); /* Lighten the box on hover */
+    transform: translateY(-5px) scale(1.02); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
 }
 
-/* Text on the Left */
+/* Text Section */
 .project-details {
-    flex: 1; /* Take up available space */
-    padding: 10px;
-    text-align: left; /* Align text to the left */
+    flex: 1;
+    margin-right: 10px;
 }
 
 .project-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    color: #00aaff; /* Softer blue for titles */
+    color: #00aaff; /* Blue text for titles */
     margin-bottom: 8px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Text shadow for title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
 }
 
 .project-description {
-    font-size: 13px;
-    color: #fff; /* White for text */
-    line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Image on the Right */
+/* Image Section */
 .project-box img {
-    width: 100px; /* Smaller image size */
+    width: 80px; /* Adjusted image size */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Slight rounding for images */
-    margin-left: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* White highlight border */
+    border-radius: 5px; /* Slight rounded corners */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for image */
 }
 
 /*-------------------------------------------------------------------*/
