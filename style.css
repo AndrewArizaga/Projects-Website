@@ -3,26 +3,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Base color for the header */
-    background-image: url('hexagon-texture.png'); /* Replace with your hexagon texture image */
-    background-size: contain; /* Ensure the hexagon texture scales properly */
-    background-repeat: repeat; /* Repeat the pattern across the header */
-    padding: 20px 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Header background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
 }
 
-/* Logo styling */
+/* Logo on the left */
 header h1 {
     margin: 0;
-    font-size: 28px;
-    color: #4ba3f2; /* Light blue for the logo */
-    font-weight: 600;
+    font-size: 24px;
+    color: #007bff; /* Blue color for the logo text */
+    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
 }
 
 /* Navigation Tabs */
 nav {
-    margin-left: auto;
+    margin-left: auto; /* Push the navigation to the right */
 }
 
 nav ul {
@@ -33,21 +30,22 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Adjust spacing between tabs */
+    margin: 0 10px; /* Spacing between tabs */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #e0e0e0; /* Light color for contrast */
+    color: #fff; /* White color for the links */
     font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
+    transition: color 0.3s, background-color 0.3s;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: rgba(75, 163, 242, 0.2); /* Light blue highlight on hover */
-    color: #4ba3f2;
+    color: #007bff; /* Highlight color for hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*-------------------------------------------------------------------*/
