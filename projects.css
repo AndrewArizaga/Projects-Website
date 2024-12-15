@@ -1,136 +1,51 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for projects */
+    gap: 20px; /* Space between project boxes */
+    padding: 20px 40px; /* Add padding around the section */
 }
 
-body {
-    background-color: #121212;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-/* Header Section */
-header {
+.project-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Black background for header */
-    padding: 20px 30px; /* Increased padding for more vertical height */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo/Title Styling */
-header h1 {
-    margin: 0;
-    font-size: 24px; /* Slightly larger font for emphasis */
-    color: #00aaff; /* Professional blue color */
-    font-weight: bold;
-}
-
-/* Navigation Menu */
-nav {
-    margin-left: auto;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 18px; /* Increased spacing between links */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff; /* White for navigation links */
-    font-size: 18px;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 8px 12px; /* Padding for better clickability */
-    border-radius: 4px;
-}
-
-nav ul li a:hover {
-    color: #00aaff; /* Hover effect with blue highlight */
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
-}
-
-/* Sticky Header */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Projects Section */
-.projects-container {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.projects-container h2 {
-    font-size: 36px;
-    color: #4dabf7;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #4dabf7;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-/* Grid for Projects */
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-/* Project Box */
-.project-box {
-    display: flex;
-    align-items: center;
-    background-color: #1e1e1e;
-    border: 2px solid #4dabf7;
-    border-radius: 8px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: 1px solid #58a6ff; /* Blue border for styling */
+    border-radius: 10px;
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
 }
 
 .project-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
-.project-text {
-    flex: 2;
-    text-align: left;
-    padding-right: 20px;
+.project-content {
+    flex: 1; /* Text area takes up the majority of the box */
+    margin-right: 20px; /* Space between text and image */
+    text-align: left; /* Align text to the left */
 }
 
-.project-text h3 {
-    font-size: 20px;
-    color: #4dabf7;
+.project-content h3 {
+    font-size: 20px; /* Adjust font size for headings */
+    color: #58a6ff; /* Soft blue for headings */
     margin-bottom: 10px;
 }
 
-.project-text p {
-    font-size: 14px;
-    color: #dcdcdc;
-    margin-bottom: 5px;
+.project-content p {
+    font-size: 16px; /* Adjust font size for descriptions */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 10px;
 }
 
 .project-image {
-    flex: 1;
-    text-align: right;
-}
-
-.project-image img {
-    max-width: 100%;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    max-width: 120px; /* Restrict image size */
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
