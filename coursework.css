@@ -80,18 +80,18 @@ header {
     padding-bottom: 5px;
 }
 
-.coursework-category {
+.coursework-semester {
     margin-bottom: 40px;
 }
 
-.coursework-category h3 {
+.coursework-semester h3 {
     font-size: 24px;
     color: #00aaff;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-.coursework-category ul {
+.coursework-semester ul {
     list-style-type: disc;
     margin: 0 0 0 40px; /* Indent list */
     padding: 0;
@@ -99,17 +99,17 @@ header {
     line-height: 1.8; /* Increase spacing for readability */
 }
 
-.coursework-category ul li {
+.coursework-semester ul li {
     margin-bottom: 10px;
     color: #ffffff; /* White text for course names */
 }
 
-/* Subcategories for Core Courses */
-.coursework-subcategory {
-    margin-left: 20px; /* Indent for subcategories */
+/* Subcategories for Each Semester */
+.coursework-category {
+    margin-left: 20px; /* Indent for semesters */
 }
 
-.coursework-subcategory h4 {
+.coursework-category h4 {
     font-size: 20px;
     color: #00aaff; /* Professional blue */
     margin-bottom: 10px;
@@ -118,7 +118,7 @@ header {
     padding-bottom: 5px;
 }
 
-.coursework-subcategory ul {
+.coursework-category ul {
     list-style-type: circle;
     margin: 0 0 0 20px;
     padding: 0;
@@ -126,12 +126,12 @@ header {
     line-height: 1.6;
 }
 
-.coursework-subcategory ul li {
+.coursework-category ul li {
     margin-bottom: 8px;
 }
 
 /* Add some hover effects for interactivity */
-.coursework-category ul li:hover {
+.coursework-semester ul li:hover {
     color: #00aaff; /* Highlight course names on hover */
     cursor: pointer;
 }
