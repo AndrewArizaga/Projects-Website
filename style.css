@@ -119,39 +119,49 @@ nav ul li a:hover {
 /*----------------------------------------------------------------------------------*/
 
 /* About Me Section */
-.about {
-    background-color: #101010; /* Dark background */
-    color: #ffffff; /* White text */
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px; /* Restrict the width for better readability */
-    text-align: left; /* Align text to the left */
-    border-radius: 10px; /* Smooth corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+.about-me-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px 40px;
+    gap: 30px; /* Space between text box and image */
 }
 
-.about h2 {
-    color: #58a6ff; /* Light blue heading */
-    font-size: 28px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #58a6ff; /* Underline the heading */
+.about-me-text {
+    background-color: #000; /* Black background for text box */
+    color: #fff; /* White text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    flex: 1; /* Ensures box takes up space equally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-me-text h2 {
+    font-size: 24px;
+    color: #58a6ff; /* Soft blue for heading */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #58a6ff; /* Divider under heading */
     padding-bottom: 5px;
 }
 
-.about p {
-    line-height: 1.6; /* Improve text readability */
-    margin-bottom: 15px;
+.about-me-text p {
     font-size: 16px;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
 }
 
-.about-content {
-    font-family: 'Poppins', sans-serif;
+.about-me-image {
+    flex: 1; /* Ensures equal space with text box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Optional styling for emphasis (e.g., bold or highlighted text) */
-.about-content strong {
-    color: #58a6ff;
-    font-weight: 600;
+.about-me-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 /*----------------------------------------------------------------------------------------*/
