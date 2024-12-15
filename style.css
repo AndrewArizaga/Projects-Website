@@ -168,47 +168,62 @@ nav ul li a:hover {
 
 /* Recent Projects Section */
 /* Recent Projects Section */
-.recent-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px 0;
+#recent-projects {
+    padding: 20px;
 }
 
-.recent-projects .project-box {
-    display: flex;
-    align-items: center;
-    background-color: #121212;
+#recent-projects h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #007bff; /* Softer blue */
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between the project boxes */
+    margin-top: 20px;
+}
+
+/* Project Box Styling */
+.project-box {
+    background-color: #121212; /* Dark background for contrast */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.recent-projects .project-box img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
+.project-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.recent-projects .project-details {
-    display: flex;
-    flex-direction: column;
+/* Image Styling */
+.project-box img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures proper cropping */
 }
 
-.recent-projects .project-title {
+/* Project Details */
+.project-details {
+    padding: 15px;
+}
+
+.project-title {
     font-size: 18px;
+    color: #007bff;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #00bcd4; /* Softer blue */
+    margin-bottom: 8px;
 }
 
-.recent-projects .project-description {
+.project-description {
     font-size: 14px;
-    line-height: 1.6;
-    color: #e0e0e0; /* Softer white */
+    color: #ccc; /* Softer white for text */
+    line-height: 1.4;
 }
 
 /*-------------------------------------------------------------------*/
