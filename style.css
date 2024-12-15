@@ -3,23 +3,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Header background color */
+    background-color: #000; /* Ensure the header background is visible */
+    background-image: url('octagon-pattern.png'); /* Replace with your octagon pattern image */
+    background-size: contain; /* Makes the pattern clean and professional */
+    background-repeat: repeat;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
+    font-family: 'Roboto', sans-serif; /* Professional, clean font */
 }
 
-/* Logo on the left */
+/* Logo */
 header h1 {
     margin: 0;
     font-size: 24px;
-    color: #007bff; /* Blue color for the logo text */
-    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
+    color: #3498db; /* Professional shade of blue */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Ensure consistency with font */
 }
 
-/* Navigation Tabs */
+/* Navigation Bar */
 nav {
-    margin-left: auto; /* Push the navigation to the right */
+    margin-left: auto;
 }
 
 nav ul {
@@ -30,21 +34,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px; /* Spacing between tabs */
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White color for the links */
+    color: #fff;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif; /* Updated to match the other sections */
-    transition: color 0.3s, background-color 0.3s;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease-in-out;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Highlight color for hover effect */
+    color: #3498db; /* Matches the header logo blue */
     background-color: rgba(255, 255, 255, 0.1);
 }
 
