@@ -1,90 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Andrew Arizaga</title>
-    <link rel="stylesheet" href="projects.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Andrew Arizaga - My Engineering Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="coursework.html">Coursework</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Projects Section -->
-    <section class="projects-container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-box">
-                <div class="project-text">
-                    <h3>Smart Power Management Using Microcontroller</h3>
-                    <p>
-                        This project focuses on developing a smart power management system that uses a microcontroller to monitor and optimize energy consumption. The system integrates sensors to measure electrical parameters and automates power distribution based on real-time data. By improving energy efficiency and reducing waste, this project highlights practical applications in sustainability and modern power systems.
-                    </p>
-                    <p><strong>Key Skills:</strong> Microcontroller programming, sensor integration, embedded systems design.</p>
-                </div>
-                <div class="project-image">
-                    <img src="images/smart-power.jpg" alt="Smart Power Management">
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-box">
-                <div class="project-text">
-                    <h3>Face and Voice Recognition-Based Auto Door</h3>
-                    <p>
-                        A security-driven automation project, this system uses a microcontroller to implement face and voice recognition for controlling door access. The project integrates recognition modules and sensors to authenticate users, providing a secure and seamless automation experience. It demonstrates the potential of IoT technologies in enhancing home and workplace security systems.
-                    </p>
-                    <p><strong>Key Skills:</strong> IoT integration, microcontroller programming, AI-powered recognition systems.</p>
-                </div>
-                <div class="project-image">
-                    <img src="images/auto-door.jpg" alt="Auto Door with Recognition">
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-box">
-                <div class="project-text">
-                    <h3>Machine Learning-Based Energy Meter</h3>
-                    <p>
-                        This project combines IoT hardware and machine learning to create an intelligent energy monitoring system. Using an Arduino UNO, the system calculates real-time voltage, current, and power consumption while collecting data for analysis. Machine learning algorithms predict energy usage trends and detect anomalies, offering valuable insights for optimizing energy consumption.
-                    </p>
-                    <p><strong>Key Features:</strong> Real-time data display, energy analysis, intelligent predictions.</p>
-                    <p><strong>Key Skills:</strong> IoT systems, data analytics, machine learning.</p>
-                </div>
-                <div class="project-image">
-                    <img src="images/energy-meter.jpg" alt="Energy Meter with ML">
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-box">
-                <div class="project-text">
-                    <h3>Python Program for Ladder Iterative Load Flow</h3>
-                    <p>
-                        A foundational project in power systems, this tool uses Python programming to implement the ladder iterative method for analyzing load flow in electrical grids. The program calculates power distribution and performance metrics, providing a clear understanding of network behavior. This project is particularly useful for optimizing grid performance and planning.
-                    </p>
-                    <p><strong>Key Skills:</strong> Python programming, power system analysis, algorithm design.</p>
-                </div>
-                <div class="project-image">
-                    <img src="images/ladder-flow.jpg" alt="Ladder Iterative Load Flow">
-                </div>
-            </div>
+<section class="projects-container">
+    <div class="project-box">
+        <div class="project-content">
+            <h3>Smart Power Management Using Microcontroller</h3>
+            <p>This project focuses on developing a smart power management system that uses a microcontroller to monitor and optimize energy consumption. The system integrates sensors to measure electrical parameters and automates power distribution based on real-time data. By improving energy efficiency and reducing waste, this project highlights practical applications in sustainability and modern power systems.</p>
+            <p><strong>Key Skills:</strong> Microcontroller programming, sensor integration, embedded systems design.</p>
         </div>
-    </section>
-</body>
-</html>
+        <img class="project-image" src="path_to_image/smart-power-management.jpg" alt="Smart Power Management">
+    </div>
+
+    <div class="project-box">
+        <div class="project-content">
+            <h3>Face and Voice Recognition-Based Auto Door</h3>
+            <p>A security-driven automation project, this system uses a microcontroller to implement face and voice recognition for controlling door access. The project integrates recognition modules and sensors to authenticate users, providing a secure and seamless automation experience. It demonstrates the potential of IoT technologies in enhancing home and workplace security systems.</p>
+            <p><strong>Key Skills:</strong> IoT integration, microcontroller programming, AI-powered recognition systems.</p>
+        </div>
+        <img class="project-image" src="path_to_image/auto-door-recognition.jpg" alt="Auto Door Recognition">
+    </div>
+
+    <div class="project-box">
+        <div class="project-content">
+            <h3>Machine Learning-Based Energy Meter</h3>
+            <p>This project combines IoT hardware and machine learning to create an intelligent energy monitoring system. Using an Arduino UNO, the system calculates real-time voltage, current, and power consumption while collecting data for analysis. Machine learning algorithms predict energy usage trends and detect anomalies, offering valuable insights for optimizing energy consumption.</p>
+            <p><strong>Key Skills:</strong> IoT systems, data analytics, machine learning.</p>
+        </div>
+        <img class="project-image" src="path_to_image/energy-meter.jpg" alt="Energy Meter with Machine Learning">
+    </div>
+
+    <div class="project-box">
+        <div class="project-content">
+            <h3>Python Program for Ladder Iterative Load Flow</h3>
+            <p>A foundational project in power systems, this tool uses Python programming to implement the ladder iterative method for analyzing load flow in electrical grids. The program calculates power distribution and performance metrics, providing a clear understanding of network behavior. This project is particularly useful for optimizing grid performance and planning.</p>
+            <p><strong>Key Skills:</strong> Python programming, power system analysis, algorithm design.</p>
+        </div>
+        <img class="project-image" src="path_to_image/ladder-flow.jpg" alt="Ladder Iterative Load Flow">
+    </div>
+</section>
