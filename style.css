@@ -381,3 +381,64 @@ footer p:nth-child(2) {
     font-style: italic; /* Italicize the quirky message */
     color: #4ba3f2; /* Highlight the quirky message in blue */
 }
+
+/*--------------------------------------------------------------------------------*/
+
+/* Hero Section Background */
+#hero {
+    position: relative;
+    background: url('Toronto Background.htm') no-repeat center center fixed; 
+    background-size: cover; /* Make the background cover the section */
+    color: #fff; /* White text for better contrast */
+    text-align: center;
+    padding: 100px 20px; /* Adjust height of the section */
+    height: 600px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay for readability */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Hero Content */
+#hero h1, #hero p, #hero a {
+    position: relative;
+    z-index: 2; /* Ensure text appears above the overlay */
+    margin: 10px 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#hero a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#hero a.btn:hover {
+    background: #fff;
+    color: #333;
+}
