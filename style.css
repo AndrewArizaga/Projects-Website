@@ -13,7 +13,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 28px; /* Slightly larger font for emphasis */
-    color: #007BFF; /* Professional blue color */
+    color: #00aaff; /* Professional blue color */
     font-weight: bold;
 }
 
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF; /* Hover effect with blue highlight */
+    color: #00aaff; /* Hover effect with blue highlight */
     background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
 }
 
