@@ -1,127 +1,153 @@
-/* General Styling */
-body {
-    font-family: 'Cambria', serif; /* Professional font */
-    background-color: #1c1c1c; /* Dark background */
-    color: #e0e0e0; /* Light text */
-    line-height: 1.6;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Cambria', serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light gray text for readability */
+}
+
+/* Main Section Styling */
 main {
-    padding: 40px 10%; /* Central alignment with margins */
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1c1c1c; /* Slightly lighter dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    color: #4ba3f2; /* Professional blue for headings */
-    border-bottom: 2px solid #4ba3f2;
-    display: inline-block;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    font-size: 28px;
-}
-
-p {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
-/* About Me Section */
+/* About Me Intro */
 .about-intro {
     display: flex;
-    gap: 40px;
     align-items: center;
-    margin-bottom: 50px;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .about-photo img {
-    max-width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid #00aaff; /* Blue border around the profile picture */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.about-summary {
-    flex: 1;
+.about-summary h2 {
+    font-size: 28px;
+    color: #00aaff; /* Highlighted blue for section headings */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .about-summary p {
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 /* Skills Section */
+.skills {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skills h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column grid */
-    gap: 10px;
     list-style: none;
-    padding: 0;
 }
 
 .skills-list li {
-    background-color: #333;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}
-
-.skills-list li:hover {
-    background-color: #4ba3f2;
-    color: #fff;
-    transform: translateY(-3px);
-}
-
-/* Design Teams & Extracurriculars */
-.design-teams, .extracurriculars {
-    margin-bottom: 50px;
-}
-
-.design-teams h3, .extracurriculars h3 {
-    font-size: 20px;
-    color: #4ba3f2;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.design-teams p, .extracurriculars p {
-    margin-left: 20px;
+    margin: 8px 0;
     font-size: 16px;
-    margin-bottom: 10px;
-}
-
-/* Awards Section */
-.awards-list {
-    list-style: none;
-    padding: 0;
-}
-
-.awards-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
     position: relative;
-    font-size: 16px;
+    padding-left: 25px;
 }
 
-.awards-list li::before {
-    content: '\2605'; /* Star icon */
+.skills-list li::before {
+    content: '✓';
     position: absolute;
     left: 0;
-    color: #4ba3f2;
-    font-size: 18px;
+    color: #00aaff; /* Blue checkmark for bullets */
+    font-weight: bold;
 }
 
-/* Footer Section */
+/* Design Teams Section */
+.design-teams, .extra-curricular, .awards {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.design-teams h2,
+.extra-curricular h2,
+.awards h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.design-teams ul,
+.extra-curricular ul,
+.awards ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.design-teams li,
+.extra-curricular li,
+.awards li {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.design-teams li strong,
+.extra-curricular li strong,
+.awards li strong {
+    color: #4ba3f2;
+}
+
+/* Footer Styling */
 footer {
     background-color: #000;
     color: #e0e0e0;
     text-align: center;
     padding: 20px 10px;
-    font-size: 14px;
-    border-top: 2px solid #4ba3f2;
-    margin-top: 50px;
+    font-size: 0.9rem;
+    border-top: 2px solid #00aaff;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 footer p:nth-child(2) {
-    color: #4ba3f2;
     font-style: italic;
+    color: #00aaff;
 }
