@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-    <!-- Header Section -->
+
+<!-- Header Section -->
     <header>
         <h1>Andrew Arizaga - My Engineering Portfolio</h1>
         <nav>
@@ -25,21 +26,54 @@
 
     <!-- Resume Section -->
     <section class="resume-container">
-        <h2>RESUME</h2>
-        <div class="pdf-box">
-            <iframe src="documents/resume.pdf" title="Resume" class="pdf-viewer"></iframe>
-        </div>
+        <div class="resume-content">
+            <!-- Left Column: PDF Scrollable Section -->
+            <div class="left-section">
+                <h2>Resume</h2>
+                <iframe src="documents/resume.pdf" title="Resume" class="pdf-viewer" onmouseover="showInfo('resume')"></iframe>
+                
+                <h2>Cover Letter</h2>
+                <iframe src="documents/coverletter.pdf" title="Cover Letter" class="pdf-viewer" onmouseover="showInfo('coverLetter')"></iframe>
+                
+                <h2>Engineering Portfolio</h2>
+                <iframe src="documents/portfolio.pdf" title="Portfolio" class="pdf-viewer" onmouseover="showInfo('portfolio')"></iframe>
+            </div>
 
-        <h2>COVER LETTER</h2>
-        <div class="pdf-box">
-            <iframe src="documents/coverletter.pdf" title="Cover Letter" class="pdf-viewer"></iframe>
-        </div>
-
-        <h2>ENGINEERING PORTFOLIO</h2>
-        <div class="pdf-box">
-            <iframe src="documents/portfolio.pdf" title="Engineering Portfolio" class="pdf-viewer"></iframe>
+            <!-- Right Column: Hover Information -->
+            <div class="right-section" id="hover-info">
+                <h3>Hover over the sections to see details!</h3>
+                <p>Here, you will see dynamic information based on the document section you are highlighting.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Andrew Arizaga. All rights reserved. Built with passion and precision.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showInfo(section) {
+            const infoBox = document.getElementById('hover-info');
+            if (section === 'resume') {
+                infoBox.innerHTML = `
+                    <h3>Resume</h3>
+                    <p>My professional resume includes details about my skills, education, and work experience relevant to engineering and technology.</p>
+                `;
+            } else if (section === 'coverLetter') {
+                infoBox.innerHTML = `
+                    <h3>Cover Letter</h3>
+                    <p>My cover letter highlights my enthusiasm, qualifications, and tailored approach for engineering roles.</p>
+                `;
+            } else if (section === 'portfolio') {
+                infoBox.innerHTML = `
+                    <h3>Engineering Portfolio</h3>
+                    <p>Explore my engineering portfolio showcasing projects, technical designs, and innovative solutions I’ve developed.</p>
+                `;
+            }
+        }
+    </script>
 
     <!-- Footer -->
     <footer>
