@@ -7,58 +7,111 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1c1c1c;
+    background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* Resume Section Layout */
 .resume-container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
     background-color: #1a1a1a;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.resume-container h2 {
+.resume-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-title h2 {
     font-size: 2.5rem;
     color: #00aaff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* Buttons for PDF Switching */
-.pdf-buttons {
+.resume-title p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+}
+
+/* Resume Content Layout */
+.resume-content {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 30px;
 }
 
-.pdf-buttons button {
-    background-color: #00aaff;
+/* Left Section: PDF Viewer and Buttons */
+.left-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.button-group button {
+    background-color: #333333;
     color: #ffffff;
-    border: none;
-    padding: 10px 20px;
+    border: 2px solid #00aaff;
     border-radius: 5px;
-    font-size: 1rem;
+    padding: 10px 15px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
-.pdf-buttons button:hover {
-    background-color: #0077cc;
-    transform: scale(1.05);
+.button-group button.active, 
+.button-group button:hover {
+    background-color: #00aaff;
+    color: #ffffff;
 }
 
-/* PDF Viewer */
 .pdf-viewer {
     width: 100%;
     height: 500px;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Right Section: Hover Information */
+.right-section {
+    flex: 1;
+    background-color: #1c1c1c;
     border: 1px solid #00aaff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.right-section h3 {
+    font-size: 1.5rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 1rem;
+    color: #d0d0d0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
