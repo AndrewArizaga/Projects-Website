@@ -3,148 +3,148 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Black background for header */
-    padding: 20px 30px; /* Increased padding for more vertical height */
+    background-color: #000; /* Black background */
+    padding: 20px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo/Title Styling */
 header h1 {
     margin: 0;
-    font-size: 24px; /* Slightly larger font for emphasis */
-    color: #00aaff; /* Professional blue color */
+    font-size: 24px;
+    color: #00aaff;
     font-weight: bold;
-}
-
-/* Navigation Menu */
-nav {
-    margin-left: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* Aligns all links to the right */
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px; /* Increased spacing between links */
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White for navigation links */
+    color: #fff;
     font-size: 18px;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 8px 12px; /* Padding for better clickability */
-    border-radius: 4px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Hover effect with blue highlight */
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+    color: #00aaff;
 }
 
-/* Sticky Header */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Optional: Add Texture Background */
-header {
-    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* Contact Section */
+/* Contact Section Styling */
 .contact-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 90vh; /* Center vertically */
+    justify-content: center;
+    min-height: 80vh;
+    padding: 50px 20px;
     background-color: #1c1c1c; /* Dark background */
-    color: #ffffff; /* White text */
-    text-align: center;
-    padding: 20px;
+    color: #ffffff;
 }
 
 .contact-container h2 {
-    font-size: 36px;
-    color: #00aaff; /* Professional blue */
-    margin-bottom: 10px;
+    font-size: 32px;
+    color: #00aaff;
+    margin-bottom: 20px;
     text-transform: uppercase;
     border-bottom: 2px solid #00aaff;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
-.contact-text {
-    margin-bottom: 30px;
+.contact-container p {
     font-size: 18px;
-    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
 }
 
-/* Contact Form Box */
+/* Form Styling */
 .contact-form {
-    background-color: #000; /* Black form background */
-    border: 1px solid #00aaff; /* Blue border */
+    background-color: #000;
+    border: 1px solid #00aaff;
     border-radius: 10px;
     padding: 30px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
 }
 
-.contact-form:hover {
-    transform: scale(1.02); /* Subtle zoom effect */
-}
-
-/* Input Fields */
 .contact-form label {
     display: block;
-    text-align: left;
     font-size: 16px;
+    margin-bottom: 8px;
     color: #00aaff;
-    margin-bottom: 5px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    background-color: #222;
+    margin-bottom: 20px;
     border: 1px solid #444;
-    color: #fff;
     border-radius: 5px;
-    font-size: 14px;
-    transition: border-color 0.3s ease-in-out;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #00aaff;
-    outline: none;
+    box-shadow: 0 0 5px #00aaff;
 }
 
-/* Submit Button */
 .contact-form button {
+    width: 100%;
+    padding: 10px;
     background-color: #00aaff;
-    color: #ffffff;
+    color: #fff;
+    font-size: 18px;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-    background-color: #008fcc;
+    background-color: #008ecc;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
+/* Remove Default Margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
