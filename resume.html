@@ -27,55 +27,27 @@
 
     <!-- Resume Section -->
     <section class="resume-container">
-        <div class="resume-content">
-            <!-- Left Column: PDF Scrollable Section -->
-            <div class="left-section">
-                <h2>Resume</h2>
-                <iframe src="Resume.pdf" title="Resume" class="pdf-viewer" onmouseover="showInfo('resume')"></iframe>
-                
-                <h2>Cover Letter</h2>
-                <iframe src="documents/coverletter.pdf" title="Cover Letter" class="pdf-viewer" onmouseover="showInfo('coverLetter')"></iframe>
-                
-                <h2>Engineering Portfolio</h2>
-                <iframe src="documents/portfolio.pdf" title="Portfolio" class="pdf-viewer" onmouseover="showInfo('portfolio')"></iframe>
-            </div>
+        <h2>Resume Section</h2>
 
-            <!-- Right Column: Hover Information -->
-            <div class="right-section" id="hover-info">
-                <h3>Hover over the sections to see details!</h3>
-                <p>Here, you will see dynamic information based on the document section you are highlighting.</p>
-            </div>
+        <!-- Buttons to Switch PDFs -->
+        <div class="pdf-buttons">
+            <button onclick="displayPDF('resume.pdf')">Resume</button>
+            <button onclick="displayPDF('cover-letter.pdf')">Cover Letter</button>
+            <button onclick="displayPDF('portfolio.pdf')">Portfolio</button>
+        </div>
+
+        <!-- PDF Viewer -->
+        <div class="left-section">
+            <iframe id="pdf-viewer" class="pdf-viewer" src="resume.pdf" title="PDF Viewer"></iframe>
         </div>
     </section>
 
-    <!-- JavaScript -->
     <script>
-        function showInfo(section) {
-            const infoBox = document.getElementById('hover-info');
-            if (section === 'resume') {
-                infoBox.innerHTML = `
-                    <h3>Resume</h3>
-                    <p>My professional resume includes details about my skills, education, and work experience relevant to engineering and technology.</p>
-                `;
-            } else if (section === 'coverLetter') {
-                infoBox.innerHTML = `
-                    <h3>Cover Letter</h3>
-                    <p>My cover letter highlights my enthusiasm, qualifications, and tailored approach for engineering roles.</p>
-                `;
-            } else if (section === 'portfolio') {
-                infoBox.innerHTML = `
-                    <h3>Engineering Portfolio</h3>
-                    <p>Explore my engineering portfolio showcasing projects, technical designs, and innovative solutions I’ve developed.</p>
-                `;
-            }
+        // Function to update the PDF viewer source
+        function displayPDF(file) {
+            document.getElementById('pdf-viewer').src = file;
         }
     </script>
-
-<!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
-        <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
-    </footer>
 
 </body>
 </html>
