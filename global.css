@@ -1,1 +1,156 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Clean, professional font */
+    background-color: #1c1c1c; /* Consistent dark background */
+    color: #e0e0e0; /* Light text for readability */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black background for header */
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-image: url('Octagon Background.jpg'); /* Optional texture background */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #00aaff; /* Blue text for the title */
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #000; /* Black footer background */
+    color: #e0e0e0; /* Light text for contrast */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #4ba3f2; /* Subtle blue border on top */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:nth-child(2) {
+    font-style: italic; /* Quirky footer message */
+    color: #4ba3f2; /* Highlighted in blue */
+}
+
+/* Links */
+a {
+    color: #00aaff; /* Consistent link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4ba3f2; /* Slightly lighter blue on hover */
+}
+
+/* Section Titles */
+h2 {
+    font-size: 32px;
+    color: #00aaff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #4ba3f2;
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section {
+    margin: 50px 0;
+}
+
+/* Scrollbar Styling (optional) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4ba3f2;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
 
