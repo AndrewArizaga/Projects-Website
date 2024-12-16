@@ -23,12 +23,12 @@
 
 .semester h3 {
     font-size: 2rem;
-    color: #007bff; /* Blue for semester headings */
-    margin-bottom: 20px;
+    color: #007bff;
     text-transform: uppercase;
     text-align: left;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* Coursework Grid Layout */
@@ -47,7 +47,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .course-box:hover {
