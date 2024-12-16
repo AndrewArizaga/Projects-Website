@@ -1,172 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Header Section */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Black background for header */
-    padding: 20px 30px; /* Increased padding for more vertical height */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo/Title Styling */
 header h1 {
-    margin: 0;
-    font-size: 24px; /* Slightly larger font for emphasis */
-    color: #00aaff; /* Professional blue color */
-    font-weight: bold;
-}
-
-/* Navigation Menu */
-nav {
-    margin-left: auto;
+    color: #00aaff;
+    font-size: 24px;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* Aligns all links to the right */
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px; /* Increased spacing between links */
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White for navigation links */
+    color: #ffffff;
     font-size: 18px;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 8px 12px; /* Padding for better clickability */
-    border-radius: 4px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Hover effect with blue highlight */
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
-}
-
-/* Sticky Header */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Optional: Add Texture Background */
-header {
-    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: #00aaff;
 }
 
 /* Contact Section */
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 50px 20px;
-    background-color: #1c1c1c; /* Dark background */
-    color: #ffffff;
-}
-
-.contact-container h2 {
-    font-size: 32px;
-    color: #00aaff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    flex-grow: 1; /* Centers vertically with flexbox */
     text-align: center;
-    margin-bottom: 30px;
-    color: #ccc;
-}
-
-/* Form Styling */
-.contact-form {
     background-color: #000;
     border: 1px solid #00aaff;
     border-radius: 10px;
-    padding: 30px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
     color: #00aaff;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #444;
     border-radius: 5px;
     background-color: #1c1c1c;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #00aaff;
-    box-shadow: 0 0 5px #00aaff;
-}
-
-.contact-form button {
-    width: 100%;
+.contact-form .send-btn {
     padding: 10px;
     background-color: #00aaff;
     color: #fff;
-    font-size: 18px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-form .send-btn:hover {
     background-color: #008ecc;
-    transform: scale(1.05);
 }
 
 /* LinkedIn Section */
-.linkedin-container {
-    margin-top: 40px;
-    text-align: center;
-    color: #ffffff;
+.linkedin-section {
+    margin-top: 20px;
+    font-size: 16px;
 }
 
-.linkedin-container p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-.linkedin-container a {
-    text-decoration: none;
+.linkedin-link {
     color: #00aaff;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
 }
 
-.linkedin-container a:hover {
+.linkedin-link:hover {
     color: #008ecc;
     text-decoration: underline;
 }
@@ -174,54 +132,10 @@ header {
 /* Footer Section */
 footer {
     text-align: center;
+    padding: 10px 0;
     background-color: #000;
     color: #ccc;
-    padding: 10px 20px;
     font-size: 14px;
-    margin-top: 50px;
-    border-top: 1px solid #333;
-}
-
-footer a {
-    color: #00aaff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #008ecc;
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        padding: 20px;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-
-    .linkedin-container p {
-        font-size: 16px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-}
-
-/* Remove default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #444;
 }
