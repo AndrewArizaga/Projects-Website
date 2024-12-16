@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styling */
 body {
-    background-color: #1c1c1c; /* Consistent dark background */
-    color: #e0e0e0; /* Light text for readability */
-    line-height: 1.6; /* Improve readability */
+    font-family: Cambria, "Times New Roman", serif; /* Cambria with fallback */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff; /* White text for general use */
+    background-color: #1c1c1c; /* Dark background */
 }
 
 /* Header Section */
@@ -20,21 +22,23 @@ header {
     background-color: #000; /* Black background for header */
     padding: 20px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-repeat: no-repeat;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-image: url('Octagon Background.jpg'); /* Optional texture background */
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 header h1 {
     margin: 0;
+    font-family: Cambria, "Times New Roman", serif;
     font-size: 24px;
-    color: #00aaff; /* Blue text for the title */
+    color: #00aaff; /* Professional blue color */
     font-weight: bold;
 }
 
+/* Navigation Menu */
 nav {
     margin-left: auto;
 }
@@ -54,10 +58,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-family: Cambria, "Times New Roman", serif;
     font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
     padding: 8px 12px;
     border-radius: 4px;
-    transition: color 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -67,89 +72,20 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-    background-color: #000; /* Dark footer background */
-    color: #e0e0e0; /* Light text for contrast */
+    background-color: #000;
+    color: #e0e0e0;
     text-align: center;
-    padding: 20px 10px; /* Add spacing inside the footer */
-    font-size: 0.9rem; /* Slightly smaller font size */
-    border-top: 2px solid #4ba3f2; /* Subtle blue border on top */
+    padding: 20px 10px;
+    font-family: Cambria, "Times New Roman", serif;
+    font-size: 0.9rem;
+    border-top: 2px solid #4ba3f2;
 }
 
 footer p {
-    margin: 5px 0; /* Add some space between paragraphs */
+    margin: 5px 0;
 }
 
 footer p:nth-child(2) {
-    font-style: italic; /* Italicize the quirky message */
+    font-style: italic;
     color: #4ba3f2; /* Highlight the quirky message in blue */
 }
-
-/* Links */
-a {
-    color: #00aaff; /* Consistent link color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #4ba3f2; /* Slightly lighter blue on hover */
-}
-
-/* Section Titles */
-h2 {
-    font-size: 32px;
-    color: #00aaff;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Buttons */
-button, .btn {
-    background-color: #00aaff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover, .btn:hover {
-    background-color: #4ba3f2;
-}
-
-/* Utility Classes */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.section {
-    margin: 50px 0;
-}
-
-/* Scrollbar Styling (optional) */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #4ba3f2;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #333;
-}
-
