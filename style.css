@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-start; /* Align content higher */
     align-items: center;
-    padding-top: 10vh; /* Adds space from the top */
+    padding-top: 20vh; /* Adds space from the top */
     background: url('Toronto Background new.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
