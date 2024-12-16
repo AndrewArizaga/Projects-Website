@@ -3,39 +3,52 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Black background */
+    background-color: #000; /* Black background for header */
     padding: 20px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
-    color: #00aaff;
+    font-size: 24px; /* Font size for header title */
+    color: #00aaff; /* Professional blue color */
     font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Aligns all links to the right */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Spacing between navigation links */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* White navigation links */
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
 nav ul li a:hover {
     color: #00aaff;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Contact Section Styling */
