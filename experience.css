@@ -1,95 +1,93 @@
-/* General Experience Section */
+/* General Styling */
 .experience-container {
     padding: 50px 20px;
     background-color: #1c1c1c; /* Dark background */
     color: #e0e0e0; /* Light text */
-    text-align: center;
 }
 
 .experience-container h2 {
     font-size: 2.5rem;
-    color: #00aaff; /* Highlighted blue */
-    margin-bottom: 30px;
     text-transform: uppercase;
-    border-bottom: 3px solid #00aaff;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
     display: inline-block;
     padding-bottom: 10px;
 }
 
-/* Experience List */
-.experience-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Experience Card */
-.experience-card {
+/* Job Card Layout */
+.job {
     display: flex;
-    align-items: center;
-    background-color: #2e2e2e; /* Darker card background */
-    border: 1px solid #444;
+    align-items: flex-start;
+    background-color: #333333;
+    margin-bottom: 30px;
+    border: 1px solid #444444;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
-    gap: 20px;
+    overflow: hidden;
 }
 
-.experience-card:hover {
-    transform: translateY(-10px);
+.job:hover {
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border: 1px solid #00aaff;
-    cursor: pointer;
 }
 
-/* Logo Section */
-.experience-logo img {
-    width: 80px; /* Logo size */
-    height: 80px;
-    border-radius: 50%; /* Circular logos */
-    object-fit: contain;
-    border: 2px solid #00aaff;
-    background-color: #ffffff;
+.job-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures square aspect ratio */
+    margin-right: 20px;
+    background-color: #ffffff; /* White image background */
 }
 
-/* Experience Content */
-.experience-content {
-    text-align: left;
+.job-details {
+    flex: 1;
+    padding: 20px;
 }
 
-.experience-content h3 {
-    font-size: 1.5rem;
-    color: #00aaff;
+.job-details h3 {
+    font-size: 1.8rem;
+    color: #007bff;
     margin-bottom: 5px;
 }
 
-.experience-content p {
-    font-size: 1rem;
-    color: #e0e0e0;
-    margin: 5px 0;
-    line-height: 1.5;
+.job-details h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #aaaaaa;
+    margin-bottom: 15px;
 }
 
-.experience-content strong {
-    color: #f0f0f0; /* Slightly brighter for company names */
+.job-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.job-details ul li {
+    margin-bottom: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .experience-card {
+    .job {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .job-image {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .job-details {
         text-align: center;
     }
 
-    .experience-logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .experience-content h3 {
-        font-size: 1.3rem;
+    .job-details ul {
+        padding-left: 0;
     }
 }
