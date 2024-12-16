@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: Cambria, "Times New Roman", serif; /* Cambria with fallback */
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.6;
     color: #ffffff; /* White text for general use */
     background-color: #1c1c1c; /* Dark background */
@@ -33,7 +33,7 @@ header {
 header h1 {
     margin: 0;
     font-family: Cambria, "Times New Roman", serif;
-    font-size: 26px;
+    font-size: 18px;
     color: #00aaff; /* Professional blue color */
     font-weight: bold;
 }
