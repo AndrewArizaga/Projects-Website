@@ -1,72 +1,44 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #121212;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
 /* Header Section */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000; /* Black background for header */
-    padding: 20px 30px; /* Increased padding for more vertical height */
+    padding: 20px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo/Title Styling */
 header h1 {
     margin: 0;
-    font-size: 24px; /* Slightly larger font for emphasis */
-    color: #00aaff; /* Professional blue color */
+    font-size: 24px;
+    color: #00aaff;
     font-weight: bold;
-}
-
-/* Navigation Menu */
-nav {
-    margin-left: auto;
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 18px; /* Increased spacing between links */
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* White for navigation links */
+    color: #fff;
     font-size: 18px;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 8px 12px; /* Padding for better clickability */
-    border-radius: 4px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Hover effect with blue highlight */
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+    color: #00aaff;
 }
 
-/* Sticky Header */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Contact Section Styling */
+/* Contact Section */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -150,6 +122,54 @@ header {
     transform: scale(1.05);
 }
 
+/* LinkedIn Section */
+.linkedin-container {
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.linkedin-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.linkedin-container a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.linkedin-container a:hover {
+    color: #008ecc;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #008ecc;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
@@ -160,19 +180,11 @@ header {
         padding: 20px;
     }
 
-    .contact-container h2 {
-        font-size: 28px;
+    .linkedin-container p {
+        font-size: 16px;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
+    footer {
+        font-size: 12px;
     }
-}
-
-/* Remove Default Margins */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
