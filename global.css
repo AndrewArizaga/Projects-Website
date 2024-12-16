@@ -33,7 +33,7 @@ header {
 header h1 {
     margin: 0;
     font-family: Cambria, "Times New Roman", serif;
-    font-size: 24px;
+    font-size: 28px;
     color: #00aaff; /* Professional blue color */
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
