@@ -18,25 +18,26 @@
 
 /* Semester Section */
 .semester {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Spacing between semesters */
 }
 
 .semester h3 {
     font-size: 2rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #007bff, #0056b3); /* Blue gradient background */
+    color: #ffffff; /* White text for gradient heading */
+    background: linear-gradient(to right, #007bff, #0056b3);
     border-radius: 5px;
+    padding: 10px 20px;
     text-align: center;
-    padding: 10px;
+    text-transform: uppercase;
     margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Coursework Grid Layout */
 .coursework-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px;
+    gap: 20px; /* Spacing between cards */
     margin-top: 20px;
 }
 
@@ -49,74 +50,77 @@
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Initial animation state */
+    opacity: 0; /* Start hidden for animation */
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.course-box.visible {
-    opacity: 1;
-    transform: translateY(0); /* Reveal animation */
-}
-
-.course-box:hover {
-    transform: translateY(-10px); /* Lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: 2px solid #007bff; /* Highlight border */
-    cursor: pointer;
 }
 
 /* Course Code and Name Styling */
 .course-box h3 {
     font-size: 1.8rem; /* Larger font size for course code */
-    color: #007bff;
+    color: #007bff; /* Blue for course code */
     font-weight: bold;
     margin-bottom: 5px;
-    display: flex;
-    align-items: center;
 }
 
 .course-box h3 span {
-    display: block;
+    display: block; /* Place course name on a new line */
     font-size: 1rem; /* Smaller font for course name */
     font-weight: normal;
     color: #555555; /* Softer gray for course name */
     margin-top: 3px;
 }
 
-/* Optional Icon for Course Title */
-.course-box h3 i {
-    margin-right: 10px; /* Icon spacing */
-    color: #007bff; /* Blue icon color */
-}
-
 /* Course Description */
 .course-box p {
     font-size: 0.95rem;
-    color: #555555; /* Softer text color */
+    color: #555555;
     margin: 10px 0 0;
     line-height: 1.5;
+}
+
+/* Hover Effect for Course Cards */
+.course-box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    border: 2px solid #007bff; /* Highlight border */
+    cursor: pointer;
+}
+
+/* Scroll Animation for Course Cards */
+.course-box.visible {
+    opacity: 1; /* Visible when scrolled into view */
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Icons (Optional) */
+.course-box h3 i {
+    margin-right: 8px; /* Spacing between icon and text */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .coursework-container h2 {
-        font-size: 2rem; /* Adjusted title size */
+        font-size: 2rem; /* Smaller title for mobile */
     }
 
     .course-box {
-        padding: 15px; /* Reduced padding */
+        padding: 15px; /* Reduce padding on smaller screens */
     }
 
     .course-box h3 {
-        font-size: 1.5rem; /* Smaller course code size */
+        font-size: 1.5rem; /* Adjust course code size */
     }
 
     .course-box h3 span {
-        font-size: 0.9rem; /* Adjusted course name size */
+        font-size: 0.9rem; /* Adjust course name size */
     }
 
     .course-box p {
-        font-size: 0.9rem; /* Smaller description */
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .semester h3 {
+        font-size: 1.5rem; /* Adjust semester title size */
     }
 }
