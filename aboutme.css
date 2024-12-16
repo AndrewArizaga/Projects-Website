@@ -6,148 +6,92 @@
 }
 
 body {
-    font-family: 'Cambria', serif;
+    font-family: 'Cambria', serif; /* Professional serif font */
+    background-color: #fdfdfd; /* Soft white background */
+    color: #333333; /* Dark gray for readability */
     line-height: 1.6;
-    background-color: #121212; /* Dark background for the entire page */
-    color: #e0e0e0; /* Light gray text for readability */
 }
 
-/* Main Section Styling */
+/* Main Section */
 main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #1c1c1c; /* Slightly lighter dark background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Me Intro */
+/* About Me Section */
 .about-intro {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 40px;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .about-photo img {
-    max-width: 200px;
-    border-radius: 50%;
-    border: 3px solid #00aaff; /* Blue border around the profile picture */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 180px;
+    border-radius: 50%; /* Circular photo */
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .about-summary h2 {
-    font-size: 28px;
-    color: #00aaff; /* Highlighted blue for section headings */
+    font-size: 2rem;
+    color: #007bff;
     margin-bottom: 10px;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 5px;
 }
 
 .about-summary p {
-    margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
 }
 
 /* Skills Section */
-.skills {
+.skills, .design-teams, .extracurriculars, .awards {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.skills h2 {
-    font-size: 28px;
-    color: #00aaff;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.skills-list {
-    list-style: none;
-}
-
-.skills-list li {
-    margin: 8px 0;
-    font-size: 16px;
-    position: relative;
-    padding-left: 25px;
-}
-
-.skills-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #00aaff; /* Blue checkmark for bullets */
-    font-weight: bold;
-}
-
-/* Design Teams Section */
-.design-teams, .extra-curricular, .awards {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
+.skills h2, 
 .design-teams h2,
-.extra-curricular h2,
+.extracurriculars h2,
 .awards h2 {
-    font-size: 28px;
-    color: #00aaff;
+    font-size: 1.8rem;
+    color: #007bff;
     margin-bottom: 15px;
-    border-bottom: 2px solid #00aaff;
+    border-bottom: 2px solid #007bff;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-.design-teams ul,
-.extra-curricular ul,
-.awards ul {
+.skills-list, ul {
     list-style: none;
-    padding-left: 0;
 }
 
-.design-teams li,
-.extra-curricular li,
+.skills-list li, 
+.design-teams li, 
+.extracurriculars li, 
 .awards li {
+    font-size: 1rem;
+    padding-left: 25px;
     margin: 8px 0;
-    font-size: 16px;
+    position: relative;
+    color: #555;
     line-height: 1.8;
 }
 
-.design-teams li strong,
-.extra-curricular li strong,
-.awards li strong {
-    color: #4ba3f2;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-    border-top: 2px solid #00aaff;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer p:nth-child(2) {
-    font-style: italic;
-    color: #00aaff;
+.skills-list li::before,
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
 }
