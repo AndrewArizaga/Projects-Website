@@ -277,37 +277,91 @@ main {
 }
 
 /* ---------------------- AWARDS SECTION ---------------------- */
-.awards {
+/* Awards Section */
+.awards-section {
     margin-bottom: 40px;
     background-color: #1a1a1a;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.awards h2 {
-    font-size: 2rem;
+.awards-section h2 {
+    font-size: 2.5rem;
     color: #00aaff;
-    margin-bottom: 15px;
     border-bottom: 2px solid #00aaff;
-    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Category Headings */
+.category-heading {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-top: 20px;
+    border-bottom: 1px solid #00aaff;
     padding-bottom: 5px;
 }
 
-.awards li {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
+/* Awards Container */
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.awards li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.award-icon {
+    font-size: 1.8rem;
     color: #00aaff;
-    font-size: 1.5rem;
+}
+
+.award-content h3 {
+    font-size: 1.4rem;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.award-content p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .award-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .award-icon {
+        font-size: 1.5rem;
+    }
+
+    .award-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .award-content p {
+        font-size: 1rem;
+    }
 }
 
 /* ---------------------- FOOTER SECTION ---------------------- */
