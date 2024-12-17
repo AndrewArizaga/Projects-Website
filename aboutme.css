@@ -180,6 +180,7 @@ main {
 }
 
 /* ---------------------- EXTRACURRICULARS SECTION ---------------------- */
+/* Extracurriculars Section */
 .extracurriculars {
     margin-bottom: 40px;
     background-color: #1a1a1a;
@@ -189,28 +190,65 @@ main {
 }
 
 .extracurriculars h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #00aaff;
-    margin-bottom: 15px;
     border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.extracurriculars li {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
+/* Activity Layout */
+.activity-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.extracurriculars li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #00aaff;
+.activity-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #00aaff;
+}
+
+.activity-content h3 {
     font-size: 1.5rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.activity-content p {
+    font-size: 1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .activity-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .activity-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .activity-content p {
+        font-size: 0.9rem;
+    }
 }
 
 /* ---------------------- AWARDS SECTION ---------------------- */
