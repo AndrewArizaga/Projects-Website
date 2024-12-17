@@ -1,109 +1,100 @@
-/* Contact Section */
-.contact-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #1f1f1f; /* Dark card background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #e0e0e0;
-    text-align: center;
+/* General Contact Section */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-section h2 {
+.contact-container h2 {
     font-size: 2.5rem;
-    color: #00aaff;
     margin-bottom: 20px;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 10px;
+    text-align: center;
+    color: #00aaff;
 }
 
-/* Contact Form */
+/* Contact Form Styling */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
 }
 
 .contact-form label {
-    text-align: left;
-    font-size: 1.1rem;
-    color: #d0d0d0;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #cccccc;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #333333;
+    border: 1px solid #444444;
+    background-color: #2e2e2e;
     color: #ffffff;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #00aaff;
-    box-shadow: 0 0 5px rgba(0, 170, 255, 0.6);
-    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
 }
 
 .contact-form textarea {
-    resize: none;
-    height: 150px;
+    resize: vertical;
+    min-height: 150px;
 }
 
+/* Button Styling */
 .contact-form button {
     background-color: #00aaff;
     color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #0077cc;
-    transform: scale(1.05);
+    background-color: #008fcc;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.4);
 }
 
-/* LinkedIn Contact Info */
-.contact-links {
+/* LinkedIn Link */
+.linkedin-link {
     margin-top: 20px;
-    font-size: 1rem;
-    color: #d0d0d0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #cccccc;
 }
 
-.contact-links a {
+.linkedin-link a {
     color: #00aaff;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     transition: color 0.3s ease;
 }
 
-.contact-links a:hover {
-    color: #0077cc;
-    text-decoration: underline;
+.linkedin-link a:hover {
+    color: #008fcc;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-section {
-        padding: 20px;
-    }
-
-    .contact-section h2 {
-        font-size: 2rem;
-    }
-
-    .contact-form button {
-        font-size: 0.9rem;
-    }
+.linkedin-link a::before {
+    content: "🔗"; /* Add LinkedIn icon (simple text emoji) */
+    font-size: 1.2rem;
 }
+
