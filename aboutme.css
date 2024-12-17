@@ -93,3 +93,27 @@ main {
     color: #00aaff;
     font-size: 1.5rem;
 }
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
+    gap: 15px 30px; /* Row and column spacing */
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    font-size: 1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 15px;
+}
+
+.skills-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00aaff; /* Blue bullet points */
+    font-size: 1.2rem;
+}
