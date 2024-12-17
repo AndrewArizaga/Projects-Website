@@ -108,14 +108,26 @@
     }
 
     .course-box h3 {
-        font-size: 1.3rem;
-    }
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0; /* Remove unnecessary margin */
+    text-transform: uppercase;
+}
 
-    .course-box h3 span {
-        font-size: 0.9rem;
-    }
+.course-box h3 span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555555;
+    margin: 5px 0; /* Reduce spacing below the title line */
+}
 
     .course-box p {
-        font-size: 0.9rem;
-    }
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0; /* Remove default margin */
+    padding-top: 10px; /* Add slight spacing above text */
+}
 }
