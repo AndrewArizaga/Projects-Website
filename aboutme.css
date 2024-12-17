@@ -364,6 +364,50 @@ main {
     }
 }
 
+/* Certifications Section */
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #1f1f1f;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.award-icon {
+    font-size: 2rem;
+    color: #00aaff; /* Blue icon */
+    margin-top: 5px;
+}
+
+.award-content p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.cert-desc {
+    font-size: 1rem;
+    color: #b0b0b0; /* Lighter gray for descriptions */
+    margin-bottom: 15px;
+}
+
+.award-content strong {
+    color: #ffffff; /* Bold certification name in white */
+    font-weight: 600;
+}
+
+.award-content em {
+    font-size: 1rem;
+    color: #00aaff; /* Blue date for certifications */
+    font-style: normal;
+    margin-left: 10px;
+}
+
+
+
 /* ---------------------- FOOTER SECTION ---------------------- */
 footer {
     text-align: center;
