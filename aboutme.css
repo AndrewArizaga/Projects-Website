@@ -22,7 +22,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* About Me Section */
+/* ---------------------- ABOUT ME SECTION ---------------------- */
 .about-intro {
     display: flex;
     flex-direction: row;
@@ -54,8 +54,8 @@ main {
     color: #d0d0d0;
 }
 
-/* Shared Section Styles */
-.skills, .design-teams, .extracurriculars, .awards {
+/* ---------------------- SKILLS SECTION ---------------------- */
+.skills {
     margin-bottom: 40px;
     background-color: #1a1a1a;
     padding: 20px;
@@ -63,35 +63,13 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.skills h2, .design-teams h2, .extracurriculars h2, .awards h2 {
+.skills h2 {
     font-size: 2rem;
     color: #00aaff;
     margin-bottom: 15px;
     border-bottom: 2px solid #00aaff;
     display: inline-block;
     padding-bottom: 5px;
-}
-
-.skills-list, ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.skills-list li, .design-teams li, .extracurriculars li, .awards li {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-/* Custom Bullets */
-.skills-list li::before, ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #00aaff;
-    font-size: 1.5rem;
 }
 
 .skills-list {
@@ -116,4 +94,121 @@ main {
     left: 0;
     color: #00aaff; /* Blue bullet points */
     font-size: 1.2rem;
+}
+
+/* ---------------------- DESIGN TEAMS SECTION ---------------------- */
+.design-teams {
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.design-teams h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.design-teams li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.design-teams li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00aaff;
+    font-size: 1.5rem;
+}
+
+/* ---------------------- EXTRACURRICULARS SECTION ---------------------- */
+.extracurriculars {
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.extracurriculars h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.extracurriculars li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.extracurriculars li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00aaff;
+    font-size: 1.5rem;
+}
+
+/* ---------------------- AWARDS SECTION ---------------------- */
+.awards {
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.awards h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.awards li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.awards li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00aaff;
+    font-size: 1.5rem;
+}
+
+/* ---------------------- FOOTER SECTION ---------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    border-top: 2px solid #00aaff;
+}
+
+footer p:nth-child(2) {
+    font-style: italic;
+    color: #00aaff;
 }
