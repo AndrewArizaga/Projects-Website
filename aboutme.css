@@ -55,6 +55,7 @@ main {
 }
 
 /* ---------------------- SKILLS SECTION ---------------------- */
+/* Skills Section */
 .skills {
     margin-bottom: 40px;
     background-color: #1a1a1a;
@@ -64,38 +65,51 @@ main {
 }
 
 .skills h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #00aaff;
-    margin-bottom: 15px;
     border-bottom: 2px solid #00aaff;
-    display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
+/* Skill Categories */
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Skills List */
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px 30px; /* Row and column spacing */
     list-style: none;
     padding-left: 0;
 }
 
 .skills-list li {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Larger skill point size */
     color: #d0d0d0;
     line-height: 1.6;
     position: relative;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
+/* Larger Custom Bullets */
 .skills-list li::before {
     content: '•';
     position: absolute;
     left: 0;
     color: #00aaff; /* Blue bullet points */
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Bigger bullet */
+    line-height: 1;
 }
-
 /* ---------------------- DESIGN TEAMS SECTION ---------------------- */
 .design-teams {
     margin-bottom: 40px;
