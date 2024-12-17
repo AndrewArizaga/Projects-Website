@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Full-Page Background Image */
 body {
     font-family: 'Cambria', serif;
-    background-color: #121212; /* Dark background for contrast */
-    color: #e0e0e0;
+    background-image: url('aboutme-background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    background-position: center; /* Centers the background image */
+    color: #e0e0e0; /* Ensures text remains readable */
     line-height: 1.6;
 }
 
