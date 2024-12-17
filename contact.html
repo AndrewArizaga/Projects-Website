@@ -26,32 +26,29 @@
     </header>
 
     <!-- Contact Section -->
-    <section class="contact-container">
-    <div class="contact-form">
-        <h2>Contact Me</h2>
-        <p class="contact-text">I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hello.</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+<section class="contact-container">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hello.</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your Email" required>
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-            <button type="submit">Send Message</button>
-        </form>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="linkedin-link">
+        <p>Want to connect further? Reach out to me on <a href="https://linkedin.com" target="_blank">LinkedIn</a>!</p>
     </div>
 </section>
 
-<!-- LinkedIn Section -->
-<div class="linkedin-container">
-    <p>Want to connect further? Reach out to me on <a href="https://www.linkedin.com/in/andrewarizaga/" target="_blank">LinkedIn</a>!</p>
-</div>
-
-<!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
-        <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+    <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
+</footer>
