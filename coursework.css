@@ -34,8 +34,8 @@
 /* Coursework Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller min width */
+    gap: 30px 40px; /* Increase row and column spacing */
     margin-top: 20px;
     justify-content: center;
 }
@@ -105,20 +105,25 @@
     }
 
     .course-box {
-        padding: 15px;
-        height: 350px; /* Slightly taller for smaller screens */
+        height: 350px; /* Increase height for content */
+        padding: 25px; /* Add more internal padding */
     }
+
 
     /* Adjust font sizes for smaller screens */
     .course-box h3 {
-        font-size: 1.3rem;
+        font-size: 1.6rem; /* Slightly larger titles */
+        margin-bottom: 5px; /* Add space below title */
     }
+
 
     .course-box h3 span {
         font-size: 0.9rem;
     }
 
     .course-box p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Larger text for readability */
+        -webkit-line-clamp: 5; /* Limit to 5 lines for consistency */
     }
+
 }
