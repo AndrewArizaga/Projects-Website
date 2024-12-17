@@ -67,7 +67,7 @@ main {
 .qualifications {
     margin-bottom: 40px;
     background-color: #1a1a1a;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -75,80 +75,61 @@ main {
 .qualifications h2 {
     font-size: 2.8rem;
     color: #00aaff;
+    text-align: center;
     border-bottom: 2px solid #00aaff;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
+/* Category Styles */
 .qualifications-category {
     margin-bottom: 30px;
 }
 
 .qualifications-category h3 {
-    font-size: 2rem; /* Increased from 1.8rem */
+    font-size: 1.8rem;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-transform: uppercase;
+    border-bottom: 1px solid #333; /* Subtle underline */
+    padding-bottom: 5px;
 }
 
-/* 5 Columns Layout for Skills */
+/* Grid Layout for Skills */
 .qualifications-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    gap: 15px 20px; /* Row and column spacing */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px 30px; /* Spacing between rows and columns */
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .qualifications-list li {
-    font-size: 1.5rem; /* Increased size */
-    color: #e0e0e0; /* Keeps the white color */
-    line-height: 1.8; /* Slightly increase spacing */
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    padding-left: 15px;
     position: relative;
-    padding-left: 20px;
 }
 
 .qualifications-list li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: #00aaff;
-    font-size: 1.8rem; /* Bigger bullet points */
-
-/* ---------------------- WORKSPACE TOOLS SUBDIVISION ---------------------- */
-/* Workspace Tools Section */
-.qualifications-category.workspace-tools {
-    margin-top: 20px;
-}
-
-.workspace-tools h3 {
-    font-size: 1.8rem;
-    color: #00aaff;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.workspace-tools ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 10px 20px; /* Adjust spacing between rows and columns */
-    list-style: none;
-    padding: 0;
-}
-
-.workspace-tools li {
-    position: relative;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding-left: 15px; /* Space for bullet */
-}
-
-.workspace-tools li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #00aaff; /* Blue bullet points */
+    color: #00aaff; /* Blue bullet point */
     font-size: 1.5rem;
+}
+
+/* Adjust smaller screens */
+@media (max-width: 768px) {
+    .qualifications-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .qualifications-list {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
 }
 
 /* ---------------------- DESIGN TEAMS SECTION ---------------------- */
