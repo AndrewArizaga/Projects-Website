@@ -106,6 +106,66 @@ main {
     left: 0;
     color: #00aaff;
     font-size: 1.8rem; /* Bigger bullet points */
+
+/* ---------------------- WORKSPACE TOOLS SUBDIVISION ---------------------- */
+.workspace-tools {
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.workspace-tools h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.workspace-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px 20px;
+}
+
+.workspace-category {
+    background-color: #1f1f1f;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.workspace-category h4 {
+    font-size: 1.3rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.workspace-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.workspace-category li {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.workspace-category li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00aaff;
+    font-size: 1.3rem;
+}
+
 }
 /* ---------------------- DESIGN TEAMS SECTION ---------------------- */
 /* Design Teams Section */
