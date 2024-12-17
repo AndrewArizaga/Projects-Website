@@ -56,6 +56,7 @@
     justify-content: space-between;
 }
 
+/* Hover Effect */
 .course-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -67,7 +68,7 @@
     font-size: 1.5rem;
     color: #007bff;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 0; /* Remove default margin */
     text-transform: uppercase;
 }
 
@@ -76,7 +77,7 @@
     font-size: 1rem;
     font-weight: normal;
     color: #555555;
-    margin-top: 5px;
+    margin: 5px 0; /* Adjust spacing below the title line */
 }
 
 /* Course Description */
@@ -84,7 +85,8 @@
     font-size: 0.95rem;
     color: #555555;
     line-height: 1.5;
-    margin-top: 10px;
+    margin: 0; /* Remove default margins */
+    padding-top: 10px; /* Add spacing above the text */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -107,27 +109,16 @@
         height: 350px; /* Slightly taller for smaller screens */
     }
 
+    /* Adjust font sizes for smaller screens */
     .course-box h3 {
-    font-size: 1.8rem;
-    color: #007bff;
-    font-weight: bold;
-    margin: 0; /* Remove unnecessary margin */
-    text-transform: uppercase;
-}
+        font-size: 1.3rem;
+    }
 
-.course-box h3 span {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-    color: #555555;
-    margin: 5px 0; /* Reduce spacing below the title line */
-}
+    .course-box h3 span {
+        font-size: 0.9rem;
+    }
 
     .course-box p {
-    font-size: 1rem;
-    color: #555555;
-    line-height: 1.5;
-    margin: 0; /* Remove default margin */
-    padding-top: 10px; /* Add slight spacing above text */
-}
+        font-size: 0.9rem;
+    }
 }
