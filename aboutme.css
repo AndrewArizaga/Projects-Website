@@ -139,7 +139,7 @@ main {
 }
 
 .team-image {
-    width: 150px;
+    width: 300px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
@@ -211,7 +211,7 @@ main {
 }
 
 .activity-image {
-    width: 120px;
+    width: 300px;
     height: 120px;
     object-fit: cover;
     border-radius: 10px;
