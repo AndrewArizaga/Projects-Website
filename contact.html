@@ -25,28 +25,30 @@
         </nav>
     </header>
 
-    <!-- Contact Section -->
-<section class="contact-container">
-    <h2>Contact Me</h2>
-    <p>I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hello.</p>
+/* Contact Section Container */
+.contact-container {
+    min-height: 600px; /* Ensures the container has a minimum height */
+    padding: 50px 20px; /* Adds space inside the container */
+    margin-bottom: 100px; /* Adds spacing at the bottom of the page */
+    background-color: #1f1f1f; /* Keep consistent with your theme */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
 
-    <form class="contact-form" action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+/* Form Adjustments */
+.contact-container form {
+    margin-top: 20px;
+}
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+.contact-container textarea {
+    min-height: 200px; /* Increase text area height */
+    resize: vertical; /* Allows resizing vertically */
+}
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <div class="linkedin-link">
-        <p>Want to connect further? Reach out to me on <a href="https://linkedin.com" target="_blank">LinkedIn</a>!</p>
-    </div>
-</section>
+/* Footer Padding Adjustment */
+footer {
+    margin-top: 50px; /* Adds space between contact section and footer */
+}
 
 <footer>
     <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
