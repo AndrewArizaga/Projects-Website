@@ -248,6 +248,20 @@ main {
     border: 3px solid #00aaff;
 }
 
+@media (max-width: 768px) {
+    .activity-image {
+        width: 300px; /* Slightly smaller for smaller screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-image {
+        width: 100%; /* Full width for very small screens */
+        height: auto;
+    }
+}
+
 .activity-content h3 {
     font-size: 1.5rem;
     color: #00aaff;
