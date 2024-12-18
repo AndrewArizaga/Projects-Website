@@ -427,8 +427,8 @@ main {
 .certifications h2 {
     font-size: 2.8rem;
     color: #00aaff;
-    text-align: right; /* Right-align title */
-    margin-right: 20px; /* Adds slight spacing from the edge */
+    text-align: left; /* Left-align title */
+    margin-left: 20px; /* Adds slight spacing from the edge */
     border-bottom: 2px solid #00aaff;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -499,8 +499,8 @@ main {
 .memberships h2 {
     font-size: 2.8rem;
     color: #00aaff;
-    text-align: right; /* Right-align title */
-    margin-right: 20px; /* Adds slight spacing from the edge */
+    text-align: left; /* left-align title */
+    margin-left: 20px; /* Adds slight spacing from the edge */
     border-bottom: 2px solid #00aaff;
     margin-bottom: 20px;
     padding-bottom: 10px;
