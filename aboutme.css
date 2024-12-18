@@ -103,7 +103,7 @@ main {
 /* Grid Layout for Skills */
 .qualifications-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
     gap: 10px 20px; /* Add spacing between items */
     list-style: none;
     padding: 0;
