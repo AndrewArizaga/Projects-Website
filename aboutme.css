@@ -311,6 +311,13 @@ main {
     .activity-content li {
         font-size: 0.9rem;
     }
+
+    .team-name {
+    font-size: 1rem;
+    color: #00aaff; /* Blue color for visibility */
+    margin-bottom: 10px;
+    }
+
 }
 
 /* ---------------------- AWARDS SECTION ---------------------- */
