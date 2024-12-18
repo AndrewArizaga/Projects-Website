@@ -103,37 +103,43 @@ main {
 /* Grid Layout for Skills */
 .qualifications-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 10px 30px; /* Spacing between rows and columns */
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    gap: 10px 20px; /* Add spacing between items */
     list-style: none;
     padding: 0;
+    margin: 0 auto;
 }
 
 .qualifications-list li {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Adjust font size for better spacing */
     color: #d0d0d0;
-    padding-left: 15px;
+    padding-left: 10px; /* Padding for bullet spacing */
     position: relative;
 }
 
 .qualifications-list li::before {
-    content: '•';
+    content: '•'; /* Bullet point */
     position: absolute;
     left: 0;
     color: #00aaff; /* Blue bullet point */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* Adjust smaller screens */
+@media (max-width: 1200px) {
+    .qualifications-list {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     .qualifications-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
     }
 }
 
 @media (max-width: 480px) {
     .qualifications-list {
-        grid-template-columns: 1fr; /* Single column on very small screens */
+        grid-template-columns: 1fr; /* 1 column for small screens */
     }
 }
 
