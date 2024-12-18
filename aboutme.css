@@ -211,54 +211,55 @@ main {
 
 /* ---------------------- EXTRACURRICULARS SECTION ---------------------- */
 /* Extracurriculars Section */
-.extracurriculars {
-    margin-bottom: 40px;
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.extracurriculars h2 {
-    font-size: 2.8rem;
-    color: #00aaff;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* Activity Layout */
 .activity-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Adds more space between the image and text */
     margin-bottom: 30px;
     background-color: #1f1f1f;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .activity-image {
-    width: 400px; /* Increase width */
-    height: 200px; /* Increase height */
-    object-fit: cover;
+    width: 150px; /* Increase image width */
+    height: 150px; /* Make height equal for consistency */
+    object-fit: cover; /* Ensures image fills the box without distortion */
     border-radius: 10px;
-    border: 3px solid #00aaff;
+    border: 3px solid #00aaff; /* Keeps the blue border */
 }
 
+.activity-content h3 {
+    font-size: 1.8rem; /* Slightly larger font size for the title */
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.activity-content p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+    .activity-section {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
     .activity-image {
-        width: 300px; /* Slightly smaller for smaller screens */
-        height: 150px;
+        width: 200px; /* Adjust size for smaller screens */
+        height: 200px;
     }
 }
 
 @media (max-width: 480px) {
     .activity-image {
         width: 100%; /* Full width for very small screens */
-        height: auto;
+        height: auto; /* Adjust height automatically */
     }
 }
 
@@ -296,7 +297,6 @@ main {
 }
 
 /* ---------------------- AWARDS SECTION ---------------------- */
-/* Awards Section */
 /* Awards Section */
 .awards-section {
     margin-bottom: 40px;
