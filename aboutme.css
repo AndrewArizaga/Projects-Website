@@ -253,8 +253,8 @@ main {
 }
 
 .activity-image {
-    width: 200px; /* Example width */
-    height: auto; /* Adjust as needed */
+    width: 400px; /* Example width */
+    height: 300px; /* Adjust as needed */
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid #00aaff;
