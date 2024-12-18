@@ -241,8 +241,8 @@ main {
 }
 
 .activity-image {
-    width: 300px;
-    height: 120px;
+    width: 400px; /* Increase width */
+    height: 200px; /* Increase height */
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid #00aaff;
