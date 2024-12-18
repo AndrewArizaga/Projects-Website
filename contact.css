@@ -1,85 +1,84 @@
-/* Contact Section Styling */
+/* Contact Section */
 .contact-section {
     background-color: #1a1a1a;
-    padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #e0e0e0;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 40px auto;
-    max-width: 1100px;
+    max-width: 800px;
 }
 
-.contact-title {
+.contact-section h2 {
     font-size: 2.5rem;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
-.contact-intro {
-    font-size: 1.2rem;
+.contact-section p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
     margin-bottom: 30px;
-    line-height: 1.6;
 }
 
 /* Contact Container */
 .contact-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    flex-direction: column;
     gap: 20px;
 }
 
-.contact-option {
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
     background-color: #1f1f1f;
-    border: 2px solid #00aaff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-option:hover {
+.contact-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.contact-option h3 {
-    font-size: 1.5rem;
-    color: #00aaff;
-    margin-bottom: 10px;
-}
-
-.contact-option a {
-    color: #e0e0e0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-option a:hover {
-    color: #00aaff;
-}
-
-/* Icons */
 .contact-icon {
     font-size: 2rem;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-right: 15px;
 }
 
-/* LinkedIn Embed */
-.linkedin-embed {
-    margin-top: 20px;
-    background-color: #1f1f1f;
-    border: 2px solid #00aaff;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.linkedin-embed h3 {
+.contact-content h3 {
+    font-size: 1.2rem;
     color: #00aaff;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: #00aaff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
 }
