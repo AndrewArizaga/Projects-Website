@@ -252,13 +252,18 @@ main {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.activity-image {
-    width: 200px; /* Wider images */
-    height: 120px; /* Uniform shorter height */
-    object-fit: cover; /* Maintains proper scaling */
+.activity-section {
+    display: flex;
+    align-items: stretch; /* Stretch content to match the tallest item */
+    gap: 20px; /* Space between image and content */
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
     border-radius: 10px;
-    border: 3px solid #00aaff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 @media (max-width: 768px) {
     .activity-image {
@@ -586,19 +591,4 @@ main {
     color: #00aaff;
     font-style: normal;
     margin-left: 10px;
-}
-
-/* ---------------------- FOOTER SECTION ---------------------- */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
-    color: #e0e0e0;
-    font-size: 0.9rem;
-    border-top: 2px solid #00aaff;
-}
-
-footer p:nth-child(2) {
-    font-style: italic;
-    color: #00aaff;
 }
