@@ -388,6 +388,14 @@ main {
     padding-bottom: 10px;
 }
 
+/* Certifications Section - Title Adjustment */
+.certifications h3 {
+    font-size: 1.2rem; /* Smaller font size for titles */
+    margin-bottom: 5px; /* Slightly reduce spacing below the title */
+    font-weight: 600; /* Maintain bold weight */
+    color: #ffffff; /* Keep the text color white */
+}
+
 /* Certification Box */
 .cert-box {
     display: flex;
