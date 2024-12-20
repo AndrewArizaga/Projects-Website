@@ -28,7 +28,7 @@
 }
 
 /* Contact Items Container */
-.contact-items {
+.contact-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -44,19 +44,23 @@
     border-radius: 8px;
     padding: 20px;
     gap: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-item:hover {
+    background-color: #222222;
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 /* Contact Icon */
 .contact-icon {
-    font-size: 2.5rem;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 2rem;
     color: #00aaff;
-    flex-shrink: 0; /* Prevents icon from resizing */
+    flex-shrink: 0;
 }
 
 /* Contact Content */
@@ -78,6 +82,45 @@
     color: #00aaff;
 }
 
+/* Contact Form */
+.contact-form {
+    margin-top: 40px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0088cc;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-item {
@@ -86,6 +129,22 @@
     }
 
     .contact-icon {
+        margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-icon {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .contact-section h2 {
         font-size: 2rem;
     }
 }
