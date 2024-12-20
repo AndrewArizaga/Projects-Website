@@ -268,21 +268,23 @@ main {
 }
 
 .activity-content p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Decreased font size */
     color: #d0d0d0;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 8px; /* Adjusted spacing */
+    line-height: 1.5; /* Reduced line spacing */
 }
 
 .activity-content ul {
     list-style-type: disc;
     margin-left: 20px;
     color: #e0e0e0;
-    line-height: 1.7;
+    line-height: 1.5; /* Reduced line spacing */
+    font-size: 0.9rem; /* Smaller text size */
 }
 
 .activity-content li {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced space between list items */
+    font-size: 0.9rem; /* Smaller text size for list items */
 }
 
 @media (max-width: 768px) {
