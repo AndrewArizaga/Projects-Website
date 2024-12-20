@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Andrew Arizaga</title>
+    <title>Contact - Andrew Arizaga</title>
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -32,7 +33,7 @@
     <div class="contact-container">
         <!-- Email -->
         <div class="contact-item">
-            <i class="fa fa-envelope contact-icon"></i>
+            <i class="fas fa-envelope contact-icon" aria-label="Email"></i>
             <div class="contact-content">
                 <h3>Email</h3>
                 <a href="mailto:andrewarizaga@example.com">andrewarizaga@example.com</a>
@@ -41,7 +42,7 @@
 
         <!-- Phone -->
         <div class="contact-item">
-            <i class="fa fa-phone contact-icon"></i>
+            <i class="fas fa-phone contact-icon" aria-label="Phone"></i>
             <div class="contact-content">
                 <h3>Phone</h3>
                 <a href="tel:+1234567890">+1 (234) 567-890</a>
@@ -50,22 +51,31 @@
 
         <!-- LinkedIn -->
         <div class="contact-item">
-            <i class="fa fa-linkedin contact-icon"></i>
+            <i class="fab fa-linkedin contact-icon" aria-label="LinkedIn"></i>
             <div class="contact-content">
                 <h3>LinkedIn</h3>
                 <a href="https://www.linkedin.com/in/andrewarizaga" target="_blank">Visit My LinkedIn Profile</a>
             </div>
         </div>
     </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </section>
 
-<!-- ----------------------------------------------------------------------------------------------------------------------- -->
-    
 <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
-        <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+    <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
+</footer>
 
 </body>
 </html>
