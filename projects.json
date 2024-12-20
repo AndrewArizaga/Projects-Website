@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Smart Power Management Using Microcontroller",
+        "description": "Developed a smart power management system using a microcontroller to optimize energy consumption.",
+        "image": "images/smart-power-management.jpg"
+    },
+    {
+        "title": "Face and Voice Recognition Auto Door",
+        "description": "Implemented a security system using face and voice recognition for access control.",
+        "image": "images/auto-door-recognition.jpg"
+    },
+    {
+        "title": "Machine Learning-Based Energy Meter",
+        "description": "Integrated IoT hardware and machine learning algorithms to monitor energy consumption.",
+        "image": "images/energy-meter.jpg"
+    },
+    {
+        "title": "Python-Based Ladder Iterative Load Flow Tool",
+        "description": "Developed a Python program to analyze load flow in electrical grids using the ladder iterative method.",
+        "image": "images/ladder-flow.jpg"
+    },
+    {
+        "title": "IoT-Based Automated Plant Watering System",
+        "description": "Created an IoT system to automate plant watering based on real-time data.",
+        "image": "images/plant-watering.jpg"
+    },
+    {
+        "title": "Robot Arm on a Moving Car",
+        "description": "Designed a robotic arm integrated with a mobile platform for object manipulation.",
+        "image": "images/robot-arm.jpg"
+    }
+]
