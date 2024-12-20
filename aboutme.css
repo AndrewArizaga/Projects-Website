@@ -268,7 +268,7 @@ main {
 }
 
 .activity-content p {
-    font-size: 0.9rem; /* Decreased font size */
+    font-size: 1.2rem; /* Decreased font size */
     color: #d0d0d0;
     margin-bottom: 8px; /* Adjusted spacing */
     line-height: 1.5; /* Reduced line spacing */
@@ -284,7 +284,7 @@ main {
 
 .activity-content li {
     margin-bottom: 8px; /* Reduced space between list items */
-    font-size: 0.9rem; /* Smaller text size for list items */
+    font-size: 1.2rem; /* Smaller text size for list items */
 }
 
 @media (max-width: 768px) {
