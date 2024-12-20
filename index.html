@@ -141,6 +141,43 @@
         <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
         <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
     </footer>
+
+<script>
+    async function loadProjects() {
+        try {
+            const response = await fetch('projects.json'); // Fetch the JSON file
+            const projects = await response.json(); // Parse JSON data
+
+            // Select the first 6 projects
+            const recentProjects = projects.slice(0, 6);
+
+            const projectGrid = document.getElementById('project-grid');
+
+            // Create project cards dynamically
+            recentProjects.forEach(project => {
+                const projectBox = document.createElement('div');
+                projectBox.classList.add('project-box');
+
+                projectBox.innerHTML = `
+                    <img src="${project.image}" alt="${project.title}" class="project-image">
+                    <div class="project-details">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                    </div>
+                `;
+
+                projectGrid.appendChild(projectBox);
+            });
+        } catch (error) {
+            console.error('Error loading projects:', error);
+        }
+    }
+
+    // Call the function when the page loads
+    document.addEventListener('DOMContentLoaded', loadProjects);
+</script>
+
+
 </body>
 
 </html>
