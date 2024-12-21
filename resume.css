@@ -6,10 +6,12 @@
 }
 
 body {
-    background-image: url('aboutme-background.jpg'); /* Replace with the path to your global background image */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('global-background.jpg'); /* Replace with the global background image */
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -18,11 +20,18 @@ body {
 .resume-container {
     max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(26, 26, 26, 0.9); /* Slight transparency for the background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px); /* Subtle blur effect for transparency */
+    padding: 30px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.85)
+    ), url('aboutme-background.jpg'); /* Adds a subtle background with an overlay */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 15px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    backdrop-filter: blur(10px); /* Adds a blur effect to soften the background */
+    color: #e0e0e0;
 }
 
 /* Title Section */
@@ -32,7 +41,7 @@ body {
 }
 
 .resume-title h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #00aaff;
     margin-bottom: 10px;
 }
@@ -89,13 +98,12 @@ body {
 /* Right Section: Hover Information */
 .right-section {
     flex: 1;
-    background-color: rgba(28, 28, 28, 0.9); /* Slight transparency for hover section */
+    background-color: rgba(28, 28, 28, 0.9); /* Slight transparency for depth */
     border: 1px solid #00aaff;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
-    backdrop-filter: blur(8px); /* Adds blur effect to match transparency */
 }
 
 .right-section h3 {
@@ -109,6 +117,12 @@ body {
     color: #d0d0d0;
 }
 
+/* Hover Effect (For Dynamic Updates in JavaScript) */
+.right-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .resume-content {
@@ -118,5 +132,9 @@ body {
     .button-group {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .pdf-viewer {
+        height: 700px; /* Reduce height for smaller screens */
     }
 }
