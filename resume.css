@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-image: url('global-background.jpg'); /* Replace with the path to your global background image */
     background-size: cover;
     background-position: center;
