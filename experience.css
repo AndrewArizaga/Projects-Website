@@ -25,15 +25,22 @@
     max-width: 1200px;
 }
 
+/* Timeline Layout */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1200px;
+}
+
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 10%; /* Adjust the timeline line to the left */
     top: 0;
     bottom: 0;
     width: 4px;
     background-color: #00aaff;
-    transform: translateX(-50%);
 }
 
 .timeline-item {
@@ -56,7 +63,7 @@
     height: 20px;
     background-color: #00aaff;
     border-radius: 50%;
-    left: 50%;
+    left: 10%; /* Adjust the dots along with the timeline */
     transform: translate(-50%, -50%);
     z-index: 2;
 }
