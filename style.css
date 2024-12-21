@@ -103,8 +103,7 @@
     padding: 50px 5%;
     text-align: center;
     background-color: #121212;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                      radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
     background-size: 50px 50px;
     background-position: 25px 25px, 0 0;
     color: #e0e0e0;
