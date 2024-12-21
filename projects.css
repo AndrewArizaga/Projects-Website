@@ -18,14 +18,15 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     padding: 30px;
-    position: relative; /* Required for overlay positioning */
-    background-image: url('Octagon Background.jpg'); /* Replace with your actual image path */
+    background-image: url('Octagon Background.jpg'); /* Replace with the actual path to your background image */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Optional for a parallax effect */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #e0e0e0;
 }
+
 
 /* Add an overlay for readability */
 .projects-container::before {
