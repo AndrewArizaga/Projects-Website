@@ -27,7 +27,7 @@ body {
 
 /* Title Section */
 .experience-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
 }
 
@@ -35,6 +35,7 @@ body {
     font-size: 2.8rem;
     color: #00aaff;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .experience-title p {
