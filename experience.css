@@ -17,7 +17,7 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 0.85),
         rgba(0, 0, 0, 0.85)
-    ), url('section-background.jpg'); /* Section-specific background */
+    ), url('Octagon Background.jpg'); /* Section-specific background */
     background-size: cover;
     background-position: center;
     border-radius: 15px;
