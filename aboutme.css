@@ -89,6 +89,7 @@ main {
 /* ---------------------- SKILLS SECTION ---------------------- */
 /* Summary of Qualifications Section */
 .qualifications {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     background-color: #1a1a1a;
     padding: 20px 30px;
@@ -165,6 +166,7 @@ main {
 /* ---------------------- DESIGN TEAMS SECTION ---------------------- */
 /* Design Teams Section */
 .design-teams {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #1a1a1a;
@@ -237,6 +239,7 @@ main {
 /* ---------------------- EXTRACURRICULARS SECTION ---------------------- */
 /* Extracurriculars Section Styling */
 .extracurriculars {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #1a1a1a;
@@ -330,6 +333,7 @@ main {
 /* ---------------------- AWARDS SECTION ---------------------- */
 /* Awards Section */
 .awards-section {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #1a1a1a;
