@@ -31,17 +31,16 @@ body {
 .experience-title h2 {
     font-size: 2.8rem;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Adds space after the title */
     text-align: left;
 }
 
 .experience-title p {
     font-size: 1.2rem;
     color: #d0d0d0;
-    margin-bottom: 15px; /* Add spacing between paragraphs */
-    line-height: 1.8; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+    line-height: 1.8; /* Improves readability */
 }
-
 
 /* Timeline Layout */
 .timeline {
