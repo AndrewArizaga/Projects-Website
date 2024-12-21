@@ -73,8 +73,8 @@ body {
 
 /* Project Box */
 .project-box {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for better readability */
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 20px;
     text-align: left;
