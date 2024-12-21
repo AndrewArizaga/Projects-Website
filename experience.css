@@ -17,6 +17,14 @@
     margin-bottom: 40px;
 }
 
+.experience-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
 /* Timeline Layout */
 .timeline {
     position: relative;
