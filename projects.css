@@ -49,7 +49,7 @@ body {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #d0d0d0;
-    text-align: center; /* Center-align intro text */
+    text-align: left; /* Left-align intro text */
 }
 
 /* Project Grid Layout */
