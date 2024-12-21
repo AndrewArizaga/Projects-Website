@@ -466,6 +466,7 @@ main {
 
 /* Certifications Section */
 .certifications {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #1a1a1a;
@@ -538,6 +539,7 @@ main {
 
 /* Memberships Section */
 .memberships {
+    background-image: url('Octagon Background.jpg'); /* Path to your background image */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #1a1a1a;
