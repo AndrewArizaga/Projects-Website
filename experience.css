@@ -1,31 +1,29 @@
 /* Experience Section */
 .experience {
     padding: 50px 20px;
-    background-image: url('aboutme-background.jpg'); /* Replace with your image path */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('aboutme-background.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 2px solid #00aaff; /* Adds a border around the entire section */
 }
 
 .experience h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #00aaff;
-    text-align: left; /* Left-align the title */
-    margin-bottom: 20px;
+    text-align: left; /* Left align the title */
+    margin-bottom: 10px;
+    padding-left: 20px; /* Indent to align with description */
 }
 
 .experience-description {
-    text-align: left; /* Left-align the description */
+    text-align: left;
     font-size: 1.2rem;
     color: #d0d0d0;
-    margin-bottom: 30px;
+    margin: 10px 20px 30px; /* Add spacing below the title */
     line-height: 1.5;
-    max-width: 100%;
 }
 
 /* Timeline Layout */
@@ -33,14 +31,26 @@
     position: relative;
     margin: 0 auto;
     padding: 20px 0;
-    max-width: 1100px; /* Adjust for better alignment */
+    max-width: 1200px;
 }
 
+/* Adjust the timeline line position */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20%; /* Moved to the left for better spacing */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #00aaff;
+}
+
+/* Timeline Items */
 .timeline-item {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 40px;
+    align-items: flex-start;
+    margin-bottom: 60px; /* Increase spacing between items */
     position: relative;
 }
 
@@ -56,20 +66,21 @@
     height: 20px;
     background-color: #00aaff;
     border-radius: 50%;
-    left: 12%; /* Moves the dots along the timeline slightly to the right */
+    left: 20%; /* Align with the timeline line */
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 /* Timeline Image */
 .timeline-image {
-    flex: 0 0 200px;
-    max-width: 200px;
-    height: 200px;
+    flex: 0 0 150px; /* Adjust image size */
+    max-width: 150px;
+    height: 150px;
+    margin: 0 40px; /* Add spacing between the image and content */
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00aaff;
 }
 
 .timeline-image img {
@@ -81,11 +92,12 @@
 /* Timeline Content */
 .timeline-content {
     flex: 1;
-    background-color: rgba(31, 31, 31, 0.9); /* Semi-transparent dark box for content */
+    background-color: rgba(0, 0, 0, 0.8); /* Solid background for readability */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: #fff; /* Ensure text is visible */
+    margin-left: 40px; /* Space between the content and the timeline */
 }
 
 .timeline-content h3 {
@@ -113,10 +125,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .timeline-content {
-        text-align: center;
-        padding: 20px;
-        background-size: cover;
+    .timeline::before {
+        left: 10%; /* Adjust for smaller screens */
     }
 
     .timeline-item {
@@ -125,15 +135,12 @@
         gap: 20px;
     }
 
-    .timeline-item:nth-child(even) {
-        flex-direction: column;
-    }
-
     .timeline-content {
+        margin-left: 0;
         text-align: center;
     }
 
-    .timeline-content ul {
-        text-align: left;
+    .timeline-image {
+        margin: 0 0 20px;
     }
 }
