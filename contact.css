@@ -1,11 +1,33 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('page-background.jpg'); /* Replace with your page background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
 /* Contact Section Container */
 .contact-section {
-    background-color: #1a1a1a; /* Dark background for contrast */
-    padding: 40px 20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ), url('section-background.jpg'); /* Replace with your section background image */
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    padding: 40px 20px;
     max-width: 900px;
     margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -21,7 +43,7 @@
 
 /* Contact Text */
 .contact-section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #d0d0d0;
     margin-bottom: 30px;
     line-height: 1.7;
@@ -39,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1f1f1f;
+    background-color: rgba(28, 28, 28, 0.9);
     border: 2px solid #00aaff;
     border-radius: 8px;
     padding: 20px;
@@ -88,7 +110,7 @@
     background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -96,7 +118,6 @@
     font-size: 2rem;
     color: #00aaff;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -139,13 +160,12 @@
     border-radius: 8px;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form button:hover {
     background-color: #0077cc;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive Adjustments */
