@@ -1,10 +1,13 @@
 /* Experience Section */
 .experience {
     padding: 50px 20px;
-    background-image: url('aboutme-background.jpg'); /* Replace with your image path */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ), url('aboutme-background.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Optional: Makes the background fixed for a parallax effect */
+    background-attachment: fixed;
     color: #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -44,7 +47,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 10%; /* Adjust the timeline line to the left */
+    left: 5%; /* Push further left for alignment */
     top: 0;
     bottom: 0;
     width: 4px;
@@ -96,7 +99,10 @@
 /* Timeline Content */
 .timeline-content {
     flex: 1;
-    background-image: url('aboutme-background.jpg'); /* Replace with your box background image path */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ), url('aboutme-background.jpg'); /* Replace with your box background image path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
