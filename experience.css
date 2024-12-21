@@ -33,6 +33,7 @@ body {
     color: #00aaff;
     margin-bottom: 20px; /* Adds space after the title */
     text-align: left;
+    text-decoration: underline; /* Adds an underline to the title */
 }
 
 .experience-title p {
