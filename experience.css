@@ -1,145 +1,140 @@
-/* Experience Section */
-.experience {
-    padding: 50px 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('aboutme-background.jpg'); /* Replace with your image path */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('global-background.jpg'); /* Replace with the global background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Resume Section Layout */
+.resume-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.85)
+    ), url('aboutme-background.jpg'); /* Adds a subtle background with an overlay */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    border-radius: 15px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    backdrop-filter: blur(10px); /* Adds a blur effect to soften the background */
     color: #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.experience h2 {
+/* Title Section */
+.resume-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-title h2 {
     font-size: 2.8rem;
     color: #00aaff;
-    text-align: left;
     margin-bottom: 10px;
-    padding-left: 20px;
 }
 
-.experience-description {
-    text-align: left;
-    font-size: 1.2rem;
+.resume-title p {
+    font-size: 1.1rem;
     color: #d0d0d0;
-    margin: 10px 20px 30px;
-    line-height: 1.5;
 }
 
-/* Timeline Layout */
-.timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 1200px;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 15%; /* Move timeline line further left */
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: #00aaff;
-}
-
-/* Timeline Items */
-.timeline-item {
+/* Resume Content Layout */
+.resume-content {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 60px;
-    position: relative;
+    gap: 30px;
 }
 
-.timeline-item:nth-child(even) {
-    flex-direction: row-reverse;
+/* Left Section: PDF Viewer and Buttons */
+.left-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
-.timeline-item:nth-child(odd)::after,
-.timeline-item:nth-child(even)::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #00aaff;
-    border-radius: 50%;
-    left: 15%; /* Align dots with the timeline */
-    transform: translate(-50%, -50%);
-    z-index: 2;
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
 
-/* Timeline Image */
-.timeline-image {
-    flex: 0 0 150px;
-    max-width: 150px;
-    height: 150px;
-    margin-right: 30px; /* Add spacing between image and content */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.button-group button {
+    background-color: #333333;
+    color: #ffffff;
     border: 2px solid #00aaff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.timeline-image img {
+.button-group button.active,
+.button-group button:hover {
+    background-color: #00aaff;
+    color: #ffffff;
+}
+
+.pdf-viewer {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 1000px;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Timeline Content */
-.timeline-content {
+/* Right Section: Hover Information */
+.right-section {
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(28, 28, 28, 0.9); /* Slight transparency for depth */
+    border: 1px solid #00aaff;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 40px; /* Move boxes further to the right */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-.timeline-content h3 {
-    font-size: 1.8rem;
+.right-section h3 {
+    font-size: 1.5rem;
     color: #00aaff;
     margin-bottom: 10px;
 }
 
-.timeline-content p {
+.right-section p {
     font-size: 1rem;
     color: #d0d0d0;
-    margin-bottom: 10px;
 }
 
-.timeline-content ul {
-    list-style: disc;
-    padding-left: 20px;
-    line-height: 1.6;
-    color: #e0e0e0;
+/* Hover Effect (For Dynamic Updates in JavaScript) */
+.right-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.timeline-content li {
-    margin-bottom: 8px;
-}
-
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 10%; /* Adjust timeline for smaller screens */
-    }
-
-    .timeline-item {
+    .resume-content {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
     }
 
-    .timeline-content {
-        margin-left: 0;
-        text-align: center;
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .timeline-image {
-        margin: 0 0 20px;
+    .pdf-viewer {
+        height: 700px; /* Reduce height for smaller screens */
     }
 }
