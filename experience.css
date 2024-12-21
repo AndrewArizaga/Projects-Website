@@ -13,16 +13,16 @@
 .experience h2 {
     font-size: 2.8rem;
     color: #00aaff;
-    text-align: left; /* Left align the title */
+    text-align: left;
     margin-bottom: 10px;
-    padding-left: 20px; /* Indent to align with description */
+    padding-left: 20px;
 }
 
 .experience-description {
     text-align: left;
     font-size: 1.2rem;
     color: #d0d0d0;
-    margin: 10px 20px 30px; /* Add spacing below the title */
+    margin: 10px 20px 30px;
     line-height: 1.5;
 }
 
@@ -34,11 +34,10 @@
     max-width: 1200px;
 }
 
-/* Adjust the timeline line position */
 .timeline::before {
     content: '';
     position: absolute;
-    left: 20%; /* Moved to the left for better spacing */
+    left: 15%; /* Move timeline line further left */
     top: 0;
     bottom: 0;
     width: 4px;
@@ -49,8 +48,8 @@
 .timeline-item {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 60px; /* Increase spacing between items */
+    align-items: center;
+    margin-bottom: 60px;
     position: relative;
 }
 
@@ -66,17 +65,17 @@
     height: 20px;
     background-color: #00aaff;
     border-radius: 50%;
-    left: 20%; /* Align with the timeline line */
+    left: 15%; /* Align dots with the timeline */
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 /* Timeline Image */
 .timeline-image {
-    flex: 0 0 150px; /* Adjust image size */
+    flex: 0 0 150px;
     max-width: 150px;
     height: 150px;
-    margin: 0 40px; /* Add spacing between the image and content */
+    margin-right: 30px; /* Add spacing between image and content */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -92,12 +91,12 @@
 /* Timeline Content */
 .timeline-content {
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.8); /* Solid background for readability */
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 20px;
+    margin-left: 40px; /* Move boxes further to the right */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: #fff; /* Ensure text is visible */
-    margin-left: 40px; /* Space between the content and the timeline */
+    color: #fff;
 }
 
 .timeline-content h3 {
@@ -126,7 +125,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .timeline::before {
-        left: 10%; /* Adjust for smaller screens */
+        left: 10%; /* Adjust timeline for smaller screens */
     }
 
     .timeline-item {
