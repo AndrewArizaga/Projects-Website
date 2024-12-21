@@ -15,18 +15,18 @@ body {
 
 /* Projects Section Container */
 .projects-container {
+    position: relative; /* Ensures overlay is properly placed */
     max-width: 1200px;
     margin: 50px auto;
-    padding: 30px;
-    background-image: url('Octagon Background.jpg'); /* Replace with the actual path to your background image */
+    padding: 40px; /* Increased padding for better spacing */
+    background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Optional for a parallax effect */
+    background-attachment: fixed; /* Parallax effect */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #e0e0e0;
 }
-
 
 /* Add an overlay for readability */
 .projects-container::before {
@@ -36,7 +36,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent overlay */
+    background-color: rgba(18, 18, 18, 0.8); /* Adjusted for better readability */
     border-radius: 10px;
     z-index: 0; /* Pushes the overlay behind the content */
 }
@@ -54,7 +54,7 @@ body {
     border-bottom: 2px solid #00aaff;
     display: inline-block;
     padding-bottom: 10px;
-    text-align: left; /* Left-align the title */
+    text-align: center; /* Center-align the title */
 }
 
 /* Introductory Text */
@@ -62,13 +62,14 @@ body {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #d0d0d0;
+    text-align: center; /* Center-align intro text */
 }
 
 /* Project Grid Layout */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px; /* Increased gap for better layout */
 }
 
 /* Project Box */
@@ -82,7 +83,7 @@ body {
 }
 
 .project-box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02); /* Enhanced hover effect */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
 }
 
