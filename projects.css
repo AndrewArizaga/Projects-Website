@@ -16,7 +16,7 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     padding: 30px;
-    background-image: url('aboutme-Background.jpg'); /* Replace with your actual image path */
+    background-image: url('path-to-your-image.jpg'); /* Replace 'path-to-your-image.jpg' with your actual image path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -32,6 +32,8 @@ body {
     border-bottom: 2px solid #00aaff;
     display: inline-block;
     padding-bottom: 10px;
+    text-align: right; /* Add this line */
+    width: 100%; /* Ensures alignment applies to the full width */
 }
 
 .projects-intro {
