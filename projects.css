@@ -28,19 +28,6 @@ body {
     color: #e0e0e0;
 }
 
-/* Add an overlay for readability */
-.projects-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 18, 18, 0.8); /* Adjusted for better readability */
-    border-radius: 10px;
-    z-index: 0; /* Pushes the overlay behind the content */
-}
-
 /* Ensures content is above the overlay */
 .projects-container > * {
     position: relative;
