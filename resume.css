@@ -20,10 +20,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 30px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.85),
-        rgba(0, 0, 0, 0.85)
-    ), url('Octagon Background.jpg'); /* Adds a subtle background with an overlay */
+    background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
