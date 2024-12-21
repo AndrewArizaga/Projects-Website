@@ -97,6 +97,13 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Overlay for Better Readability */
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .qualifications h2 {
     font-size: 2.8rem;
     color: #00aaff;
@@ -174,6 +181,13 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Overlay for Better Readability */
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .design-teams h2 {
     font-size: 2.8rem;
     color: #00aaff;
@@ -245,6 +259,13 @@ main {
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay for Better Readability */
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .extracurriculars h2 {
@@ -339,6 +360,13 @@ main {
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay for Better Readability */
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .awards-section h2 {
