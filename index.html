@@ -148,8 +148,8 @@
             const response = await fetch('projects.json'); // Fetch the JSON file
             const projects = await response.json(); // Parse JSON data
 
-            // Select the first 6 projects
-            const recentProjects = projects.slice(0, 6);
+            // Select the first 4 projects
+            const recentProjects = projects.slice(0, 4);
 
             const projectGrid = document.getElementById('project-grid');
 
@@ -170,13 +170,13 @@
             });
         } catch (error) {
             console.error('Error loading projects:', error);
+            document.getElementById('project-grid').innerHTML = '<p>Error loading projects. Please try again later.</p>';
         }
     }
 
     // Call the function when the page loads
     document.addEventListener('DOMContentLoaded', loadProjects);
 </script>
-
 
 </body>
 
