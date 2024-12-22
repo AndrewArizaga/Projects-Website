@@ -96,6 +96,7 @@ a.contact-item:hover {
     font-size: 1.1rem;
     color: #d0d0d0;
     margin: 0;
+    text-align: left; /* Align text inside each button to the left */
 }
 
 /* Responsive Design */
