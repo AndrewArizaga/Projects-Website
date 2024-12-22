@@ -14,10 +14,10 @@ body.contact-page {
     line-height: 1.6;
 }
 
-/* Contact Section Container */
+/* Contact Section */
 .contact-section {
     background-color: rgba(28, 28, 28, 0.9);
-    background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
+    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -28,7 +28,6 @@ body.contact-page {
     text-align: center;
 }
 
-/* Contact Title */
 .contact-section h2 {
     font-size: 2.5rem;
     color: #00aaff;
@@ -97,12 +96,12 @@ body.contact-page {
 .linkedin-profile-plugin {
     margin: 40px auto;
     max-width: 400px;
-    text-align: center;
-}
-
-.linkedin-profile-plugin .LI-profile-badge {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.linkedin-profile-plugin .LI-profile-badge {
+    display: block;
     margin: 0 auto;
 }
