@@ -24,7 +24,7 @@ body {
     margin: 50px auto;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    text-align: left;
+    text-align: center;
     color: #ffffff; /* Ensure text is visible on the background image */
 }
 
