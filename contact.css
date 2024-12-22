@@ -95,14 +95,14 @@ body.contact-page {
 
 /* LinkedIn Profile Plugin */
 .linkedin-profile-plugin {
-    margin: 30px auto;
+    margin: 40px auto;
     max-width: 400px;
     text-align: center;
 }
 
-.linkedin-profile-plugin iframe {
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+.linkedin-profile-plugin .LI-profile-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
