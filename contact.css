@@ -51,7 +51,7 @@ body {
 }
 
 a.contact-item {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from text */
     color: inherit;
     background-color: rgba(0, 0, 0, 0.85);
     padding: 20px;
@@ -60,10 +60,12 @@ a.contact-item {
     width: 100%;
     max-width: 400px;
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 a.contact-item:hover {
@@ -81,12 +83,14 @@ a.contact-item:hover {
     font-size: 1.5rem;
     margin-bottom: 5px;
     color: #ffffff;
+    text-align: center; /* Ensure text is centered */
 }
 
 .contact-content p {
     font-size: 1.1rem;
     color: #d0d0d0;
     margin: 0;
+    text-align: center; /* Center additional text */
 }
 
 /* Responsive Design */
