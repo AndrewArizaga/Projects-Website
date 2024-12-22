@@ -5,27 +5,81 @@
     box-sizing: border-box;
 }
 
-body.contact-page {
-    background-image: url('aboutme-background.jpg'); /* Replace with your page background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #ffffff;
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    color: #ffffff;
+    background-color: #1c1c1c; /* Dark background */
+}
+
+/* Header Styling */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header h1 {
+    font-size: 1.2rem;
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.site-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.site-header nav ul li {
+    margin-left: 20px;
+}
+
+.site-header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-header nav ul li a:hover,
+.site-header nav ul li a.active {
+    background-color: #00aaff;
+    color: #ffffff;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #00aaff;
+    color: #d0d0d0;
+}
+
+.site-footer p:nth-child(2) {
+    font-style: italic;
+    color: #00aaff;
 }
 
 /* Contact Section */
 .contact-section {
     background-color: rgba(28, 28, 28, 0.9);
-    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
-    background-size: cover;
-    background-position: center;
     border-radius: 10px;
     padding: 40px 20px;
     max-width: 900px;
     margin: 40px auto;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .contact-section h2 {
@@ -39,57 +93,37 @@ body.contact-page {
 
 .contact-section p {
     font-size: 1.2rem;
-    color: #d0d0d0;
     margin-bottom: 30px;
-    line-height: 1.7;
+    color: #d0d0d0;
 }
 
 /* Contact Items */
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .contact-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #00aaff;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: rgba(28, 28, 28, 0.9);
-    border: 2px solid #00aaff;
-    border-radius: 8px;
-    padding: 15px 20px;
-    gap: 20px;
+    gap: 15px;
     width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .contact-icon {
-    background-color: #2a2a2a;
-    border-radius: 50%;
-    padding: 10px;
     font-size: 2rem;
     color: #00aaff;
-    flex-shrink: 0;
 }
 
 .contact-content h3 {
-    font-size: 1.5rem;
-    color: #ffffff;
+    font-size: 1.2rem;
     margin-bottom: 5px;
-}
-
-.contact-content a {
-    font-size: 1.1rem;
-    color: #00aaff;
-    text-decoration: none;
+    color: #ffffff;
 }
 
 /* LinkedIn Profile Plugin */
@@ -99,9 +133,4 @@ body.contact-page {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.linkedin-profile-plugin .LI-profile-badge {
-    display: block;
-    margin: 0 auto;
 }
