@@ -35,18 +35,18 @@ body {
 }
 
 .projects-container h2 {
-    font-size: 3rem; /* Larger title */
+    font-size: 2.5rem; /* Adjusted title size */
     color: #00aaff;
     margin-bottom: 20px;
     border-bottom: 2px solid #00aaff;
     display: inline-block;
     padding-bottom: 10px;
-    text-align: left; /* Center-align the title */
+    text-align: left; /* Left-align the title */
 }
 
 /* Introductory Text */
 .projects-intro {
-    font-size: 1.3rem; /* Slightly larger intro text */
+    font-size: 1.2rem; /* Standard intro text */
     margin-bottom: 30px;
     color: #d0d0d0;
     text-align: left; /* Left-align intro text */
@@ -55,13 +55,13 @@ body {
 /* Project Grid Layout */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger photo boxes */
-    gap: 30px; /* Increased gap for better layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for smaller screens */
+    gap: 20px; /* Adjusted gap for balanced spacing */
 }
 
 /* Project Box */
 .project-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for better readability */
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black for better readability */
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     overflow: hidden; /* Ensures image fits nicely */
@@ -72,46 +72,36 @@ body {
 }
 
 .project-box:hover {
-    transform: translateY(-10px) scale(1.02); /* Enhanced hover effect */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px) scale(1.02); /* Enhanced hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Project Image */
 .project-image {
     width: 100%;
-    height: 250px; /* Increased image height */
+    height: 220px; /* Slightly larger image height */
     background-size: cover;
     background-position: center;
 }
 
 /* Project Content */
 .project-content {
-    padding: 20px; /* Increased padding for better spacing */
+    padding: 15px; /* Balanced padding */
     text-align: left;
 }
 
 .project-content h3 {
-    font-size: 1.7rem; /* Larger title text */
+    font-size: 1.4rem; /* Reduced title size */
     color: #00aaff;
-    margin: 15px 0; /* Adjust margin for consistent spacing */
-    text-align: center; /* Center-align the title */
+    margin-bottom: 10px; /* Adjust margin for consistent spacing */
+    text-align: left; /* Left-align the title */
 }
 
 .project-content p {
-    font-size: 1.2rem; /* Larger description text */
-    color: #e0e0e0; /* Ensure consistent text color */
-    line-height: 1.8;
+    font-size: 1rem; /* Balanced description text size */
+    color: #d0d0d0; /* Softer text color */
+    line-height: 1.6;
     margin: 0;
-}
-
-/* Fix for link text color */
-.project-box a {
-    color: #e0e0e0; /* Consistent text color for links */
-    text-decoration: none; /* Remove underline */
-}
-
-.project-box a:hover {
-    color: #00aaff; /* Hover effect */
 }
 
 /* Footer Section */
@@ -132,18 +122,18 @@ footer p:nth-child(2) {
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-container {
-        padding: 15px;
+        padding: 20px; /* Adjusted padding for smaller screens */
     }
 
     .project-content h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem; /* Adjusted title size for smaller screens */
     }
 
     .project-content p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Adjusted description size for smaller screens */
     }
 
     .project-image {
-        height: 200px; /* Reduce image height for smaller screens */
+        height: 180px; /* Reduced image height for smaller screens */
     }
 }
