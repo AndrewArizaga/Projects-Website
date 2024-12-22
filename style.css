@@ -216,12 +216,14 @@
 
 /* Experience Section */
 .experience-section {
-    background: url('aboutme-background.jpg') no-repeat center center; /* Add the aboutme background */
-    background-size: cover; /* Make the background cover the entire section */
+    background: url('aboutme-background.jpg') no-repeat center center; /* Use the aboutme background */
+    background-size: cover; /* Make it cover the full section */
+    background-attachment: fixed; /* Add parallax effect if desired */
     color: #fff; /* White text for readability */
     padding: 50px 0;
-    position: relative; /* Ensures any pseudo-elements are positioned correctly */
+    position: relative;
 }
+
 
 /* Optional: Add a semi-transparent overlay to improve readability */
 .experience-section::before {
@@ -248,10 +250,11 @@
 .experience-section .section-description {
     font-size: 1.2rem;
     color: #e0e0e0; /* Subtle gray for contrast */
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: center; /* Center-align text */
+    margin: 0 auto 30px auto; /* Center and add bottom spacing */
+    max-width: 800px; /* Limit the width for better readability */
     position: relative;
-    z-index: 2; /* Ensures text is above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
 }
 
 /* Experience Container */
@@ -269,9 +272,9 @@
 .experience-box {
     display: flex;
     align-items: center;
-    background-image: url('Octagon Background.jpg'); /* Add the octagon background */
+    justify-content: space-between; /* Add spacing between image and text */
+    background: url('Octagon Background.jpg') no-repeat center center; /* Ensure background works */
     background-size: cover;
-    background-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
