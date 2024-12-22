@@ -321,49 +321,93 @@
 
 /* Coursework Section */
 .coursework {
-    padding: 60px 20px; /* Padding for spacing */
-    background-color: #111; /* Dark background for consistency */
-    color: #e0e0e0; /* Light text for contrast */
+    padding: 60px 20px; /* Spacing for section */
+    background: url('aboutme-background.jpg') no-repeat center center; /* About me background */
+    background-size: cover; /* Ensure background covers the section */
+    background-attachment: fixed; /* Optional for parallax effect */
+    color: #e0e0e0; /* Light text for readability */
+    text-align: center;
+    position: relative; /* For pseudo-elements or overlays */
+}
+
+/* Optional: Add an overlay for readability */
+.coursework::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Ensure content stays above overlay */
+.coursework-title-container,
+.coursework ul {
+    position: relative;
+    z-index: 2;
+}
+
+/* Coursework Title and Description */
+.coursework-title-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    border: 2px solid #4ba3f2; /* Blue border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Add spacing inside the box */
+    max-width: 800px; /* Limit the width for readability */
+    margin: 0 auto 30px auto; /* Center the box and add spacing below */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
     text-align: center;
 }
 
-.coursework h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #4ba3f2; /* Blue for the section title */
-    margin-bottom: 30px;
-    text-transform: uppercase; /* Section title in uppercase */
-    border-bottom: 2px solid #4ba3f2; /* Adds an underline effect */
-    display: inline-block;
-    padding-bottom: 10px; /* Space below the text before underline */
+/* Title Styling */
+.coursework-title-container h2 {
+    font-size: 36px;
+    color: #4ba3f2; /* Bright blue for visibility */
+    margin-bottom: 10px; /* Spacing below title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow */
 }
 
+/* Description Styling */
+.coursework-title-container .section-description {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Light gray for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin: 0; /* Remove extra margin */
+}
+
+/* Coursework List */
 .coursework ul {
-    list-style: none; /* Remove default bullet points */
+    list-style: none; /* Remove bullet points */
     padding: 0;
-    max-width: 800px; /* Limit width for better readability */
-    margin: 0 auto; /* Center align the list */
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center the list */
     text-align: left; /* Align list items to the left */
 }
 
+/* Coursework List Items */
 .coursework li {
-    font-size: 1.2rem; /* Slightly larger font size for list items */
-    margin-bottom: 15px; /* Space between list items */
-    background-color: #222; /* Subtle background for each item */
-    padding: 10px 15px; /* Padding inside each list item */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Space between items */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 10px 15px; /* Padding inside each item */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
+/* Hover Effect for List Items */
 .coursework li:hover {
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
 }
 
+/* Add Bullet Point */
 .coursework li::before {
-    content: "• "; /* Add a bullet point manually */
+    content: "• "; /* Add bullet point manually */
     color: #4ba3f2; /* Blue bullet point */
-    font-size: 1.5rem; /* Larger size for bullet */
+    font-size: 1.5rem; /* Larger size for emphasis */
     vertical-align: middle; /* Align bullet vertically */
 }
 
