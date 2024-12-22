@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+body.contact-page {
     background-image: url('aboutme-background.jpg'); /* Replace with your page background image */
     background-size: cover;
     background-attachment: fixed;
@@ -137,4 +137,23 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Scoped Header and Footer */
+.contact-page header {
+    background-color: #000; /* Black background for header */
+    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page footer {
+    background-color: #000;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #4ba3f2;
 }
