@@ -35,7 +35,6 @@ body {
     border-bottom: 3px solid #00aaff; /* Adds a solid underline */
     display: inline-block; /* Makes the underline adapt to the text width */
     padding-bottom: 10px; /* Space between text and underline */
-    text-transform: uppercase; /* Ensures consistent capitalization */
     letter-spacing: 1px; /* Adds slight spacing for better readability */
     text-align: left; /* Aligns the text to the left */
 }
