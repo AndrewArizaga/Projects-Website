@@ -16,7 +16,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-    background-image: url('Octagon Background.jpg'); /* Replace with your box background image */
+    background-image: url('your-box-background.jpg'); /* Replace with your box background image */
     background-size: cover;
     background-position: center;
     padding: 50px 30px;
@@ -66,9 +66,10 @@ a.contact-item {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: flex-start; /* Align icon and text to the left */
+    text-align: left; /* Align text inside each button to the left */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
 }
 
 a.contact-item:hover {
@@ -80,20 +81,19 @@ a.contact-item:hover {
 .contact-icon {
     font-size: 2.5rem;
     color: #00aaff;
+    flex-shrink: 0; /* Prevents the icon from resizing */
 }
 
 .contact-content h3 {
     font-size: 1.5rem;
     margin-bottom: 5px;
     color: #ffffff;
-    text-align: center;
 }
 
 .contact-content p {
     font-size: 1.1rem;
     color: #d0d0d0;
     margin: 0;
-    text-align: center;
 }
 
 /* Responsive Design */
