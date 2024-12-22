@@ -16,6 +16,7 @@ body.contact-page {
 
 /* Contact Section Container */
 .contact-section {
+    background-color: rgba(28, 28, 28, 0.9);
     background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
     background-size: cover;
     background-position: center;
@@ -30,14 +31,13 @@ body.contact-page {
 /* Contact Title */
 .contact-section h2 {
     font-size: 2.5rem;
-    color: #00aaff; /* Highlighted blue title */
+    color: #00aaff;
     margin-bottom: 20px;
     border-bottom: 2px solid #00aaff;
     display: inline-block;
     padding-bottom: 10px;
 }
 
-/* Contact Text */
 .contact-section p {
     font-size: 1.2rem;
     color: #d0d0d0;
@@ -45,33 +45,33 @@ body.contact-page {
     line-height: 1.7;
 }
 
-/* Contact Items Container */
+/* Contact Items */
 .contact-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Individual Contact Item */
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgba(28, 28, 28, 0.9);
     border: 2px solid #00aaff;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px 20px;
     gap: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-item:hover {
-    background-color: #222222;
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-/* Contact Icon */
 .contact-icon {
     background-color: #2a2a2a;
     border-radius: 50%;
@@ -81,55 +81,23 @@ body.contact-page {
     flex-shrink: 0;
 }
 
-/* Contact Content */
 .contact-content h3 {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 5px;
 }
 
-.contact-content p,
 .contact-content a {
     font-size: 1.1rem;
-    color: #d0d0d0;
+    color: #00aaff;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-.contact-content a:hover {
-    color: #00aaff;
-}
-
-/* LinkedIn Contact Tab */
-.linkedin-tab {
-    background-color: rgba(28, 28, 28, 0.9);
-    border: 2px solid #00aaff;
-    border-radius: 15px;
-    padding: 30px 20px;
-    text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    margin-top: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.linkedin-tab h3 {
-    font-size: 2rem;
-    color: #00aaff;
-    margin-bottom: 15px;
-}
-
-.linkedin-tab p {
-    font-size: 1.2rem;
-    color: #d0d0d0;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* LinkedIn Profile Plugin Styling */
+/* LinkedIn Profile Plugin */
 .linkedin-profile-plugin {
-    text-align: center;
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 400px;
+    text-align: center;
 }
 
 .linkedin-profile-plugin iframe {
@@ -137,23 +105,4 @@ body.contact-page {
     border: none;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Scoped Header and Footer */
-.contact-page header {
-    background-color: #000; /* Black background for header */
-    background-image: url('Octagon Background.jpg'); /* Replace with actual path */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-page footer {
-    background-color: #000;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-    border-top: 2px solid #4ba3f2;
 }
