@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url('aboutme-background.jpg'); /* Replace with your actual background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Project Details Container */
+.project-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+}
+
+/* Project Title */
+.project-details-container h2 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+/* Project Image */
+.project-image-large {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: #333; /* Placeholder background */
+}
+
+/* Project Description */
+.project-details-container p {
+    margin-bottom: 20px;
+    color: #d0d0d0;
+    font-size: 1.1rem;
+}
+
+/* Lists for Features and Skills */
+.project-details-container ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    line-height: 1.8;
+}
+
+.project-details-container ul li {
+    margin-bottom: 10px;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #0088cc;
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    border-top: 2px solid #00aaff;
+}
+
+footer p:nth-child(2) {
+    font-style: italic;
+    color: #00aaff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-details-container {
+        padding: 20px;
+    }
+
+    .project-details-container h2 {
+        font-size: 2rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
