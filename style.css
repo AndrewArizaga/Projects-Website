@@ -216,18 +216,42 @@
 
 /* Experience Section */
 .experience-section {
-    background-color: #1c1c1c; /* Dark gray background */
+    background: url('aboutme-background.jpg') no-repeat center center; /* Add the aboutme background */
+    background-size: cover; /* Make the background cover the entire section */
     color: #fff; /* White text for readability */
     padding: 50px 0;
+    position: relative; /* Ensures any pseudo-elements are positioned correctly */
 }
 
-/* Section Title */
+/* Optional: Add a semi-transparent overlay to improve readability */
+.experience-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
 .experience-section h2 {
     font-size: 32px;
-    color: #3498db;
+    color: #58a6ff; /* Blue heading color */
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+}
+
+/* Section Descriptor */
+.experience-section .section-description {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Subtle gray for contrast */
     text-align: center;
     margin-bottom: 30px;
-    text-decoration: underline;
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
 }
 
 /* Experience Container */
@@ -237,14 +261,18 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
 }
 
 /* Individual Experience Box */
 .experience-box {
     display: flex;
     align-items: center;
-    background-color: #2b2b2b;
-    border-radius: 8px;
+    background-image: url('Octagon Background.jpg'); /* Add the octagon background */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -253,44 +281,6 @@
 .experience-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Text Content */
-.experience-text {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.experience-text h3 {
-    font-size: 20px;
-    color: #3498db;
-    margin-bottom: 5px;
-}
-
-.experience-text h4 {
-    font-size: 16px;
-    color: #b0b0b0;
-    margin-bottom: 10px;
-}
-
-.experience-text p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* Image Content */
-.experience-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.experience-image img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*----------------------------------------------------------------*/
