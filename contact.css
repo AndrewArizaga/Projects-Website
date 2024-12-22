@@ -16,13 +16,16 @@ body {
 
 /* Contact Section */
 .contact-section {
-    background-color: rgba(28, 28, 28, 0.95);
+    background-image: url('Octagon Background.jpg'); /* Replace with your box background image */
+    background-size: cover;
+    background-position: center;
     padding: 50px 30px;
     max-width: 800px;
     margin: 50px auto;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     text-align: center;
+    color: #ffffff; /* Ensure text is visible on the background image */
 }
 
 .contact-section h2 {
@@ -40,6 +43,7 @@ body {
     font-size: 1.2rem;
     color: #d0d0d0;
     margin-bottom: 30px;
+    line-height: 1.8;
 }
 
 /* Contact Items */
@@ -60,8 +64,7 @@ a.contact-item {
     width: 100%;
     max-width: 400px;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    align-items: center;
     gap: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -83,14 +86,14 @@ a.contact-item:hover {
     font-size: 1.5rem;
     margin-bottom: 5px;
     color: #ffffff;
-    text-align: center; /* Ensure text is centered */
+    text-align: center;
 }
 
 .contact-content p {
     font-size: 1.1rem;
     color: #d0d0d0;
     margin: 0;
-    text-align: center; /* Center additional text */
+    text-align: center;
 }
 
 /* Responsive Design */
