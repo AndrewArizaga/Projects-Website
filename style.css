@@ -102,9 +102,11 @@
 #recent-projects {
     padding: 50px 5%;
     text-align: center;
-    background: url('Octagon Background.jpg') no-repeat center center/cover;
+    background: url('Octagon Background.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the section */
     color: #e0e0e0;
 }
+
 
 /* Recent Projects Title Styling */
 #recent-projects h2 {
@@ -125,8 +127,8 @@
 /* Dynamic Project Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Show 2 projects per row */
+    gap: 30px; /* Increase spacing */
     padding: 0;
 }
 
