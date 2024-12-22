@@ -93,15 +93,25 @@ body {
 .project-content h3 {
     font-size: 1.5rem;
     color: #00aaff;
-    margin: 10px 0 15px; /* Adjust margin for spacing */
+    margin: 10px 0; /* Adjust margin for consistent spacing */
     text-align: center; /* Center-align the title */
 }
 
 .project-content p {
     font-size: 1rem;
-    color: #d0d0d0;
+    color: #e0e0e0; /* Ensure consistent text color */
     line-height: 1.6;
     margin: 0;
+}
+
+/* Fix for link text color */
+.project-box a {
+    color: #e0e0e0; /* Consistent text color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-box a:hover {
+    color: #00aaff; /* Hover effect */
 }
 
 /* Footer Section */
