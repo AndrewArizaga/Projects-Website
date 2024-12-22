@@ -9,6 +9,7 @@ body {
     background-image: url('aboutme-background.jpg'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Parallax effect */
     color: #e0e0e0; /* Light text color */
     line-height: 1.6;
 }
@@ -22,7 +23,6 @@ body {
     background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #e0e0e0;
@@ -50,6 +50,7 @@ body {
     margin-bottom: 30px;
     color: #d0d0d0;
     text-align: left; /* Left-align intro text */
+    line-height: 1.8; /* Improved readability */
 }
 
 /* Project Grid Layout */
@@ -74,16 +75,26 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
 }
 
-.project-content h3 {
-    font-size: 1.5rem;
+/* Clickable Project Titles */
+.project-box a {
+    text-decoration: none;
     color: #00aaff;
+    font-size: 1.5rem;
+    display: block;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
+.project-box a:hover {
+    color: #66ccff; /* Lighter blue for hover effect */
+}
+
+/* Project Content */
 .project-content p {
     font-size: 1rem;
     color: #d0d0d0;
     margin-bottom: 10px;
+    line-height: 1.6; /* Improves readability */
 }
 
 .project-content strong {
