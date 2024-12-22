@@ -91,25 +91,6 @@ body {
     color: #00aaff;
 }
 
-/* Footer */
-footer {
-    background-color: #000;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-    border-top: 2px solid #00aaff;
-}
-
-footer p {
-    margin: 8px 0;
-}
-
-footer p:nth-child(2) {
-    font-style: italic;
-    color: #00aaff;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
