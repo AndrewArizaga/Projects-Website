@@ -29,11 +29,15 @@ body {
 }
 
 .experience-title h2 {
-    font-size: 2.8rem;
-    color: #00aaff;
-    margin-bottom: 20px; /* Adds space after the title */
-    text-align: left;
-    text-decoration: underline; /* Adds an underline to the title */
+    font-size: 2.5rem; /* Matches Projects section font size */
+    color: #00aaff; /* Blue color for consistency */
+    margin-bottom: 30px; /* Similar spacing */
+    border-bottom: 3px solid #00aaff; /* Adds a solid underline */
+    display: inline-block; /* Makes the underline adapt to the text width */
+    padding-bottom: 10px; /* Space between text and underline */
+    text-transform: uppercase; /* Ensures consistent capitalization */
+    letter-spacing: 1px; /* Adds slight spacing for better readability */
+    text-align: left; /* Aligns the text to the left */
 }
 
 .experience-title p {
