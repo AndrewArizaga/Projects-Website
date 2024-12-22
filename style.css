@@ -102,10 +102,7 @@
 #recent-projects {
     padding: 50px 5%;
     text-align: center;
-    background-color: #121212;
-    background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
-    background-size: 50px 50px;
-    background-position: 25px 25px, 0 0;
+    background: url('Octagon Background.jpg') no-repeat center center/cover;
     color: #e0e0e0;
 }
 
