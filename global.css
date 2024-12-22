@@ -74,7 +74,11 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-    background-color: #000;
+    background-color: #000; /* Fallback color */
+    background-image: url('Octagon Background.jpg'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #e0e0e0;
     text-align: center;
     padding: 20px 10px;
@@ -85,6 +89,7 @@ footer {
 
 footer p {
     margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for better text readability */
 }
 
 footer p:nth-child(2) {
