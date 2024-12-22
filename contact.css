@@ -100,89 +100,50 @@ body {
     color: #00aaff;
 }
 
-/* Contact Form Section */
-.contact-form {
-    margin-top: 40px;
-    background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
-    padding: 30px 20px;
+/* LinkedIn Contact Tab */
+.linkedin-tab {
+    background-color: rgba(28, 28, 28, 0.9);
+    border: 2px solid #00aaff;
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form h3 {
+.linkedin-tab h3 {
     font-size: 2rem;
     color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.linkedin-tab p {
+    font-size: 1.2rem;
+    color: #d0d0d0;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
-/* Form Input Fields */
-.contact-form input,
-.contact-form textarea {
-    width: 90%;
-    margin: 10px auto;
-    padding: 12px 15px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #333333;
-    border: 2px solid #00aaff;
-    border-radius: 8px;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 8px rgba(0, 119, 204, 0.6);
-}
-
-/* Textarea */
-.contact-form textarea {
-    height: 120px;
-    resize: none; /* Disable resizing */
-}
-
-/* Submit Button */
-.contact-form button {
-    margin-top: 20px;
-    padding: 12px 30px;
-    font-size: 1rem;
-    color: #ffffff;
+.linkedin-button {
+    display: inline-block;
     background-color: #00aaff;
-    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
     border-radius: 8px;
-    cursor: pointer;
-    text-transform: uppercase;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form button:hover {
+.linkedin-button:hover {
     background-color: #0077cc;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-
-    .contact-form button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-icon {
-        font-size: 1.5rem;
-        padding: 8px;
-    }
-
-    .contact-section h2 {
-        font-size: 2rem;
-    }
+.linkedin-button i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
