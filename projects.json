@@ -2,21 +2,21 @@
     {
         "title": "Smart Power Management Using Microcontroller",
         "description": "Developed a comprehensive smart power management system utilizing advanced microcontroller programming. The project aimed to optimize energy consumption by monitoring real-time power usage, providing sustainability insights, and demonstrating the integration of sensors and embedded systems for modern energy solutions.",
-        "image": "images/smart-power-management.jpg"
+        "image": "insert image.png"
     },
     {
         "title": "Face and Voice Recognition Auto Door",
         "description": "Designed and implemented a cutting-edge security system using state-of-the-art face and voice recognition technology. The project involved integrating AI models and sensor technologies to create a robust and seamless access control solution for residential and commercial applications.",
-        "image": "images/auto-door-recognition.jpg"
+        "image": "insert image.png"
     },
     {
         "title": "Machine Learning-Based Energy Meter",
         "description": "Built an IoT-enabled energy meter that leverages machine learning algorithms to monitor, analyze, and optimize energy consumption patterns. The project integrated IoT hardware with predictive analytics to provide actionable insights, showcasing innovation in energy management.",
-        "image": "images/energy-meter.jpg"
+        "image": "insert image.png"
     },
     {
         "title": "Python-Based Ladder Iterative Load Flow Tool",
         "description": "Developed a Python-based computational tool to perform load flow analysis in electrical grids using the ladder iterative method. This tool helps engineers model, simulate, and optimize power distribution networks, contributing to the efficient operation of smart grids.",
-        "image": "images/ladder-flow.jpg"
+        "image": "insert image.png"
     }
 ]
