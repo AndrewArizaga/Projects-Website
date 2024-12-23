@@ -17,13 +17,13 @@ body {
 
 /* Project Details Container */
 .project-details-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    color: #e0e0e0;
+    max-width: 1200px; /* Increase this value for a wider container */
+    width: 90%; /* Ensures responsiveness, adjusts to 90% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for inner spacing */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional background color */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
 
 /* Project Title */
