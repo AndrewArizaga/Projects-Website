@@ -349,170 +349,102 @@
 }
 
 /*----------------------------------------------------------------*/
-
 /* Coursework Section */
 .coursework {
-    padding: 60px 20px; /* Spacing for section */
-    background: url('aboutme-background.jpg') no-repeat center center; /* About me background */
-    background-size: cover; /* Ensure background covers the section */
-    background-attachment: fixed; /* Optional for parallax effect */
-    color: #e0e0e0; /* Light text for readability */
+    padding: 60px 20px;
+    background: url('aboutme-background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
     text-align: center;
-    position: relative; /* For pseudo-elements or overlays */
+    position: relative;
 }
 
 /* Ensure content stays above overlay */
 .coursework-title-container,
-.coursework ul {
+.coursework-grid {
     position: relative;
     z-index: 2;
 }
 
-/* Coursework Title and Description */
+/* Title and Description */
 .coursework-title-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-    border: 2px solid #4ba3f2; /* Blue border for emphasis */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px 30px; /* Add spacing inside the box */
-    max-width: 800px; /* Limit the width for readability */
-    margin: 0 auto 30px auto; /* Center the box and add spacing below */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #4ba3f2;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
-/* Title Styling */
 .coursework-title-container h2 {
     font-size: 36px;
-    color: #4ba3f2; /* Bright blue for visibility */
-    margin-bottom: 10px; /* Spacing below title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+    color: #4ba3f2;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Description Styling */
-.coursework-title-container .section-description {
-    font-size: 1.2rem;
-    color: #e0e0e0; /* Light gray for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
-    margin: 0; /* Remove extra margin */
-}
-
-/* Coursework List */
-.coursework ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-    max-width: 800px; /* Limit width */
-    margin: 0 auto; /* Center the list */
-    text-align: left; /* Align list items to the left */
-}
-
-/* Coursework List Items */
-/* Coursework Section */
-.coursework {
-    padding: 60px 20px; /* Spacing for section */
-    background: url('aboutme-background.jpg') no-repeat center center; /* Background image */
-    background-size: cover; /* Ensure background covers the section */
-    background-attachment: fixed; /* Optional parallax effect */
-    color: #e0e0e0; /* Light text for readability */
-    text-align: center;
-    position: relative; /* For pseudo-elements or overlays */
-}
-
-/* Ensure content stays above overlay */
-.coursework-title-container,
-.coursework-list {
-    position: relative;
-    z-index: 2;
-}
-
-/* Coursework Title and Description */
-.coursework-title-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-    border: 2px solid #4ba3f2; /* Blue border for emphasis */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px 30px; /* Spacing inside the box */
-    max-width: 800px; /* Limit width for readability */
-    margin: 0 auto 30px auto; /* Center the box */
-    text-align: center;
-}
-
-/* Title Styling */
-.coursework-title-container h2 {
-    font-size: 36px;
-    color: #4ba3f2; /* Bright blue for visibility */
-    margin-bottom: 10px; /* Spacing below title */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow */
-}
-
-/* Description Styling */
 .coursework-title-container p {
-    font-size: 16px;
-    color: #e0e0e0; /* Light gray for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
-    margin: 0 0 20px 0; /* Margin below the description */
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
 }
 
-/* Coursework List */
-.coursework-list {
-    display: flex; /* Flex layout for horizontal alignment */
-    flex-wrap: wrap; /* Wrap items to the next line if needed */
-    gap: 30px; /* Space between items */
-    justify-content: center; /* Center-align list items */
-    padding: 0;
-    max-width: 1200px; /* Constrain width */
-    margin: 0 auto; /* Center the list */
+/* Coursework Grid */
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between items */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Coursework Item */
+/* Coursework Items */
 .coursework-item {
-    display: flex; /* Flexbox for image and text alignment */
-    align-items: center; /* Vertically align items */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
-    gap: 20px; /* Space between image and text */
-    max-width: 600px; /* Constrain width for each item */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Hover Effect for Coursework Items */
 .coursework-item:hover {
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Coursework Image */
+/* Coursework Item Image */
 .coursework-item img {
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Coursework Text */
-.coursework-text {
-    flex: 1; /* Take up remaining space */
-    text-align: left; /* Align text to the left */
-    color: #e0e0e0; /* Light gray text */
+/* Coursework Item Text */
+.coursework-item .course-text {
+    flex: 1;
+    text-align: left;
 }
 
-/* Coursework Title */
-.coursework-title {
+.coursework-item .course-text h3 {
     font-size: 18px;
     font-weight: bold;
-    color: #4ba3f2; /* Bright blue for titles */
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #4ba3f2; /* Add underline */
-    padding-bottom: 5px; /* Space between text and underline */
+    color: #4ba3f2;
+    margin-bottom: 5px;
 }
 
-/* Coursework Description */
-.coursework-description {
+.coursework-item .course-text p {
     font-size: 14px;
-    line-height: 1.6; /* Improve readability */
-    color: #e0e0e0; /* Light gray for descriptions */
+    line-height: 1.4;
+    color: #e0e0e0;
 }
 
 /*--------------------------------------------------------------------------------*/
