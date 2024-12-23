@@ -50,25 +50,32 @@
 
 /*----------------------------------------------------------------------------------*/
 
-/* About Me Section */
+/* About Me Section Container */
 .about-me-container {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch; /* Ensures text box and image have the same height */
     justify-content: space-between;
     background-image: url('aboutme-background.jpg'); /* Replace with the actual path */
     padding: 20px 40px;
     gap: 30px; /* Space between text box and image */
 }
 
+/* About Me Text Box */
 .about-me-text {
     background-image: url('Octagon Background.jpg'); /* Replace with the actual path */
+    background-size: cover; /* Ensures the background covers the box */
     color: #fff; /* White text */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
-    flex: 1; /* Ensures box takes up space equally */
+    flex: 1; /* Ensures the text box takes up equal space as the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Align content inside flexibly */
+    flex-direction: column; /* Arrange heading and paragraph vertically */
+    justify-content: center; /* Center content vertically */
+    height: 100%; /* Match the height of the image */
 }
 
+/* About Me Heading Styling */
 .about-me-text h2 {
     font-size: 24px;
     color: #58a6ff; /* Soft blue for heading */
@@ -77,23 +84,28 @@
     padding-bottom: 5px;
 }
 
+/* About Me Paragraph Styling */
 .about-me-text p {
     font-size: 16px;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; /* Improves readability */
     margin-bottom: 15px;
 }
 
+/* About Me Image Box */
 .about-me-image {
-    flex: 1; /* Ensures equal space with text box */
+    flex: 1; /* Ensures the image box takes up equal space as the text box */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* About Me Image */
 .about-me-image img {
     max-width: 100%;
-    border-radius: 10px;
+    height: auto; /* Ensures the image scales proportionally */
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    object-fit: cover; /* Ensures the image fills the box neatly */
 }
 
 /*----------------------------------------------------------------------------------------*/
