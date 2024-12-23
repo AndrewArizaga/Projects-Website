@@ -286,13 +286,22 @@
 .experience-box {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Add spacing between image and text */
-    background: url('Octagon Background.jpg') no-repeat center center; /* Ensure background works */
+    justify-content: space-between;
+    background: url('Octagon Background.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-box img {
+    max-width: 120px; /* Constrain width */
+    max-height: 120px; /* Constrain height */
+    object-fit: cover; /* Maintain proportions */
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 15px; /* Space between image and text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
 }
 
 .experience-box:hover {
@@ -332,7 +341,6 @@
     max-width: 800px; /* Limits width for better readability */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for clarity */
 }
-
 
 /*----------------------------------------------------------------*/
 
