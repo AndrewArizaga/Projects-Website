@@ -36,6 +36,15 @@ body {
     padding-bottom: 10px;
 }
 
+/* Section Subtitles */
+.project-details-container h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #00aaff;
+    padding-bottom: 5px;
+}
+
 /* Project Image */
 .project-image-large {
     width: 100%;
