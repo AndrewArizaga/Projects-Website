@@ -216,7 +216,7 @@
 
 /* Experience Section */
 .experience-section {
-    background: url('Octagon Background.jpg') no-repeat center center; /* Add the octagon background */
+    background: url('aboutme-background.jpg') no-repeat center center; /* Add the octagon background */
     background-size: cover; /* Ensure the background covers the section */
     background-attachment: fixed; /* Optional for parallax effect */
     color: #fff; /* White text for readability */
