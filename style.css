@@ -318,61 +318,17 @@
 
 /*----------------------------------------------------------------*/
 
-/* Coursework Section */
-.coursework {
-    padding: 60px 20px;
-    background: url('aboutme-background.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #e0e0e0;
-    text-align: center;
-    position: relative;
-}
-
-/* Title and Description */
-.coursework-title-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid #4ba3f2;
-    border-radius: 10px;
-    padding: 20px 30px;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
-
-.coursework-title-container h2 {
-    font-size: 36px;
-    color: #4ba3f2;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.coursework-title-container p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    margin: 0 auto;
-}
-
-/* Coursework Grid */
-.coursework-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* Space between items */
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px; /* Add some padding */
-}
-
 /* Coursework Items */
 .coursework-item {
+    display: flex; /* Make the container a flexbox */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Space between the icon and text */
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
-    text-align: left;
+    text-align: left; /* Ensure text is aligned to the left */
 }
 
 .coursework-item:hover {
@@ -384,12 +340,12 @@
 .coursework-item .course-icon {
     font-size: 2rem;
     color: #4ba3f2;
-    margin-bottom: 10px;
-    display: inline-block;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
 /* Coursework Item Text */
 .coursework-item .course-text {
+    flex: 1; /* Allow text to take up the remaining space */
     color: #e0e0e0;
 }
 
@@ -402,7 +358,6 @@
 
 .coursework-item .course-text p {
     font-size: 14px;
-    line-height: 1.4;
     margin: 0;
 }
 
