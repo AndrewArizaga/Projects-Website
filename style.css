@@ -362,11 +362,12 @@
 .coursework-item {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
+    gap: 25px; /* Bigger gap between icon and text */
 }
 
 .coursework-item:hover {
@@ -378,12 +379,11 @@
 .coursework-item .icon {
     font-size: 30px;
     color: #4ba3f2;
-    margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -393,20 +393,26 @@
 .coursework-item .course-text {
     flex: 1;
     text-align: left;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Box around text */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 10px; /* Padding inside the box */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly different shade for the background */
 }
 
 .coursework-item .course-text h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #4ba3f2;
     margin-bottom: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 5px; /* Padding for the title inside the box */
 }
 
 .coursework-item .course-text p {
-    font-size: 20px;
+    font-size: 16px;
     color: #e0e0e0;
     line-height: 1.4;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px; /* Padding for the description inside the box */
 }
 
 /*--------------------------------------------------------------------------------*/
