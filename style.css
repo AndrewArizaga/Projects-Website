@@ -145,31 +145,38 @@
 }
 
 /* Project Box Styling */
+/* Project Box Styling */
 .project-box {
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Align items vertically in the center */
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 15px;
-    text-align: left;
+    gap: 20px; /* Add space between the image and text */
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-box:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
 }
 
 /* Project Image */
 .project-box img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 40%; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
-    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-/* Project Title and Description */
+/* Text Section */
+.project-details {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e0e0e0;
+}
+
+/* Project Title */
 .project-title {
     font-size: 18px;
     font-weight: bold;
@@ -181,10 +188,10 @@
     display: inline-block; /* Ensure underline matches text width */
 }
 
+/* Project Description */
 .project-description {
     font-size: 14px;
-    color: #e0e0e0;
-    line-height: 1.5;
+    line-height: 1.6; /* Better readability */
 }
 
 /* Text Section */
