@@ -313,21 +313,26 @@
     z-index: 2; /* Ensure the box stays above the background */
 }
 
-/* Adjust the Title Inside the Box */
+/* Title Styling */
 .experience-section h2 {
     font-size: 36px; /* Larger font size for visibility */
     color: #58a6ff; /* Blue text for the title */
+    text-align: center; /* Ensures the title is centered */
     margin-bottom: 10px; /* Space between title and description */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add subtle shadow for clarity */
 }
 
-/* Adjust the Description Inside the Box */
+/* Description Styling */
 .experience-section .section-description {
     font-size: 1.2rem; /* Slightly larger font for readability */
     color: #e0e0e0; /* Light gray for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for clarity */
-    margin: 0; /* Remove extra margins */
+    text-align: center; /* Centers the description */
+    line-height: 1.6; /* Improves readability */
+    margin: 0 auto; /* Centers the description text container */
+    max-width: 800px; /* Limits width for better readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for clarity */
 }
+
 
 /*----------------------------------------------------------------*/
 
