@@ -568,7 +568,7 @@ main {
 /* Memberships Section */
 .memberships {
     background-image: url('Octagon Background.jpg'); /* Path to your background image */
-    margin-bottom: 40px;
+    margin-bottom: 60px; /* Push the footer further down */
     padding: 20px;
     background-color: #1a1a1a;
     border-radius: 10px;
@@ -628,3 +628,17 @@ main {
     font-style: normal;
     margin-left: 10px;
 }
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark footer background */
+    color: #e0e0e0; /* Light text for contrast */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add internal spacing */
+    font-size: 0.9rem; /* Adjust font size */
+    border-top: 2px solid #4ba3f2; /* Optional border for separation */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow above footer */
+    margin-top: 40px; /* Extra margin for spacing from the last section */
+    position: relative; /* Ensure footer doesn't overlap content */
+}
+
