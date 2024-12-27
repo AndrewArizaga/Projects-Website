@@ -329,9 +329,15 @@
     position: relative;
 }
 
-/* Coursework Title and Description */
+/* Coursework Title and Description Container */
 .coursework-title-container {
-    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    border: 2px solid #4ba3f2; /* Blue border for emphasis */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    max-width: 900px; /* Restrict width for centered alignment */
+    margin: 0 auto 30px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
     text-align: center;
 }
 
@@ -346,6 +352,7 @@
     font-size: 1.2rem;
     color: #e0e0e0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
 /* Coursework Grid Layout */
@@ -362,55 +369,78 @@
 .coursework-item {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9); /* Unified box background */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add single shadow for clarity */
-    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 20px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.9)); /* Gradient background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    position: relative;
 }
 
 .coursework-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    border: 2px solid #4ba3f2; /* Highlight border on hover */
 }
 
 /* Icon Style */
 .coursework-item .icon {
-    font-size: 30px;
+    font-size: 35px;
     color: #4ba3f2;
-    margin-right: 15px; /* Larger gap between icon and text */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Course Text */
+/* Add spacing between icon and text */
 .coursework-item .course-text {
     flex: 1;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.8); /* Add background to title and description */
-    padding: 10px; /* Padding around text */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle inner shadow */
+    padding-left: 20px;
 }
 
+/* Course Text */
 .coursework-item .course-text h3 {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
     color: #4ba3f2;
     margin-bottom: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .coursework-item .course-text p {
-    font-size: 20px;
+    font-size: 16px;
     color: #e0e0e0;
     line-height: 1.4;
+    margin-top: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coursework-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .coursework-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .coursework-item .icon {
+        margin-bottom: 10px;
+    }
+
+    .coursework-item .course-text {
+        padding-left: 0;
+    }
 }
 
 /*--------------------------------------------------------------------------------*/
