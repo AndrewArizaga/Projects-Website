@@ -408,7 +408,7 @@
 
 /* Course Text */
 .coursework-item .course-text h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #4ba3f2;
     margin-bottom: 5px;
@@ -416,7 +416,7 @@
 }
 
 .coursework-item .course-text p {
-    font-size: 16px;
+    font-size: 20px;
     color: #e0e0e0;
     line-height: 1.4;
     margin-top: 5px;
