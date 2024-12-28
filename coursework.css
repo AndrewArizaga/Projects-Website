@@ -1,92 +1,95 @@
-/* General Coursework Section */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url('background.jpg'); /* Replace with your actual background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Coursework Container */
 .coursework-container {
-    padding: 50px 20px;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333333; /* Dark gray text */
-    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .coursework-container h2 {
     font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #007bff;
-    display: inline-block;
+    color: #00aaff;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 10px;
 }
 
 /* Semester Section */
 .semester {
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(0, 123, 255, 0.1); /* Subtle blue background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    margin-bottom: 40px;
 }
 
 .semester h3 {
     font-size: 2rem;
-    color: #007bff;
-    text-transform: uppercase;
-    text-align: left;
-    border-bottom: 2px solid #007bff;
+    color: #00aaff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
-    margin-bottom: 20px;
 }
 
 /* Coursework Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px; /* Add spacing between items */
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-/* Course Box Design */
+/* Course Box Styling */
 .course-box {
-    background-color: #ffffff; /* White background for contrast */
-    border: 2px solid #007bff; /* Blue border for visibility */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow */
     padding: 20px;
-    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #e0e0e0;
 }
 
 .course-box:hover {
-    transform: translateY(-5px); /* Subtle lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Course Code and Name Styling */
 .course-box h3 {
     font-size: 1.5rem;
-    color: #007bff;
-    font-weight: bold;
-    margin: 0 0 10px; /* Add spacing below the title */
+    color: #00aaff;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.course-box h3 span {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-    color: #555555;
-    margin-top: 5px; /* Adjust spacing above the subtitle */
-}
-
-/* Course Description */
 .course-box p {
     font-size: 1rem;
-    color: #555555;
-    line-height: 1.6;
-    margin: 0; /* Remove default margins */
-    margin-top: 10px; /* Add spacing above the text */
+    line-height: 1.4;
+    color: #d0d0d0;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
+    .coursework-container {
+        padding: 20px;
+    }
+
     .coursework-container h2 {
         font-size: 2rem;
     }
@@ -96,34 +99,14 @@
     }
 
     .course-box {
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 15px;
     }
 
     .course-box h3 {
-        font-size: 1.4rem; /* Reduce font size for smaller screens */
+        font-size: 1.2rem;
     }
 
     .course-box p {
-        font-size: 0.95rem; /* Slightly smaller text for readability */
+        font-size: 0.9rem;
     }
-}
-
-/* General Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-top: 50px;
-    border-top: 2px solid #007bff;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer p:nth-child(2) {
-    font-style: italic;
-    color: #007bff;
 }
