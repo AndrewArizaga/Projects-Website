@@ -1,20 +1,17 @@
 /* General Coursework Section */
 .coursework-container {
     padding: 50px 20px;
-    background-image: url('aboutme-background.jpg'); /* Background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #ffffff;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333333; /* Dark gray text */
     text-align: center;
 }
 
 .coursework-container h2 {
-    font-size: 2.8rem;
-    color: #00aaff;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    border-bottom: 3px solid #00aaff;
+    border-bottom: 3px solid #007bff;
     display: inline-block;
     padding-bottom: 10px;
 }
@@ -23,91 +20,111 @@
 .semester {
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 123, 255, 0.1); /* Subtle blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
 }
 
 .semester h3 {
-    font-size: 2.4rem;
-    color: #00aaff;
+    font-size: 2rem;
+    color: #007bff;
     text-transform: uppercase;
     text-align: left;
-    border-bottom: 2px solid #00aaff;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-/* Course List Grid */
-.course-list {
+/* Coursework Grid Layout */
+.coursework-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    gap: 30px; /* Add spacing between items */
+    margin-top: 20px;
 }
 
-/* Course Box Styling */
+/* Course Box Design */
 .course-box {
-    background-color: #1f1f1f;
+    background-color: #ffffff; /* White background for contrast */
+    border: 2px solid #007bff; /* Blue border for visibility */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow */
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px; /* Fixed height for consistency */
 }
 
 .course-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    cursor: pointer;
 }
 
-/* Course Title */
-.course-box h4 {
-    font-size: 1.8rem;
-    color: #00aaff;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 5px;
+/* Course Code and Name Styling */
+.course-box h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 0 10px; /* Add spacing below the title */
     text-transform: uppercase;
+}
+
+.course-box h3 span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555555;
+    margin-top: 5px; /* Adjust spacing above the subtitle */
 }
 
 /* Course Description */
 .course-box p {
     font-size: 1rem;
-    color: #e0e0e0;
+    color: #555555;
     line-height: 1.6;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6; /* Limit to 6 lines */
-    -webkit-box-orient: vertical;
+    margin: 0; /* Remove default margins */
+    margin-top: 10px; /* Add spacing above the text */
 }
 
-/* Responsive Design */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .coursework-container h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .semester h3 {
-        font-size: 1.8rem;
-    }
-
-    .course-box {
-        height: auto; /* Let the height adjust for smaller screens */
-        padding: 15px;
-    }
-
-    .course-box h4 {
         font-size: 1.5rem;
     }
 
-    .course-box p {
-        font-size: 0.9rem;
-        -webkit-line-clamp: 4; /* Limit to 4 lines for smaller screens */
+    .course-box {
+        padding: 15px; /* Reduce padding for smaller screens */
     }
+
+    .course-box h3 {
+        font-size: 1.4rem; /* Reduce font size for smaller screens */
+    }
+
+    .course-box p {
+        font-size: 0.95rem; /* Slightly smaller text for readability */
+    }
+}
+
+/* General Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    border-top: 2px solid #007bff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:nth-child(2) {
+    font-style: italic;
+    color: #007bff;
 }
