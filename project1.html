@@ -7,42 +7,109 @@
     <link rel="stylesheet" href="gen-projects.css">
 </head>
 <body>
-    <div class="project-details-container">
-        <h2>Smart Power Management Using Microcontroller</h2>
-        <img class="project-image-large" src="insert image.png" alt="Smart Power Management Project">
+    <div class="project-page-container">
+        <!-- Project Title -->
+        <h1 class="project-title">Smart Power Management Using Microcontroller</h1>
 
-        <h3>Project Motivation</h3>
-        <p>
-            I’ll be honest—I have a bad habit of leaving lights on when I leave a room. Lately, as I get older, I’ve been trying to be more mindful and frugal, especially when it comes to things like my energy bill. As an engineer, I figured, why not build something that helps me solve this problem?
-        </p>
-        <p>
-            I wanted to create a system that’s not just cool to build but actually useful—something that can help people save energy without even thinking about it. Combining microcontrollers and sensors felt like the perfect way to build something practical, affordable, and actually useful for managing energy at home.
-        </p>
+        <!-- Project Content Section -->
+        <div class="project-content">
+            <!-- Project Image -->
+            <img class="project-image" src="insert-image.png" alt="Smart Power Management Project">
 
-        <h3>Project Description</h3>
-        <p>
-            This project leverages a microcontroller and various sensors to monitor and optimize energy consumption in a residential setting. By integrating hardware components with efficient software, the system detects when rooms are unoccupied and automatically turns off lights or appliances, thereby conserving energy.
-        </p>
+            <!-- Project Motivation -->
+            <div class="project-motivation">
+                <h2>Project Motivation</h2>
+                <p>
+                    I’ll be honest—I have a bad habit of leaving lights on when I leave a room. Lately, as I get older, I’ve been trying to be more mindful and frugal, especially when it comes to things like my energy bill. As an engineer, I figured, why not build something that helps me solve this problem?
+                </p>
+                <p>
+                    I wanted to create a system that’s not just cool to build but actually useful—something that can help people save energy without even thinking about it. Combining microcontrollers and sensors felt like the perfect way to build something practical, affordable, and actually useful for managing energy at home.
+                </p>
+            </div>
+        </div>
 
-        <h3>Key Features</h3>
-        <ul>
-            <li>Real-time monitoring of room occupancy using sensors</li>
-            <li>Automatic control of lighting and appliances</li>
-            <li>User-friendly interface for manual overrides</li>
-            <li>Customizable energy-saving modes</li>
-        </ul>
+        <!-- Project Description -->
+        <div class="project-description">
+            <h2>Project Description</h2>
+            <p>
+                This project leverages a microcontroller and various sensors to monitor and optimize energy consumption in a residential setting. By integrating hardware components with efficient software, the system detects when rooms are unoccupied and automatically turns off lights or appliances, thereby conserving energy.
+            </p>
+        </div>
 
-        <h3>Skills Applied</h3>
-        <ul>
-            <li>Embedded systems programming</li>
-            <li>Sensor integration and calibration</li>
-            <li>Circuit design and implementation</li>
-            <li>Power efficiency optimization</li>
-        </ul>
+        <!-- KiCAD Schematic Section -->
+        <div class="kicad-section">
+            <h2>KiCAD Schematic</h2>
+            <p>
+                The KiCAD schematic was designed to capture the electrical connections between the components. It includes detailed connections for the ESP32 microcontroller, IR sensors, relay switches, and power management circuits. Each component was carefully placed and labeled for clarity.
+            </p>
+            <img class="project-image" src="kicad-schematic.png" alt="KiCAD Schematic">
+        </div>
 
+        <!-- KiCAD PCB Layout Section -->
+        <div class="kicad-section">
+            <h2>KiCAD PCB Layout</h2>
+            <p>
+                The PCB layout was developed using KiCAD’s PCB editor, ensuring a compact and efficient board design. Routing was optimized to reduce noise and interference between signals, particularly around the microcontroller and sensor circuits. Proper grounding techniques were applied to enhance the reliability of the board.
+            </p>
+            <img class="project-image" src="kicad-pcb-layout.png" alt="KiCAD PCB Layout">
+        </div>
+
+        <!-- Components Used -->
+        <div class="components-section">
+            <h2>Components Used</h2>
+            <ul>
+                <li>ESP32 Microcontroller</li>
+                <li>IR Sensors for occupancy detection</li>
+                <li>Relay switches for controlling lights and appliances</li>
+                <li>4 AA Batteries (main power source)</li>
+                <li>Ceramic capacitors (decoupling for power supply)</li>
+                <li>Resistors (1kΩ, 10kΩ) for signal conditioning</li>
+                <li>Voltage regulator (AMS1117 3.3V)</li>
+                <li>Diodes for reverse polarity protection</li>
+            </ul>
+        </div>
+
+        <!-- Technical Challenges -->
+        <div class="technical-challenges">
+            <h2>Technical Challenges</h2>
+            <p>
+                During the development of this project, several challenges were encountered:
+            </p>
+            <ul>
+                <li>
+                    <strong>Power Management:</strong> Balancing power consumption of the ESP32 and sensors to ensure efficiency without compromising performance.
+                </li>
+                <li>
+                    <strong>Signal Noise:</strong> Mitigating noise in the sensor signals using proper grounding and bypass capacitors.
+                </li>
+                <li>
+                    <strong>PCB Design:</strong> Ensuring minimal cross-talk and signal interference in a compact PCB layout.
+                </li>
+                <li>
+                    <strong>Code Optimization:</strong> Writing efficient firmware to handle real-time sensor readings and relay control.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Applications and Future Scope -->
+        <div class="applications-scope">
+            <h2>Applications and Future Scope</h2>
+            <p>
+                This system can be scaled for larger homes or office buildings, integrating advanced features such as:
+            </p>
+            <ul>
+                <li>Mobile app integration for remote control and monitoring</li>
+                <li>Integration with IoT platforms like AWS IoT Core or Google Cloud IoT</li>
+                <li>Support for multiple sensor types (e.g., motion, temperature, humidity)</li>
+                <li>Solar-powered energy management for sustainable operation</li>
+            </ul>
+        </div>
+
+        <!-- Back to Projects Button -->
         <a href="projects.html" class="back-button">Back to Projects</a>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>© 2024 Andrew Arizaga. All rights reserved.</p>
         <p>Built with passion and dedication to innovative solutions.</p>
