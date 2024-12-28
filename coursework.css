@@ -7,18 +7,19 @@
 }
 
 .coursework-container h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #007bff;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     border-bottom: 3px solid #007bff;
     display: inline-block;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Semester Section */
 .semester {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .semester h3 {
@@ -29,13 +30,14 @@
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Coursework Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller min width */
-    gap: 30px 40px; /* Increase row and column spacing */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 40px; /* Increased spacing */
     margin-top: 20px;
     justify-content: center;
 }
@@ -45,11 +47,11 @@
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 300px; /* Fixed height for all course boxes */
+    height: 320px; /* Fixed height for uniform boxes */
     overflow: hidden; /* Prevent overflow */
     display: flex;
     flex-direction: column;
@@ -59,13 +61,13 @@
 /* Hover Effect */
 .course-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
 /* Course Code and Name Styling */
 .course-box h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #007bff;
     font-weight: bold;
     margin: 0; /* Remove default margin */
@@ -77,7 +79,7 @@
     font-size: 1rem;
     font-weight: normal;
     color: #555555;
-    margin: 5px 0; /* Adjust spacing below the title line */
+    margin: 8px 0; /* Adjust spacing below the title line */
 }
 
 /* Course Description */
@@ -90,40 +92,36 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6; /* Limit text to 6 lines */
+    -webkit-line-clamp: 7; /* Limit text to 7 lines */
     -webkit-box-orient: vertical;
 }
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .coursework-container h2 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .semester h3 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .course-box {
-        height: 350px; /* Increase height for content */
-        padding: 25px; /* Add more internal padding */
+        height: auto; /* Adjust height for variable content */
+        padding: 20px;
     }
-
 
     /* Adjust font sizes for smaller screens */
     .course-box h3 {
-        font-size: 1.6rem; /* Slightly larger titles */
-        margin-bottom: 5px; /* Add space below title */
+        font-size: 1.5rem; /* Adjusted title size */
     }
-
 
     .course-box h3 span {
         font-size: 0.9rem;
     }
 
     .course-box p {
-        font-size: 1rem; /* Larger text for readability */
-        -webkit-line-clamp: 5; /* Limit to 5 lines for consistency */
+        font-size: 0.9rem; /* Slightly smaller text */
+        -webkit-line-clamp: 6; /* Limit to 6 lines for better fit */
     }
-
 }
