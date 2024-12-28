@@ -41,29 +41,32 @@
 /* Course List Grid */
 .course-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     justify-content: center;
 }
 
-/* Course Item Styling */
-.course-item {
+/* Course Box Styling */
+.course-box {
     background-color: #1f1f1f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Fixed height for consistency */
 }
 
-.course-item:hover {
+.course-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
 }
 
 /* Course Title */
-.course-item h4 {
+.course-box h4 {
     font-size: 1.8rem;
     color: #00aaff;
     margin-bottom: 10px;
@@ -73,14 +76,18 @@
 }
 
 /* Course Description */
-.course-item p {
-    font-size: 1.1rem;
+.course-box p {
+    font-size: 1rem;
     color: #e0e0e0;
     line-height: 1.6;
-    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limit to 6 lines */
+    -webkit-box-orient: vertical;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
     .coursework-container h2 {
         font-size: 2.2rem;
@@ -90,11 +97,17 @@
         font-size: 1.8rem;
     }
 
-    .course-item h4 {
+    .course-box {
+        height: auto; /* Let the height adjust for smaller screens */
+        padding: 15px;
+    }
+
+    .course-box h4 {
         font-size: 1.5rem;
     }
 
-    .course-item p {
-        font-size: 1rem;
+    .course-box p {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 4; /* Limit to 4 lines for smaller screens */
     }
 }
