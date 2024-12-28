@@ -1,19 +1,20 @@
 /* General Coursework Section */
 .coursework-container {
     padding: 50px 20px;
-    background: url('aboutme-background.jpg') no-repeat center center;
+    background-image: url('aboutme-background.jpg'); /* Background image */
     background-size: cover;
     background-attachment: fixed;
-    color: #333333;
+    background-position: center;
+    color: #ffffff;
     text-align: center;
 }
 
 .coursework-container h2 {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 30px;
+    font-size: 2.8rem;
+    color: #00aaff;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    border-bottom: 3px solid #007bff;
+    border-bottom: 3px solid #00aaff;
     display: inline-block;
     padding-bottom: 10px;
 }
@@ -22,47 +23,78 @@
 .semester {
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .semester h3 {
-    font-size: 2rem;
-    color: #007bff;
+    font-size: 2.4rem;
+    color: #00aaff;
     text-transform: uppercase;
     text-align: left;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-/* Course List */
+/* Course List Grid */
 .course-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px 20px;
+    justify-content: center;
+}
+
+/* Course Item Styling */
+.course-item {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.course-list li {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333333;
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* Course Title */
+.course-item h4 {
+    font-size: 1.8rem;
+    color: #00aaff;
     margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    text-transform: uppercase;
 }
 
-/* Responsive Design */
+/* Course Description */
+.course-item p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .coursework-container h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .semester h3 {
+        font-size: 1.8rem;
+    }
+
+    .course-item h4 {
         font-size: 1.5rem;
     }
 
-    .course-list li {
+    .course-item p {
         font-size: 1rem;
     }
 }
