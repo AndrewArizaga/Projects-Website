@@ -15,19 +15,28 @@ body {
     line-height: 1.6;
 }
 
-/* Project Details Container */
-.project-details-container {
+/* Project Page Container */
+.project-page-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #e0e0e0;
 }
 
-/* Motivation Section Layout */
-.motivation-section {
+/* Project Title */
+.project-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Project Content Layout */
+.project-content {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -36,71 +45,114 @@ body {
 }
 
 /* Project Image */
-.project-image-small {
-    flex: 1; /* Adjust width relative to text */
-    max-width: 300px;
+.project-image {
+    flex: 1;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Text Beside Image */
-.motivation-text {
-    flex: 2; /* Take more space relative to the image */
+/* Project Motivation */
+.project-motivation {
+    flex: 2;
     text-align: left;
 }
 
-.motivation-text h3 {
-    font-size: 24px;
+.project-motivation h2 {
+    font-size: 1.8rem;
     color: #4ba3f2;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #4ba3f2;
     padding-bottom: 5px;
 }
 
-.motivation-text p {
-    font-size: 16px;
-    line-height: 1.6;
+.project-motivation p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
-/* Description Section */
-.description-section {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+/* Project Description */
+.project-description {
+    margin-top: 30px;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.description-section h3 {
-    font-size: 24px;
+.project-description h2 {
+    font-size: 1.8rem;
     color: #4ba3f2;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #4ba3f2;
     padding-bottom: 5px;
 }
 
-.description-section p {
-    font-size: 16px;
-    line-height: 1.6;
+.project-description p {
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
-/* Lists for Features and Skills */
-.project-details-container ul {
+/* Section Styling (KiCAD Schematic, PCB Layout, Components, etc.) */
+.kicad-section, .components-section, .technical-challenges, .applications-scope {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.kicad-section h2, 
+.components-section h2, 
+.technical-challenges h2, 
+.applications-scope h2 {
+    font-size: 1.8rem;
+    color: #4ba3f2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4ba3f2;
+    padding-bottom: 5px;
+}
+
+.kicad-section p, 
+.components-section p, 
+.technical-challenges p, 
+.applications-scope p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.kicad-section img, 
+.components-section img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Lists for Components, Challenges, Applications */
+.components-section ul, 
+.technical-challenges ul, 
+.applications-scope ul {
     margin-left: 20px;
     list-style-type: disc;
     line-height: 1.8;
 }
 
-.project-details-container ul li {
+.components-section ul li, 
+.technical-challenges ul li, 
+.applications-scope ul li {
     margin-bottom: 10px;
 }
 
 /* Back Button */
 .back-button {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 10px 20px;
     background-color: #00aaff;
     color: #fff;
@@ -137,25 +189,30 @@ footer p:nth-child(2) {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .project-details-container {
-        padding: 20px;
-    }
-
-    .motivation-section {
+    .project-content {
         flex-direction: column; /* Stack image and text */
     }
 
-    .project-image-small {
+    .project-image {
         max-width: 100%; /* Full width for smaller screens */
     }
 
-    .motivation-text h3 {
-        font-size: 20px;
+    .project-motivation h2, 
+    .project-description h2, 
+    .kicad-section h2, 
+    .components-section h2, 
+    .technical-challenges h2, 
+    .applications-scope h2 {
+        font-size: 1.6rem;
     }
 
-    .motivation-text p,
-    .description-section p {
-        font-size: 14px;
+    .project-motivation p,
+    .project-description p,
+    .kicad-section p,
+    .components-section p,
+    .technical-challenges p,
+    .applications-scope p {
+        font-size: 0.9rem;
     }
 
     .back-button {
