@@ -4,6 +4,8 @@
     background-color: #f8f9fa; /* Light gray background */
     color: #333333; /* Dark gray text */
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .coursework-container h2 {
@@ -20,7 +22,7 @@
 .semester {
     margin-bottom: 50px;
     padding: 20px;
-    background-color: #ffffff; /* White background for semesters */
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -38,8 +40,8 @@
 /* Coursework Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller min width */
-    gap: 30px 40px; /* Increase row and column spacing */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptive layout */
+    gap: 20px 30px; /* Row and column spacing */
     margin-top: 20px;
     justify-content: center;
 }
@@ -53,8 +55,7 @@
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: auto; /* Remove fixed height for dynamic content */
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,16 +82,15 @@
     font-size: 1rem;
     font-weight: normal;
     color: #555555;
-    margin: 5px 0; /* Adjust spacing below the title line */
+    margin-top: 5px;
 }
 
 /* Course Description */
 .course-box p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #555555;
-    line-height: 1.5;
-    margin: 0; /* Remove default margins */
-    padding-top: 10px; /* Add spacing above the text */
+    line-height: 1.6;
+    margin-top: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -109,11 +109,11 @@
     }
 
     .course-box {
-        padding: 25px; /* Add more internal padding */
+        padding: 20px;
     }
 
     .course-box h3 {
-        font-size: 1.4rem; /* Slightly smaller titles */
+        font-size: 1.4rem;
     }
 
     .course-box h3 span {
@@ -121,7 +121,7 @@
     }
 
     .course-box p {
-        font-size: 1rem; /* Slightly larger text for readability */
-        -webkit-line-clamp: 5; /* Adjust clamping for consistency */
+        font-size: 0.9rem;
+        -webkit-line-clamp: 5;
     }
 }
