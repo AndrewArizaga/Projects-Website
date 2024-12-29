@@ -7,13 +7,14 @@
 
 /* Body Styling */
 body {
-    background-image: url('background.jpg'); /* Replace with your actual background */
+    background-color: #f0f0f0;
+    background-image: url('background.jpg'); /* Optional background image */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: #333; /* Dark text for readability */
+    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    font-family: Arial, sans-serif; /* Default system font */
 }
 
 /* Coursework Container */
@@ -21,7 +22,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -42,7 +43,7 @@ body {
 .semester {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -56,17 +57,18 @@ body {
     margin-bottom: 20px;
 }
 
-/* Course Box Grid */
+/* Course Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
-/* Course Box Design */
+/* Course Box Styling */
 .course-box {
-    background-color: #ffffff; /* White box background */
-    border: 2px solid #ddd; /* Subtle border */
+    background-color: #ffffff;
+    border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -94,15 +96,6 @@ body {
     color: #555;
     line-height: 1.5;
     margin-top: 10px;
-}
-
-/* Additional Styling for Titles */
-.course-box h3 span {
-    font-size: 1rem;
-    color: #555;
-    display: block;
-    margin-top: 5px;
-    font-weight: normal;
 }
 
 /* Responsive Design */
