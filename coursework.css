@@ -7,94 +7,87 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
 /* Coursework Container */
 .coursework-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Page Title */
+/* Title Styling */
 .coursework-container h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #333333;
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
 }
 
 /* Semester Section */
 .semester {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .semester h2 {
-    font-size: 2rem;
-    color: #0056b3;
-    border-bottom: 2px solid #0056b3;
+    font-size: 1.8rem;
     margin-bottom: 20px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
 }
 
-/* Course Boxes */
+/* Course Box Styling */
 .course-box {
-    background-color: #f8f9fa;
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
     padding: 15px;
-    margin-bottom: 15px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .course-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Course Title */
+/* Course Title Styling */
 .course-box h3 {
-    font-size: 1.5rem;
-    color: #007bff;
+    font-size: 1.4rem;
+    color: #333333;
     margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
-/* Course Description */
+/* Course Description Styling */
 .course-box p {
     font-size: 1rem;
-    color: #555;
+    color: #555555;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .coursework-container {
-        padding: 15px;
-    }
-
     .coursework-container h1 {
         font-size: 2rem;
     }
 
     .semester h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .course-box h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .course-box p {
