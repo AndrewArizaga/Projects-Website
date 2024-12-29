@@ -8,12 +8,13 @@
 /* Body Styling */
 body {
     background-color: #f0f0f0;
-    background-image: url('background.jpg'); /* Optional: Replace with your background image */
+    background-image: url('background.jpg'); /* Replace with your background image */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: #333;
     line-height: 1.6;
+    font-family: Arial, sans-serif; /* Remove custom fonts */
 }
 
 /* Coursework Container */
@@ -59,7 +60,7 @@ body {
 /* Course Grid Layout */
 .coursework-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Explicit 4 columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid layout */
     gap: 20px;
     margin-top: 20px;
     justify-content: center;
