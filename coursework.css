@@ -13,6 +13,7 @@ body {
     background-position: center;
     color: #333; /* Dark text for readability */
     line-height: 1.6;
+    font-family: Arial, sans-serif; /* Default system font */
 }
 
 /* Coursework Container */
@@ -88,6 +89,16 @@ body {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Additional Styling for Titles */
+.course-box h3 span {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
 }
 
 /* Responsive Design */
