@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     background-color: #f0f0f0;
-    background-image: url('background.jpg'); /* Replace with your background image */
+    background-image: url('aboutme-background.jpg'); /* Replace with your background image */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -22,6 +22,7 @@ body {
     margin: 40px auto;
     padding: 20px;
     background-color: #ffffff;
+    background-image: url('Octagon Background.jpg'); /* Replace with your background image */
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
