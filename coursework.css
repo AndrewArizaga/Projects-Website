@@ -7,30 +7,33 @@
 
 /* Body Styling */
 body {
-    background-color: #f4f4f4; /* Light gray background for the page */
-    font-family: sans-serif; /* Use system sans-serif font */
+    background-image: url('background.jpg'); /* Replace with your actual background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333; /* Dark text for readability */
     line-height: 1.6;
-    color: #333;
-    padding: 20px;
 }
 
 /* Coursework Container */
 .coursework-container {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #ffffff; /* White background for coursework container */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Page Title Styling */
-.coursework-container h1 {
-    text-align: center;
+/* Coursework Title */
+.coursework-container h2 {
     font-size: 2.5rem;
+    color: #007bff;
     margin-bottom: 30px;
-    color: #007bff; /* Blue color for the title */
-    border-bottom: 3px solid #007bff; /* Blue underline */
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 4px solid #007bff;
+    display: inline-block;
     padding-bottom: 10px;
 }
 
@@ -39,66 +42,66 @@ body {
     margin-bottom: 40px;
 }
 
-.semester h2 {
+.semester h3 {
     font-size: 2rem;
-    color: #007bff; /* Blue color for semester titles */
+    color: #007bff;
     text-transform: uppercase;
-    border-bottom: 2px solid #007bff; /* Underline */
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
     margin-bottom: 20px;
-    padding-bottom: 5px;
 }
 
-/* Course Grid Layout */
-.course-grid {
+/* Course Box Grid */
+.coursework-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between boxes */
+    gap: 20px;
 }
 
-/* Course Box Styling */
+/* Course Box Design */
 .course-box {
-    background-color: #ffffff; /* White background for each course */
-    border: 1px solid #ddd; /* Border around each course */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White box background */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .course-box:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Course Title Styling */
+/* Course Title */
 .course-box h3 {
-    font-size: 1.2rem;
-    color: #007bff; /* Blue color for course titles */
+    font-size: 1.5rem;
+    color: #007bff;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Underline for the title */
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
-    font-weight: bold;
 }
 
 /* Course Description */
 .course-box p {
     font-size: 1rem;
-    color: #555; /* Dark gray for course descriptions */
-    line-height: 1.6;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .coursework-container h1 {
+    .coursework-container h2 {
         font-size: 2rem;
     }
 
-    .semester h2 {
-        font-size: 1.6rem;
+    .semester h3 {
+        font-size: 1.5rem;
     }
 
     .course-box h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .course-box p {
