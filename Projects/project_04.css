@@ -5,16 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-    background-image: url('../Octagon Background.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #e0e0e0;
-    line-height: 1.6;
-}
-
 /* Project Page Container */
 .project-page-container {
     max-width: 1200px;
