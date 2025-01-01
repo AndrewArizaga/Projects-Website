@@ -86,33 +86,30 @@ nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Project Content Layout */
-.project-content {
+/* Radial Distribution Section */
+.radial-network {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
-.project-image {
-    flex: 1;
-    max-width: 350px;
+.radial-network img {
+    max-width: 300px; /* Reduce image size */
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.project-motivation {
-    flex: 2;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.radial-network .content {
+    flex: 1;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 /* Generic Section Styling */
-.generic-section, .components-section {
+.generic-section {
     margin-top: 30px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -120,7 +117,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.generic-section h2, .components-section h2 {
+.generic-section h2 {
     font-size: 1.8rem;
     color: #4ba3f2;
     margin-bottom: 15px;
@@ -128,31 +125,15 @@ nav ul li a:hover {
     padding-bottom: 5px;
 }
 
-.generic-section p, .generic-section ul, .components-section p, .components-section ul {
+.generic-section p,
+.generic-section ul {
     font-size: 1rem;
     line-height: 1.8;
 }
 
-.generic-section ul, .components-section ul {
+.generic-section ul {
     padding-left: 20px;
     list-style-type: disc;
-}
-
-/* Radial Distribution Image Section */
-.radial-network img {
-    float: left; /* Align the image to the left */
-    margin: 10px 20px 10px 0; /* Add margin around the image */
-    max-width: 250px; /* Reduce image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.radial-network p {
-    overflow: hidden; /* Ensure proper wrapping */
-    text-align: justify; /* Align text neatly */
-    line-height: 1.8; /* Enhance readability */
 }
 
 /* Back Button Styling */
@@ -170,6 +151,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 200px; /* Set a fixed width for the button */
 }
 
 .back-button:hover {
@@ -189,18 +171,13 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .project-content {
+    .radial-network {
         flex-direction: column;
-    }
-
-    .project-image {
-        max-width: 100%;
+        align-items: center;
     }
 
     .radial-network img {
-        float: none; /* Reset floating */
-        margin: 0 auto 20px; /* Center align image */
-        display: block; /* Block-level element */
+        max-width: 100%;
     }
 
     .back-button {
