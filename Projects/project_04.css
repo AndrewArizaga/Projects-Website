@@ -7,13 +7,47 @@
 
 /* Body Styling */
 body {
-    background: url('../aboutme-background.jpg'); /* Update path if necessary */
+    background: url('../aboutme-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     color: #e0e0e0;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    border-bottom: 2px solid #4ba3f2;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4ba3f2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0088cc;
 }
 
 /* Disclaimer Banner */
@@ -25,7 +59,6 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Project Page Container */
@@ -41,109 +74,57 @@ body {
 /* Project Title */
 .project-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #4ba3f2;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Project Content Layout */
-.project-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.project-image {
-    flex: 1;
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-motivation {
-    flex: 2;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Radial Distribution Section */
-.radial-network {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.radial-network img {
-    max-width: 40%;
-    margin-right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+/* Radial Network Image */
+.radial-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.radial-network p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #e0e0e0;
-}
-
-/* Generic Section Styling */
-.generic-section, .components-section {
-    margin-top: 30px;
+/* Project Description */
+.project-description {
+    margin-top: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.generic-section h2, .components-section h2 {
-    font-size: 2rem;
+.project-description h3 {
+    margin-top: 20px;
     color: #4ba3f2;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4ba3f2;
-    padding-bottom: 5px;
 }
 
-.generic-section p, .generic-section ul, .components-section p, .components-section ul {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.generic-section ul, .components-section ul {
+.project-description ul {
+    margin: 10px 0;
     padding-left: 20px;
     list-style-type: disc;
+    line-height: 1.8;
 }
 
 /* Back Button Styling */
 .back-button {
-    display: block;
-    margin: 30px auto 0;
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #00aaff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .back-button:hover {
     background-color: #0088cc;
-    transform: translateY(-3px);
 }
 
 /* Footer Styling */
@@ -152,32 +133,6 @@ footer {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.85);
     color: #e0e0e0;
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .radial-network {
-        flex-direction: column;
-    }
-
-    .radial-network img {
-        margin-right: 0;
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-
-    .project-content {
-        flex-direction: column;
-    }
-
-    .project-image {
-        max-width: 100%;
-    }
-
-    .back-button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
 }
