@@ -7,10 +7,7 @@
 
 /* Body Styling */
 body {
-    background-image: url('aboutme-background.jpg'); /* Replace with your actual background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: #121212; /* Generic dark background */
     color: #e0e0e0;
     line-height: 1.6;
 }
@@ -54,28 +51,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Motivation */
-.project-motivation {
-    flex: 2;
-    text-align: left;
-}
-
-.project-motivation h2 {
-    font-size: 1.8rem;
-    color: #4ba3f2;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4ba3f2;
-    padding-bottom: 5px;
-}
-
-.project-motivation p {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* Project Description */
-.project-description {
+/* Generic Section Styling */
+.generic-section {
     margin-top: 30px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -83,7 +60,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.project-description h2 {
+.generic-section h2 {
     font-size: 1.8rem;
     color: #4ba3f2;
     margin-bottom: 15px;
@@ -91,62 +68,14 @@ body {
     padding-bottom: 5px;
 }
 
-.project-description p {
+.generic-section p, .generic-section ul {
     font-size: 1rem;
     line-height: 1.8;
 }
 
-/* Section Styling (KiCAD Schematic, PCB Layout, Components, etc.) */
-.kicad-section, .components-section, .technical-challenges, .applications-scope {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.kicad-section h2, 
-.components-section h2, 
-.technical-challenges h2, 
-.applications-scope h2 {
-    font-size: 1.8rem;
-    color: #4ba3f2;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4ba3f2;
-    padding-bottom: 5px;
-}
-
-.kicad-section p, 
-.components-section p, 
-.technical-challenges p, 
-.applications-scope p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.kicad-section img, 
-.components-section img {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Lists for Components, Challenges, Applications */
-.components-section ul, 
-.technical-challenges ul, 
-.applications-scope ul {
-    margin-left: 20px;
+.generic-section ul {
+    padding-left: 20px;
     list-style-type: disc;
-    line-height: 1.8;
-}
-
-.components-section ul li, 
-.technical-challenges ul li, 
-.applications-scope ul li {
-    margin-bottom: 10px;
 }
 
 /* Back Button */
@@ -182,21 +111,11 @@ body {
         max-width: 100%; /* Full width for smaller screens */
     }
 
-    .project-motivation h2, 
-    .project-description h2, 
-    .kicad-section h2, 
-    .components-section h2, 
-    .technical-challenges h2, 
-    .applications-scope h2 {
+    .generic-section h2 {
         font-size: 1.6rem;
     }
 
-    .project-motivation p,
-    .project-description p,
-    .kicad-section p,
-    .components-section p,
-    .technical-challenges p,
-    .applications-scope p {
+    .generic-section p, .generic-section ul li {
         font-size: 0.9rem;
     }
 
