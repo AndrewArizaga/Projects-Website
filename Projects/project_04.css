@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    background-image: url('path/to/your/background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Optional: Use Google Fonts */
+}
+
 /* Project Page Container */
 .project-page-container {
     max-width: 1200px;
@@ -44,40 +56,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Radial Distribution Section */
-.radial-network {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.radial-network img {
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.radial-network p {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #e0e0e0;
-}
-
-/* Project Description */
-.project-description {
+/* Generic Section Styling */
+.generic-section {
     margin-top: 30px;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    line-height: 1.8;
-    color: #e0e0e0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.project-description h2 {
+.generic-section h2 {
     font-size: 1.8rem;
     color: #4ba3f2;
     margin-bottom: 15px;
@@ -85,31 +73,24 @@
     padding-bottom: 5px;
 }
 
-.project-description h3 {
-    font-size: 1.6rem;
-    color: #4ba3f2;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 5px;
-}
-
-.project-description p {
+.generic-section p, .generic-section ul {
     font-size: 1rem;
     line-height: 1.8;
 }
 
-.project-description ul {
+.generic-section ul {
     padding-left: 20px;
-    margin-bottom: 20px;
     list-style-type: disc;
-    color: #e0e0e0;
 }
 
-.project-description ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.6;
+/* Section: Radial Distribution Image */
+.radial-network img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Back Button */
@@ -138,27 +119,18 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-content {
-        flex-direction: column;
+        flex-direction: column; /* Stack image and text */
     }
 
     .project-image {
-        max-width: 100%;
+        max-width: 100%; /* Full width for smaller screens */
     }
 
-    .radial-network {
-        flex-direction: column;
+    .generic-section h2 {
+        font-size: 1.6rem;
     }
 
-    .radial-network img {
-        max-width: 90%;
-        margin-bottom: 15px;
-    }
-
-    .project-description h3 {
-        font-size: 1.4rem;
-    }
-
-    .project-description ul li {
+    .generic-section p, .generic-section ul li {
         font-size: 0.9rem;
     }
 
