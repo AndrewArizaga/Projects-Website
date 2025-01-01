@@ -16,40 +16,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #e0e0e0;
-    border-bottom: 2px solid #4ba3f2;
-}
-
-header h1 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #4ba3f2;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #0088cc;
-}
-
 /* Disclaimer Banner */
 .disclaimer-banner {
     text-align: center;
@@ -64,6 +30,7 @@ nav ul li a:hover {
 
 /* Project Page Container */
 .project-page-container {
+    background: url('../Octagon Background.jpg'); /* Update path if necessary */
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
