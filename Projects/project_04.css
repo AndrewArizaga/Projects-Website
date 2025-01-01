@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     color: #e0e0e0;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header Styling */
@@ -78,11 +79,12 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Radial Network Image */
+/* Radial Network Image with Text Wrapping */
 .radial-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
+    float: left;
+    margin: 10px 20px 10px 0;
+    max-width: 300px;
+    height: auto;
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
