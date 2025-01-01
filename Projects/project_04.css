@@ -11,7 +11,7 @@ body {
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
       ),
-      url('../aboutme-background.jpg'); /* Use your existing image path */
+      url('../Octagon Background.jpg'); /* Update the path if necessary */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -21,12 +21,62 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    border-bottom: 2px solid #4ba3f2;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4ba3f2;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0088cc;
+}
+
+/* Disclaimer Banner */
+.disclaimer-banner {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7b500;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* Project Page Container */
 .project-page-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85); /* Adds a slightly transparent background for content */
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -38,7 +88,6 @@ body {
     color: #4ba3f2;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-weight: bold;
 }
 
 /* Project Content Layout */
@@ -60,11 +109,20 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Styling */
+/* Project Motivation */
+.project-motivation {
+    flex: 2;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Generic Section Styling */
 .generic-section {
     margin-top: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -122,16 +180,14 @@ body {
     transform: translateY(-3px);
 }
 
-/* Disclaimer Banner */
-.disclaimer-banner {
+/* Footer Styling */
+footer {
     text-align: center;
-    padding: 10px;
-    background-color: #f7b500;
-    color: #121212;
-    font-weight: bold;
-    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    margin-top: 40px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Design */
