@@ -13,7 +13,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: #e0e0e0;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Disclaimer Banner */
@@ -30,7 +31,6 @@ body {
 
 /* Project Page Container */
 .project-page-container {
-    background: url('../Octagon Background.jpg'); /* Update path if necessary */
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
@@ -42,7 +42,7 @@ body {
 /* Project Title */
 .project-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #4ba3f2;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -73,6 +73,31 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Radial Distribution Section */
+.radial-network {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.radial-network img {
+    max-width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.radial-network p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
 /* Generic Section Styling */
 .generic-section, .components-section {
     margin-top: 30px;
@@ -83,7 +108,7 @@ body {
 }
 
 .generic-section h2, .components-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #4ba3f2;
     margin-bottom: 15px;
     border-bottom: 2px solid #4ba3f2;
@@ -91,23 +116,13 @@ body {
 }
 
 .generic-section p, .generic-section ul, .components-section p, .components-section ul {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .generic-section ul, .components-section ul {
     padding-left: 20px;
     list-style-type: disc;
-}
-
-/* Radial Distribution Image Section */
-.radial-network img {
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Back Button Styling */
@@ -119,7 +134,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -144,6 +159,16 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .radial-network {
+        flex-direction: column;
+    }
+
+    .radial-network img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
     .project-content {
         flex-direction: column;
     }
@@ -153,7 +178,7 @@ footer {
     }
 
     .back-button {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 8px 16px;
     }
 }
