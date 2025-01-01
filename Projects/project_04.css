@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    background-image: url('path/to/your/background-image.jpg'); /* Replace with your image path */
+    background-image: url('../Octagon Background.jpg'); /* Replace with your image path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
