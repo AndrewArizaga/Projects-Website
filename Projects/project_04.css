@@ -47,13 +47,20 @@ body {
 
 /* Radial Network Image with Text Wrapping */
 .radial-image {
-    float: left;
-    margin: 10px 20px 10px 0;
-    max-width: 300px;
-    height: auto;
+    float: left; /* Align the image to the left */
+    margin: 10px 20px 10px 0; /* Add margin around the image */
+    max-width: 300px; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust Paragraph Styling for Wrapping */
+.radial-network p {
+    overflow: hidden; /* Ensure proper wrapping */
+    text-align: justify; /* Justify text for a cleaner look */
+    line-height: 1.8; /* Enhance readability */
 }
 
 /* Project Description */
