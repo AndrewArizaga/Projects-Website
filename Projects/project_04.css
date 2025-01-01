@@ -7,14 +7,15 @@
 
 /* Body Styling */
 body {
-    background-image: url('../Octagon Background.jpg'); /* Replace with your image path */
+    background-image: url('../octagon-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #121212; /* Fallback */
     color: #e0e0e0;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif; /* Optional: Use Google Fonts */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Project Page Container */
