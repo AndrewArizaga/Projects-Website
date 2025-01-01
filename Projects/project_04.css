@@ -7,12 +7,15 @@
 
 /* Body Styling */
 body {
-    background-image: url('../octagon-background.jpg');
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+      ),
+      url('../Octagon Background.jpg'); /* Use your existing image path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #121212; /* Fallback */
     color: #e0e0e0;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
@@ -23,10 +26,9 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85); /* Adds a slightly transparent background for content */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #e0e0e0;
 }
 
 /* Project Title */
@@ -36,6 +38,7 @@ body {
     color: #4ba3f2;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
 /* Project Content Layout */
@@ -57,11 +60,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Generic Section Styling */
+/* Section Styling */
 .generic-section {
     margin-top: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -72,9 +75,11 @@ body {
     margin-bottom: 15px;
     border-bottom: 2px solid #4ba3f2;
     padding-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-.generic-section p, .generic-section ul {
+.generic-section p,
+.generic-section ul {
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -84,7 +89,7 @@ body {
     list-style-type: disc;
 }
 
-/* Section: Radial Distribution Image */
+/* Radial Distribution Image Section */
 .radial-network img {
     display: block;
     margin: 20px auto;
@@ -94,7 +99,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Back Button */
+/* Back Button Styling */
 .back-button {
     display: inline-block;
     margin-top: 30px;
@@ -117,10 +122,22 @@ body {
     transform: translateY(-3px);
 }
 
+/* Disclaimer Banner */
+.disclaimer-banner {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7b500;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-content {
-        flex-direction: column; /* Stack image and text */
+        flex-direction: column; /* Stack image and text vertically */
     }
 
     .project-image {
@@ -131,7 +148,8 @@ body {
         font-size: 1.6rem;
     }
 
-    .generic-section p, .generic-section ul li {
+    .generic-section p,
+    .generic-section ul li {
         font-size: 0.9rem;
     }
 
