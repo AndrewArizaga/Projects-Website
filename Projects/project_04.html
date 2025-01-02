@@ -105,15 +105,71 @@
     </div>
 </section>
     
-    <!-- ------------------------------------------------ -->
-    <!-- Research Section -->
-    <!-- ------------------------------------------------ -->
-    <div class="generic-section">
-        <h2>Research</h2>
+<!-- -------------------------------------------------------- -->
+<!-- Research Section -->
+<!-- -------------------------------------------------------- -->
+<div class="research-section">
+    <h1 class="section-title">Research and Development</h1>
+
+    <!-- Introduction to Research -->
+    <div class="research-content">
+        <h2>Introduction to Research</h2>
         <p>
-            This project is based on extensive research into power distribution systems and the challenges of maintaining stability in radial networks. The Ladder Iterative Method was chosen for its effectiveness in balancing loads and reducing losses across complex systems.
+            The Ladder Iterative Load Flow tool is the result of extensive research into optimizing power distribution for radial networks. Radial networks, prevalent in residential and urban areas, often face challenges like voltage drops and fault sensitivity. Traditional load flow methods can struggle with scalability and efficiency, especially in large-scale three-phase systems. This tool was developed to address these challenges using a Python-based iterative approach.
         </p>
     </div>
+
+    <!-- Key Research Goals -->
+    <div class="research-content">
+        <h2>Key Research Goals</h2>
+        <ul>
+            <li><strong>Efficiency and Accuracy:</strong> Design a tool capable of performing precise voltage and current calculations across all nodes in the network.</li>
+            <li><strong>Industry Standard Compliance:</strong> Align with IEEE standards for data input and output, ensuring seamless integration with existing systems.</li>
+            <li><strong>Adaptability:</strong> Create a solution that scales from small residential systems to larger urban networks.</li>
+            <li><strong>Ease of Use:</strong> Incorporate Excel-based data management and modular code design for practical application.</li>
+        </ul>
+    </div>
+
+    <!-- Methodology -->
+    <div class="research-content">
+        <h2>Methodology</h2>
+        <p>
+            <strong>Ladder Iterative Method:</strong> A proven approach for radial systems, the Ladder Iterative Method involves iterating through each branch of the network to calculate voltage and power flow. It starts at the farthest node and works backward toward the source.
+        </p>
+        <p>
+            <strong>Python Integration:</strong> Python was chosen for its versatility and extensive libraries, such as Pandas for data handling and Matplotlib for visualization.
+        </p>
+        <p>
+            <strong>Excel Interoperability:</strong> Leveraging Excel ensures compatibility with industry workflows, allowing users to input data in IEEE format and export results seamlessly.
+        </p>
+    </div>
+
+    <!-- Insights from Research -->
+    <div class="research-content">
+        <h2>Insights from Research</h2>
+        <ul>
+            <li><strong>Challenges in Radial Networks:</strong> Voltage drops and fault sensitivity are critical issues that require precise analysis to ensure reliability.</li>
+            <li><strong>Iterative Techniques for Precision:</strong> Iterative methods provided the accuracy needed to model real-world scenarios while Python’s computational efficiency enabled handling of large datasets.</li>
+        </ul>
+    </div>
+
+    <!-- Diagram Explanation -->
+    <div class="diagram-section">
+        <h2>Radial Distribution Network Diagram</h2>
+        <div class="diagram-wrapper">
+            <img src="Project_Images/radial_diagram.png" alt="Radial Distribution Network Diagram">
+            <p>
+                The <strong>Radial Distribution Network Diagram</strong> visually represents how power flows through the system:
+                <br>
+                <strong>Branches and Nodes:</strong> The network branches out from a substation (source) to serve residential, commercial, and industrial loads.
+                <br>
+                <strong>Voltage Drop Analysis:</strong> Voltage decreases as distance from the source increases, a core challenge the tool addresses.
+                <br>
+                <strong>Tool Application:</strong> By iterating over each branch, the tool ensures voltage stability and minimizes energy loss.
+            </p>
+        </div>
+    </div>
+</div>
 
     <!-- ------------------------------------------------ -->
     <!-- Key Features Section -->
