@@ -66,50 +66,48 @@ body {
 /* -------------------------------------------------------- */
 /* Project Description Section */
 /* -------------------------------------------------------- */
-/* Project Description Section */
 #project-description {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #e0e0e0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff; /* White text for description */
     margin-bottom: 30px;
 }
 
-.project-description-container {
+.description-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.project-section {
-    margin-bottom: 30px;
+.description-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
 }
 
-.section-title {
-    font-size: 1.8rem;
-    color: #4ba3f2;
+.description-text h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: #4ba3f2; /* Blue for the subsection titles */
     text-decoration: underline;
 }
 
-.section-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
-
-.section-content p {
-    flex: 1;
-    text-align: justify;
+.description-text p {
     font-size: 1.2rem;
     line-height: 1.8;
+    color: #ffffff; /* White for the text */
 }
 
-.section-image {
-    max-width: 300px;
-    height: auto;
+.description-image {
+    flex: 1;
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-left: 20px; /* Add spacing between text and image */
 }
 
 /* -------------------------------------------------------- */
