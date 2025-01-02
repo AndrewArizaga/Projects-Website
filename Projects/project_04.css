@@ -118,6 +118,7 @@ body {
     text-align: left;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 .project-description-container {
