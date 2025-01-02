@@ -42,7 +42,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85); /* Dark background for contrast */
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -51,12 +51,12 @@ body {
 .project-title {
     text-align: center;
     font-size: 2.5rem;
-    color: #4ba3f2; /* Bright blue for emphasis */
+    color: #4ba3f2;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Flexbox Layout for Content */
+/* Content Layout */
 .project-description-content {
     display: flex;
     flex-wrap: wrap;
@@ -64,29 +64,27 @@ body {
     align-items: flex-start;
 }
 
-/* Image Styling */
-.project-description-content img {
-    max-width: 300px; /* Set maximum width */
+/* Main Image Styling */
+.main-image {
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
     margin-bottom: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
 }
 
 /* Text Content Styling */
 .project-description-text {
-    flex: 1; /* Allow text to expand */
+    flex: 1;
     font-size: 1rem;
     line-height: 1.8;
-    text-align: justify;
-    color: #e0e0e0; /* Light gray for readability */
+    color: #e0e0e0;
 }
 
 /* Subsection Titles */
 .project-description-text h2 {
     font-size: 1.8rem;
-    color: #4ba3f2; /* Matches the title color */
+    color: #4ba3f2;
     margin-bottom: 15px;
     border-bottom: 2px solid #4ba3f2;
     padding-bottom: 5px;
@@ -98,23 +96,36 @@ body {
     margin-bottom: 15px;
 }
 
-.project-description-text ul,
-.project-description-text ol {
-    margin: 10px 0 15px;
+.project-description-text ul {
+    list-style-type: disc;
     padding-left: 20px;
-    list-style-position: outside; /* Aligns list markers outside the text */
 }
 
-.project-description-text ul li,
-.project-description-text ol li {
+.project-description-text ul li {
     margin-bottom: 8px;
     line-height: 1.6;
 }
 
-/* Numbered List Styling */
-.project-description-text ol li {
-    list-style-type: decimal;
-    padding-left: 5px;
+/* Secondary Image Styling */
+.text-image-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.text-image-wrap img.secondary-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-image-wrap p,
+.text-image-wrap ul {
+    flex: 1;
 }
 
 /* -------------------------------------------------------- */
