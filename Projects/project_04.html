@@ -3,98 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 4: Python-Based Ladder Iterative Load Flow Tool</title>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="project4.css">
+    <title>Project 4 - Python-Based Ladder Iterative Load Flow Tool</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- -------------------------------------------------------- -->
-    <!-- Header Section (No changes) -->
-    <!-- -------------------------------------------------------- -->
 
-    <header>
-        <h1>Andrew Arizaga - My Engineering Portfolio</h1>
-        <nav>
+<!-- -------------------------------------------------------- -->
+<!-- Title Section -->
+<!-- -------------------------------------------------------- -->
+<section id="project-title">
+    <div class="title-container">
+        <div class="title-text">
+            <h1>Python-Based Ladder Iterative Load Flow Tool</h1>
+            <p>
+                Addressing the challenges of radial power distribution networks, this project combines robust computation 
+                and user-friendly design to optimize power flow. By leveraging the Ladder Iterative Method, it ensures 
+                stability and efficiency in grid planning and management.
+            </p>
+        </div>
+        <img src="images/project-banner.jpg" alt="Project Overview" class="title-image">
+    </div>
+</section>
+
+<!-- -------------------------------------------------------- -->
+<!-- Project Description Section -->
+<!-- -------------------------------------------------------- -->
+<section id="project-description">
+    <h2 class="section-title">Project Description</h2>
+    <div class="project-description-container">
+        <div class="project-paragraph">
+            <img src="images/project-overview.jpg" alt="Overview Diagram" class="project-image left-aligned">
+            <p>
+                The <strong>Ladder Iterative Load Flow Tool</strong> is a Python-based project developed to analyze and optimize 
+                radial power distribution networks. These networks are prevalent in urban and residential areas, presenting unique 
+                challenges like voltage drops and inefficiencies. This project bridges the gap between academic theory and real-world 
+                application, offering a scalable and practical solution.
+            </p>
+        </div>
+        <div class="project-paragraph">
+            <h3 class="subsection-title">Radial Distribution Network Diagram</h3>
+            <img src="images/radial-diagram.jpg" alt="Radial Distribution Network Diagram" class="project-image right-aligned">
+            <p>
+                This diagram illustrates the flow of electricity through a radial system, starting from the substation and branching out to 
+                various loads. It visually represents voltage drops and highlights the critical areas addressed by this project’s computations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------------------------- -->
+<!-- How It Works Section -->
+<!-- -------------------------------------------------------- -->
+<section id="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <div class="how-it-works-container">
+        <div class="project-paragraph">
+            <img src="images/python-computation.jpg" alt="Python Computation" class="project-image left-aligned">
+            <p>
+                The tool reads power system data in IEEE format from an Excel spreadsheet, processes it using the Ladder Iterative Method, 
+                and exports results back into an Excel file. This ensures seamless integration with industry-standard workflows.
+            </p>
+        </div>
+        <div class="project-paragraph">
+            <h3 class="subsection-title">Key Features</h3>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../aboutme.html">About Me</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../experience.html">Experience</a></li>
-                <li><a href="../coursework.html">Coursework</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li>Scalable for large, complex three-phase radial systems.</li>
+                <li>IEEE-compliant input and output formats.</li>
+                <li>Precise voltage and current analysis through iterative calculations.</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- -------------------------------------------------------- -->
-    <!-- Project Title Section -->
-    <!-- -------------------------------------------------------- -->
-    <section id="project-title">
-        <div class="project-title-container">
-            <div class="project-title-content">
-                <h1>Python-Based Ladder Iterative Load Flow Tool</h1>
-                <img src="images/project-title.jpg" alt="Project Overview" class="project-title-image">
-            </div>
-            <div class="project-motivation">
-                <h2>Project Motivation</h2>
-                <p>
-                    This project focuses on addressing challenges in analyzing radial distribution networks by providing a user-friendly Python-based solution. Radial systems, often used in urban and residential grids, face challenges such as voltage drops and inefficiencies. My goal was to design a scalable tool that bridges the gap between theoretical analysis and practical application.
-                </p>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- -------------------------------------------------------- -->
-    <!-- Project Description Section -->
-    <!-- -------------------------------------------------------- -->
-    <section id="project-description">
-        <h2>Project Description</h2>
-        <div class="project-description-container">
-            <div class="project-paragraph">
-                <img src="images/overview.jpg" alt="Project Overview" class="project-image left-aligned">
-                <p>
-                    The Ladder Iterative Load Flow Tool is designed to simplify the analysis of radial power distribution systems. These networks, resembling tree structures, distribute power efficiently but face challenges like voltage drops as electricity moves further from the source. This project provides a robust solution tailored for such challenges.
-                </p>
-            </div>
-            <div class="project-paragraph">
-                <img src="images/computation.jpg" alt="Python Computation" class="project-image right-aligned">
-                <p>
-                    Leveraging Python's computational power, the tool calculates precise voltage and current solutions. It integrates seamlessly with IEEE-compliant data formats, enabling input and output from Excel spreadsheets for better accessibility and integration into existing workflows.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- -------------------------------------------------------- -->
+<!-- Applications Section -->
+<!-- -------------------------------------------------------- -->
+<section id="applications">
+    <h2 class="section-title">Applications</h2>
+    <div class="applications-container">
+        <p>
+            This tool finds applications in:
+        </p>
+        <ul>
+            <li><strong>Grid Planning:</strong> Designing efficient and reliable networks.</li>
+            <li><strong>Renewable Integration:</strong> Analyzing the impact of solar and wind energy on grids.</li>
+            <li><strong>Fault Detection:</strong> Identifying weak points for targeted upgrades.</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- -------------------------------------------------------- -->
-    <!-- Research and Applications Section -->
-    <!-- -------------------------------------------------------- -->
-    <section id="research-applications">
-        <h2>Research and Applications</h2>
-        <div class="research-container">
-            <div class="research-item">
-                <img src="images/radial-diagram.jpg" alt="Radial Diagram">
-                <p>
-                    Radial networks distribute electricity from a single source to various nodes, mimicking tree branches. This design is efficient but susceptible to voltage instability. The tool tackles these issues by optimizing voltage and current flow at each branch.
-                </p>
-            </div>
-            <div class="research-item">
-                <img src="images/real-world.jpg" alt="Real World Applications">
-                <p>
-                    Practical applications include grid planning, renewable energy integration, and enhancing fault detection systems. By combining precision and accessibility, this tool empowers engineers to design smarter grids and ensure energy reliability.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- -------------------------------------------------------- -->
+<!-- Call-to-Action Section -->
+<!-- -------------------------------------------------------- -->
+<section id="call-to-action">
+    <div class="cta-container">
+        <a href="../projects.html" class="cta-button">Back to Projects</a>
+    </div>
+</section>
 
-    <!-- -------------------------------------------------------- -->
-    <!-- Footer Section (No changes) -->
-    <!-- -------------------------------------------------------- -->
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+    <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
-        <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
-    </footer>
 </body>
 </html>
