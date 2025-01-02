@@ -66,11 +66,12 @@ body {
 /* -------------------------------------------------------- */
 /* Project Description Section */
 /* -------------------------------------------------------- */
+/* Project Description Section */
 #project-description {
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.9);
-    margin-bottom: 30px;
     color: #e0e0e0;
+    margin-bottom: 30px;
 }
 
 .project-description-container {
@@ -78,36 +79,37 @@ body {
     margin: 0 auto;
 }
 
-.project-paragraph {
+.project-section {
     margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #4ba3f2;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.section-content {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 
-.project-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-paragraph img.left-aligned {
-    float: left;
-    margin-right: 20px;
-}
-
-.project-paragraph img.right-aligned {
-    float: right;
-    margin-left: 20px;
-}
-
-.project-paragraph p {
+.section-content p {
     flex: 1;
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.8;
+}
+
+.section-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* -------------------------------------------------------- */
