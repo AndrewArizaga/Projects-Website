@@ -76,7 +76,6 @@ body {
 .description-container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 30px;
 }
 
 h2 {
@@ -85,14 +84,6 @@ h2 {
     color: #4ba3f2;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-h3 {
-    font-size: 1.8rem;
-    color: #4ba3f2;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4ba3f2;
-    padding-bottom: 5px;
 }
 
 .description-paragraph {
