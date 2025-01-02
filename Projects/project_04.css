@@ -86,6 +86,15 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
 .description-paragraph {
     margin-bottom: 30px;
     overflow: hidden; /* Ensures text wraps cleanly around floated images */
