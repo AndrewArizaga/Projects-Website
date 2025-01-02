@@ -1,15 +1,22 @@
+/* -------------------------------------------------------- */
 /* General Reset */
+/* -------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------------------------------------------------------- */
+/* Body Styling */
+/* -------------------------------------------------------- */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: url('../aboutme-background.jpg') no-repeat center center fixed;
+    background: url('../aboutme-background.jpg'); /* Update the path */
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
@@ -18,36 +25,42 @@ body {
 /* -------------------------------------------------------- */
 #project-title {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-title-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.project-title-content h1 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #4ba3f2;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
 }
 
-.project-title-image {
-    max-width: 50%;
-    height: auto;
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.title-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.title-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.title-image {
+    flex: 1;
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-motivation h2 {
-    color: #f7b500;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
 }
 
 /* -------------------------------------------------------- */
@@ -55,74 +68,113 @@ body {
 /* -------------------------------------------------------- */
 #project-description {
     padding: 40px 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+    color: #e0e0e0;
 }
 
 .project-description-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-paragraph {
+    margin-bottom: 30px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
 
 .project-image {
-    max-width: 40%;
+    max-width: 300px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.left-aligned {
+.project-paragraph img.left-aligned {
     float: left;
+    margin-right: 20px;
 }
 
-.right-aligned {
+.project-paragraph img.right-aligned {
     float: right;
+    margin-left: 20px;
 }
 
-/* -------------------------------------------------------- */
-/* Research and Applications Section */
-/* -------------------------------------------------------- */
-#research-applications {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.research-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.research-item {
+.project-paragraph p {
     flex: 1;
-    min-width: 280px;
-    margin-bottom: 20px;
-}
-
-.research-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.research-item p {
     text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* -------------------------------------------------------- */
+/* How It Works Section */
+/* -------------------------------------------------------- */
+#how-it-works {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 30px;
     color: #e0e0e0;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------- */
+/* Applications Section */
+/* -------------------------------------------------------- */
+#applications {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.applications-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* -------------------------------------------------------- */
+/* Call-to-Action Section */
+/* -------------------------------------------------------- */
+#call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+}
+
+/* -------------------------------------------------------- */
+/* Footer Section */
+/* -------------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    margin-top: 40px;
 }
