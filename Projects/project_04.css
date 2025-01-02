@@ -62,31 +62,39 @@ body {
 }
 
 .project-paragraph {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.project-paragraph:nth-child(even) {
-    flex-direction: row-reverse; /* Alternate image alignment */
-}
-
-.project-paragraph p {
-    flex: 2;
-    line-height: 1.8;
-    text-align: justify;
-    font-size: 1.2rem;
-    color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-paragraph img {
-    flex: 1;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 15px 10px 0;
+    float: left;
+}
+
+.project-paragraph img.right-aligned {
+    float: right;
+    margin: 0 0 10px 15px;
+}
+
+.project-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+/* Subsection Titles */
+.subsection-title {
+    font-size: 1.8rem;
+    color: #4ba3f2;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 /* -------------------------------------------------------- */
