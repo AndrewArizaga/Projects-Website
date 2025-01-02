@@ -98,69 +98,73 @@ body {
     color: #e0e0e0;
 }
 
-/* -------------------------------------------------------- */
+/* ------------------------------------------------ */
 /* Project Description Section */
-/* -------------------------------------------------------- */
-
-/* Project Description Section */
+/* ------------------------------------------------ */
 #project-description {
-    margin: 40px auto;
+    margin-top: 40px;
     padding: 20px;
-    max-width: 1200px;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .section-title {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 2.2rem;
     color: #4ba3f2;
-    text-align: left;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    text-decoration: underline;
-}
-
-.project-description-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .project-paragraph {
-    position: relative;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
-.project-paragraph img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 0 15px 10px 0;
-    float: left;
+.subsection-title {
+    font-size: 1.8rem;
+    color: #4ba3f2;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
 }
 
-.project-paragraph img.right-aligned {
+.project-image {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-image.left-aligned {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-image.right-aligned {
     float: right;
-    margin: 0 0 10px 15px;
+    margin-left: 20px;
 }
 
 .project-paragraph p {
-    font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
     color: #e0e0e0;
 }
 
-/* Subsection Titles */
-.subsection-title {
-    font-size: 1.8rem;
-    color: #4ba3f2;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-decoration: underline;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 100%;
+    }
+
+    .subsection-title {
+        text-align: center;
+    }
 }
 
 /* -------------------------------------------------------- */
