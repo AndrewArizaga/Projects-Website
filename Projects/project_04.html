@@ -44,59 +44,47 @@
 
     <!-- Content Wrapper -->
     <div class="project-description-content">
-        <!-- Image -->
-        <img src="Project_Images/radial-network.png" alt="Radial Distribution Network Diagram">
+        <!-- Main Image -->
+        <img src="Project_Images/radial-network.png" alt="Radial Distribution Network Diagram" class="main-image">
 
         <!-- Text Content -->
         <div class="project-description-text">
             <h2>Overview</h2>
             <p>
-                The Ladder Iterative Load Flow tool is a Python-based solution that simplifies and optimizes power system analysis for radial distribution networks. This project combines computational efficiency with practical applications, ensuring engineers have the tools to address real-world power distribution challenges. 
+                The Ladder Iterative Load Flow tool is a Python-based solution designed to simplify and optimize power system analysis for radial distribution networks. These networks, commonly found in residential and urban areas, present unique challenges like voltage drops and fault sensitivity, which this tool addresses effectively.
             </p>
 
-            <h2>Why This Project Matters</h2>
+            <h2>Key Features</h2>
             <p>
-                Load flow analysis plays a crucial role in modern power systems. Whether you're designing a new network, monitoring performance, or integrating renewable energy, understanding voltage and current distribution is essential. Radial distribution networks, which resemble tree-like structures, are particularly common in urban and residential grids. However, they come with unique challenges, such as voltage drops and fault sensitivity. This tool addresses these issues by:
+                This project integrates several advanced capabilities to streamline load flow analysis:
             </p>
             <ul>
-                <li>Providing accurate voltage solutions for large three-phase systems.</li>
-                <li>Supporting data in IEEE format, ensuring compatibility with industry standards.</li>
-                <li>Enabling efficient visualization and analysis of system performance.</li>
+                <li>Scalable for large, complex radial three-phase systems.</li>
+                <li>IEEE-compliant input and output formats for seamless integration.</li>
+                <li>Iterative computations for precise voltage and current analysis.</li>
             </ul>
 
-            <h2>Project Objectives</h2>
-            <p>
-                The goal of this project was to develop a scalable tool that:
-            </p>
-            <ul>
-                <li>Reads system data from an Excel spreadsheet formatted in IEEE standards.</li>
-                <li>Calculates voltage solutions using the Ladder Iterative Method.</li>
-                <li>Outputs results back into Excel for seamless reporting and further analysis.</li>
-            </ul>
-            <p>
-                By building a robust and user-friendly program, I aimed to bridge the gap between theoretical power system concepts and practical applications.
-            </p>
-
-            <h2>How It Works</h2>
-            <p>
-                Think of this tool as a problem solver for radial networks. Using the Ladder Iterative Method, it calculates how power flows from a central source to different loads, maintaining stable voltages and minimizing losses. The process involves:
-            </p>
-            <ol>
-                <li><strong>Data Input:</strong> Importing system parameters like line impedances and load data from an Excel file.</li>
-                <li><strong>Computation:</strong> Applying iterative calculations to determine voltage levels at each node.</li>
-                <li><strong>Output:</strong> Exporting the results into a user-friendly format for reporting and decision-making.</li>
-            </ol>
+            <!-- Secondary Image and Description -->
+            <div class="text-image-wrap">
+                <img src="Project_Images/data-flow.png" alt="Data Flow Diagram" class="secondary-image">
+                <p>
+                    The tool uses Python’s computational capabilities to handle large datasets efficiently. Input data in IEEE format is read from Excel spreadsheets, processed using the Ladder Iterative Method, and exported back into Excel for detailed reporting and further analysis. This ensures compatibility with industry standards and practical utility in real-world scenarios.
+                </p>
+            </div>
 
             <h2>Real-World Applications</h2>
             <p>
-                This tool isn’t just theoretical; it’s designed to have real-world impact. Here are some practical applications:
+                The Ladder Iterative Load Flow tool is not just theoretical—it's built to solve practical engineering problems:
             </p>
-            <ul>
-                <li><strong>Grid Planning:</strong> Designing efficient and reliable distribution networks.</li>
-                <li><strong>Renewable Integration:</strong> Adding solar and wind energy sources without destabilizing the grid.</li>
-                <li><strong>Fault Detection:</strong> Identifying weak points in the network for upgrades.</li>
-                <li><strong>Smart Grids:</strong> Laying the groundwork for automated systems and demand response mechanisms.</li>
-            </ul>
+            <div class="text-image-wrap">
+                <img src="Project_Images/renewable-energy.png" alt="Renewable Energy Integration" class="secondary-image">
+                <ul>
+                    <li><strong>Grid Planning:</strong> Helps utility companies design efficient and reliable networks.</li>
+                    <li><strong>Renewable Integration:</strong> Analyzes solar and wind energy addition to grids without destabilizing them.</li>
+                    <li><strong>Fault Detection:</strong> Identifies weak spots for targeted upgrades or improvements.</li>
+                    <li><strong>Smart Grids:</strong> Lays the groundwork for automated fault detection and demand response systems.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
