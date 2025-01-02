@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     color: #e0e0e0;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Optional: Add a modern font */
 }
 
 /* Disclaimer Banner */
@@ -109,27 +110,51 @@ body {
 /* -------------------------------------------------------- */
 /* Tools and Technologies Section */
 /* -------------------------------------------------------- */
-/* Add your styles for this section here */
+.tools-and-tech-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
+.tools-and-tech-section h2 {
+    font-size: 1.8rem;
+    color: #00c4ff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00c4ff;
+    padding-bottom: 5px;
+}
+
+.tools-and-tech-section p {
+    line-height: 1.8;
+}
 
 /* -------------------------------------------------------- */
 /* Technical Challenges and Solutions Section */
 /* -------------------------------------------------------- */
-/* Add your styles for this section here */
+/* Reuse generic-section styling */
 
 /* -------------------------------------------------------- */
 /* Results and Outcomes Section */
 /* -------------------------------------------------------- */
-/* Add your styles for this section here */
+/* Reuse generic-section styling */
 
 /* -------------------------------------------------------- */
 /* Visual Showcase Section */
 /* -------------------------------------------------------- */
-/* Add your styles for this section here */
+.visual-showcase img {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 /* -------------------------------------------------------- */
 /* Future Plans Section */
 /* -------------------------------------------------------- */
-/* Add your styles for this section here */
+/* Reuse generic-section styling */
 
 /* -------------------------------------------------------- */
 /* Call-to-Action Section */
