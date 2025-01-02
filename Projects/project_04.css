@@ -38,65 +38,55 @@ body {
 /* -------------------------------------------------------- */
 
 /* Project Description Section */
-.project-description-container {
-    max-width: 1200px;
+#project-description {
     margin: 40px auto;
     padding: 20px;
+    max-width: 1200px;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .section-title {
-    text-align: center;
     font-size: 2.5rem;
     color: #4ba3f2;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.project-description-content {
+.project-description-container {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.project-image {
+.project-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.project-paragraph:nth-child(even) {
+    flex-direction: row-reverse; /* Alternate image alignment */
+}
+
+.project-paragraph p {
+    flex: 2;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.project-paragraph img {
+    flex: 1;
     max-width: 300px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-description-text {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #e0e0e0;
-}
-
-.key-features, .applications {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.key-features h3, .applications h3 {
-    font-size: 1.8rem;
-    color: #4ba3f2;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4ba3f2;
-    padding-bottom: 5px;
-}
-
-.key-features p, .applications p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #e0e0e0;
 }
 
 /* -------------------------------------------------------- */
