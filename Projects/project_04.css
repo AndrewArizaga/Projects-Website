@@ -33,6 +33,71 @@ body {
 }
 
 /* -------------------------------------------------------- */
+/* Project Title Section */
+/* -------------------------------------------------------- */
+#project-title {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-project-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-project-title h1 {
+    font-size: 2.8rem;
+    color: #4ba3f2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.project-title-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.project-title-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.project-motivation {
+    flex: 1;
+}
+
+.project-motivation h2 {
+    font-size: 2rem;
+    color: #4ba3f2;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.project-motivation p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+/* -------------------------------------------------------- */
 /* Project Description Section */
 /* -------------------------------------------------------- */
 
