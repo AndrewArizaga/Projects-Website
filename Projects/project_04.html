@@ -37,6 +37,7 @@
     <!-- ------------------------------------------------ -->
     <!-- Project Description Section -->
     <!-- ------------------------------------------------ -->
+<!-- Project Description Section -->
 <div class="project-description-container">
     <!-- Section Title -->
     <h1 class="project-title">Project Description</h1>
@@ -49,36 +50,66 @@
         <!-- Text Content -->
         <div class="project-description-text">
             <!-- Subsection 1 -->
-            <h2>What is a Radial Distribution Network?</h2>
+            <h2>Preamble</h2>
             <p>
-                A radial distribution network is like a tree. Power flows from a central source (the "trunk") 
-                and spreads out to different loads (the "branches") like homes and businesses. These systems 
-                are simple and cost-effective, but they come with challenges like voltage drops and outages 
-                if there’s a fault. That’s where the Ladder Iterative Method comes in—it’s designed to handle 
-                these networks efficiently, calculating voltage levels, power flows, and losses to keep 
-                everything running smoothly.
+                Load flow analysis is a fundamental component of power system engineering. It is essential for determining voltage solutions in distribution systems, enabling engineers to plan, operate, and optimize electrical grids effectively. This project focuses on implementing a Python-based tool for Ladder Iterative Load Flow, a method widely used for analyzing large radial three-phase systems.
             </p>
 
             <!-- Subsection 2 -->
-            <h2>Why This Project Matters</h2>
+            <h2>Objective</h2>
             <p>
-                This Python-based tool is a game-changer for engineers working on radial distribution networks. 
-                Its features ensure:
+                The objective of this project is to develop a Python program that performs load flow calculations for radial distribution networks. The program will read input data in IEEE format from an Excel spreadsheet, compute voltage solutions using the Ladder Iterative Method, and output results back into an Excel spreadsheet in the IEEE format. This tool aims to provide scalability for analyzing complex systems and support engineers in real-world power distribution scenarios.
+            </p>
+
+            <!-- Subsection 3 -->
+            <h2>Key Features and Specifications</h2>
+            <ul>
+                <li>Implements Ladder Iterative Method for load flow analysis.</li>
+                <li>Reads input data from Excel spreadsheets in IEEE format.</li>
+                <li>Handles large radial three-phase distribution systems.</li>
+                <li>Outputs results in IEEE format into Excel spreadsheets.</li>
+                <li>Scalable for real-world distribution system sizes.</li>
+            </ul>
+
+            <!-- Subsection 4 -->
+            <h2>Suggested Approach</h2>
+            <p>
+                To develop the tool successfully, the following approach is recommended:
             </p>
             <ul>
-                <li>Voltage levels remain stable across the grid.</li>
-                <li>Energy losses are minimized, improving system efficiency.</li>
-                <li>Weak areas in the network are pinpointed for necessary upgrades or improvements.</li>
+                <li>Thoroughly study the IEEE data format for power system representation.</li>
+                <li>Gain proficiency in the Python programming language.</li>
+                <li>Understand the mathematical foundation of the Ladder Iterative Method.</li>
+                <li>Familiarize with relevant power system analysis tools and methodologies covered in the ELE 746 course.</li>
             </ul>
+
+            <!-- Subsection 5 -->
+            <h2>Responsibilities Breakdown</h2>
             <p>
-                For radial systems, which are used everywhere from neighborhoods to rural grids, having an 
-                accurate and reliable tool like this allows smarter decisions about grid planning, renewable 
-                energy integration, and advanced smart grid features.
+                This project was originally designed for a team structure. However, in the solo implementation:
             </p>
+            <ul>
+                <li><strong>Data Handling:</strong> Understanding IEEE data format and designing the data reading and output modules.</li>
+                <li><strong>Computation Engine:</strong> Developing the core algorithm to compute voltage solutions using the Ladder Iterative Method.</li>
+                <li><strong>User Interface:</strong> Implementing a basic GUI or CLI for user interaction (optional).</li>
+                <li><strong>Testing:</strong> Simulating various distribution system data to validate the accuracy and efficiency of the program.</li>
+            </ul>
+
+            <!-- Subsection 6 -->
+            <h2>Real-World Applications</h2>
+            <p>
+                The Python-based Ladder Iterative Load Flow tool has significant applications in the field of power system engineering:
+            </p>
+            <ul>
+                <li><strong>Power Distribution Planning:</strong> Enables utility companies to design efficient and reliable distribution networks.</li>
+                <li><strong>Real-Time Monitoring:</strong> Models power flow in radial networks, assisting in real-time decision-making.</li>
+                <li><strong>Fault Detection:</strong> Identifies weak points in the system for targeted upgrades or improvements.</li>
+                <li><strong>Renewable Integration:</strong> Supports analysis for incorporating renewable energy sources like solar and wind into existing networks.</li>
+            </ul>
         </div>
     </div>
 </div>
-
+    
     <!-- ------------------------------------------------ -->
     <!-- Research Section -->
     <!-- ------------------------------------------------ -->
