@@ -1,3 +1,7 @@
+/* -------------------------------------------------------- */
+/* Start of CSS Code for Project Page */
+/* -------------------------------------------------------- */
+
 /* General Reset */
 * {
     margin: 0;
@@ -28,7 +32,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Page Container */
+/* -------------------------------------------------------- */
+/* Project Description Section */
+/* -------------------------------------------------------- */
 .project-page-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -38,7 +44,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Title */
 .project-title {
     text-align: center;
     font-size: 2.5rem;
@@ -47,7 +52,9 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Radial Distribution Section */
+/* -------------------------------------------------------- */
+/* Research Section */
+/* -------------------------------------------------------- */
 .radial-network {
     display: flex;
     gap: 20px;
@@ -56,7 +63,7 @@ body {
 }
 
 .radial-network img {
-    max-width: 300px; /* Reduce image size */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -69,7 +76,9 @@ body {
     text-align: justify;
 }
 
-/* Generic Section Styling */
+/* -------------------------------------------------------- */
+/* Key Features Section */
+/* -------------------------------------------------------- */
 .generic-section {
     margin-top: 30px;
     padding: 20px;
@@ -97,7 +106,34 @@ body {
     list-style-type: disc;
 }
 
-/* Back Button Styling */
+/* -------------------------------------------------------- */
+/* Tools and Technologies Section */
+/* -------------------------------------------------------- */
+/* Add your styles for this section here */
+
+/* -------------------------------------------------------- */
+/* Technical Challenges and Solutions Section */
+/* -------------------------------------------------------- */
+/* Add your styles for this section here */
+
+/* -------------------------------------------------------- */
+/* Results and Outcomes Section */
+/* -------------------------------------------------------- */
+/* Add your styles for this section here */
+
+/* -------------------------------------------------------- */
+/* Visual Showcase Section */
+/* -------------------------------------------------------- */
+/* Add your styles for this section here */
+
+/* -------------------------------------------------------- */
+/* Future Plans Section */
+/* -------------------------------------------------------- */
+/* Add your styles for this section here */
+
+/* -------------------------------------------------------- */
+/* Call-to-Action Section */
+/* -------------------------------------------------------- */
 .back-button {
     display: block;
     margin: 30px auto 0;
@@ -112,7 +148,7 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    max-width: 200px; /* Set a fixed width for the button */
+    max-width: 200px;
 }
 
 .back-button:hover {
@@ -120,7 +156,9 @@ body {
     transform: translateY(-3px);
 }
 
-/* Footer Styling */
+/* -------------------------------------------------------- */
+/* Footer Section */
+/* -------------------------------------------------------- */
 footer {
     text-align: center;
     padding: 20px;
@@ -130,7 +168,9 @@ footer {
     border-radius: 5px;
 }
 
+/* -------------------------------------------------------- */
 /* Responsive Design */
+/* -------------------------------------------------------- */
 @media (max-width: 768px) {
     .radial-network {
         flex-direction: column;
@@ -146,3 +186,7 @@ footer {
         padding: 8px 16px;
     }
 }
+
+/* -------------------------------------------------------- */
+/* End of CSS Code for Project Page */
+/* -------------------------------------------------------- */
