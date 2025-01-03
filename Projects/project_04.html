@@ -97,22 +97,97 @@
 <!-- How It Works Section -->
 <!-- -------------------------------------------------------- -->
 <section id="how-it-works">
-    <h2 class="section-title">How It Works</h2>
     <div class="how-it-works-container">
-        <div class="project-paragraph">
-            <img src="images/python-computation.jpg" alt="Python Computation" class="project-image left-aligned">
+        <h2 class="section-title">How It Works</h2>
+
+        <!-- Step 1: Input System Data -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 1: Input System Data</h3>
+            <img src="../Project_Images/Project_04_input_data.png" alt="Input Data Overview" class="how-it-works-image left-aligned">
             <p>
-                The tool reads power system data in IEEE format from an Excel spreadsheet, processes it using the Ladder Iterative Method, 
-                and exports results back into an Excel file. This ensures seamless integration with industry-standard workflows.
+                The tool begins by importing power system data structured in IEEE format. Data such as:
+                <ul>
+                    <li>Node identifiers and voltage levels.</li>
+                    <li>Active and reactive power demands at each load.</li>
+                    <li>Line impedances and the Y-bus admittance matrix.</li>
+                </ul>
+                are read from Excel spreadsheets. The modular design ensures compatibility with radial systems of varying sizes and complexities.
             </p>
         </div>
-        <div class="project-paragraph">
-            <h3 class="subsection-title">Key Features</h3>
-            <ul>
-                <li>Scalable for large, complex three-phase radial systems.</li>
-                <li>IEEE-compliant input and output formats.</li>
-                <li>Precise voltage and current analysis through iterative calculations.</li>
-            </ul>
+
+        <!-- Step 2: Construct the Radial Network Model -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 2: Construct the Radial Network Model</h3>
+            <img src="../Project_Images/Project_04_radial_model.png" alt="Radial Network Model" class="how-it-works-image right-aligned">
+            <p>
+                The system topology is mapped into a directed graph using adjacency lists, capturing:
+                <ul>
+                    <li>Connections between nodes.</li>
+                    <li>Branch lengths and impedances.</li>
+                    <li>Shunt capacitance and distributed generation data.</li>
+                </ul>
+                This graph-based representation forms the basis for iterative calculations and ensures efficient traversal during sweeps.
+            </p>
+        </div>
+
+        <!-- Step 3: Backward Sweep -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 3: Backward Sweep</h3>
+            <img src="../Project_Images/Project_04_backward_sweep.png" alt="Backward Sweep Process" class="how-it-works-image left-aligned">
+            <p>
+                The backward sweep propagates from the terminal nodes back to the slack bus, performing calculations for:
+                <ul>
+                    <li>Real and reactive power flows on each branch.</li>
+                    <li>Current injections at each node, considering local loads and shunt elements.</li>
+                    <li>Total line losses by summing branch-wise contributions.</li>
+                </ul>
+                This sweep ensures that upstream current distributions reflect all downstream load requirements.
+            </p>
+        </div>
+
+        <!-- Step 4: Forward Sweep -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 4: Forward Sweep</h3>
+            <img src="../Project_Images/Project_04_forward_sweep.png" alt="Forward Sweep Process" class="how-it-works-image right-aligned">
+            <p>
+                The forward sweep recalculates node voltages moving from the slack bus to the terminal nodes. Using:
+                <ul>
+                    <li>Branch current values from the backward sweep.</li>
+                    <li>Known branch impedances.</li>
+                    <li>Voltage at the previous node (starting from the source).</li>
+                </ul>
+                Voltage drops are iteratively corrected, ensuring accuracy across all nodes.
+            </p>
+        </div>
+
+        <!-- Step 5: Iteration Until Convergence -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 5: Iteration Until Convergence</h3>
+            <img src="../Project_Images/Project_04_convergence.png" alt="Convergence Process" class="how-it-works-image left-aligned">
+            <p>
+                Backward and forward sweeps are repeated until the following convergence criteria are met:
+                <ul>
+                    <li>Node voltage variations fall below a predefined tolerance (e.g., 0.01%).</li>
+                    <li>Line current variations stabilize across iterations.</li>
+                    <li>Power losses converge to a consistent value.</li>
+                </ul>
+                These conditions ensure numerical stability and accuracy in the final results.
+            </p>
+        </div>
+
+        <!-- Step 6: Results and Visualization -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 6: Results and Visualization</h3>
+            <img src="../Project_Images/Project_04_results.png" alt="Results and Visualization" class="how-it-works-image right-aligned">
+            <p>
+                Results include:
+                <ul>
+                    <li>Voltage profiles at all nodes.</li>
+                    <li>Current and power flow on each branch.</li>
+                    <li>System-wide power losses and efficiency metrics.</li>
+                </ul>
+                Interactive visualizations, such as voltage contour maps and load-flow diagrams, allow engineers to analyze performance and identify bottlenecks.
+            </p>
         </div>
     </div>
 </section>
