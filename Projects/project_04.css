@@ -245,31 +245,17 @@ h2 {
     color: #e0e0e0;
 }
 
-.technical-container {
+.technical-challenges-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Added padding to prevent text from reaching the edges */
 }
 
-.technical-paragraph {
+.challenge-paragraph {
     margin-bottom: 30px;
-    overflow: hidden; /* Ensures text wraps cleanly around floated images */
 }
 
-.technical-paragraph img {
-    max-width: 400px;
-    height: auto;
-    margin: 0 20px 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    float: left; /* Default alignment for images */
-}
-
-.technical-paragraph img.right-aligned {
-    float: right;
-    margin: 0 0 20px 20px;
-}
-
-.subsection-title {
+.challenge-paragraph h3 {
     font-size: 1.8rem;
     color: #00aaff;
     margin-bottom: 10px;
@@ -278,15 +264,11 @@ h2 {
     font-weight: bold;
 }
 
-.technical-paragraph p,
-.technical-paragraph ul {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.technical-paragraph ul {
+.challenge-paragraph ul {
     list-style-type: disc;
     margin-left: 40px;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 /* -------------------------------------------------------- */
