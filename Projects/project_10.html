@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Code for Network Reconfiguration</title>
+    <title>Project - Python Code for Network Reconfiguration</title>
     <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../gen-projects.css">
+    <link rel="stylesheet" href="project_network_reconfig.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <h1>Andrew Arizaga - My Engineering Portfolio</h1>
@@ -25,64 +26,141 @@
         </nav>
     </header>
 
-<div class="disclaimer-banner">
-    <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
-</div>
-    
-    <div class="project-page-container">
-        <!-- Project Title -->
-        <h1 class="project-title">Python Code for Network Reconfiguration</h1>
+    <div class="disclaimer-banner">
+        <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
+    </div>
 
-        <!-- Project Content Section -->
-        <div class="project-content">
-            <!-- Project Image -->
-            <img class="project-image" src="placeholder-image.jpg" alt="Project Image">
-
-            <!-- Project Motivation -->
-            <div class="project-motivation">
-                <h2>Project Motivation</h2>
+    <!-- Title Section -->
+    <section id="project-title">
+        <div class="title-container">
+            <div class="title-text">
+                <h1>Python Code for Network Reconfiguration</h1>
                 <p>
-                    Optimizing electrical networks is crucial for ensuring energy efficiency and reliability. This project leverages heuristic optimization algorithms to reconfigure power systems, improving load balancing, energy distribution, and overall network resilience. Python was chosen for its versatility and capability to implement complex algorithms efficiently.
+                    This project involves developing a Python-based tool for optimal reconfiguration of 
+                    distribution systems using heuristic optimization methods, ensuring improved efficiency and adaptability for large radial networks.
+                    It reads and writes data in IEEE format using Excel spreadsheets and implements heuristic methods
+                    for enhanced performance.
+                </p>
+            </div>
+            <img src="../Project_Images/Network_Reconfig_Overview.png" alt="Project Overview" class="title-image">
+        </div>
+    </section>
+
+    <!-- Project Description Section -->
+    <section id="project-description">
+        <div class="description-container">
+            <h2>Project Description</h2>
+
+            <!-- Overview -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Overview</h3>
+                <img src="../Project_Images/Network_Reconfig_Diagram.png" alt="Network Overview" class="description-image left-aligned">
+                <p class="description-text">
+                    The tool is designed to optimize the topology of radial power distribution systems. It incorporates
+                    heuristic optimization techniques to minimize losses and ensure voltage stability across all nodes.
+                    Key features include compatibility with IEEE-standard data formats and scalability for large systems.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Key Features</h3>
+                <ul class="description-text">
+                    <li>Reads and processes IEEE-standard data from Excel files.</li>
+                    <li>Implements heuristic optimization methods for reconfiguration.</li>
+                    <li>Handles large-scale radial distribution networks.</li>
+                    <li>Outputs optimized configurations back into IEEE-standard Excel files.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="how-it-works-container">
+            <h2>How It Works</h2>
+
+            <!-- Data Input -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 1: Data Input</h3>
+                <img src="../Project_Images/Data_Input.png" alt="Data Input Process" class="how-it-works-image left-aligned">
+                <p>
+                    The tool reads network data formatted according to IEEE standards from Excel spreadsheets. 
+                    This data includes:
+                    <ul>
+                        <li>Node identifiers and voltage levels.</li>
+                        <li>Line impedances and admittance matrices.</li>
+                        <li>Load and generation information for each node.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Optimization Algorithm -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 2: Optimization Algorithm</h3>
+                <img src="../Project_Images/Optimization_Process.png" alt="Optimization Process" class="how-it-works-image right-aligned">
+                <p>
+                    The heuristic optimization algorithm identifies the best configuration to minimize power losses 
+                    and maintain voltage profiles. Iterative calculations ensure convergence to an optimal solution.
+                </p>
+            </div>
+
+            <!-- Output Generation -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 3: Output Generation</h3>
+                <img src="../Project_Images/Output_Generation.png" alt="Output Process" class="how-it-works-image left-aligned">
+                <p>
+                    Results, including updated network configurations and performance metrics, are exported 
+                    to Excel files in IEEE format. This ensures compatibility with standard engineering workflows.
                 </p>
             </div>
         </div>
+    </section>
 
-        <!-- Project Description -->
-        <div class="project-description">
-            <h2>Project Description</h2>
-            <p>
-                This project applies heuristic optimization algorithms to reconfigure electrical networks for improved performance and reliability. By using Python, the system identifies optimal configurations for load balancing, energy efficiency, and enhanced network resilience.
-            </p>
+    <!-- Applications Section -->
+    <section id="applications">
+        <div class="applications-container">
+            <h2>Applications and Benefits</h2>
+
+            <!-- Efficiency Improvements -->
+            <div class="application-paragraph">
+                <h3 class="subsection-title">Efficiency Improvements</h3>
+                <p>
+                    The tool optimizes power flow in radial networks, reducing losses and improving overall system efficiency.
+                </p>
+            </div>
+
+            <!-- Scalability -->
+            <div class="application-paragraph">
+                <h3 class="subsection-title">Scalability</h3>
+                <p>
+                    Designed for large radial systems, the tool ensures robustness and adaptability for varying network sizes.
+                </p>
+            </div>
+
+            <!-- Heuristic Optimization -->
+            <div class="application-paragraph">
+                <h3 class="subsection-title">Heuristic Optimization</h3>
+                <p>
+                    The project emphasizes heuristic methods, distinguishing it from classic optimization techniques. 
+                    This approach provides flexibility and faster solutions for complex, real-world systems.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <!-- Key Features Section -->
-        <div class="components-section">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Developed a Python tool for network reconfiguration.</li>
-                <li>Enhanced load balancing and energy efficiency in power systems.</li>
-                <li>Applied heuristic optimization techniques for performance improvement.</li>
-            </ul>
+    <!-- Call-to-Action Section -->
+    <section id="call-to-action">
+        <div class="cta-container">
+            <a href="../projects.html" class="cta-button">Back to Projects</a>
         </div>
-
-        <!-- Key Skills Section -->
-        <div class="components-section">
-            <h2>Key Skills</h2>
-            <ul>
-                <li>Python programming</li>
-                <li>Optimization algorithms</li>
-                <li>Power system analysis</li>
-            </ul>
-        </div>
-
-        <!-- Back to Projects Button -->
-        <a href="../projects.html" class="back-button">Back to Projects</a>
-    </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
         <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
     </footer>
+
 </body>
 </html>
