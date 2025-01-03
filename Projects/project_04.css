@@ -276,67 +276,61 @@ h2 {
 /* -------------------------------------------------------- */
 #visual-showcase {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Matches other sections */
+    background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 30px;
-    color: #e0e0e0; /* Matches the text color */
+    color: #e0e0e0;
 }
 
 .visual-showcase-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Prevent text from reaching the edges */
 }
 
-.visual-paragraph {
+.showcase-paragraph {
     margin-bottom: 30px;
-    overflow: hidden; /* Ensures clean wrapping around images */
 }
 
-.visual-paragraph img {
-    max-width: 400px;
-    height: auto;
-    margin: 0 20px 20px 0; /* Similar spacing as other sections */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    float: left; /* Default alignment for images */
-}
-
-.visual-paragraph img.right-aligned {
-    float: right; /* Alternate alignment for images */
-    margin: 0 0 20px 20px; /* Adjusted spacing */
-}
-
-.subsection-title {
+.showcase-paragraph h3 {
     font-size: 1.8rem;
-    color: #00aaff; /* Highlight color consistent with other sections */
+    color: #00aaff;
     margin-bottom: 10px;
-    border-bottom: 2px solid #00aaff; /* Matching the underline style */
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
-.visual-paragraph p {
+.showcase-paragraph img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-paragraph p {
     font-size: 1.2rem;
     line-height: 1.8;
-    text-align: justify; /* Ensures clean, readable text */
+    text-align: justify;
 }
 
 .visual-showcase-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Even spacing for gallery items */
-    gap: 20px; /* Consistent spacing */
+    gap: 20px;
+    justify-content: center;
 }
 
 .visual-showcase-gallery img {
-    max-width: calc(33.33% - 20px); /* Adjust for three items per row */
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Matches image styling */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .visual-showcase-gallery img:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
+    transform: scale(1.05);
 }
 
 /* -------------------------------------------------------- */
