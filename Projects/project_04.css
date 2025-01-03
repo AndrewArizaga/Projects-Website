@@ -236,24 +236,37 @@ h2 {
 }
 
 /* -------------------------------------------------------- */
-/* Technical Challenges Section */
+/* Technical Challenges and Solutions Section */
 /* -------------------------------------------------------- */
 #technical-challenges {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 30px;
     color: #e0e0e0;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #4ba3f2;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+.technical-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.technical-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures text wraps cleanly around floated images */
+}
+
+.technical-paragraph img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment for images */
+}
+
+.technical-paragraph img.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px;
 }
 
 .subsection-title {
@@ -265,54 +278,15 @@ h2 {
     font-weight: bold;
 }
 
-.challenges-introduction {
+.technical-paragraph p,
+.technical-paragraph ul {
     font-size: 1.2rem;
     line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 30px;
 }
 
-.challenge {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.challenge h4 {
-    font-size: 1.5rem;
-    color: #f4a261;
-    margin-bottom: 10px;
-}
-
-.challenge p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.tools-container {
-    margin-top: 30px;
-}
-
-.tools-container ul {
+.technical-paragraph ul {
     list-style-type: disc;
     margin-left: 40px;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.tools-container ul li {
-    margin-bottom: 10px;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 30px 0;
 }
 
 /* -------------------------------------------------------- */
