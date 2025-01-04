@@ -1,0 +1,283 @@
+/* -------------------------------------------------------- */
+/* General Reset */
+/* -------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+/* Body Styling */
+/* -------------------------------------------------------- */
+body {
+    background: url('../Images/project_05_background.jpg'); /* Update the path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* -------------------------------------------------------- */
+/* Header Styling */
+/* -------------------------------------------------------- */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    color: #4ba3f2;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #4ba3f2;
+}
+
+/* -------------------------------------------------------- */
+/* Disclaimer Banner */
+/* -------------------------------------------------------- */
+.disclaimer-banner {
+    background-color: rgba(255, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
+/* Project Title Section */
+/* -------------------------------------------------------- */
+#project-title {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #4ba3f2;
+    margin-bottom: 30px;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.title-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.title-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.title-image {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------------------------------- */
+/* Project Description Section */
+/* -------------------------------------------------------- */
+#project-description {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.description-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.description-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* -------------------------------------------------------- */
+/* How It Works Section */
+/* -------------------------------------------------------- */
+#how-it-works {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------- */
+/* Applications Section */
+/* -------------------------------------------------------- */
+#applications {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.application-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.application-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* -------------------------------------------------------- */
+/* Technical Challenges Section */
+/* -------------------------------------------------------- */
+#technical-challenges {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.technical-challenges-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.challenge-paragraph h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
+/* Visual Showcase Section */
+/* -------------------------------------------------------- */
+#visual-showcase {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.visual-showcase-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.visual-showcase-gallery img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.visual-showcase-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* -------------------------------------------------------- */
+/* Call-to-Action Section */
+/* -------------------------------------------------------- */
+#call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+}
+
+/* -------------------------------------------------------- */
+/* Footer Section */
+/* -------------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    margin-top: 40px;
+}
