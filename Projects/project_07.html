@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Security Camera with Facial Recognition</title>
+    <title>Project MK01 - MOUSE Emulator for the Physically Challenged</title>
     <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../gen-projects.css">
+    <link rel="stylesheet" href="project_mk01.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <h1>Andrew Arizaga - My Engineering Portfolio</h1>
@@ -25,64 +26,123 @@
         </nav>
     </header>
 
-<div class="disclaimer-banner">
-    <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
-</div>
-    
-    <div class="project-page-container">
-        <!-- Project Title -->
-        <h1 class="project-title">Smart Security Camera with Facial Recognition</h1>
+    <div class="disclaimer-banner">
+        <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
+    </div>
 
-        <!-- Project Content Section -->
-        <div class="project-content">
-            <!-- Project Image -->
-            <img class="project-image" src="placeholder-image.jpg" alt="Project Image">
-
-            <!-- Project Motivation -->
-            <div class="project-motivation">
-                <h2>Project Motivation</h2>
+    <!-- Title Section -->
+    <section id="project-title">
+        <div class="title-container">
+            <div class="title-text">
+                <h1>MOUSE Emulator for the <br> Physically Challenged</h1>
                 <p>
-                    Enhancing security at home and workplaces is an ongoing challenge. This project was motivated by the need for an efficient and intelligent solution to monitor and protect premises. By incorporating facial recognition and IoT technologies, the system offers real-time insights and alerts, ensuring advanced and user-friendly security measures.
+                    The MOUSE Emulator project is designed to assist physically challenged individuals in navigating computers and other devices. Using head motion sensors and intelligent algorithms, this system provides seamless mouse emulation for those with limited mobility, improving their interaction with technology.
+                </p>
+            </div>
+            <img src="../Project_Images/MK01_Overview.png" alt="MOUSE Emulator Overview" class="title-image">
+        </div>
+    </section>
+
+    <!-- Project Description Section -->
+    <section id="project-description">
+        <div class="description-container">
+            <h2>Project Description</h2>
+
+            <!-- Overview -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Overview</h3>
+                <img src="../Project_Images/MK01_Headband.png" alt="Headband with Sensors" class="description-image left-aligned">
+                <p class="description-text">
+                    The MOUSE Emulator leverages head motion sensors to emulate mouse pointer navigation, providing a low-cost solution for individuals with severe physical limitations. This system includes a headband with integrated sensors, a base station, and wireless communication to ensure reliable and seamless operation.
+                </p>
+            </div>
+
+            <!-- Core Features -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Core Features</h3>
+                <img src="../Project_Images/MK01_Features.png" alt="Core Features" class="description-image right-aligned">
+                <ul class="description-text">
+                    <li>Head motion sensing with MEMS accelerometers and gyroscopes.</li>
+                    <li>Wireless communication between the headband and base station.</li>
+                    <li>USB or Bluetooth connectivity for plug-and-play operation.</li>
+                    <li>Custom algorithms for accurate and comfortable pointer control.</li>
+                    <li>Optional Puff-Sip switch for click functionality.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="how-it-works-container">
+            <h2 class="section-title">How It Works</h2>
+
+            <!-- Step 1: Detect Head Movements -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 1: Detect Head Movements</h3>
+                <img src="../Project_Images/MK01_HeadMovement.png" alt="Head Movement Detection" class="how-it-works-image left-aligned">
+                <p>
+                    The headband detects head tilts and rotations using MEMS sensors. These sensors measure the angle and speed of motion, transmitting data wirelessly to the base station.
+                </p>
+            </div>
+
+            <!-- Step 2: Process Motion Data -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 2: Process Motion Data</h3>
+                <img src="../Project_Images/MK01_DataProcessing.png" alt="Data Processing" class="how-it-works-image right-aligned">
+                <p>
+                    The base station processes the raw sensor data using custom algorithms. It filters out noise and unintended movements to ensure precise pointer navigation.
+                </p>
+            </div>
+
+            <!-- Step 3: Communicate with PC -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 3: Communicate with PC</h3>
+                <img src="../Project_Images/MK01_Communication.png" alt="PC Communication" class="how-it-works-image left-aligned">
+                <p>
+                    The processed data is sent to the PC via USB or Bluetooth, emulating standard mouse protocols. The user can interact with applications seamlessly, without additional software or drivers.
                 </p>
             </div>
         </div>
+    </section>
 
-        <!-- Project Description -->
-        <div class="project-description">
-            <h2>Project Description</h2>
-            <p>
-                This project involves designing a smart security camera system equipped with facial recognition capabilities. Utilizing IoT components and machine learning, the system identifies individuals and alerts users through a connected app. It provides an innovative approach to enhancing home and workplace security with real-time notifications and advanced detection features.
-            </p>
+    <!-- Applications and Benefits Section -->
+    <section id="applications">
+        <div class="applications-container">
+            <h2>Applications and Benefits</h2>
+
+            <!-- Accessibility Enhancement -->
+            <div class="application-paragraph">
+                <h3 class="subsection-title">Accessibility Enhancement</h3>
+                <img src="../Project_Images/MK01_Accessibility.png" alt="Accessibility" class="application-image left-aligned">
+                <p>
+                    This project empowers individuals with severe motor disabilities, enabling them to use computers for work, education, and entertainment, enhancing their independence and quality of life.
+                </p>
+            </div>
+
+            <!-- Gaming and Virtual Reality -->
+            <div class="application-paragraph">
+                <h3 class="subsection-title">Gaming and Virtual Reality</h3>
+                <img src="../Project_Images/MK01_Gaming.png" alt="Gaming Applications" class="application-image right-aligned">
+                <p>
+                    The system can be adapted for gaming and VR environments, providing an immersive experience for users with physical challenges.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <!-- Key Features Section -->
-        <div class="components-section">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Facial recognition for enhanced security.</li>
-                <li>Real-time alerts via a connected app.</li>
-                <li>Seamless integration with IoT components.</li>
-            </ul>
+    <!-- Call-to-Action Section -->
+    <section id="call-to-action">
+        <div class="cta-container">
+            <a href="../projects.html" class="cta-button">Back to Projects</a>
         </div>
-
-        <!-- Key Skills Section -->
-        <div class="components-section">
-            <h2>Key Skills</h2>
-            <ul>
-                <li>Machine learning algorithms</li>
-                <li>IoT systems integration</li>
-                <li>Camera hardware and software interfacing</li>
-            </ul>
-        </div>
-
-        <!-- Back to Projects Button -->
-        <a href="../projects.html" class="back-button">Back to Projects</a>
-    </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+        <p>&copy; 2025 Andrew Arizaga. All rights reserved.</p>
         <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
     </footer>
+
 </body>
 </html>
