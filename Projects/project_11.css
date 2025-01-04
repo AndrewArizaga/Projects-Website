@@ -102,7 +102,7 @@ h2 {
 }
 
 .description-image {
-    max-width: 300px; /* Adjust as needed */
+    max-width: 500px; /* Adjust as needed */
     height: auto;
     margin: 0 20px 20px 0;
     float: left; /* Default alignment to the left */
