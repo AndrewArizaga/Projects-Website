@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Power Management Using Microcontroller</title>
-    <link rel="stylesheet" href="../global.css">    
-    <link rel="stylesheet" href="../gen-projects.css">
+    <title>Project - Smart Power Management System</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="project_01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <!-- Header Section -->
+
+    <!-- Header Section -->
     <header>
         <h1>Andrew Arizaga - My Engineering Portfolio</h1>
         <nav>
@@ -22,118 +24,93 @@
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>
 
-<div class="disclaimer-banner">
-    <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
-</div>
+    <div class="disclaimer-banner">
+        <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
+    </div>
     
-<div class="project-page-container">
-        <!-- Project Title -->
-        <h1 class="project-title">Smart Power Management Using Microcontroller</h1>
-
-        <!-- Project Content Section -->
-        <div class="project-content">
-            <!-- Project Image -->
-            <img class="project-image" src="insert-image.png" alt="Smart Power Management Project">
-
-            <!-- Project Motivation -->
-            <div class="project-motivation">
-                <h2>Project Motivation</h2>
+    <!-- Title Section -->
+    <section id="project-title">
+        <div class="title-container">
+            <div class="title-text">
+                <h1>Smart Power Management System <br> Using Microcontroller</h1>
                 <p>
-                    I’ll be honest—I have a bad habit of leaving lights on when I leave a room. Lately, as I get older, I’ve been trying to be more mindful and frugal, especially when it comes to things like my energy bill. As an engineer, I figured, why not build something that helps me solve this problem?
+                    The **Smart Power Management System Using Microcontroller** enhances energy efficiency by automating light and appliance control based on room occupancy and individual identification. This innovative system uses an ESP32 microcontroller, custom PCB design, and advanced sensors to optimize power usage.
                 </p>
-                <p>
-                    I wanted to create a system that’s not just cool to build but actually useful—something that can help people save energy without even thinking about it. Combining microcontrollers and sensors felt like the perfect way to build something practical, affordable, and actually useful for managing energy at home.
+            </div>
+            <img src="../Project_Images/FM01_Title.png" alt="Project Overview" class="title-image">
+        </div>
+    </section>
+    
+    <!-- Project Description Section -->
+    <section id="project-description">
+        <div class="description-container">
+            <h2>Project Description</h2>
+
+            <!-- Overview -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Overview</h3>
+                <img src="../Project_Images/FM01_Overview.png" alt="Overview" class="description-image left-aligned">
+                <p class="description-text">
+                    This project leverages modern IoT technology to develop a smart power management system. It automates energy-efficient operations by detecting room occupancy through IR sensors and identifying users via iris recognition.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Key Features</h3>
+                <img src="../Project_Images/FM01_Features.png" alt="Features" class="description-image right-aligned">
+                <p class="description-text">
+                    - **Automated Controls**: Adjusts devices based on occupancy and identity.  
+                    - **Energy Savings**: Reduces power wastage for sustainable living.  
+                    - **Custom PCB**: Designed for reliability and scalability.
+                </p>
+            </div>
+
+            <!-- System Workflow -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">System Workflow</h3>
+                <img src="../Project_Images/FM01_Workflow.png" alt="Workflow Diagram" class="description-image left-aligned">
+                <p class="description-text">
+                    The system processes sensor inputs to determine room occupancy and identity. Based on this data, relays are triggered to control connected devices. The workflow includes detection, recognition, and execution phases.
                 </p>
             </div>
         </div>
+    </section>
 
-        <!-- Project Description -->
-        <div class="project-description">
-            <h2>Project Description</h2>
-            <p>
-                This project leverages a microcontroller and various sensors to monitor and optimize energy consumption in a residential setting. By integrating hardware components with efficient software, the system detects when rooms are unoccupied and automatically turns off lights or appliances, thereby conserving energy.
-            </p>
+    <!-- Visual Showcase Section -->
+    <section id="visual-showcase">
+        <div class="visual-showcase-container">
+            <h2 class="section-title">Visual Showcase</h2>
+
+            <!-- Showcase Description -->
+            <div class="showcase-paragraph">
+                <h3>Gallery</h3>
+                <p>Here are visuals showcasing the PCB layout, circuit diagram, and working prototype.</p>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="visual-showcase-gallery">
+                <img src="../Project_Images/FM01_PCB.png" alt="Custom PCB Design">
+                <img src="../Project_Images/FM01_Circuit.png" alt="Circuit Diagram">
+                <img src="../Project_Images/FM01_Prototype.png" alt="Working Prototype">
+            </div>
         </div>
+    </section>
 
-        <!-- KiCAD Schematic Section -->
-        <div class="kicad-section">
-            <h2>KiCAD Schematic</h2>
-            <p>
-                The KiCAD schematic was designed to capture the electrical connections between the components. It includes detailed connections for the ESP32 microcontroller, IR sensors, relay switches, and power management circuits. Each component was carefully placed and labeled for clarity.
-            </p>
-            <img class="project-image" src="kicad-schematic.png" alt="KiCAD Schematic">
+    <!-- Call-to-Action Section -->
+    <section id="call-to-action">
+        <div class="cta-container">
+            <a href="../projects.html" class="cta-button">Back to Projects</a>
         </div>
+    </section>
 
-        <!-- KiCAD PCB Layout Section -->
-        <div class="kicad-section">
-            <h2>KiCAD PCB Layout</h2>
-            <p>
-                The PCB layout was developed using KiCAD’s PCB editor, ensuring a compact and efficient board design. Routing was optimized to reduce noise and interference between signals, particularly around the microcontroller and sensor circuits. Proper grounding techniques were applied to enhance the reliability of the board.
-            </p>
-            <img class="project-image" src="kicad-pcb-layout.png" alt="KiCAD PCB Layout">
-        </div>
-
-        <!-- Components Used -->
-        <div class="components-section">
-            <h2>Components Used</h2>
-            <ul>
-                <li>ESP32 Microcontroller</li>
-                <li>IR Sensors for occupancy detection</li>
-                <li>Relay switches for controlling lights and appliances</li>
-                <li>4 AA Batteries (main power source)</li>
-                <li>Ceramic capacitors (decoupling for power supply)</li>
-                <li>Resistors (1kΩ, 10kΩ) for signal conditioning</li>
-                <li>Voltage regulator (AMS1117 3.3V)</li>
-                <li>Diodes for reverse polarity protection</li>
-            </ul>
-        </div>
-
-        <!-- Technical Challenges -->
-        <div class="technical-challenges">
-            <h2>Technical Challenges</h2>
-            <p>
-                During the development of this project, several challenges were encountered:
-            </p>
-            <ul>
-                <li>
-                    <strong>Power Management:</strong> Balancing power consumption of the ESP32 and sensors to ensure efficiency without compromising performance.
-                </li>
-                <li>
-                    <strong>Signal Noise:</strong> Mitigating noise in the sensor signals using proper grounding and bypass capacitors.
-                </li>
-                <li>
-                    <strong>PCB Design:</strong> Ensuring minimal cross-talk and signal interference in a compact PCB layout.
-                </li>
-                <li>
-                    <strong>Code Optimization:</strong> Writing efficient firmware to handle real-time sensor readings and relay control.
-                </li>
-            </ul>
-        </div>
-
-        <!-- Applications and Future Scope -->
-        <div class="applications-scope">
-            <h2>Applications and Future Scope</h2>
-            <p>
-                This system can be scaled for larger homes or office buildings, integrating advanced features such as:
-            </p>
-            <ul>
-                <li>Mobile app integration for remote control and monitoring</li>
-                <li>Integration with IoT platforms like AWS IoT Core or Google Cloud IoT</li>
-                <li>Support for multiple sensor types (e.g., motion, temperature, humidity)</li>
-                <li>Solar-powered energy management for sustainable operation</li>
-            </ul>
-        </div>
-
-        <!-- Back to Projects Button -->
-        <a href="../projects.html" class="back-button">Back to Projects</a>
-    </div>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+        <p>&copy; 2025 Andrew Arizaga. All rights reserved.</p>
         <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
     </footer>
+
 </body>
 </html>
