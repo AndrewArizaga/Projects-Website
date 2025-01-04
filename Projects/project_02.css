@@ -11,61 +11,12 @@
 /* Body Styling */
 /* -------------------------------------------------------- */
 body {
-    background: url('../backgrounds/fm02-bg.jpg'); /* Update the path */
+    background: url('../project-background.jpg'); /* Update the path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: #e0e0e0;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* -------------------------------------------------------- */
-/* Header Section */
-/* -------------------------------------------------------- */
-header {
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    color: #4ba3f2;
-    font-size: 2rem;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 10px;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #4ba3f2;
-}
-
-/* -------------------------------------------------------- */
-/* Disclaimer Banner */
-/* -------------------------------------------------------- */
-.disclaimer-banner {
-    background-color: rgba(255, 165, 0, 0.9);
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
 /* -------------------------------------------------------- */
@@ -207,13 +158,56 @@ h2 {
 
 .how-it-works-image.right-aligned {
     float: right;
-    margin: 0 0 20px 20px;
 }
 
 .how-it-works-paragraph p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
+}
+
+/* -------------------------------------------------------- */
+/* Applications and Benefits Section */
+/* -------------------------------------------------------- */
+#applications {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.applications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.application-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.application-paragraph img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.application-paragraph img.right-aligned {
+    float: right;
+}
+
+.application-paragraph p,
+.application-paragraph ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.application-paragraph ul {
+    list-style-type: disc;
+    margin-left: 40px;
 }
 
 /* -------------------------------------------------------- */
