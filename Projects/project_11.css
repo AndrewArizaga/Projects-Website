@@ -95,42 +95,30 @@ h2 {
     font-weight: bold;
 }
 
+/* Ensures images are aligned left or right with text wrapping */
 .description-paragraph {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 30px;
-    flex-wrap: wrap;
+    overflow: hidden; /* Prevents image overflow */
 }
 
 .description-image {
-    max-width: 400px;
+    max-width: 300px; /* Adjust as needed */
     height: auto;
     margin: 0 20px 20px 0;
+    float: left; /* Default alignment to the left */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .description-image.right-aligned {
-    order: 2;
+    float: right;
     margin: 0 0 20px 20px;
 }
 
 .description-text {
-    flex: 1;
     font-size: 1.2rem;
     line-height: 1.8;
-    text-align: justify;
-}
-
-.description-text ul {
-    margin: 15px 0 0 20px;
-    padding-left: 20px;
-    list-style-type: disc;
-    line-height: 1.8;
-}
-
-.description-text ul li {
-    margin-bottom: 5px;
+    text-align: justify; /* Makes the text look cleaner */
 }
 
 /* -------------------------------------------------------- */
