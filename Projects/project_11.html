@@ -46,29 +46,87 @@
     </section>
 
     <!-- Project Description Section -->
-    <section id="project-description">
-        <div class="description-container">
-            <h2>Project Description</h2>
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Overview</h3>
-                <p class="description-text">
-                    This project addresses the challenge of developing a low-power 10-bit SAR ADC for applications in biomedical sensors and wireless systems. 
-                    The design integrates a 6-bit SAR ADC, a Voltage-to-Time Converter (VTC), and a 4-bit Vernier Time-to-Digital Converter (TDC), 
-                    achieving high resolution and low power consumption.
-                </p>
-            </div>
+  <section id="project-description">
+    <div class="description-container">
+        <h2>Project Description</h2>
 
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Key Features</h3>
-                <ul class="description-text">
-                    <li>Hybrid SAR ADC architecture for enhanced performance.</li>
-                    <li>Low-power design, ideal for battery-operated devices.</li>
-                    <li>High resolution with an Effective Number of Bits (ENOB) of 10.</li>
-                    <li>Built using TSMC 130 nm CMOS technology.</li>
-                </ul>
-            </div>
+        <!-- Overview -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Overview</h3>
+            <img src="../Images/hybrid_adc_overview.png" alt="Hybrid ADC Overview" class="description-image left-aligned">
+            <p class="description-text">
+                The <strong>Low-Power Two-Step Successive Approximation ADC</strong> is a state-of-the-art 10-bit Analog-to-Digital Converter (ADC) 
+                designed for applications in biomedical sensors and wireless sensor networks. This project achieves high resolution and energy efficiency 
+                through a hybrid architecture that integrates a 6-bit Voltage-Mode SAR ADC, a Voltage-to-Time Converter (VTC), 
+                and a 4-bit Vernier Time-to-Digital Converter (TDC).
+            </p>
         </div>
-    </section>
+
+        <!-- What is an ADC? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What is an ADC?</h3>
+            <img src="../Images/adc_functionality.png" alt="ADC Functionality" class="description-image right-aligned">
+            <p class="description-text">
+                An <strong>Analog-to-Digital Converter (ADC)</strong> is an essential component in modern electronics, responsible for converting 
+                continuous analog signals (such as voltages, sound waves, or temperatures) into discrete digital signals that can be processed 
+                by computers or microcontrollers. ADCs bridge the gap between the physical world and digital systems, enabling applications like 
+                medical devices, smartphones, and IoT systems to interpret real-world data.
+            </p>
+        </div>
+
+        <!-- What is a SAR ADC? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What is a SAR ADC?</h3>
+            <img src="../Images/sar_adc_diagram.png" alt="SAR ADC Diagram" class="description-image left-aligned">
+            <p class="description-text">
+                A <strong>Successive Approximation Register (SAR) ADC</strong> is a popular ADC architecture known for its efficiency and 
+                balance of speed, resolution, and power consumption. SAR ADCs work through an iterative process, using a binary search algorithm 
+                to narrow down the input signal’s value step by step. Each step compares the input signal to a reference voltage, 
+                gradually refining the digital output. This makes SAR ADCs particularly suited for low-power, high-precision applications 
+                such as biomedical devices and portable electronics.
+            </p>
+        </div>
+
+        <!-- What is a Voltage-to-Time Converter (VTC)? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What is a Voltage-to-Time Converter (VTC)?</h3>
+            <img src="../Images/vtc_diagram.png" alt="Voltage-to-Time Converter Diagram" class="description-image right-aligned">
+            <p class="description-text">
+                A <strong>Voltage-to-Time Converter (VTC)</strong> is a specialized circuit that maps a residual voltage (the difference left 
+                after a coarse digitization step) into a time delay. In a hybrid ADC, this step enhances resolution without requiring additional 
+                power-consuming circuitry. The VTC's ability to work with a small input range makes it a critical component for improving 
+                the overall linearity and precision of the ADC.
+            </p>
+        </div>
+
+        <!-- What is a Time-to-Digital Converter (TDC)? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What is a Time-to-Digital Converter (TDC)?</h3>
+            <img src="../Images/tdc_diagram.png" alt="Time-to-Digital Converter Diagram" class="description-image left-aligned">
+            <p class="description-text">
+                A <strong>Time-to-Digital Converter (TDC)</strong> transforms the time delay generated by the VTC into a digital value. Using 
+                techniques like Vernier delay lines, the TDC achieves high precision by measuring small differences in time intervals. 
+                This step completes the hybrid ADC architecture, converting the time-domain signal into a final digital output. 
+                TDCs are valued for their low power consumption and accuracy, making them ideal for high-resolution designs.
+            </p>
+        </div>
+
+        <!-- How These Components Work Together -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">How These Components Work Together</h3>
+            <img src="../Images/hybrid_adc_workflow.png" alt="Hybrid ADC Workflow" class="description-image right-aligned">
+            <p class="description-text">
+                The <strong>Low-Power Two-Step Successive Approximation ADC</strong> integrates:
+                <ul>
+                    <li>A <strong>6-bit Voltage-Mode SAR ADC</strong> for coarse digitization of the input signal.</li>
+                    <li>A <strong>VTC</strong> to convert the residual voltage into a time-domain signal.</li>
+                    <li>A <strong>4-bit Vernier TDC</strong> to refine the output and achieve the final 10-bit resolution.</li>
+                </ul>
+                This hybrid approach ensures high accuracy, low power consumption, and scalability for applications requiring energy efficiency and precision.
+            </p>
+        </div>
+    </div>
+</section>
 
     <!-- How It Works Section -->
     <section id="how-it-works">
