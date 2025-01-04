@@ -69,8 +69,8 @@ body {
 #project-description {
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.9);
-    margin-bottom: 30px;
     color: #e0e0e0;
+    margin-bottom: 30px;
 }
 
 .description-container {
@@ -82,41 +82,55 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #4ba3f2;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .subsection-title {
     font-size: 1.8rem;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
 .description-paragraph {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 30px;
-    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.description-image {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.description-image.right-aligned {
+    order: 2;
+    margin: 0 0 20px 20px;
 }
 
 .description-text {
+    flex: 1;
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
 }
 
-.description-image {
-    max-width: 500px;
-    height: auto;
-    margin: 0 20px 20px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    float: left; /* Default alignment for images */
+.description-text ul {
+    margin: 15px 0 0 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+    line-height: 1.8;
 }
 
-.description-image.right-aligned {
-    float: right; /* Alternate alignment for right-aligned images */
+.description-text ul li {
+    margin-bottom: 5px;
 }
 
 /* -------------------------------------------------------- */
