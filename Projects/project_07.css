@@ -1,0 +1,251 @@
+/* -------------------------------------------------------- */
+/* General Reset */
+/* -------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+/* Body Styling */
+/* -------------------------------------------------------- */
+body {
+    background: url('../aboutme-background.jpg'); /* Update the path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* -------------------------------------------------------- */
+/* Project Title Section */
+/* -------------------------------------------------------- */
+#project-title {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #4ba3f2;
+    margin-bottom: 30px;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.title-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.title-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffff; /* White for the description */
+}
+
+.title-image {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------------------------------- */
+/* Project Description Section */
+/* -------------------------------------------------------- */
+#project-description {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.description-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.description-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures text wraps cleanly around floated images */
+}
+
+.description-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.description-image {
+    max-width: 500px;
+    height: auto;
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment for images */
+}
+
+.description-image.right-aligned {
+    float: right;
+}
+
+/* -------------------------------------------------------- */
+/* How It Works Section */
+/* -------------------------------------------------------- */
+#how-it-works {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.how-it-works-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures text wraps cleanly around floated images */
+}
+
+.how-it-works-image {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment for images */
+}
+
+.how-it-works-image.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust margin for right alignment */
+}
+
+.how-it-works-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* -------------------------------------------------------- */
+/* Applications and Benefits Section */
+/* -------------------------------------------------------- */
+#applications {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.applications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.application-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures text wraps cleanly around floated images */
+}
+
+.application-paragraph img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment for images */
+}
+
+.application-paragraph img.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.application-paragraph p,
+.application-paragraph ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.application-paragraph ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+/* -------------------------------------------------------- */
+/* Call-to-Action Section */
+/* -------------------------------------------------------- */
+#call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+}
+
+/* -------------------------------------------------------- */
+/* Footer Section */
+/* -------------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+    margin-top: 40px;
+}
