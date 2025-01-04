@@ -20,39 +20,6 @@ body {
 }
 
 /* -------------------------------------------------------- */
-/* Header Section */
-/* -------------------------------------------------------- */
-header {
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #4ba3f2;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #00aaff;
-}
-
-/* -------------------------------------------------------- */
 /* Disclaimer Section */
 /* -------------------------------------------------------- */
 .disclaimer-banner {
