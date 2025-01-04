@@ -122,6 +122,73 @@ h2 {
 }
 
 /* -------------------------------------------------------- */
+/* How It Works Section */
+/* -------------------------------------------------------- */
+
+/* How It Works Section */
+#how-it-works {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e0e0e0;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.how-it-works-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.step-image {
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.left-aligned {
+    float: left;
+    margin-right: 20px;
+}
+
+.right-aligned {
+    float: right;
+    margin-left: 20px;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.step-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* -------------------------------------------------------- */
 /* Applications Section */
 /* -------------------------------------------------------- */
 #applications {
