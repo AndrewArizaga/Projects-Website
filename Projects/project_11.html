@@ -136,24 +136,84 @@
 <!-- How it Works -->
 <!-- -------------------------------------------------------- -->
     <section id="how-it-works">
-        <div class="how-it-works-container">
-            <h2>How It Works</h2>
-            <div class="how-it-works-paragraph">
-                <h3 class="subsection-title">Step 1: Input Voltage Sampling</h3>
+    <div class="how-it-works-container">
+        <h2 class="section-title">How It Works</h2>
+
+        <!-- Step 1 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/analog-input.png" alt="Analog Input" class="step-image left-aligned">
+            <div class="step-text">
+                <h3>Step 1: Analog Input Signal</h3>
                 <p>
-                    The system begins with the 6-bit SAR ADC performing coarse voltage sampling. 
-                    The residual voltage is then mapped to a time delay using the Voltage-to-Time Converter (VTC).
-                </p>
-            </div>
-            <div class="how-it-works-paragraph">
-                <h3 class="subsection-title">Step 2: Time-to-Digital Conversion</h3>
-                <p>
-                    The VTC output is digitized using a 4-bit Vernier Time-to-Digital Converter (TDC), ensuring high precision. 
-                    The combined outputs of the SAR ADC and TDC form the 10-bit digital signal.
+                    The ADC begins by receiving an <strong>analog signal</strong>, such as a sine wave 
+                    (e.g., a biomedical sensor's voltage output). The front-end circuit amplifies and conditions 
+                    this signal to prepare it for digitization.
                 </p>
             </div>
         </div>
-    </section>
+
+        <!-- Step 2 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/sar-adc.png" alt="SAR ADC" class="step-image right-aligned">
+            <div class="step-text">
+                <h3>Step 2: Coarse Digitization with SAR ADC</h3>
+                <p>
+                    The <strong>6-bit SAR ADC</strong> performs coarse digitization using a successive approximation 
+                    algorithm. It compares the input voltage against a reference voltage, generating a 6-bit 
+                    approximation of the input signal.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/residual-voltage.png" alt="Residual Voltage" class="step-image left-aligned">
+            <div class="step-text">
+                <h3>Step 3: Residual Voltage</h3>
+                <p>
+                    The SAR ADC generates a <strong>residual voltage</strong> representing the difference between 
+                    the input signal and the coarse approximation. This signal is key to achieving high precision.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/vtc.png" alt="Voltage-to-Time Converter" class="step-image right-aligned">
+            <div class="step-text">
+                <h3>Step 4: Voltage-to-Time Conversion (VTC)</h3>
+                <p>
+                    The <strong>VTC</strong> maps the residual voltage into a precise time delay. Smaller voltages 
+                    result in shorter delays, while larger voltages create longer delays.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/tdc.png" alt="Vernier TDC" class="step-image left-aligned">
+            <div class="step-text">
+                <h3>Step 5: Fine Digitization with Vernier TDC</h3>
+                <p>
+                    The <strong>4-bit Vernier TDC</strong> digitizes the time delay with sub-nanosecond precision, 
+                    using two delay lines (fast and slow) to measure time differences accurately.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="how-it-works-step">
+            <img src="../Project_Images/digital-output.png" alt="Digital Output" class="step-image right-aligned">
+            <div class="step-text">
+                <h3>Step 6: Digital Output</h3>
+                <p>
+                    The ADC outputs a <strong>10-bit digital signal</strong>, combining the SAR ADC's 6 bits and 
+                    the Vernier TDC's 4 bits, to precisely represent the original analog input.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- -------------------------------------------------------- -->
 <!-- Applications Section -->
