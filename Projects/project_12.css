@@ -1,11 +1,15 @@
+/* -------------------------------------------------------- */
 /* General Reset */
+/* -------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------------------------------------------------------- */
 /* Body Styling */
+/* -------------------------------------------------------- */
 body {
     background: url('../Project_Images/background.jpg'); /* Update the path */
     background-size: cover;
@@ -15,7 +19,53 @@ body {
     line-height: 1.6;
 }
 
+/* -------------------------------------------------------- */
+/* Header Section */
+/* -------------------------------------------------------- */
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #4ba3f2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* -------------------------------------------------------- */
+/* Disclaimer Section */
+/* -------------------------------------------------------- */
+.disclaimer-banner {
+    background-color: rgba(255, 255, 0, 0.8);
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
 /* Project Title Section */
+/* -------------------------------------------------------- */
 #project-title {
     padding: 40px 20px;
     text-align: center;
@@ -56,7 +106,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* -------------------------------------------------------- */
 /* Project Description Section */
+/* -------------------------------------------------------- */
 #project-description {
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -91,6 +143,11 @@ h2 {
     line-height: 1.8;
 }
 
+.description-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
 .description-image {
     max-width: 500px;
     margin: 0 20px 20px 0;
@@ -99,7 +156,14 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.description-image.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+/* -------------------------------------------------------- */
 /* Call-to-Action Section */
+/* -------------------------------------------------------- */
 #call-to-action {
     padding: 40px 20px;
     text-align: center;
@@ -123,7 +187,9 @@ h2 {
     background-color: #0088cc;
 }
 
+/* -------------------------------------------------------- */
 /* Footer Section */
+/* -------------------------------------------------------- */
 footer {
     text-align: center;
     padding: 20px;
