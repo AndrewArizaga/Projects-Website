@@ -59,7 +59,7 @@
             <h3 class="subsection-title">Overview</h3>
             <img src="../Project_Images/Project_03_2.png" alt="Energy Monitoring Overview" class="description-image left-aligned">
             <p class="description-text">
-                This project integrates sensors, microcontrollers, and Wi-Fi communication to create a smart energy meter. By capturing data on current, voltage, and power, the system calculates energy usage and sends notifications through IFTTT. Its machine learning capabilities enable analysis of consumption patterns, providing insights for energy optimization.
+                This project integrates sensors, microcontrollers, Wi-Fi communication, and machine learning to create a smart energy meter. The system captures real-time data on current, voltage, and power usage from connected loads. Using the Arduino Uno as the central processing unit, the data is processed and transmitted to a cloud platform via the ESP12 Wi-Fi module. The machine learning component analyzes historical energy consumption patterns to provide predictive insights and actionable recommendations for efficient energy usage.
             </p>
         </div>
 
@@ -68,23 +68,69 @@
             <h3 class="subsection-title">Features of the Energy Meter</h3>
             <img src="../Project_Images/Project_03_3.png" alt="Features of the Energy Meter" class="description-image right-aligned">
             <p class="description-text">
-                Key features include:
+                The energy meter offers several advanced features that enhance its functionality and user experience. Key highlights include real-time monitoring of energy usage and cloud integration for storing and analyzing data. The system provides timely notifications via SMS or email, keeping users informed about significant changes or thresholds.
             </p>
             <ul class="description-text">
-                <li>Real-time tracking of energy consumption.</li>
-                <li>Cloud-based data storage for accessibility.</li>
-                <li>Notifications via SMS and email using the IFTTT platform.</li>
-                <li>Machine learning models for usage prediction and optimization suggestions.</li>
+                <li>Real-time monitoring of energy usage.</li>
+                <li>Cloud storage for historical data analysis.</li>
+                <li>IFTTT notifications for updates and alerts.</li>
+                <li>User-friendly dashboards for simplified data interpretation.</li>
             </ul>
         </div>
 
-        <!-- System Diagram -->
+        <!-- System Architecture -->
         <div class="description-paragraph">
-            <h3 class="subsection-title">System Diagram</h3>
+            <h3 class="subsection-title">System Architecture</h3>
             <img src="../Project_Images/Project_03_4.png" alt="System Diagram" class="description-image left-aligned">
             <p class="description-text">
-                The system diagram outlines the components and their interconnections, including sensors for measuring current and voltage, the Arduino Uno for processing, and the ESP12 Wi-Fi module for communication. The system is powered by a stable power supply and interfaces with the IFTTT platform to send notifications.
+                The system architecture is built on a layered design, ensuring both scalability and efficiency. The hardware layer includes sensors for current and voltage measurement, an Arduino Uno for processing, and an ESP12 Wi-Fi module for connectivity. Data is transmitted reliably through a robust communication layer to a cloud platform, where it is stored and analyzed for trend insights.
             </p>
+            <ul class="description-text">
+                <li><strong>Hardware Layer:</strong> Processes data from sensors and manages connectivity.</li>
+                <li><strong>Communication Layer:</strong> Ensures secure and reliable data transmission.</li>
+                <li><strong>Cloud Layer:</strong> Facilitates storage and machine learning model integration.</li>
+                <li><strong>Application Layer:</strong> Provides interactive dashboards and notifications for user interaction.</li>
+            </ul>
+        </div>
+
+        <!-- IFTTT Notifications -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">IFTTT Notifications</h3>
+            <img src="../Project_Images/Project_03_IFTTT.png" alt="IFTTT Notification Example" class="description-image right-aligned">
+            <p class="description-text">
+                IFTTT (If This Then That) integration enables users to receive real-time alerts about their energy usage. Notifications are customizable and include daily summaries, warnings about unusual consumption, and alerts for crossing specific thresholds. For example, users can receive an SMS or email when their energy consumption exceeds a set limit.
+            </p>
+            <ul class="description-text">
+                <li>Daily summaries with usage and cost details.</li>
+                <li>Unusual consumption pattern alerts.</li>
+                <li>Threshold-based notifications for proactive management.</li>
+            </ul>
+        </div>
+
+        <!-- Machine Learning Integration -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Machine Learning Integration</h3>
+            <p class="description-text">
+                Machine learning is central to the energy meter, offering predictive analytics and actionable insights. By analyzing historical energy data, the system helps forecast future usage trends and identify peak consumption hours. This enables users to optimize their energy usage and address inefficiencies proactively.
+            </p>
+            <ul class="description-text">
+                <li>Forecasting future usage trends.</li>
+                <li>Identifying and suggesting adjustments during peak hours.</li>
+                <li>Detecting anomalies like surges or inefficiencies.</li>
+            </ul>
+        </div>
+
+        <!-- User Experience and Dashboard -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">User Experience and Dashboard</h3>
+            <p class="description-text">
+                A major focus of the project is the intuitive user interface. The dashboard provides interactive charts that display real-time and historical energy usage. Users can customize alerts for specific energy thresholds, ensuring the system meets individual needs. Additionally, the mobile-friendly design allows users to access data conveniently from any location.
+            </p>
+            <ul class="description-text">
+                <li>Interactive real-time and historical energy charts.</li>
+                <li>Customizable alerts for specific thresholds.</li>
+                <li>Mobile-friendly access for convenience.</li>
+            </ul>
         </div>
     </div>
 </section>
