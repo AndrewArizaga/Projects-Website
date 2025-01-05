@@ -144,6 +144,64 @@
     </div>
 </section>
 
+<!-- -------------------------------------------------------- -->
+<!-- How it works section -->
+<!-- -------------------------------------------------------- -->
+    
+<section id="how-it-works">
+    <div class="how-it-works-container">
+        <h2>How It Works</h2>
+
+        <!-- Step 1: Serialization -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 1: Serialization</h3>
+            <p>
+                The process begins at the transmitter, where <strong>parallel data streams</strong> are combined into a single high-speed serial stream using a <strong>serializer</strong>. Serialization reduces the complexity of wiring by converting multiple lanes of data into a single channel while ensuring that the data rate is high enough to meet the system’s requirements of <strong>5.12 Gbps</strong>.
+            </p>
+        </div>
+
+        <!-- Step 2: Pre-Emphasis and Transmission -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 2: Pre-Emphasis and Transmission</h3>
+            <p>
+                Before transmitting the serialized signal, <strong>pre-emphasis</strong> is applied to improve the signal quality over long distances. Pre-emphasis boosts high-frequency components to compensate for channel attenuation and ensures the signal arrives at the receiver with minimal distortion. The enhanced signal is then transmitted through the channel.
+            </p>
+        </div>
+
+        <!-- Step 3: Equalization -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 3: Equalization (Adaptive DFE)</h3>
+            <p>
+                At the receiver, the signal often exhibits impairments such as noise, reflections, and interference. <strong>Adaptive Decision Feedback Equalization (DFE)</strong> dynamically adjusts to restore the signal’s integrity. This technique mitigates inter-symbol interference (ISI) by using feedback from previously detected bits and adapts to real-time channel variations caused by <strong>process, voltage, and temperature (PVT)</strong> effects.
+            </p>
+        </div>
+
+        <!-- Step 4: Voltage-to-Time Conversion -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 4: Voltage-to-Time Conversion</h3>
+            <p>
+                After equalization, the analog signal is processed using <strong>voltage-to-time converters (VTCs)</strong>. These converters transform the amplitude of the signal into time intervals, which are easier to digitize and process. By leveraging <strong>time-interleaving</strong>, the system efficiently handles high data rates, splitting the processing workload across multiple parallel paths.
+            </p>
+        </div>
+
+        <!-- Step 5: Clock and Data Recovery -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 5: Clock and Data Recovery (CDR)</h3>
+            <p>
+                In serial communication, the clock signal isn’t transmitted explicitly but is embedded within the data stream. <strong>Clock and Data Recovery (CDR)</strong> reconstructs the clock signal using a <strong>phase-picking mechanism</strong> that detects transitions in the signal. A <strong>digitally controlled oscillator (DCO)</strong> generates a stable, synchronized clock for accurate data sampling.
+            </p>
+        </div>
+
+        <!-- Step 6: Deserialization -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 6: Deserialization</h3>
+            <p>
+                The recovered serial data is <strong>deserialized</strong> back into its original parallel format. This step reconstructs the original data streams, ensuring they are aligned with the recovered clock and ready for further processing or application.
+            </p>
+        </div>
+    </div>
+</section>
+    
     <!-- -------------------------------------------------------- -->
     <!-- Call-to-Action Section -->
     <!-- -------------------------------------------------------- -->
