@@ -162,6 +162,56 @@
     </div>
 </section>
 
+<!-- -------------------------------------------------------- -->
+<!-- Technical Challenges -->
+<!-- -------------------------------------------------------- -->
+    
+<section id="technical-challenges">
+    <div class="technical-challenges-container">
+        <h2>Technical Challenges and Solutions</h2>
+
+        <!-- Challenge: Sensor Noise -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge: Sensor Noise</h3>
+            <p><strong>Problem:</strong> High-frequency noise affected the accuracy of voltage and current readings.</p>
+            <p><strong>Solution:</strong> Implemented a moving average filter in the software to smooth sensor data, reducing noise and ensuring stable measurements.</p>
+        </div>
+
+        <!-- Challenge: Wi-Fi Module Integration -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge: Wi-Fi Module Integration</h3>
+            <p><strong>Problem:</strong> Ensuring stable communication with the cloud platform despite intermittent Wi-Fi connectivity.</p>
+            <p><strong>Solution:</strong> Designed a reconnection protocol with error-handling routines to maintain data transmission reliability. Added capacitors to stabilize the power supply to the Wi-Fi module.</p>
+        </div>
+
+        <!-- Challenge: Limited Historical Data for Machine Learning -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge: Limited Historical Data for Machine Learning</h3>
+            <p><strong>Problem:</strong> Insufficient real-world data for training the energy usage prediction model.</p>
+            <p><strong>Solution:</strong> Generated synthetic datasets based on known energy consumption patterns. Used lightweight regression algorithms suitable for deployment on embedded systems.</p>
+        </div>
+
+        <!-- Challenge: Power Management -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge: Power Management</h3>
+            <p><strong>Problem:</strong> The system experienced power fluctuations due to high current draw from multiple components.</p>
+            <p><strong>Solution:</strong> Integrated voltage regulators and decoupling capacitors to stabilize the power supply. Ensured optimal power distribution among sensors and the microcontroller.</p>
+        </div>
+
+        <!-- Challenge: Real-Time Data Processing -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge: Real-Time Data Processing</h3>
+            <p><strong>Problem:</strong> Processing data from multiple sensors in real time caused delays and occasional data loss.</p>
+            <p><strong>Solution:</strong> Optimized the Arduino code by prioritizing critical tasks using interrupt-driven programming. Reduced computational overhead by simplifying calculations.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- -------------------------------------------------------- -->
+<!-- Call to Action -->
+<!-- -------------------------------------------------------- -->
+    
 <section id="call-to-action">
     <div class="cta-container">
         <a href="../projects.html" class="cta-button">Back to Projects</a>
