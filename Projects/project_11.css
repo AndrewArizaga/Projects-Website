@@ -205,9 +205,6 @@ h2 {
 }
 
 /* -------------------------------------------------------- */
-/* Applications Section */
-/* -------------------------------------------------------- */
-/* -------------------------------------------------------- */
 /* Technical Challenges and Solutions Section */
 /* -------------------------------------------------------- */
 #technical-challenges {
@@ -265,6 +262,61 @@ h2 {
 .challenge-image.right-aligned {
     float: right;
     margin: 0 0 20px 20px; /* Adjust for right alignment */
+}
+
+/* -------------------------------------------------------- */
+/* Visual Showcase Section Styling */
+/* -------------------------------------------------------- */
+#visual-showcase {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    color: #e0e0e0; /* Light text for readability */
+    margin-bottom: 30px;
+}
+
+.visual-showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Prevent text from reaching the edges */
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Subsection Titles */
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.showcase-paragraph {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.showcase-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Images */
+.showcase-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* -------------------------------------------------------- */
