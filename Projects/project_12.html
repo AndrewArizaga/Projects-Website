@@ -60,40 +60,89 @@
     <!-- -------------------------------------------------------- -->
     <!-- Project Description Section -->
     <!-- -------------------------------------------------------- -->
-    <section id="project-description">
-        <div class="description-container">
-            <h2>Project Description</h2>
+   <section id="project-description">
+    <div class="description-container">
+        <h2>Project Description</h2>
 
-            <!-- Overview -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Overview</h3>
-                <p class="description-text">
-                    The 5.12 Gbps Time-Interleaved Front-End of SerDes project tackles the complexities of high-speed serial data communication. By leveraging time-interleaved voltage-to-time converters and digital decision feedback equalization (DFE), the design ensures robust performance in the presence of channel impairments and PVT variations.
-                </p>
-            </div>
-
-            <!-- Key Features -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Key Features</h3>
-                <ul class="description-text">
-                    <li>Data rate: 5.12 Gbps.</li>
-                    <li>Near-end pre-emphasis for channel equalization.</li>
-                    <li>Time-interleaved sampling and voltage-to-time conversion.</li>
-                    <li>Phase-picking clock and data recovery.</li>
-                    <li>Designed using TSMC 130 nm 1.2V CMOS technology.</li>
-                </ul>
-            </div>
-
-            <!-- System Architecture -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">System Architecture</h3>
-                <img src="../Project_Images/Project_05_2.png" alt="System Architecture" class="description-image right-aligned">
-                <p class="description-text">
-                    The architecture comprises key components like serializers, pre-emphasis circuits, voltage-to-time converters, digitally controlled oscillators (DCO), and frequency synthesizers. Each component is meticulously designed to ensure synchronization and signal integrity across the transceiver.
-                </p>
-            </div>
+        <!-- Overview -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Overview</h3>
+            <img src="../Project_Images/serdes_overview.png" alt="SerDes Overview" class="description-image right-aligned">
+            <p>
+                High-speed serial data communication is the backbone of modern data-driven systems, from data centers to advanced communication networks. This project focuses on designing a <strong>5.12 Gbps Serializer/Deserializer (SerDes)</strong> front-end. By leveraging <strong>adaptive decision feedback equalization (DFE)</strong> and <strong>phase-picking clock and data recovery</strong>, the design overcomes signal integrity challenges, ensuring accurate and reliable data transmission.
+            </p>
         </div>
-    </section>
+
+        <!-- What is SerDes? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What is SerDes?</h3>
+            <img src="../Project_Images/serdes_block_diagram.png" alt="SerDes Block Diagram" class="description-image left-aligned">
+            <p>
+                A <strong>Serializer/Deserializer (SerDes)</strong> is a critical component in high-speed communication systems. Its main job is to <strong>convert parallel data streams into a single high-speed serial stream (serialization)</strong> for transmission and then <strong>reconvert the serial data back into parallel streams (deserialization)</strong> at the receiver. This allows data to travel efficiently over fewer wires or channels, reducing hardware complexity while maintaining high data rates.
+            </p>
+        </div>
+
+        <!-- Serial Data Communication -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Serial Data Communication</h3>
+            <img src="../Project_Images/serial_communication.png" alt="Serial Data Communication" class="description-image right-aligned">
+            <p>
+                Unlike parallel communication, where multiple data bits are transmitted simultaneously, <strong>serial communication</strong> sends one bit at a time over a single channel. This approach is ideal for high-speed links because it minimizes interference and signal degradation over long distances. However, challenges like <strong>signal loss</strong>, <strong>reflection</strong>, and <strong>crosstalk</strong> become more pronounced as speeds increase. To address these issues, techniques like <strong>pre-emphasis</strong> and <strong>adaptive equalization</strong> are essential.
+            </p>
+        </div>
+
+        <!-- Adaptive Decision Feedback Equalization (DFE) -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Adaptive Decision Feedback Equalization (DFE)</h3>
+            <img src="../Project_Images/adaptive_dfe.png" alt="Adaptive DFE" class="description-image left-aligned">
+            <p>
+                Signal integrity often deteriorates due to imperfections in the communication channel. <strong>DFE</strong> is a method used at the receiver to clean up the signal by dynamically adjusting to the channel's changing characteristics. Unlike fixed equalization, <strong>adaptive DFE</strong> reacts to variations caused by <strong>PVT (Process, Voltage, and Temperature)</strong> changes, making it highly effective for real-world scenarios. This design implements DFE entirely in the digital domain, making it scalable and robust.
+            </p>
+        </div>
+
+        <!-- Time-Interleaved Sampling and Voltage-to-Time Conversion -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Time-Interleaved Sampling and Voltage-to-Time Conversion</h3>
+            <img src="../Project_Images/voltage_to_time_conversion.png" alt="Voltage-to-Time Conversion" class="description-image right-aligned">
+            <p>
+                To handle the high data rate of <strong>5.12 Gbps</strong>, the system uses <strong>time-interleaving</strong> to divide the workload across multiple parallel paths. <strong>Voltage-to-time conversion</strong> transforms incoming analog voltage signals into time variables, which are easier to process digitally. This innovative approach improves efficiency and precision in high-speed environments.
+            </p>
+        </div>
+
+        <!-- Clock and Data Recovery (CDR) with Phase-Picking -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Clock and Data Recovery (CDR) with Phase-Picking</h3>
+            <img src="../Project_Images/phase_picking_cdr.png" alt="Phase-Picking CDR" class="description-image left-aligned">
+            <p>
+                In serial communication, the clock signal isn’t transmitted explicitly but is embedded within the data stream. <strong>Clock and Data Recovery (CDR)</strong> extracts the clock signal from the incoming data to ensure proper synchronization. This project employs a <strong>phase-picking mechanism</strong>, a technique that detects transitions in the data to reconstruct the clock with high accuracy.
+            </p>
+        </div>
+
+        <!-- TSMC 130 nm CMOS Technology -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">TSMC 130 nm CMOS Technology</h3>
+            <img src="../Project_Images/tsmc_130nm.png" alt="TSMC 130 nm CMOS" class="description-image right-aligned">
+            <p>
+                The design is implemented using <strong>TSMC’s 130 nm CMOS process</strong>, known for its balance between performance and energy efficiency. Operating at <strong>1.2 V</strong>, this technology provides the necessary speed and reliability while keeping power consumption low—an important factor for high-speed communication systems.
+            </p>
+        </div>
+
+        <!-- What are PVT Variations? -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">What are PVT Variations?</h3>
+            <img src="../Project_Images/pvt_variations.png" alt="PVT Variations" class="description-image left-aligned">
+            <p>
+                In any semiconductor design, the behavior of circuits can change due to <strong>PVT variations</strong>:
+                <ul>
+                    <li><strong>Process (P):</strong> Variations during chip manufacturing can lead to differences in transistor performance.</li>
+                    <li><strong>Voltage (V):</strong> Changes in supply voltage affect how circuits operate.</li>
+                    <li><strong>Temperature (T):</strong> Environmental temperature impacts the speed and reliability of transistors.</li>
+                </ul>
+                This project accounts for these uncertainties by incorporating <strong>adaptive equalization</strong> techniques, ensuring consistent performance under varying conditions.
+            </p>
+        </div>
+    </div>
+</section>
 
     <!-- -------------------------------------------------------- -->
     <!-- Call-to-Action Section -->
