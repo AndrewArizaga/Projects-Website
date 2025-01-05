@@ -213,6 +213,59 @@ h2 {
 }
 
 /* -------------------------------------------------------- */
+/* Technical Challenges Section */
+/* -------------------------------------------------------- */
+#technical-challenges {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.technical-challenges-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding to prevent text from reaching the edges */
+}
+
+.technical-challenges-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.challenge-paragraph {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.challenge-paragraph h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.challenge-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.challenge-paragraph strong {
+    color: #4ba3f2;
+}
+
+/* -------------------------------------------------------- */
 /* Call-to-Action Section */
 /* -------------------------------------------------------- */
 #call-to-action {
