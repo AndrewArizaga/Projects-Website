@@ -196,6 +196,59 @@ body {
 }
 
 /* -------------------------------------------------------- */
+/* Challenges and Solutions Section */
+/* -------------------------------------------------------- */
+#challenges-and-solutions {
+    padding: 40px 20px; /* Padding around the section */
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black background */
+    color: #e0e0e0; /* Light gray text color */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.challenges-container {
+    max-width: 1200px; /* Limit section width */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Section Title Styling */
+#challenges-and-solutions h2 {
+    text-align: center; /* Center-align the title */
+    font-size: 2.5rem; /* Large font size for the section title */
+    color: #4ba3f2; /* Bright blue for the title */
+    margin-bottom: 30px; /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for emphasis */
+}
+
+/* Challenge Paragraph Styling */
+.challenge-paragraph {
+    margin-bottom: 40px; /* Space between challenge sections */
+    overflow: hidden; /* Prevent text from overlapping with floated elements */
+}
+
+.challenge-paragraph h3 {
+    font-size: 1.8rem; /* Font size for challenge titles */
+    color: #00aaff; /* Light blue color for challenge titles */
+    margin-bottom: 10px; /* Space below challenge title */
+    font-weight: bold; /* Bold text for emphasis */
+    text-decoration: underline; /* Optional underline for clarity */
+}
+
+.challenge-paragraph h4 {
+    font-size: 1.4rem; /* Slightly smaller font size for solution titles */
+    color: #ffcc00; /* Yellow color for solution subtitles */
+    margin-top: 20px; /* Space above solution subtitle */
+    margin-bottom: 10px; /* Space below solution subtitle */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.challenge-paragraph p {
+    font-size: 1.2rem; /* Font size for body text */
+    line-height: 1.8; /* Line height for readability */
+    text-align: justify; /* Align text for clean look */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* -------------------------------------------------------- */
 /* Call-to-Action Section */
 /* -------------------------------------------------------- */
 #call-to-action {
