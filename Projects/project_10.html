@@ -131,42 +131,97 @@
 <!-- -------------------------------------------------------- -->
 <!-- How it Works Section -->
 <!-- -------------------------------------------------------- -->
+      <!-- How It Works Section -->
     <section id="how-it-works">
         <div class="how-it-works-container">
-            <h2>How It Works</h2>
+            <h2 class="section-title">How It Works</h2>
 
-            <!-- Data Input -->
+            <!-- Step 1: Data Input and Validation -->
             <div class="how-it-works-paragraph">
-                <h3 class="subsection-title">Step 1: Data Input</h3>
-                <img src="../Project_Images/Data_Input.png" alt="Data Input Process" class="how-it-works-image left-aligned">
-                <p>
-                    The tool reads network data formatted according to IEEE standards from Excel spreadsheets. 
-                    This data includes:
-                    <ul>
-                        <li>Node identifiers and voltage levels.</li>
-                        <li>Line impedances and admittance matrices.</li>
-                        <li>Load and generation information for each node.</li>
-                    </ul>
+                <h3 class="subsection-title">Step 1: Data Input and Validation</h3>
+                <img src="../Project_Images/Data_Input.png" alt="Data Input" class="how-it-works-image left-aligned">
+                <p class="description-text">
+                    The process begins by importing network data formatted according to IEEE standards, ensuring compatibility with widely-used engineering tools. Input data includes:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Node Identifiers and Voltage Levels:</strong> Defines each node’s voltage and unique ID.</li>
+                    <li><strong>Line Impedances:</strong> Specifies resistance, reactance, and susceptance values.</li>
+                    <li><strong>Load and Generation Details:</strong> Details active/reactive power demands and distributed generation sources.</li>
+                    <li><strong>Topology Information:</strong> Describes how nodes are connected in a radial structure.</li>
+                </ul>
+                <p class="description-text">
+                    After importing, the tool performs rigorous validation to ensure data accuracy. It detects missing values, disconnected nodes, and unrealistic parameters. Normalization ensures consistency in units across voltage, power, and impedance values. A topology check confirms the radial nature of the network, removing loops or redundancies.
                 </p>
             </div>
 
-            <!-- Optimization Algorithm -->
+            <!-- Step 2: Model Construction and Baseline Analysis -->
             <div class="how-it-works-paragraph">
-                <h3 class="subsection-title">Step 2: Optimization Algorithm</h3>
-                <img src="../Project_Images/Optimization_Process.png" alt="Optimization Process" class="how-it-works-image right-aligned">
-                <p>
-                    The heuristic optimization algorithm identifies the best configuration to minimize power losses 
-                    and maintain voltage profiles. Iterative calculations ensure convergence to an optimal solution.
+                <h3 class="subsection-title">Step 2: Model Construction and Baseline Analysis</h3>
+                <img src="../Project_Images/Model_Construction.png" alt="Model Construction" class="how-it-works-image right-aligned">
+                <p class="description-text">
+                    Using validated data, the tool constructs a graph-based model of the radial distribution network. Nodes represent substations, transformers, and load points, while edges define transmission lines with their electrical attributes.
+                </p>
+                <p class="description-text">
+                    A baseline load flow analysis evaluates the current state of the network through:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Backward Sweep:</strong> Calculates branch currents starting from terminal nodes back to the source.</li>
+                    <li><strong>Forward Sweep:</strong> Updates voltage profiles from the source to terminal nodes, correcting voltage drops caused by line losses.</li>
+                </ul>
+                <p class="description-text">
+                    This baseline provides critical metrics, such as power losses and voltage drops, serving as a reference for assessing the optimization process.
                 </p>
             </div>
 
-            <!-- Output Generation -->
+            <!-- Step 3: Heuristic Optimization -->
             <div class="how-it-works-paragraph">
-                <h3 class="subsection-title">Step 3: Output Generation</h3>
-                <img src="../Project_Images/Output_Generation.png" alt="Output Process" class="how-it-works-image left-aligned">
-                <p>
-                    Results, including updated network configurations and performance metrics, are exported 
-                    to Excel files in IEEE format. This ensures compatibility with standard engineering workflows.
+                <h3 class="subsection-title">Step 3: Heuristic Optimization</h3>
+                <img src="../Project_Images/Heuristic_Optimization_Process.png" alt="Heuristic Optimization" class="how-it-works-image left-aligned">
+                <p class="description-text">
+                    The heuristic optimization engine identifies and implements optimal configurations for the network. Unlike traditional deterministic approaches, heuristic methods offer flexibility and efficiency in solving complex, non-linear problems. The optimization process involves:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Power Flow Analysis:</strong> Evaluates inefficiencies in the current configuration, pinpointing areas of high losses or instability.</li>
+                    <li><strong>Exploratory Search:</strong> Iteratively tests alternative configurations by reassigning loads and rerouting power flows.</li>
+                    <li><strong>Constraint Management:</strong> Incorporates operational limits, such as line capacities and voltage thresholds.</li>
+                    <li><strong>Dynamic Refinement:</strong> Continuously adapts the search strategy based on intermediate results, enabling rapid convergence to a near-optimal solution.</li>
+                </ul>
+                <p class="description-text">
+                    This iterative process minimizes power losses and enhances voltage stability across the network, ensuring robust performance even in large-scale systems.
+                </p>
+            </div>
+
+            <!-- Step 4: Convergence and Contingency Analysis -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 4: Convergence and Contingency Analysis</h3>
+                <img src="../Project_Images/Convergence_Analysis.png" alt="Convergence Analysis" class="how-it-works-image right-aligned">
+                <p class="description-text">
+                    The optimization process uses iterative backward and forward sweeps to refine the solution:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Backward Sweep:</strong> Aggregates current demands from terminal nodes to the source.</li>
+                    <li><strong>Forward Sweep:</strong> Propagates voltage corrections from the source to terminal nodes.</li>
+                    <li><strong>Convergence Criteria:</strong> Repeats until changes in power flow and voltage profiles fall below a predefined threshold (e.g., 0.01%).</li>
+                </ul>
+                <p class="description-text">
+                    To ensure reliability, the tool conducts contingency analysis by simulating potential failure scenarios, such as single-line outages and critical node failures. This analysis identifies optimal reconfiguration strategies to maintain service continuity and enhance network robustness under varying conditions.
+                </p>
+            </div>
+
+            <!-- Step 5: Output Generation and Visualization -->
+            <div class="how-it-works-paragraph">
+                <h3 class="subsection-title">Step 5: Output Generation and Visualization</h3>
+                <img src="../Project_Images/Visualization_Outputs.png" alt="Visualization Outputs" class="how-it-works-image left-aligned">
+                <p class="description-text">
+                    The final step generates comprehensive reports and visualizations summarizing the results of the optimization. Outputs include:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Voltage Profiles:</strong> Displays improved voltage levels at all nodes, highlighting enhanced stability and reduced drops.</li>
+                    <li><strong>Power Flow Diagrams:</strong> Illustrates active and reactive power distribution across branches.</li>
+                    <li><strong>Performance Metrics:</strong> Summarizes pre- and post-optimization states, showcasing reductions in power losses and improved load-serving capability.</li>
+                </ul>
+                <p class="description-text">
+                    Results are exported in IEEE-standard Excel files for further use in workflows. Additionally, visual outputs like contour maps, load flow diagrams, and comparative charts provide actionable insights, empowering engineers to make informed decisions.
                 </p>
             </div>
         </div>
