@@ -252,23 +252,61 @@
 <!-- -------------------------------------------------------- -->
 <!-- Technical Challenges -->
 <!-- -------------------------------------------------------- -->
-    <section id="technical-challenges">
-        <div class="technical-challenges-container">
-            <h2>Technical Challenges</h2>
-            <div class="challenge-paragraph">
-                <h3>Design Complexity</h3>
-                <p>
-                    Balancing high resolution with low power consumption required innovative circuit designs and extensive simulations.
-                </p>
-            </div>
-            <div class="challenge-paragraph">
-                <h3>Post-Layout Validation</h3>
-                <p>
-                    Ensuring the performance of the circuit after layout implementation posed significant challenges due to parasitics.
-                </p>
-            </div>
+<section id="technical-challenges">
+    <div class="technical-challenges-container">
+        <h2 class="section-title">Technical Challenges and Solutions</h2>
+
+        <!-- Challenge 1 -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge 1: Achieving High Precision at Low Power</h3>
+            <img src="../Project_Images/precision-vs-power.png" alt="Precision vs Power" class="challenge-image left-aligned">
+            <p>
+                One of the primary challenges in designing this ADC was maintaining high precision (10-bit resolution) without exceeding strict power consumption limits. Precision often requires amplifiers and comparators with higher transconductance, which increases power usage.
+            </p>
+            <p><strong>Solution:</strong> A hybrid SAR ADC architecture was employed, combining a voltage-mode SAR ADC for coarse approximation and a time-based Vernier TDC for fine resolution. This reduced the power demands on the SAR ADC while leveraging the efficiency of time-based processing in the VTC and TDC stages.</p>
         </div>
-    </section>
+
+        <!-- Challenge 2 -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge 2: Managing Noise in the Signal Path</h3>
+            <img src="../Project_Images/noise-reduction.png" alt="Noise Management" class="challenge-image right-aligned">
+            <p>
+                Noise from external sources, such as power supply fluctuations and electromagnetic interference, posed a significant obstacle to achieving accurate signal conversion. Unfiltered noise could degrade both coarse and fine digitization.
+            </p>
+            <p><strong>Solution:</strong> Advanced filtering techniques were implemented in the front-end circuit to remove unwanted noise before digitization. Additionally, the design incorporated shielding and careful layout practices during the silicon implementation to minimize susceptibility to interference.</p>
+        </div>
+
+        <!-- Challenge 3 -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge 3: Ensuring Linearity in Voltage-to-Time Conversion</h3>
+            <img src="../Project_Images/linear-vtc.png" alt="Linear VTC" class="challenge-image left-aligned">
+            <p>
+                The Voltage-to-Time Converter (VTC) needed to exhibit a highly linear relationship between input voltage and time delay. Non-linearity in this stage could significantly degrade the ADC’s overall performance and resolution.
+            </p>
+            <p><strong>Solution:</strong> A carefully designed current-controlled delay line was used, ensuring a linear response over the entire input range. Rigorous simulations and fine-tuning of the VTC parameters helped optimize linearity.</p>
+        </div>
+
+        <!-- Challenge 4 -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge 4: Minimizing Delay Mismatch in the Vernier TDC</h3>
+            <img src="../Project_Images/tdc-mismatch.png" alt="TDC Mismatch" class="challenge-image right-aligned">
+            <p>
+                The accuracy of the Vernier TDC depends on the precise calibration of its fast and slow delay lines. Even minor mismatches could lead to significant errors in time measurement.
+            </p>
+            <p><strong>Solution:</strong> A robust calibration routine was implemented to minimize mismatch between the delay lines. The design also included self-tuning mechanisms to adjust for variations caused by temperature or process changes.</p>
+        </div>
+
+        <!-- Challenge 5 -->
+        <div class="challenge-paragraph">
+            <h3 class="subsection-title">Challenge 5: Scaling to TSMC 130 nm CMOS Technology</h3>
+            <img src="../Project_Images/tsmc-scaling.png" alt="Scaling to TSMC 130 nm" class="challenge-image left-aligned">
+            <p>
+                Implementing the ADC design in TSMC 130 nm CMOS posed challenges related to power supply limitations, transistor sizing, and layout optimization. These issues could impact both functionality and manufacturability.
+            </p>
+            <p><strong>Solution:</strong> The design process leveraged advanced EDA tools for layout and post-layout simulations. These tools ensured that parasitics and scaling challenges were addressed, optimizing the ADC’s performance in the specified technology node.</p>
+        </div>
+    </div>
+</section>
 
 <!-- -------------------------------------------------------- -->
 <!-- Visual Showcase -->
