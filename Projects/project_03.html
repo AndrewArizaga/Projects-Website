@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Energy Management with Machine Learning</title>
+    <title>Project 3 - Machine Learning-Based Energy Meter</title>
     <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../gen-projects.css">
+    <link rel="stylesheet" href="project_03.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <h1>Andrew Arizaga - My Engineering Portfolio</h1>
@@ -28,65 +30,149 @@
     <p><strong>Disclaimer:</strong> This project is a work in progress. Updates and improvements are ongoing!</p>
 </div>
     
-    <div class="project-page-container">
-        <!-- Project Title -->
-        <h1 class="project-title">Smart Energy Management with Machine Learning</h1>
-
-        <!-- Project Content Section -->
-        <div class="project-content">
-            <!-- Project Image -->
-            <img class="project-image" src="smart-energy-management.jpg" alt="Smart Energy Management Project">
-
-            <!-- Project Motivation -->
-            <div class="project-motivation">
-                <h2>Project Motivation</h2>
-                <p>
-                    Energy consumption is something we rarely think about until the bill arrives—and let’s be honest, it’s not always easy to figure out where all that energy is going. That got me wondering: what if there was a way to not only track energy use in real time but also predict future usage patterns and detect inefficiencies before they cost you money?
-                </p>
-                <p>
-                    This project is my attempt to combine machine learning with real-time energy monitoring to create a system that’s smarter about energy usage. By analyzing patterns and spotting anomalies, the goal is to make managing energy easier and more proactive. It’s about bridging technology and everyday life to tackle a problem we all face but rarely see.
-                </p>
-            </div>
-        </div>
-
-        <!-- Project Description -->
-        <div class="project-description">
-            <h2>Project Description</h2>
+<!-- -------------------------------------------------------- -->
+<!-- Title Section -->
+<!-- -------------------------------------------------------- -->
+<section id="project-title">
+    <div class="title-container">
+        <div class="title-text">
+            <h1>Machine Learning-Based Energy Meter</h1>
             <p>
-                This project integrates machine learning algorithms with energy monitoring systems to provide real-time insights into energy consumption. By using predictive models, the system can forecast future energy usage, identify inefficiencies, and suggest actionable steps to optimize energy consumption.
+                The Machine Learning-Based Energy Meter leverages IoT and predictive analytics to monitor energy 
+                consumption in real time. This innovative solution notifies users about their energy usage patterns 
+                and helps reduce electricity costs while promoting sustainable energy practices.
+            </p>
+        </div>
+        <img src="../Project_Images/Project_03_1.png" alt="Project Overview" class="title-image">
+    </div>
+</section>
+    
+<!-- -------------------------------------------------------- -->
+<!-- Project Description Section -->
+<!-- -------------------------------------------------------- -->
+<section id="project-description">
+    <div class="description-container">
+        <h2>Project Description</h2>
+
+        <!-- Overview -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Overview</h3>
+            <img src="../Project_Images/Project_03_2.png" alt="Energy Monitoring Overview" class="description-image left-aligned">
+            <p class="description-text">
+                This project integrates sensors, microcontrollers, and Wi-Fi communication to create a smart energy meter. By capturing data on current, voltage, and power, the system calculates energy usage and sends notifications through IFTTT. Its machine learning capabilities enable analysis of consumption patterns, providing insights for energy optimization.
             </p>
         </div>
 
-        <!-- Key Features Section -->
-        <div class="components-section">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Real-time energy monitoring with smart sensors</li>
-                <li>Machine learning algorithms for usage prediction</li>
-                <li>Anomaly detection to identify inefficiencies</li>
-                <li>Customizable dashboards for user insights</li>
+        <!-- Features of the Energy Meter -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Features of the Energy Meter</h3>
+            <img src="../Project_Images/Project_03_3.png" alt="Features of the Energy Meter" class="description-image right-aligned">
+            <p class="description-text">
+                Key features include:
+            </p>
+            <ul class="description-text">
+                <li>Real-time tracking of energy consumption.</li>
+                <li>Cloud-based data storage for accessibility.</li>
+                <li>Notifications via SMS and email using the IFTTT platform.</li>
+                <li>Machine learning models for usage prediction and optimization suggestions.</li>
             </ul>
         </div>
 
-        <!-- Skills Applied Section -->
-        <div class="components-section">
-            <h2>Skills Applied</h2>
-            <ul>
-                <li>Machine learning model development</li>
-                <li>Data collection and analysis</li>
-                <li>Embedded systems integration</li>
-                <li>User interface design and implementation</li>
-            </ul>
+        <!-- System Diagram -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">System Diagram</h3>
+            <img src="../Project_Images/Project_03_4.png" alt="System Diagram" class="description-image left-aligned">
+            <p class="description-text">
+                The system diagram outlines the components and their interconnections, including sensors for measuring current and voltage, the Arduino Uno for processing, and the ESP12 Wi-Fi module for communication. The system is powered by a stable power supply and interfaces with the IFTTT platform to send notifications.
+            </p>
         </div>
-
-        <!-- Back to Projects Button -->
-        <a href="../projects.html" class="back-button">Back to Projects</a>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
-        <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
-    </footer>
+<!-- -------------------------------------------------------- -->
+<!-- How It Works Section -->
+<!-- -------------------------------------------------------- -->
+<section id="how-it-works">
+    <div class="how-it-works-container">
+        <h2 class="section-title">How It Works</h2>
+
+        <!-- Step 1: Data Collection -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 1: Data Collection</h3>
+            <img src="../Project_Images/Project_03_data_collection.png" alt="Data Collection" class="how-it-works-image left-aligned">
+            <p>
+                Current and voltage sensors measure the parameters of the load and send analog signals to the Arduino Uno. These signals are converted into digital values using the ADC (Analog-to-Digital Converter) of the microcontroller.
+            </p>
+        </div>
+
+        <!-- Step 2: Data Processing -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 2: Data Processing</h3>
+            <img src="../Project_Images/Project_03_data_processing.png" alt="Data Processing" class="how-it-works-image right-aligned">
+            <p>
+                The Arduino processes the data to calculate energy consumption. This involves multiplying voltage and current values and integrating them over time to compute energy. Results are formatted for transmission via the Wi-Fi module.
+            </p>
+        </div>
+
+        <!-- Step 3: Cloud Integration and Notifications -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 3: Cloud Integration and Notifications</h3>
+            <img src="../Project_Images/Project_03_cloud_integration.png" alt="Cloud Integration" class="how-it-works-image left-aligned">
+            <p>
+                Data is sent to a cloud platform via the ESP12 Wi-Fi module. Using IFTTT, users receive SMS or email notifications about energy usage trends and alerts. Historical data is stored for analysis and machine learning integration.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------------------------- -->
+<!-- Applications and Benefits Section -->
+<!-- -------------------------------------------------------- -->
+<section id="applications">
+    <div class="applications-container">
+        <h2>Applications and Benefits</h2>
+
+        <!-- Smart Home Energy Management -->
+        <div class="application-paragraph">
+            <h3 class="subsection-title">Smart Home Energy Management</h3>
+            <img src="../Project_Images/smart_home.jpg" alt="Smart Home Energy Management" class="application-image left-aligned">
+            <p>
+                The energy meter is ideal for smart homes, providing:
+            </p>
+            <ul>
+                <li>Real-time monitoring of appliances and devices.</li>
+                <li>Automatic notifications to avoid overconsumption.</li>
+                <li>Insights for energy-saving practices and automation.</li>
+            </ul>
+        </div>
+
+        <!-- Sustainable Living -->
+        <div class="application-paragraph">
+            <h3 class="subsection-title">Sustainable Living</h3>
+            <img src="../Project_Images/sustainability.jpg" alt="Sustainability" class="application-image right-aligned">
+            <p>
+                By optimizing energy consumption, this project contributes to:
+            </p>
+            <ul>
+                <li>Lower carbon footprints for households and businesses.</li>
+                <li>Efficient use of renewable energy sources.</li>
+                <li>Reduced electricity bills and resource conservation.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="call-to-action">
+    <div class="cta-container">
+        <a href="../projects.html" class="cta-button">Back to Projects</a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Andrew Arizaga. All rights reserved.</p>
+    <p>Made with an irrational amount of caffeine and a questionable number of debug attempts.</p>
+</footer>
+
 </body>
 </html>
