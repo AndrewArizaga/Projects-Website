@@ -125,11 +125,15 @@ h2 {
 /* How It Works Section */
 /* -------------------------------------------------------- */
 
-/* How It Works Section */
+/* -------------------------------------------------------- */
+/* General Styling for How It Works Section */
+/* -------------------------------------------------------- */
 #how-it-works {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background for contrast */
+    color: #e0e0e0; /* Light text for readability */
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .how-it-works-container {
@@ -137,6 +141,7 @@ h2 {
     margin: 0 auto;
 }
 
+/* Section Title */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -145,35 +150,8 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.how-it-works-step {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    overflow: hidden;
-}
-
-.step-image {
-    max-width: 400px;
-    border-radius: 8px;
-    margin: 0 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.left-aligned {
-    float: left;
-    margin-right: 20px;
-}
-
-.right-aligned {
-    float: right;
-    margin-left: 20px;
-}
-
-.step-text {
-    flex: 1;
-}
-
-.step-text h3 {
+/* Subsection Title */
+.subsection-title {
     font-size: 1.8rem;
     color: #00aaff;
     margin-bottom: 10px;
@@ -182,10 +160,53 @@ h2 {
     font-weight: bold;
 }
 
-.step-text p {
+/* Paragraph Container */
+.how-it-works-paragraph {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures proper wrapping of text around images */
+}
+
+/* Paragraph Text */
+.how-it-works-paragraph p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
+}
+
+/* Image Styling */
+.how-it-works-image {
+    max-width: 350px;
+    height: auto;
+    margin: 0 20px 20px 0; /* Default margin for left alignment */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment is left */
+}
+
+/* Alternate Image Alignment */
+.how-it-works-image.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust margin for right alignment */
+}
+
+/* List Styling */
+.how-it-works-paragraph ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* Links Inside the Section */
+.how-it-works-paragraph a {
+    color: #00aaff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.how-it-works-paragraph a:hover {
+    color: #4ba3f2;
 }
 
 /* -------------------------------------------------------- */
