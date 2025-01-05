@@ -256,6 +256,65 @@
     </div>
 </section>
 
+<!-- -------------------------------------------------------- -->
+<!-- Visual Showcase Section -->
+<!-- -------------------------------------------------------- -->
+<section id="visual-showcase">
+    <div class="visual-showcase-container">
+        <h2>Visual Showcase</h2>
+
+        <!-- Showcase Description -->
+        <div class="showcase-paragraph">
+            <h3>Overview</h3>
+            <p>
+                The Visual Showcase highlights key components and results of the 5.12 Gbps Time-Interleaved Front-End of SerDes project. Below are block diagrams, waveforms, and simulation results that provide a detailed look into the design and its performance.
+            </p>
+        </div>
+
+        <!-- Block Diagram -->
+        <div class="showcase-paragraph">
+            <h3>System Block Diagram</h3>
+            <img src="../Project_Images/serdes_block_diagram.png" alt="SerDes System Block Diagram" class="showcase-image">
+            <p>
+                The block diagram illustrates the overall architecture of the SerDes system, including:
+                <ul>
+                    <li>Serializer at the transmitter for parallel-to-serial data conversion.</li>
+                    <li>Pre-emphasis and channel for signal enhancement and transmission.</li>
+                    <li>Equalizer, Voltage-to-Time Converter (VTC), and Clock/Data Recovery (CDR) at the receiver.</li>
+                </ul>
+                This layout ensures high-speed, reliable data transmission at 5.12 Gbps.
+            </p>
+        </div>
+
+        <!-- Waveform Snapshots -->
+        <div class="showcase-paragraph">
+            <h3>Waveform Snapshots</h3>
+            <img src="../Project_Images/dfe_waveform.png" alt="Waveform Before and After DFE" class="showcase-image">
+            <p>
+                The waveform snapshot compares the input signal before and after <strong>adaptive Decision Feedback Equalization (DFE)</strong>. Post-DFE, the signal exhibits reduced inter-symbol interference (ISI), ensuring accurate data recovery.
+            </p>
+        </div>
+
+        <!-- Simulation Results -->
+        <div class="showcase-paragraph">
+            <h3>Simulation Results</h3>
+            <img src="../Project_Images/cdr_simulation.png" alt="Clock and Data Recovery Simulation" class="showcase-image">
+            <p>
+                The simulation results demonstrate the precision of the <strong>Clock and Data Recovery (CDR)</strong> mechanism. The phase-picking algorithm accurately aligns the clock with the incoming data stream, minimizing jitter and improving timing accuracy.
+            </p>
+        </div>
+
+        <!-- Design Layout -->
+        <div class="showcase-paragraph">
+            <h3>Design Layout</h3>
+            <img src="../Project_Images/design_layout.png" alt="SerDes Circuit Design Layout" class="showcase-image">
+            <p>
+                The circuit layout showcases the implementation of the design using <strong>TSMC 130 nm CMOS technology</strong>. Each component is optimized for area and power efficiency, ensuring robust performance within the design constraints.
+            </p>
+        </div>
+    </div>
+</section>
+    
     <!-- -------------------------------------------------------- -->
     <!-- Call-to-Action Section -->
     <!-- -------------------------------------------------------- -->
