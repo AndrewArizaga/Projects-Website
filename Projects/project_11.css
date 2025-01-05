@@ -11,7 +11,7 @@
 /* Body Styling */
 /* -------------------------------------------------------- */
 body {
-    background: url('../Images/project_05_background.jpg'); /* Add a custom background */
+    background: url('../aboutme-background.jpg'); /* Update the path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
