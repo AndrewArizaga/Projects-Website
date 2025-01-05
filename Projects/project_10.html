@@ -47,6 +47,7 @@
     </section>
 
     <!-- Project Description Section -->
+        <!-- Project Description Section -->
     <section id="project-description">
         <div class="description-container">
             <h2>Project Description</h2>
@@ -56,9 +57,17 @@
                 <h3 class="subsection-title">Overview</h3>
                 <img src="../Project_Images/Network_Reconfig_Diagram.png" alt="Network Overview" class="description-image left-aligned">
                 <p class="description-text">
-                    The tool is designed to optimize the topology of radial power distribution systems. It incorporates
-                    heuristic optimization techniques to minimize losses and ensure voltage stability across all nodes.
-                    Key features include compatibility with IEEE-standard data formats and scalability for large systems.
+                    This project focuses on optimizing the topology of radial power distribution systems using advanced 
+                    heuristic optimization techniques. Radial power systems are widely used due to their simplicity and 
+                    cost-effectiveness; however, they are prone to challenges such as voltage drops, power losses, and 
+                    inefficient resource distribution. The developed tool addresses these issues by reconfiguring the 
+                    network to achieve improved stability, reduced losses, and enhanced system performance.
+                </p>
+                <p class="description-text">
+                    The tool is built with scalability in mind, enabling it to handle large and complex radial systems. 
+                    Additionally, it adheres to IEEE-standard data formats for seamless integration into existing engineering 
+                    workflows. By leveraging Python’s computational capabilities, the tool ensures accuracy and efficiency 
+                    in analyzing and reconfiguring distribution networks.
                 </p>
             </div>
 
@@ -66,14 +75,53 @@
             <div class="description-paragraph">
                 <h3 class="subsection-title">Key Features</h3>
                 <ul class="description-text">
-                    <li>Reads and processes IEEE-standard data from Excel files.</li>
-                    <li>Implements heuristic optimization methods for reconfiguration.</li>
-                    <li>Handles large-scale radial distribution networks.</li>
-                    <li>Outputs optimized configurations back into IEEE-standard Excel files.</li>
+                    <li><strong>Data Integration:</strong> The tool reads network data formatted in IEEE standards directly from 
+                    Excel spreadsheets, including node identifiers, voltage levels, line impedances, and load information.</li>
+                    <li><strong>Heuristic Optimization:</strong> Implements iterative algorithms to identify optimal network configurations, 
+                    focusing on minimizing power losses while maintaining voltage stability across all nodes.</li>
+                    <li><strong>Scalability:</strong> Designed to handle large-scale radial distribution networks with varying levels 
+                    of complexity and node configurations.</li>
+                    <li><strong>Output Compliance:</strong> Exports the reconfigured network data back into IEEE-standard Excel files, 
+                    ensuring compatibility with existing analysis tools and engineering documentation.</li>
+                    <li><strong>User-Friendly Design:</strong> The modular structure allows for easy integration with additional 
+                    features such as GUI interfaces or advanced visualization tools in the future.</li>
+                </ul>
+            </div>
+
+            <!-- Advantages of Heuristic Optimization -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Advantages of Heuristic Optimization</h3>
+                <p class="description-text">
+                    Unlike classic optimization methods, which often rely on predefined models and rigid constraints, heuristic 
+                    optimization offers greater flexibility in addressing complex, real-world problems. This tool uses heuristic 
+                    algorithms to iteratively explore potential configurations, balancing computational efficiency with accuracy.
+                </p>
+                <p class="description-text">
+                    Key benefits include:
+                </p>
+                <ul class="description-text">
+                    <li>Faster convergence to near-optimal solutions, even in large systems.</li>
+                    <li>Ability to handle non-linearities and constraints inherent in power distribution networks.</li>
+                    <li>Robustness in adapting to dynamic changes in network topology or load demands.</li>
+                </ul>
+            </div>
+
+            <!-- Application Scenarios -->
+            <div class="description-paragraph">
+                <h3 class="subsection-title">Application Scenarios</h3>
+                <p class="description-text">
+                    The tool can be applied in various scenarios, including:
+                </p>
+                <ul class="description-text">
+                    <li><strong>Urban Power Grids:</strong> Optimizing power flow in dense urban areas to prevent outages and reduce energy losses.</li>
+                    <li><strong>Rural Electrification:</strong> Enhancing the efficiency of distribution networks in rural areas, where infrastructure is often limited.</li>
+                    <li><strong>Renewable Energy Integration:</strong> Adapting the grid to accommodate distributed energy resources such as solar and wind power.</li>
+                    <li><strong>Disaster Recovery:</strong> Reconfiguring networks post-disaster to restore functionality and prioritize critical loads.</li>
                 </ul>
             </div>
         </div>
     </section>
+
 
     <!-- How It Works Section -->
     <section id="how-it-works">
