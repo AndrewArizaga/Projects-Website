@@ -249,6 +249,61 @@ body {
 }
 
 /* -------------------------------------------------------- */
+/* Visual Showcase Section */
+/* -------------------------------------------------------- */
+#visual-showcase {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: #e0e0e0; /* Light gray text for readability */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.visual-showcase-container {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the section content */
+    text-align: center; /* Center-align text */
+}
+
+/* Section Title */
+#visual-showcase h2 {
+    font-size: 2.5rem; /* Large font size for title */
+    color: #4ba3f2; /* Bright blue title color */
+    margin-bottom: 30px; /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for emphasis */
+}
+
+/* Paragraph Styling */
+.showcase-paragraph {
+    margin-bottom: 40px; /* Space between paragraphs */
+}
+
+.showcase-paragraph h3 {
+    font-size: 1.8rem; /* Font size for subsection titles */
+    color: #00aaff; /* Light blue subsection titles */
+    margin-bottom: 15px; /* Space below subsection titles */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.showcase-paragraph p {
+    font-size: 1.2rem; /* Font size for text */
+    line-height: 1.8; /* Line height for readability */
+    margin-top: 10px; /* Space above the text */
+    text-align: justify; /* Justified text alignment */
+}
+
+/* Image Styling */
+.showcase-image {
+    max-width: 100%; /* Ensure images scale to container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space above and below images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: block; /* Center images */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------------------------------------------- */
 /* Call-to-Action Section */
 /* -------------------------------------------------------- */
 #call-to-action {
