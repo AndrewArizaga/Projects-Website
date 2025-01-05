@@ -149,7 +149,7 @@ ul.description-text li {
 }
 
 /* -------------------------------------------------------- */
-/* How It Works Section */
+/* How It Works Section Styling */
 /* -------------------------------------------------------- */
 #how-it-works {
     padding: 40px 20px;
@@ -171,13 +171,22 @@ ul.description-text li {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
 .how-it-works-paragraph {
     margin-bottom: 30px;
     overflow: hidden;
 }
 
 .how-it-works-image {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     margin: 0 20px 20px 0;
     border-radius: 8px;
@@ -194,6 +203,35 @@ ul.description-text li {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
+    margin-bottom: 10px;
+}
+
+ul.description-text {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.8;
+}
+
+ul.description-text li {
+    margin-bottom: 10px;
+}
+
+/* Highlighted Text Styling */
+.how-it-works-paragraph strong {
+    color: #4ba3f2;
+}
+
+/* Spacing and Layout Adjustments */
+.how-it-works-paragraph ul {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.how-it-works-paragraph ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* -------------------------------------------------------- */
