@@ -201,7 +201,61 @@
         </div>
     </div>
 </section>
-    
+
+<!-- -------------------------------------------------------- -->
+<!-- Challenges and Solutions Section -->
+<!-- -------------------------------------------------------- -->
+<section id="challenges-and-solutions">
+    <div class="challenges-container">
+        <h2>Challenges and Solutions</h2>
+
+        <div class="challenge-paragraph">
+            <h3>Challenge: Inter-Symbol Interference (ISI)</h3>
+            <p>
+                At high data rates like 5.12 Gbps, inter-symbol interference (ISI) becomes a major challenge. 
+                This occurs when signals from previous bits overlap with the current bit, causing errors in data recovery.
+            </p>
+            <h4>Solution:</h4>
+            <p>
+                Implemented <strong>adaptive Decision Feedback Equalization (DFE)</strong>, which dynamically adjusts to the channel conditions, mitigating ISI by removing the impact of previously received symbols. The adaptive nature ensures robust performance even under varying PVT conditions.
+            </p>
+        </div>
+
+        <div class="challenge-paragraph">
+            <h3>Challenge: Signal Integrity Over Long Channels</h3>
+            <p>
+                Signal degradation due to limited channel bandwidth, reflections at connectors, and crosstalk from neighboring devices posed significant hurdles for reliable data transmission.
+            </p>
+            <h4>Solution:</h4>
+            <p>
+                Integrated <strong>pre-emphasis</strong> at the transmitter to boost high-frequency components of the signal. This technique compensates for channel attenuation, ensuring the signal arrives at the receiver with sufficient clarity for processing.
+            </p>
+        </div>
+
+        <div class="challenge-paragraph">
+            <h3>Challenge: Clock Recovery and Timing Accuracy</h3>
+            <p>
+                The absence of a separate clock signal in serial communication makes accurate clock recovery critical. Even slight inaccuracies in clock alignment can lead to sampling errors.
+            </p>
+            <h4>Solution:</h4>
+            <p>
+                Used a <strong>phase-picking mechanism</strong> for clock and data recovery (CDR), supported by a <strong>digitally controlled oscillator (DCO)</strong>. This ensures precise clock alignment with the incoming data stream, enabling reliable data recovery.
+            </p>
+        </div>
+
+        <div class="challenge-paragraph">
+            <h3>Challenge: Handling PVT Variations</h3>
+            <p>
+                Variations in process, voltage, and temperature (PVT) can significantly impact circuit performance, leading to timing errors or degraded signal quality.
+            </p>
+            <h4>Solution:</h4>
+            <p>
+                Designed robust adaptive circuits that compensate for PVT variations. The digital implementation of the equalizer ensures that the system adjusts dynamically to environmental and manufacturing changes, maintaining consistent performance.
+            </p>
+        </div>
+    </div>
+</section>
+
     <!-- -------------------------------------------------------- -->
     <!-- Call-to-Action Section -->
     <!-- -------------------------------------------------------- -->
