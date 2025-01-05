@@ -137,6 +137,65 @@ body {
 }
 
 /* -------------------------------------------------------- */
+/* How It Works Section */
+/* -------------------------------------------------------- */
+#how-it-works {
+    padding: 40px 20px; /* Padding around the entire section */
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black background */
+    color: #e0e0e0; /* Light gray text for readability */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.how-it-works-container {
+    max-width: 1200px; /* Restrict section width */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Section Title Styling */
+#how-it-works h2 {
+    text-align: center; /* Center-align the title */
+    font-size: 2.5rem; /* Large font size for the title */
+    color: #4ba3f2; /* Bright blue title color */
+    margin-bottom: 30px; /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow for emphasis */
+}
+
+/* Subsection Title Styling */
+.how-it-works-paragraph h3.subsection-title {
+    font-size: 1.8rem; /* Font size for subsection titles */
+    color: #00aaff; /* Light blue color for subsections */
+    margin-bottom: 15px; /* Space below the title */
+    border-bottom: 2px solid #00aaff; /* Underline for subsections */
+    padding-bottom: 5px; /* Padding below the text */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Paragraph Styling */
+.how-it-works-paragraph {
+    margin-bottom: 40px; /* Space between steps */
+    overflow: hidden; /* Prevent content overflow from floated images */
+}
+
+.how-it-works-paragraph p {
+    font-size: 1.2rem; /* Font size for text */
+    line-height: 1.8; /* Line height for readability */
+    text-align: justify; /* Align text for a clean, formal look */
+    margin-bottom: 15px; /* Space below each paragraph */
+}
+
+/* List Styling (if applicable) */
+.how-it-works-paragraph ul {
+    list-style-type: disc; /* Bullet points for lists */
+    margin-left: 40px; /* Indent for lists */
+    font-size: 1.2rem; /* Match font size with paragraphs */
+    line-height: 1.8; /* Line height for consistent spacing */
+}
+
+.how-it-works-paragraph ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* -------------------------------------------------------- */
 /* Call-to-Action Section */
 /* -------------------------------------------------------- */
 #call-to-action {
