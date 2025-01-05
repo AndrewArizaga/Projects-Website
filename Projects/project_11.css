@@ -124,16 +124,11 @@ h2 {
 /* -------------------------------------------------------- */
 /* How It Works Section */
 /* -------------------------------------------------------- */
-
-/* -------------------------------------------------------- */
-/* General Styling for How It Works Section */
-/* -------------------------------------------------------- */
 #how-it-works {
     padding: 40px 20px;
     background-color: rgba(0, 0, 0, 0.85); /* Dark background for contrast */
     color: #e0e0e0; /* Light text for readability */
     margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .how-it-works-container {
