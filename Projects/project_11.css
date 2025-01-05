@@ -207,21 +207,64 @@ h2 {
 /* -------------------------------------------------------- */
 /* Applications Section */
 /* -------------------------------------------------------- */
-#applications {
+/* -------------------------------------------------------- */
+/* Technical Challenges and Solutions Section */
+/* -------------------------------------------------------- */
+#technical-challenges {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 30px;
-    color: #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark theme */
+    color: #e0e0e0; /* Light text for readability */
 }
 
-.application-paragraph {
+.technical-challenges-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4ba3f2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Subsection Titles */
+.subsection-title {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.challenge-paragraph {
     margin-bottom: 30px;
     overflow: hidden;
 }
 
-.application-paragraph p {
+.challenge-paragraph p {
     font-size: 1.2rem;
     line-height: 1.8;
+    text-align: justify;
+}
+
+/* Images */
+.challenge-image {
+    max-width: 350px;
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment */
+}
+
+.challenge-image.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust for right alignment */
 }
 
 /* -------------------------------------------------------- */
