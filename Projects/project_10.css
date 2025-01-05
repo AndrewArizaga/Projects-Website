@@ -64,7 +64,7 @@ body {
 }
 
 /* -------------------------------------------------------- */
-/* Project Description Section */
+/* Project Description Section Styling */
 /* -------------------------------------------------------- */
 #project-description {
     padding: 40px 20px;
@@ -118,6 +118,34 @@ h2 {
 .description-image.right-aligned {
     float: right;
     margin: 0 0 20px 20px;
+}
+
+ul.description-text {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.8;
+}
+
+ul.description-text li {
+    margin-bottom: 10px;
+}
+
+/* Highlighted Text Styling */
+.description-paragraph strong {
+    color: #4ba3f2;
+}
+
+/* Spacing and Layout Adjustments */
+.description-paragraph ul {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.description-paragraph ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* -------------------------------------------------------- */
