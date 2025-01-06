@@ -68,9 +68,9 @@ body {
 /* -------------------------------------------------------- */
 #project-description {
     padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
     color: #e0e0e0;
+    margin-bottom: 30px;
 }
 
 .description-container {
@@ -104,14 +104,30 @@ h2 {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
+    margin-bottom: 15px;
 }
 
 .description-image {
     max-width: 500px;
     height: auto;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left; /* Default alignment for images */
+}
+
+.description-image.right-aligned {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust margin for right alignment */
+}
+
+ul.description-text {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+ul.description-text li {
+    margin-bottom: 10px;
 }
 
 /* -------------------------------------------------------- */
