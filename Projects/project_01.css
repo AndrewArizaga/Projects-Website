@@ -113,12 +113,14 @@ h2 {
     margin: 0 20px 20px 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    float: left; /* Default alignment for images */
 }
 
-.description-image.right-aligned {
-    float: right;
-    margin: 0 0 20px 20px; /* Adjust margin for right alignment */
+.description-paragraph:nth-child(odd) .description-image {
+    float: left; /* Left-align images for odd sections */
+}
+
+.description-paragraph:nth-child(even) .description-image {
+    float: right; /* Right-align images for even sections */
 }
 
 ul.description-text {
