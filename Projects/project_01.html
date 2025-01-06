@@ -163,6 +163,83 @@
 </section>
 
 
+<!-- ------------------------ -->
+<!-- How It Works Section -->
+<!-- ------------------------ -->    
+<section id="how-it-works">
+    <div class="how-it-works-container">
+        <h2 class="section-title">How It Works</h2>
+
+        <!-- Step 1: Room Occupancy Detection -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 1: Room Occupancy Detection</h3>
+            <img src="../Project_Images/Room_Occupancy_Detection.png" alt="Room Occupancy Detection" class="how-it-works-image left-aligned">
+            <p>
+                The first step involves detecting room occupancy using Passive Infrared (PIR) sensors. These sensors detect motion by identifying changes in infrared radiation levels, which are emitted by human bodies. This data is sent to the ESP32 microcontroller to determine the occupancy state of the room.
+            </p>
+            <ul>
+                <li>PIR sensors trigger signals to indicate movement.</li>
+                <li>If no motion is detected for a specified duration, the system powers down connected appliances.</li>
+                <li>The ESP32 dynamically monitors motion data and adjusts system responses.</li>
+            </ul>
+        </div>
+
+        <!-- Step 2: User Authentication -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 2: User Authentication</h3>
+            <img src="../Project_Images/User_Authentication.png" alt="User Authentication" class="how-it-works-image right-aligned">
+            <p>
+                Once motion is detected, the system employs a dual-layer authentication mechanism. This combines facial recognition, handled by the ESP32-CAM, and voice command verification using the serial voice recognition module. Both layers work together to verify the user’s identity.
+            </p>
+            <ul>
+                <li><strong>Facial Recognition:</strong> Real-time image processing matches facial features against profiles.</li>
+                <li><strong>Voice Commands:</strong> Predefined commands, such as "Turn on lights," are validated through the voice module.</li>
+            </ul>
+        </div>
+
+        <!-- Step 3: Appliance and Light Control -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 3: Appliance and Light Control</h3>
+            <img src="../Project_Images/Appliance_Control.png" alt="Appliance Control" class="how-it-works-image left-aligned">
+            <p>
+                After authentication, the ESP32 microcontroller manages the operation of connected appliances and lights through relay switches. These relays serve as electronic switches that control the flow of electricity to various devices. The system dynamically adjusts its behavior based on user preferences and room conditions.
+            </p>
+            <ul>
+                <li>Relays activate appliances based on commands from the ESP32.</li>
+                <li>Lights and devices are turned off automatically when the room becomes unoccupied.</li>
+            </ul>
+        </div>
+
+        <!-- Step 4: Feedback Mechanism -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 4: Feedback Mechanism</h3>
+            <img src="../Project_Images/Feedback_Mechanism.png" alt="Feedback Mechanism" class="how-it-works-image right-aligned">
+            <p>
+                The system provides immediate feedback to the user regarding its operational state. This feedback includes both visual indicators, such as LED signals, and optional remote notifications through a connected mobile application.
+            </p>
+            <ul>
+                <li><strong>LED Indicators:</strong> Lights indicate states like motion detected, authentication ongoing, or system idle.</li>
+                <li><strong>Optional App Notifications:</strong> Users can receive real-time updates about system activity or errors.</li>
+            </ul>
+        </div>
+
+        <!-- Step 5: System Coordination -->
+        <div class="how-it-works-paragraph">
+            <h3 class="subsection-title">Step 5: System Coordination</h3>
+            <img src="../Project_Images/System_Coordination.png" alt="System Coordination" class="how-it-works-image left-aligned">
+            <p>
+                At the core of the system is the ESP32 microcontroller, which coordinates all the components. The PIR sensors, ESP32-CAM, relays, and voice module are integrated seamlessly to create a cohesive automation solution. The ESP32 uses communication protocols such as I2C and UART to ensure fast and reliable data exchange between components.
+            </p>
+            <ul>
+                <li><strong>I2C:</strong> Facilitates data flow from sensors.</li>
+                <li><strong>UART:</strong> Handles communication between the ESP32 and the voice module.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    
+
     <!-- Visual Showcase Section -->
     <section id="visual-showcase">
         <div class="visual-showcase-container">
