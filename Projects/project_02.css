@@ -11,12 +11,12 @@
 /* Body Styling */
 /* -------------------------------------------------------- */
 body {
-    background: url('../project_02-background.jpg'); /* Specific to this project */
+    background: url('../aboutme-background.jpg'); /* Update the path as needed */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: #e0e0e0;
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: 'Roboto', sans-serif;
 }
 
