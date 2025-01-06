@@ -42,42 +42,126 @@
             <img src="../Project_Images/FM01_Title.png" alt="Project Overview" class="title-image">
         </div>
     </section>
+
     
-    <!-- Project Description Section -->
-    <section id="project-description">
-        <div class="description-container">
-            <h2>Project Description</h2>
+<!-- -------------------------------------------------------- -->
+<!-- Project Description Section -->
+<!-- -------------------------------------------------------- -->    
+   <section id="project-description">
+    <div class="description-container">
+        <h2>Project Description</h2>
 
-            <!-- Overview -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Overview</h3>
-                <img src="../Project_Images/FM01_Overview.png" alt="Overview" class="description-image left-aligned">
-                <p class="description-text">
-                    This project leverages modern IoT technology to develop a smart power management system. It automates energy-efficient operations by detecting room occupancy through IR sensors and identifying users via iris recognition.
-                </p>
-            </div>
-
-            <!-- Key Features -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">Key Features</h3>
-                <img src="../Project_Images/FM01_Features.png" alt="Features" class="description-image right-aligned">
-                <p class="description-text">
-                    - **Automated Controls**: Adjusts devices based on occupancy and identity.  
-                    - **Energy Savings**: Reduces power wastage for sustainable living.  
-                    - **Custom PCB**: Designed for reliability and scalability.
-                </p>
-            </div>
-
-            <!-- System Workflow -->
-            <div class="description-paragraph">
-                <h3 class="subsection-title">System Workflow</h3>
-                <img src="../Project_Images/FM01_Workflow.png" alt="Workflow Diagram" class="description-image left-aligned">
-                <p class="description-text">
-                    The system processes sensor inputs to determine room occupancy and identity. Based on this data, relays are triggered to control connected devices. The workflow includes detection, recognition, and execution phases.
-                </p>
-            </div>
+        <!-- -------------------------------------------------------- -->
+        <!-- Overview -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Overview</h3>
+            <img src="../Project_Images/FM01_Overview.png" alt="Smart Power Management Overview" class="description-image left-aligned">
+            <p class="description-text">
+                The <strong>Smart Power Management System Using Microcontroller</strong> is a versatile and energy-efficient solution designed to optimize power usage in modern spaces. 
+                It achieves this by automating the control of appliances such as lights, fans, and televisions based on room occupancy and user identification. 
+                The system integrates powerful microcontrollers, sensors, and relays, providing a compact and efficient solution for energy management. This innovative approach reduces energy waste 
+                while enhancing user convenience and security, making it ideal for smart homes, offices, and other applications.
+            </p>
         </div>
-    </section>
+
+        <!-- -------------------------------------------------------- -->
+        <!-- ESP32-WROOM-32D -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">ESP32-WROOM-32D</h3>
+            <img src="../Project_Images/FM01_ESP32.png" alt="ESP32-WROOM-32D" class="description-image right-aligned">
+            <p class="description-text">
+                The <strong>ESP32-WROOM-32D</strong> serves as the core microcontroller driving the system. This module combines robust processing capabilities with integrated Wi-Fi and Bluetooth modules, 
+                making it an excellent choice for IoT and automation projects. Its dual-core architecture ensures efficient management of multiple tasks, such as handling sensors, relays, and communication.
+            </p>
+            <p class="description-text">
+                The ESP32 was selected for its versatility, energy efficiency, and ability to process real-time sensor inputs. It seamlessly integrates with other components to ensure a responsive and reliable system.
+            </p>
+            <ul class="description-text">
+                <li>Processes data from IR sensors for occupancy detection.</li>
+                <li>Communicates with the ESP32-CAM module for user recognition.</li>
+                <li>Sends control signals to relay modules for appliance management.</li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------------------------------- -->
+        <!-- ESP32-CAM Module -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">ESP32-CAM Module</h3>
+            <img src="../Project_Images/FM01_CAM.png" alt="ESP32-CAM" class="description-image left-aligned">
+            <p class="description-text">
+                The <strong>ESP32-CAM Module</strong> adds advanced image processing and user authentication to the system. Its built-in camera enables iris recognition, enhancing security and personalization. 
+                This compact module reduces the overall size of the project while maintaining high functionality.
+            </p>
+            <p class="description-text">
+                The ESP32-CAM was chosen for its cost-effectiveness, high-resolution capabilities, and integration of camera and microcontroller features into a single unit. It plays a crucial role in providing secure access control.
+            </p>
+            <ul class="description-text">
+                <li>Captures images for iris recognition to identify authorized users.</li>
+                <li>Communicates authentication results to the ESP32-WROOM-32D.</li>
+                <li>Enables potential future features like video streaming or remote monitoring.</li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------------------------------- -->
+        <!-- IR Sensors -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">IR Sensors</h3>
+            <img src="../Project_Images/FM01_IR_Sensors.png" alt="IR Sensors" class="description-image right-aligned">
+            <p class="description-text">
+                Infrared (IR) sensors are essential for detecting motion and occupancy within the room. These sensors operate by detecting infrared radiation emitted by objects, enabling real-time automation. 
+                Their low power consumption and reliable performance make them an ideal choice for this project.
+            </p>
+            <p class="description-text">
+                The IR sensors ensure that appliances operate only when the room is occupied, contributing significantly to energy savings and system responsiveness.
+            </p>
+            <ul class="description-text">
+                <li>Monitor room occupancy and send input signals to the ESP32-WROOM-32D.</li>
+                <li>Trigger appliance control based on detected motion or absence.</li>
+                <li>Seamlessly integrate with the ESP32 for accurate communication.</li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------------------------------- -->
+        <!-- Relay Modules -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Relay Modules</h3>
+            <img src="../Project_Images/FM01_Relays.png" alt="Relay Modules" class="description-image left-aligned">
+            <p class="description-text">
+                Relay modules act as the interface between the low-power microcontroller and high-power appliances. These electromechanical switches enable the system to safely control devices such as lights, 
+                fans, and televisions. Their design ensures safe and reliable operation when managing high-power loads.
+            </p>
+            <p class="description-text">
+                The relays provide electrical isolation and flexibility, allowing the system to handle various appliance types while maintaining safety and reliability.
+            </p>
+            <ul class="description-text">
+                <li>Receive control signals from the ESP32-WROOM-32D to activate or deactivate appliances.</li>
+                <li>Provide isolation between the control circuit and high-power appliances.</li>
+                <li>Ensure safe and reliable operation of connected devices.</li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------------------------------- -->
+        <!-- Custom PCB -->
+        <!-- -------------------------------------------------------- -->
+        <div class="description-paragraph">
+            <h3 class="subsection-title">Custom PCB</h3>
+            <img src="../Project_Images/FM01_PCB.png" alt="Custom PCB Design" class="description-image right-aligned">
+            <p class="description-text">
+                The custom PCB integrates all components into a single, compact platform, ensuring reliability and scalability. Designed with future enhancements in mind, the PCB minimizes wiring complexity 
+                and provides efficient power distribution. Its optimized layout includes thermal management features, ensuring stable performance even under extended operation.
+            </p>
+            <p class="description-text">
+                The PCB not only simplifies assembly but also enhances the overall durability and reliability of the system. Its design aligns with modern engineering practices, emphasizing compactness and scalability.
+            </p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Visual Showcase Section -->
     <section id="visual-showcase">
