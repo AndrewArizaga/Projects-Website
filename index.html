@@ -252,6 +252,48 @@
     document.addEventListener('DOMContentLoaded', loadProjects);
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Array of text to type
+        const typewriterTexts = [
+            "an Electrical Engineering Student.",
+            "passionate about robotics and innovation.",
+            "exploring renewable energy solutions.",
+        ];
+        let currentTextIndex = 0; // Track the current text in the array
+        let charIndex = 0; // Track the current character being typed
+        const typingSpeed = 100; // Typing speed (milliseconds per character)
+        const delayBetweenTexts = 2000; // Delay before erasing or switching text
+        const typewriterElement = document.getElementById('typewriter-text');
+
+        // Function to type text
+        function type() {
+            if (charIndex < typewriterTexts[currentTextIndex].length) {
+                typewriterElement.textContent += typewriterTexts[currentTextIndex][charIndex];
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, delayBetweenTexts);
+            }
+        }
+
+        // Function to erase text
+        function erase() {
+            if (charIndex > 0) {
+                typewriterElement.textContent = typewriterTexts[currentTextIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, typingSpeed);
+            } else {
+                currentTextIndex = (currentTextIndex + 1) % typewriterTexts.length; // Move to the next text
+                setTimeout(type, typingSpeed);
+            }
+        }
+
+        // Start the typewriter effect
+        type();
+    });
+</script>
+    
 </body>
 
 </html>
