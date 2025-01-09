@@ -50,7 +50,7 @@
 
 /* Typewriter Effect */
 .typewriter {
-    font-size: 1.5rem; /* Match your desired font size */
+    font-size: 2.5rem; /* Match your desired font size */
     color: #e0e0e0; /* Match your hero section text color */
     text-align: center;
     white-space: nowrap; /* Prevent text wrapping */
@@ -62,7 +62,7 @@
 
 .cursor {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #e0e0e0;
     animation: blink 0.7s step-end infinite; /* Blinking cursor animation */
 }
