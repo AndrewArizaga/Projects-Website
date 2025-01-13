@@ -118,7 +118,7 @@
         <!-- How These Components Work Together -->
         <div class="description-paragraph">
             <h3 class="subsection-title">How These Components Work Together</h3>
-            <img src="../Images/hybrid_adc_workflow.png" alt="Hybrid ADC Workflow" class="description-image right-aligned">
+            <img src="../insert image.png" alt="Hybrid ADC Workflow" class="description-image right-aligned">
             <p class="description-text">
                 The <strong>Low-Power Two-Step Successive Approximation ADC</strong> integrates:
                 <ul>
@@ -142,7 +142,7 @@
         <!-- Step 1 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 1: Analog Input Signal</h3>
-            <img src="../Project_Images/analog-input-signal.png" alt="Analog Input Signal" class="how-it-works-image left-aligned">
+            <img src="../insert image.png" alt="Analog Input Signal" class="how-it-works-image left-aligned">
             <p>
                 The ADC begins with the reception of an analog signal, typically ranging from <strong>0–400 mV</strong>, from sources such as biomedical sensors or IoT devices. These signals represent real-world data, such as heart rate, temperature, or voltage levels. 
                 To ensure the signal is suitable for digitization:
@@ -158,7 +158,7 @@
         <!-- Step 2 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 2: Coarse Digitization with SAR ADC</h3>
-            <img src="../Project_Images/sar-adc.png" alt="Coarse Digitization with SAR ADC" class="how-it-works-image right-aligned">
+            <img src="../insert image.png" alt="Coarse Digitization with SAR ADC" class="how-it-works-image right-aligned">
             <p>
                 The <strong>6-bit SAR ADC</strong> is the first major stage of digitization. It performs a coarse approximation of the analog input signal using a <strong>successive approximation algorithm</strong>. The process involves:
             </p>
@@ -175,7 +175,7 @@
         <!-- Step 3 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 3: Residual Voltage</h3>
-            <img src="../Project_Images/residual-voltage.png" alt="Residual Voltage" class="how-it-works-image left-aligned">
+            <img src="../insert image.png" alt="Residual Voltage" class="how-it-works-image left-aligned">
             <p>
                 The residual voltage, representing the difference between the input signal and the SAR ADC’s 6-bit approximation, is a crucial intermediate signal. It retains the finer details of the original input signal and ensures that the ADC can achieve its full <strong>10-bit resolution</strong>. This signal is passed to the <strong>Voltage-to-Time Converter (VTC)</strong> for further processing.
             </p>
@@ -184,7 +184,7 @@
         <!-- Step 4 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 4: Voltage-to-Time Conversion (VTC)</h3>
-            <img src="../Project_Images/vtc.png" alt="Voltage-to-Time Conversion" class="how-it-works-image right-aligned">
+            <img src="../insert image.png" alt="Voltage-to-Time Conversion" class="how-it-works-image right-aligned">
             <p>
                 In the Voltage-to-Time Conversion stage, the residual voltage is translated into a time delay, a format that allows for high precision in the subsequent stage. 
                 This process works as follows:
@@ -201,7 +201,7 @@
         <!-- Step 5 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 5: Fine Digitization with Vernier TDC</h3>
-            <img src="../Project_Images/vernier-tdc.png" alt="Vernier TDC" class="how-it-works-image left-aligned">
+            <img src="../insert image.png" alt="Vernier TDC" class="how-it-works-image left-aligned">
             <p>
                 The <strong>4-bit Vernier Time-to-Digital Converter (TDC)</strong> processes the time delay from the VTC and converts it into a fine-resolution digital value. The TDC operates using two delay lines:
             </p>
@@ -217,7 +217,7 @@
         <!-- Step 6 -->
         <div class="how-it-works-paragraph">
             <h3 class="subsection-title">Step 6: Digital Output</h3>
-            <img src="../Project_Images/digital-output.png" alt="Digital Output" class="how-it-works-image right-aligned">
+            <img src="../insert image.png" alt="Digital Output" class="how-it-works-image right-aligned">
             <p>
                 Finally, the outputs from the SAR ADC and Vernier TDC are combined to form a <strong>10-bit digital code</strong>. The 6-bit SAR ADC output provides a coarse approximation, while the 4-bit TDC output refines the result by adding finer details.
             </p>
@@ -238,7 +238,7 @@
         <!-- Challenge 1 -->
         <div class="challenge-paragraph">
             <h3 class="subsection-title">Challenge 1: Achieving High Precision at Low Power</h3>
-            <img src="../Project_Images/precision-vs-power.png" alt="Precision vs Power" class="challenge-image left-aligned">
+            <img src="../insert image.png" alt="Precision vs Power" class="challenge-image left-aligned">
             <p>
                 One of the primary challenges in designing this ADC was maintaining high precision (10-bit resolution) without exceeding strict power consumption limits. Precision often requires amplifiers and comparators with higher transconductance, which increases power usage.
             </p>
@@ -248,7 +248,7 @@
         <!-- Challenge 2 -->
         <div class="challenge-paragraph">
             <h3 class="subsection-title">Challenge 2: Managing Noise in the Signal Path</h3>
-            <img src="../Project_Images/noise-reduction.png" alt="Noise Management" class="challenge-image right-aligned">
+            <img src="../insert image.png" alt="Noise Management" class="challenge-image right-aligned">
             <p>
                 Noise from external sources, such as power supply fluctuations and electromagnetic interference, posed a significant obstacle to achieving accurate signal conversion. Unfiltered noise could degrade both coarse and fine digitization.
             </p>
@@ -258,7 +258,7 @@
         <!-- Challenge 3 -->
         <div class="challenge-paragraph">
             <h3 class="subsection-title">Challenge 3: Ensuring Linearity in Voltage-to-Time Conversion</h3>
-            <img src="../Project_Images/linear-vtc.png" alt="Linear VTC" class="challenge-image left-aligned">
+            <img src="../insert image.png" alt="Linear VTC" class="challenge-image left-aligned">
             <p>
                 The Voltage-to-Time Converter (VTC) needed to exhibit a highly linear relationship between input voltage and time delay. Non-linearity in this stage could significantly degrade the ADC’s overall performance and resolution.
             </p>
@@ -268,7 +268,7 @@
         <!-- Challenge 4 -->
         <div class="challenge-paragraph">
             <h3 class="subsection-title">Challenge 4: Minimizing Delay Mismatch in the Vernier TDC</h3>
-            <img src="../Project_Images/tdc-mismatch.png" alt="TDC Mismatch" class="challenge-image right-aligned">
+            <img src="../insert image.png" alt="TDC Mismatch" class="challenge-image right-aligned">
             <p>
                 The accuracy of the Vernier TDC depends on the precise calibration of its fast and slow delay lines. Even minor mismatches could lead to significant errors in time measurement.
             </p>
@@ -278,7 +278,7 @@
         <!-- Challenge 5 -->
         <div class="challenge-paragraph">
             <h3 class="subsection-title">Challenge 5: Scaling to TSMC 130 nm CMOS Technology</h3>
-            <img src="../Project_Images/tsmc-scaling.png" alt="Scaling to TSMC 130 nm" class="challenge-image left-aligned">
+            <img src="../insert image.png" alt="Scaling to TSMC 130 nm" class="challenge-image left-aligned">
             <p>
                 Implementing the ADC design in TSMC 130 nm CMOS posed challenges related to power supply limitations, transistor sizing, and layout optimization. These issues could impact both functionality and manufacturability.
             </p>
@@ -305,7 +305,7 @@
         <!-- Signal Conversion Process -->
         <div class="showcase-paragraph">
             <h3 class="subsection-title">Signal Conversion Process</h3>
-            <img src="../Project_Images/signal-conversion-process.png" alt="Signal Conversion Process" class="showcase-image">
+            <img src="../insert image.png" alt="Signal Conversion Process" class="showcase-image">
             <p>
                 The flowchart illustrates the signal conversion process from the analog input to the final digital output. Each stage, including the SAR ADC, VTC, and Vernier TDC, is carefully designed to optimize precision and power efficiency.
             </p>
@@ -314,7 +314,7 @@
         <!-- Power vs. Precision -->
         <div class="showcase-paragraph">
             <h3 class="subsection-title">Power vs. Precision</h3>
-            <img src="../Project_Images/power-vs-precision.png" alt="Power vs Precision" class="showcase-image">
+            <img src="../insert image.png" alt="Power vs Precision" class="showcase-image">
             <p>
                 The graph compares the ADC's power consumption to its resolution. By leveraging a hybrid architecture, the design achieves high precision with minimal power usage, making it suitable for energy-constrained applications.
             </p>
@@ -323,7 +323,7 @@
         <!-- Simulated Waveforms -->
         <div class="showcase-paragraph">
             <h3 class="subsection-title">Simulated Waveforms</h3>
-            <img src="../Project_Images/simulated-waveforms.png" alt="Simulated Waveforms" class="showcase-image">
+            <img src="../insert image.png" alt="Simulated Waveforms" class="showcase-image">
             <p>
                 The simulated waveforms display the original sine wave input and the resulting 10-bit digital output. The high fidelity of the digital output demonstrates the ADC’s accuracy in preserving the signal’s integrity.
             </p>
@@ -332,7 +332,7 @@
         <!-- Block Diagram -->
         <div class="showcase-paragraph">
             <h3 class="subsection-title">ADC Block Diagram</h3>
-            <img src="../Project_Images/adc-block-diagram.png" alt="ADC Block Diagram" class="showcase-image">
+            <img src="../insert image.png" alt="ADC Block Diagram" class="showcase-image">
             <p>
                 The architectural block diagram provides an overview of the ADC’s components, including the SAR ADC, VTC, Vernier TDC, and front-end circuit. Each block is optimized to contribute to the system’s overall performance and efficiency.
             </p>
