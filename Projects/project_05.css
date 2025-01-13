@@ -102,7 +102,7 @@ h2 {
 }
 
 .description-image {
-    max-width: 500px; /* Adjust as needed */
+    max-width: 300px; /* Adjust as needed */
     height: auto;
     margin: 0 20px 20px 0;
     float: left; /* Default alignment to the left */
@@ -170,7 +170,7 @@ h2 {
 
 /* Image Styling */
 .how-it-works-image {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     margin: 0 20px 20px 0; /* Default margin for left alignment */
     border-radius: 8px;
@@ -251,7 +251,7 @@ h2 {
 
 /* Images */
 .challenge-image {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     margin: 0 20px 20px 0;
     border-radius: 8px;
