@@ -194,6 +194,22 @@ body {
   line-height: 1.6;
 }
 
+.projects .project {
+  margin-bottom: 2rem;
+}
+
+.projects h3 {
+  font-size: 1.2rem;
+  color: #1db954;
+  margin-bottom: 0.3rem;
+}
+
+.projects p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
