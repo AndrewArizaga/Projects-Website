@@ -71,6 +71,32 @@ ul li {
   text-decoration: underline;
 }
 
+.experience {
+  margin-bottom: 2rem;
+}
+
+.experience h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #1db954;
+}
+
+.experience p {
+  margin: 0.2rem 0 0.8rem;
+  font-style: italic;
+  color: #bbb;
+}
+
+.experience ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.experience ul li {
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
