@@ -156,6 +156,33 @@ ul li {
   color: #1db954; /* Spotify green */
 }
 
+.skills-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem; /* reduced vertical gap */
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.skills-category ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.4;        /* tighter vertical spacing */
+  margin-bottom: 0.3rem;   /* tighter spacing between rows */
+  color: #ddd;             /* brighter than #ccc for readability */
+  font-size: 0.95rem;
+}
+
+.skills-category ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #1db954; /* Spotify green bullet */
+  font-size: 0.75rem;
+  top: 0.15rem;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
