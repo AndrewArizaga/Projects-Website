@@ -152,6 +152,10 @@ ul li {
   color: #ccc;
 }
 
+.coursework li::marker {
+  color: #1db954; /* Spotify green */
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
