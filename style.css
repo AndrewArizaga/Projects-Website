@@ -131,6 +131,13 @@ ul li {
   font-size: 0.8rem;
 }
 
+.about p {
+  margin-bottom: 1rem;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
