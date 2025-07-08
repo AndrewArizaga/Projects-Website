@@ -97,6 +97,40 @@ ul li {
   color: #ccc;
 }
 
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skills-category h3 {
+  font-size: 1.2rem;
+  color: #1db954;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2rem;
+}
+
+.skills-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.skills-category ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1rem;
+  color: #ccc;
+}
+
+.skills-category ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #1db9ff;
+  font-size: 0.8rem;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
