@@ -272,7 +272,20 @@ body {
 .blue-text {
   color: #4ea8de; /* a clean, readable blue – feel free to tweak */
 }
-  
+
+.project-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.project-bullets li {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
 footer {
   text-align: center;
   margin-top: 3rem;
