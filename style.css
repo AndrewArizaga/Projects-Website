@@ -293,7 +293,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45); /* adjust this number for tint */
+  background-color: rgba(0, 0, 0, 0.3); /* adjust this number for tint */
   z-index: -1;
 }
 
