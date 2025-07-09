@@ -250,6 +250,10 @@ body {
   transition: transform 0.3s ease;
 }
 
+.blue-text {
+  color: #4ea8de; /* a clean, readable blue – feel free to tweak */
+}
+  
 footer {
   text-align: center;
   margin-top: 3rem;
