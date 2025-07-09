@@ -1,10 +1,29 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f0f0f;
+  font-family: 'Inter', sans-serif;
+  background-color: #000; /* darker base */
+  background-image: url('Background.jpg');
+  background-repeat: repeat;
+  background-size: auto;
   color: #f5f5f5;
   line-height: 1.6;
+  position: relative;
+  z-index: 0;
 }
+
+.tint-overlay {
+  background-color: rgba(10, 20, 40, 0.7); /* bluish-dark tint */
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.tint-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* dark tint overlay */
+  padding: 2rem 0;
+  min-height: 100vh;
+  z-index: 1;
+}
+
 
 .container {
   max-width: 900px;
