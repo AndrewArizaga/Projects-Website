@@ -77,57 +77,96 @@
     <section class="projects">
   <h2>🛠️ Projects</h2>
 
-  <!-- LEFT IMAGE -->
+  <section class="projects">
+  <h2>🛠️ Projects</h2>
+
+  <!-- 1. Smart Power Management System -->
   <div class="project-card">
     <img src="images/smart-power.png" alt="Smart Power Project">
     <div>
       <h3>Smart Power Management System</h3>
-      <p>Designed an ESP32-based system with IR sensors and iris recognition to automate energy usage. Custom PCBs built in KiCAD, programmed with ESP-IDF using I2C/SPI protocols and sleep modes for energy efficiency.</p>
+      <ul class="project-bullets">
+        <li>Developed an ESP32-based energy automation system that uses IR sensors and iris recognition for personalized room control.</li>
+        <li>Programmed using ESP-IDF in C with I2C/SPI integration, real-time interrupts, and power-saving deep sleep modes.</li>
+        <li>Designed a compact dual-layer PCB in KiCAD featuring SMD/through-hole parts, LDO regulators, and modular headers for sensors.</li>
+        <li>Integrated IR-based motion detection with secure iris recognition for appliance automation and energy optimization.</li>
+        <li>Validated firmware using serial debugging and logic analyzers to ensure stable sensor communication and minimal latency.</li>
+      </ul>
     </div>
   </div>
 
-  <!-- RIGHT IMAGE -->
+  <!-- 2. Face & Voice Recognition AutoDoor -->
   <div class="project-card reverse">
-    <img src="images/auto-door.png" alt="AutoDoor Project">
+    <img src="images/auto-door.png" alt="Face & Voice Recognition AutoDoor">
     <div>
       <h3>Face & Voice Recognition AutoDoor</h3>
-      <p>Built a secure access system using ESP32-CAM, Arduino Uno, and a voice module. Designed 4-layer PCBs and used a state machine in C to control stepper motors and voltage regulation.</p>
+      <ul class="project-bullets">
+        <li>Created a dual-authentication access control system using ESP32-CAM for facial recognition and a voice command module.</li>
+        <li>Programmed embedded C firmware with state-machine architecture to manage door motor sequencing and voice detection events.</li>
+        <li>Designed and fabricated a 4-layer PCB using KiCAD 7, integrating voltage regulation, signal routing, and modular I/O expansion.</li>
+        <li>Controlled a unipolar stepper motor via ULN2003 driver and optimized movement through current-limiting and PWM techniques.</li>
+        <li>Tested and debugged motor-sensor integration using serial monitors, ensuring reliable command execution and safe operation.</li>
+      </ul>
     </div>
   </div>
 
-  <!-- LEFT IMAGE -->
+  <!-- 3. Ladder Iterative Load Flow -->
   <div class="project-card">
-    <img src="images/load-flow.png" alt="Load Flow Analysis">
+    <img src="images/load-flow.png" alt="Python Load Flow Project">
     <div>
       <h3>Ladder Iterative Load Flow Analysis in Python</h3>
-      <p>Created a Python program to simulate radial power networks using IEEE datasets, pandas/numpy, and a tkinter GUI. Handled Excel I/O and error management for real-world reliability.</p>
+      <ul class="project-bullets">
+        <li>Built a Python application to simulate radial power distribution systems using the Ladder Iterative Load Flow algorithm.</li>
+        <li>Processed IEEE-format Excel inputs with pandas, calculated voltage/power flow using numpy, and generated outputs with openpyxl.</li>
+        <li>Designed a tkinter GUI for file upload, execution, and result display, improving accessibility for academic and field use.</li>
+        <li>Implemented error-checking and input validation to detect data issues before algorithm execution.</li>
+        <li>Published codebase to GitHub with version control, modular architecture, and future support for cloud-based load flow extensions.</li>
+      </ul>
     </div>
   </div>
 
-  <!-- RIGHT IMAGE -->
+  <!-- 4. FPGA-Based Processor -->
   <div class="project-card reverse">
-    <img src="images/fpga.png" alt="FPGA Processor Design">
+    <img src="images/fpga.png" alt="FPGA Processor Project">
     <div>
       <h3>FPGA-Based General-Purpose Processor</h3>
-      <p>Implemented a processor using VHDL on Altera FPGA with FSM-based control units, an ALU, and 7-segment displays. Verified timing using Waveform Editor.</p>
+      <ul class="project-bullets">
+        <li>Designed an 8-bit general-purpose processor using VHDL and Quartus II on an Altera FPGA board.</li>
+        <li>Implemented FSM-based control unit, ALU (ADD, AND, OR, XOR), registers, and opcode decoder for instruction handling.</li>
+        <li>Used 7-segment display to show signed 8-bit ALU outputs with custom sign-handling logic and clock synchronization.</li>
+        <li>Simulated timing and logic behavior using the Waveform Editor to optimize propagation delays and FSM transitions.</li>
+        <li>Employed modular VHDL architecture and Boolean optimization for resource-efficient implementation.</li>
+      </ul>
     </div>
   </div>
 
-  <!-- LEFT IMAGE -->
+  <!-- 5. Academic Intervention PSA -->
   <div class="project-card">
-    <img src="images/psa.png" alt="PSA R SQL Analysis">
+    <img src="images/psa.png" alt="Academic Analysis Project">
     <div>
       <h3>Academic Intervention Impact Analysis (R & SQL)</h3>
-      <p>Used Propensity Score Analysis in R and SQL to evaluate TMU’s ACES program. Created dashboards in Power BI and reported findings via LaTeX reports.</p>
+      <ul class="project-bullets">
+        <li>Analyzed effectiveness of TMU's ACES academic support program using Propensity Score Analysis in R.</li>
+        <li>Connected and queried student demographic/outcome data via SQL; cleaned/preprocessed data in R with dplyr and tidyr.</li>
+        <li>Estimated causal effects using logistic regression and random forests, validated covariate balance with Love plots and SMDs.</li>
+        <li>Built interactive Power BI dashboards showing performance trends, regional analysis, and treatment impact.</li>
+        <li>Compiled technical findings into LaTeX reports for stakeholders with statistical visuals and actionable recommendations.</li>
+      </ul>
     </div>
   </div>
 
-  <!-- RIGHT IMAGE -->
+  <!-- 6. TMU Baja Racing -->
   <div class="project-card reverse">
-    <img src="images/baja.png" alt="Baja Racing Chassis Design">
+    <img src="images/baja.png" alt="Baja Racing Chassis Project">
     <div>
       <h3>TMU Baja Racing – Chassis Design & Manufacturing</h3>
-      <p>Designed and fabricated a Baja SAE chassis using SolidWorks, Fusion 360, and FEA. Led welding, CAD integration, and team coordination for competition readiness.</p>
+      <ul class="project-bullets">
+        <li>Led design, simulation, and fabrication of a high-strength, lightweight chassis for TMU's Baja SAE off-road vehicle.</li>
+        <li>Used SolidWorks to model the chassis and performed FEA simulations to analyze crash loads, torsional rigidity, and safety margins.</li>
+        <li>Managed welding operations and ensured manufacturing accuracy using Fusion 360 for angle validation and assembly planning.</li>
+        <li>Supervised integration of mechanical and electrical subsystems with ergonomic adjustments for driver safety and ease of maintenance.</li>
+        <li>Prepared detailed technical drawings and sourcing documentation for manufacturing and supplier coordination.</li>
+      </ul>
     </div>
   </div>
 </section>
