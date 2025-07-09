@@ -12,12 +12,6 @@ body {
 }
 
 .tint-overlay {
-  background-color: rgba(10, 20, 40, 0.7); /* bluish-dark tint */
-  padding: 2rem 0;
-  min-height: 100vh;
-}
-
-.tint-overlay {
   background-color: rgba(0, 0, 0, 0.7); /* dark tint overlay */
   padding: 2rem 0;
   min-height: 100vh;
