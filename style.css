@@ -197,9 +197,9 @@ body {
 .project-card {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .project-card.reverse {
@@ -238,9 +238,16 @@ body {
   }
 
   .project-card img {
-    width: 100%;
-    max-width: 300px;
-  }
+  width: 100%;
+  max-width: 280px; /* Increased from 150px */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+  .project-card img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
 
 footer {
