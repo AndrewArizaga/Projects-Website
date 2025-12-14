@@ -4,286 +4,268 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Andrew Arizaga | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="tint-overlay">
     <div class="container">
-  <div class="container">
-    <header>
-      <h1>👋 Hi, I’m <span class="highlight">Andrew</span></h1>
-      <p class="subtitle">
-        <span class="blue-text">Electrical Engineering Student @ <strong>Toronto Metropolitan University</strong> 🏫</span>
-      </p>
-      <p>Currently a Systems Integration Engineering Intern @ General Dynamics 🏢<br>
-         Prev. Hardware Eng. @ Cence Power | Energy Mgmt. Intern @ City of Brampton</p>
-    </header>
 
-    <section class="about">
-  <h2>🧠 About me</h2>
-  <p>
-    Systems Integration Intern at General Dynamics with prior experience as an Energy Management Intern at the City of Brampton and a Hardware Engineer Intern at Cence Power. My background also includes hands-on technical work as a Computer Repair Technician at Imported Brands of Canada.
-  </p>
-  <p>
-    Currently leading the TMU Baja Racing Team as Project Manager. Previously served as Vice-President of Finance for TMU’s Electrical & Computer Engineering Course Union.
-  </p>
-  <p>
-    Passionate about embedded systems, energy infrastructure, and hardware development. Studying Electrical Engineering at Toronto Metropolitan University with a Minor in Mathematics and Computer Science.
-  </p>
-</section>
+      <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#links">Links</a>
+      </nav>
 
-<section class="experience">
-  <h2>📑 Experience</h2>
+      <header class="hero">
+        <p class="kicker">👋 Hi, I’m</p>
+        <h1><span class="highlight">Andrew</span> Arizaga</h1>
 
-  <!-- General Dynamics -->
-  <div class="exp-card">
-    <h3>Systems Integration Intern | @ General Dynamics 🛰️</h3>
-    <ul class="exp-bullets">
-      <li>Engineered full-stack automation pipelines using PowerShell, Bash, and Python to validate NATO-aligned services (Active Directory, DNS, NTP) across isolated ESXi environments, resulting in a 40% reduction in manual testing overhead and increased operational repeatability for joint mission system integration.</li>
-      <li>Provisioned Windows Server and Ubuntu nodes with secure configurations for PKI, file services, and internal tools deployment using ipconfig, systemctl, and openssl-based scripts, enabling hardened infrastructure deployment compliant with military-grade security practices.</li>
-      <li>Authored detailed network configuration guides, build playbooks, and testing SOPs in Confluence and JIRA to ensure reproducibility of virtualized deployments across validation, production, and rollback environments.</li>
-      <li>Conducted protocol-layer testing on Cisco routers, switches, and client endpoints, capturing traffic with Wireshark and validating TLS certificates, DHCP lease negotiation, and DNS resolution workflows to meet NATO STANAG and JITC evaluation standards.</li>
-      <li>Collaborated with cyber and QA divisions to manage configuration baselines, integrating audit logs and system states into version-controlled documentation workflows and meeting rigid documentation traceability requirements.</li>
-    </ul>
-  </div>
+        <p class="subtitle">
+          <span class="blue-text">Electrical Engineering Student @ <strong>Toronto Metropolitan University</strong> 🏫</span>
+        </p>
 
-  <!-- City of Brampton -->
-  <div class="exp-card">
-    <h3>Energy Mgmt. Engineering Intern | @ City of Brampton 🏙️</h3>
-    <ul class="exp-bullets">
-      <li>Executed technical energy audits across 20+ city-owned facilities, including arenas, libraries, and fire stations, to assess energy-saving opportunities through LED retrofits, HVAC upgrades, and building automation system tuning.</li>
-      <li>Designed advanced VBA-enabled Excel dashboards aggregating real-time data from Asset Planner, ChargePoint, Flo EV, and Alectra Utilities APIs, enabling the Facilities team to visualize performance indicators for energy, water, and emissions at both site and portfolio level.</li>
-      <li>Developed heatmaps and variance reports for utility data to pinpoint underperforming facilities, supporting prioritization of retrofit funding and project approvals based on technical KPIs and seasonal consumption patterns.</li>
-      <li>Co-authored stakeholder presentations and energy reports used in council and budget meetings, aligning municipal capital planning with IESO’s conservation frameworks and energy performance targets.</li>
-      <li>Worked on technical inputs for Green Municipal Fund and Save On Energy submissions, gathering scope definitions, cost estimates, and quantified environmental benefits to support grant applications.</li>
-    </ul>
-  </div>
+        <p class="hero-meta">
+          Systems Integration Engineering Intern @ General Dynamics 🏢<br>
+          Prev. Hardware Eng. @ Cence Power | Energy Mgmt. Intern @ City of Brampton
+        </p>
 
-  <!-- Cence Power -->
-  <div class="exp-card">
-    <h3>Hardware Engineering Intern | @ Cence Power 💡</h3>
-    <ul class="exp-bullets">
-      <li>Engineered high-voltage DC bus architecture and designed safety-compliant PCBs in Altium and KiCAD, applying creepage/clearance standards, copper weight calculations, and isolation techniques to support safe power distribution systems.</li>
-      <li>Developed embedded firmware in C for ESP32-based control systems handling sensor fusion, real-time telemetry, and I2C/SPI-based data communication for dynamic power monitoring and energy-saving automation.</li>
-      <li>Led hands-on prototyping and board bring-up in the lab using oscilloscopes, signal analyzers, and multimeters, validating analog signals, ADC readings, and power stability across environmental conditions.</li>
-      <li>Constructed and iterated on custom test jigs for quality control and stress testing, assessing PCB thermal performance, switching efficiency, and voltage regulation tolerances over extended cycles.</li>
-      <li>Created a structured parts procurement and BOM tracking system using supplier APIs and CSV automation to reduce design iteration delays, optimize part sourcing, and ensure cost-effective inventory planning.</li>
-    </ul>
-  </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1k_nh88C-noH8WQqBYJzij5lrl7eRnMFc/view?usp=sharing" target="_blank" rel="noopener">📄 Resume</a>
+          <a class="btn" href="https://drive.google.com/file/d/1oro1ynD6lq4-LqjACUPD6eOAZzR5PlN-/view?usp=sharing" target="_blank" rel="noopener">📁 Portfolio</a>
+          <a class="btn" href="https://www.linkedin.com/in/andrewarizaga/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="btn" href="mailto:andrew.arizaga@torontomu.ca">📧 Email</a>
+        </div>
+      </header>
 
-  <!-- Imported Brands -->
-  <div class="exp-card">
-    <h3>Computer Repair Technician | @ Imported Brands of Canada 💻</h3>
-    <ul class="exp-bullets">
-      <li>Diagnosed, disassembled, and repaired over 150 client and resale laptops, desktops, and workstations, troubleshooting component-level issues including damaged RAM, corrupted drives, failing GPUs, power rails, and display interfaces.</li>
-      <li>Executed clean operating system installs (Windows, macOS, Linux), data migration, BIOS updates, bootloader repairs, and security hardening to restore systems to functional and saleable condition.</li>
-      <li>Built a standardized diagnostic flow to reduce trial-and-error time and implemented intake forms to streamline service workflows and improve communication with non-technical clients.</li>
-      <li>Delivered bilingual customer service (English and Spanish) during walk-in repairs and post-service follow-ups, enhancing client retention through clear issue explanation and solution walkthroughs.</li>
-      <li>Performed QA, inventory checks, and final testing for all refurbished equipment before resale, ensuring all drivers were reinstalled, OS activation was complete, and warranty-grade functionality was met.</li>
-    </ul>
-  </div>
-</section>
+      <section id="about" class="about">
+        <h2>🧠 About me</h2>
+        <p>
+          Systems Integration Intern at General Dynamics with prior experience as an Energy Management Intern at the City of Brampton and a Hardware Engineer Intern at Cence Power. My background also includes hands-on technical work as a Computer Repair Technician at Imported Brands of Canada.
+        </p>
+        <p>
+          Currently leading the TMU Baja Racing Team as Project Manager. Previously served as Vice-President of Finance for TMU’s Electrical & Computer Engineering Course Union.
+        </p>
+        <p>
+          Passionate about embedded systems, energy infrastructure, and hardware development. Studying Electrical Engineering at Toronto Metropolitan University with a Minor in Mathematics and Computer Science.
+        </p>
+      </section>
 
-  <section class="projects">
-  <h2>🛠️ Projects</h2>
+      <section id="experience" class="experience">
+        <h2>📑 Experience</h2>
 
-  <!-- 1. Smart Power Management System -->
-  <div class="project-card">
-    <img src="Project_01_2.png" alt="Smart Power Project">
-    <div>
-      <h3>Smart Power Management System</h3>
-      <ul class="project-bullets">
-        <li>Developed an ESP32-based energy automation system that uses IR sensors and iris recognition for personalized room control.</li>
-        <li>Programmed using ESP-IDF in C with I2C/SPI integration, real-time interrupts, and power-saving deep sleep modes.</li>
-        <li>Designed a compact dual-layer PCB in KiCAD featuring SMD/through-hole parts, LDO regulators, and modular headers for sensors.</li>
-        <li>Integrated IR-based motion detection with secure iris recognition for appliance automation and energy optimization.</li>
-        <li>Validated firmware using serial debugging and logic analyzers to ensure stable sensor communication and minimal latency.</li>
-      </ul>
+        <div class="exp-card">
+          <h3>Systems Integration Intern | @ General Dynamics 🛰️</h3>
+          <ul class="exp-bullets">
+            <li>Engineered full-stack automation pipelines using PowerShell, Bash, and Python to validate NATO-aligned services (Active Directory, DNS, NTP) across isolated ESXi environments, resulting in a 40% reduction in manual testing overhead and increased operational repeatability for joint mission system integration.</li>
+            <li>Provisioned Windows Server and Ubuntu nodes with secure configurations for PKI, file services, and internal tools deployment using ipconfig, systemctl, and openssl-based scripts, enabling hardened infrastructure deployment compliant with military-grade security practices.</li>
+            <li>Authored detailed network configuration guides, build playbooks, and testing SOPs in Confluence and JIRA to ensure reproducibility of virtualized deployments across validation, production, and rollback environments.</li>
+            <li>Conducted protocol-layer testing on Cisco routers, switches, and client endpoints, capturing traffic with Wireshark and validating TLS certificates, DHCP lease negotiation, and DNS resolution workflows to meet NATO STANAG and JITC evaluation standards.</li>
+            <li>Collaborated with cyber and QA divisions to manage configuration baselines, integrating audit logs and system states into version-controlled documentation workflows and meeting rigid documentation traceability requirements.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <h3>Energy Mgmt. Engineering Intern | @ City of Brampton 🏙️</h3>
+          <ul class="exp-bullets">
+            <li>Executed technical energy audits across 20+ city-owned facilities, including arenas, libraries, and fire stations, to assess energy-saving opportunities through LED retrofits, HVAC upgrades, and building automation system tuning.</li>
+            <li>Designed advanced VBA-enabled Excel dashboards aggregating real-time data from Asset Planner, ChargePoint, Flo EV, and Alectra Utilities APIs, enabling the Facilities team to visualize performance indicators for energy, water, and emissions at both site and portfolio level.</li>
+            <li>Developed heatmaps and variance reports for utility data to pinpoint underperforming facilities, supporting prioritization of retrofit funding and project approvals based on technical KPIs and seasonal consumption patterns.</li>
+            <li>Co-authored stakeholder presentations and energy reports used in council and budget meetings, aligning municipal capital planning with IESO’s conservation frameworks and energy performance targets.</li>
+            <li>Worked on technical inputs for Green Municipal Fund and Save On Energy submissions, gathering scope definitions, cost estimates, and quantified environmental benefits to support grant applications.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <h3>Hardware Engineering Intern | @ Cence Power 💡</h3>
+          <ul class="exp-bullets">
+            <li>Engineered high-voltage DC bus architecture and designed safety-compliant PCBs in Altium and KiCAD, applying creepage/clearance standards, copper weight calculations, and isolation techniques to support safe power distribution systems.</li>
+            <li>Developed embedded firmware in C for ESP32-based control systems handling sensor fusion, real-time telemetry, and I2C/SPI-based data communication for dynamic power monitoring and energy-saving automation.</li>
+            <li>Led hands-on prototyping and board bring-up in the lab using oscilloscopes, signal analyzers, and multimeters, validating analog signals, ADC readings, and power stability across environmental conditions.</li>
+            <li>Constructed and iterated on custom test jigs for quality control and stress testing, assessing PCB thermal performance, switching efficiency, and voltage regulation tolerances over extended cycles.</li>
+            <li>Created a structured parts procurement and BOM tracking system using supplier APIs and CSV automation to reduce design iteration delays, optimize part sourcing, and ensure cost-effective inventory planning.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <h3>Computer Repair Technician | @ Imported Brands of Canada 💻</h3>
+          <ul class="exp-bullets">
+            <li>Diagnosed, disassembled, and repaired over 150 client and resale laptops, desktops, and workstations, troubleshooting component-level issues including damaged RAM, corrupted drives, failing GPUs, power rails, and display interfaces.</li>
+            <li>Executed clean operating system installs (Windows, macOS, Linux), data migration, BIOS updates, bootloader repairs, and security hardening to restore systems to functional and saleable condition.</li>
+            <li>Built a standardized diagnostic flow to reduce trial-and-error time and implemented intake forms to streamline service workflows and improve communication with non-technical clients.</li>
+            <li>Delivered bilingual customer service (English and Spanish) during walk-in repairs and post-service follow-ups, enhancing client retention through clear issue explanation and solution walkthroughs.</li>
+            <li>Performed QA, inventory checks, and final testing for all refurbished equipment before resale, ensuring all drivers were reinstalled, OS activation was complete, and warranty-grade functionality was met.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>🛠️ Projects</h2>
+
+        <div class="project-card">
+          <img src="Project_01_2.png" alt="Smart Power Project" loading="lazy" decoding="async">
+          <div>
+            <h3>Smart Power Management System</h3>
+            <ul class="project-bullets">
+              <li>Developed an ESP32-based energy automation system that uses IR sensors and iris recognition for personalized room control.</li>
+              <li>Programmed using ESP-IDF in C with I2C/SPI integration, real-time interrupts, and power-saving deep sleep modes.</li>
+              <li>Designed a compact dual-layer PCB in KiCAD featuring SMD/through-hole parts, LDO regulators, and modular headers for sensors.</li>
+              <li>Integrated IR-based motion detection with secure iris recognition for appliance automation and energy optimization.</li>
+              <li>Validated firmware using serial debugging and logic analyzers to ensure stable sensor communication and minimal latency.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card reverse">
+          <img src="Project_02_2.png" alt="Face & Voice Recognition AutoDoor" loading="lazy" decoding="async">
+          <div>
+            <h3>Face & Voice Recognition AutoDoor</h3>
+            <ul class="project-bullets">
+              <li>Created a dual-authentication access control system using ESP32-CAM for facial recognition and a voice command module.</li>
+              <li>Programmed embedded C firmware with state-machine architecture to manage door motor sequencing and voice detection events.</li>
+              <li>Designed and fabricated a 4-layer PCB using KiCAD 7, integrating voltage regulation, signal routing, and modular I/O expansion.</li>
+              <li>Controlled a unipolar stepper motor via ULN2003 driver and optimized movement through current-limiting and PWM techniques.</li>
+              <li>Tested and debugged motor-sensor integration using serial monitors, ensuring reliable command execution and safe operation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Project_03_1.png" alt="Python Load Flow Project" loading="lazy" decoding="async">
+          <div>
+            <h3>Ladder Iterative Load Flow Analysis in Python</h3>
+            <ul class="project-bullets">
+              <li>Built a Python application to simulate radial power distribution systems using the Ladder Iterative Load Flow algorithm.</li>
+              <li>Processed IEEE-format Excel inputs with pandas, calculated voltage/power flow using numpy, and generated outputs with openpyxl.</li>
+              <li>Designed a tkinter GUI for file upload, execution, and result display, improving accessibility for academic and field use.</li>
+              <li>Implemented error-checking and input validation to detect data issues before algorithm execution.</li>
+              <li>Published codebase to GitHub with version control, modular architecture, and future support for cloud-based load flow extensions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card reverse">
+          <img src="Project_04_1.png" alt="FPGA Processor Project" loading="lazy" decoding="async">
+          <div>
+            <h3>FPGA-Based General-Purpose Processor</h3>
+            <ul class="project-bullets">
+              <li>Designed an 8-bit general-purpose processor using VHDL and Quartus II on an Altera FPGA board.</li>
+              <li>Implemented FSM-based control unit, ALU (ADD, AND, OR, XOR), registers, and opcode decoder for instruction handling.</li>
+              <li>Used 7-segment display to show signed 8-bit ALU outputs with custom sign-handling logic and clock synchronization.</li>
+              <li>Simulated timing and logic behavior using the Waveform Editor to optimize propagation delays and FSM transitions.</li>
+              <li>Employed modular VHDL architecture and Boolean optimization for resource-efficient implementation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Project_05_1.png" alt="Academic Analysis Project" loading="lazy" decoding="async">
+          <div>
+            <h3>Academic Intervention Impact Analysis (R & SQL)</h3>
+            <ul class="project-bullets">
+              <li>Analyzed effectiveness of TMU's ACES academic support program using Propensity Score Analysis in R.</li>
+              <li>Connected and queried student demographic/outcome data via SQL; cleaned/preprocessed data in R with dplyr and tidyr.</li>
+              <li>Estimated causal effects using logistic regression and random forests, validated covariate balance with Love plots and SMDs.</li>
+              <li>Built interactive Power BI dashboards showing performance trends, regional analysis, and treatment impact.</li>
+              <li>Compiled technical findings into LaTeX reports for stakeholders with statistical visuals and actionable recommendations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card reverse">
+          <img src="Project_06_1.png" alt="Baja Racing Chassis Project" loading="lazy" decoding="async">
+          <div>
+            <h3>TMU Baja Racing – Chassis Design & Manufacturing</h3>
+            <ul class="project-bullets">
+              <li>Led design, simulation, and fabrication of a high-strength, lightweight chassis for TMU's Baja SAE off-road vehicle.</li>
+              <li>Used SolidWorks to model the chassis and performed FEA simulations to analyze crash loads, torsional rigidity, and safety margins.</li>
+              <li>Managed welding operations and ensured manufacturing accuracy using Fusion 360 for angle validation and assembly planning.</li>
+              <li>Supervised integration of mechanical and electrical subsystems with ergonomic adjustments for driver safety and ease of maintenance.</li>
+              <li>Prepared detailed technical drawings and sourcing documentation for manufacturing and supplier coordination.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>📚 Skills in the Field</h2>
+
+        <div class="skills-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>C/C++</li><li>Python</li><li>VHDL</li><li>MATLAB</li><li>JavaScript</li><li>Java</li><li>Microsoft VBA</li><li>Linux Bash</li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>Engineering Tools</h3>
+          <ul>
+            <li>Altium Designer</li><li>KiCAD</li><li>SPICE</li><li>Quartus</li><li>MultiSim</li><li>PX4</li><li>Arduino</li><li>ESP32</li><li>STM32</li><li>PuTTY</li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>Hardware</h3>
+          <ul>
+            <li>PCB Design</li><li>Sensor Integration</li><li>Microcontroller Programming</li><li>Digital Multimeters</li><li>Oscilloscopes</li><li>Soldering</li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>CAD Software</h3>
+          <ul>
+            <li>SolidWorks (CSWA, CSWA-AM, CSWA-SD, CSWP)</li><li>Fusion 360</li><li>AutoCAD</li><li>AutoCAD Electrical</li><li>OnShape</li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>Workspace Tools</h3>
+          <ul>
+            <li>Microsoft Excel</li><li>Microsoft Word</li><li>Microsoft PowerPoint</li><li>Microsoft SharePoint</li><li>Microsoft Outlook</li>
+            <li>Google Docs</li><li>Google Sheets</li><li>Google Slides</li><li>Google Drive</li><li>Slack</li><li>Microsoft Teams</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="coursework" class="coursework">
+        <h2>📘 Coursework</h2>
+        <ul>
+          <li>COE 538 – Microprocessor Systems</li>
+          <li>ELE 635 – Communications Systems</li>
+          <li>ELE 531 – Electromagnetics</li>
+          <li>ELE 637 – Energy Conversion</li>
+          <li>ELE 532 – Signals and Systems I</li>
+          <li>ELE 504 – Electronic Circuits II</li>
+          <li>ELE 404 – Electronic Circuits I</li>
+          <li>COE 428 – Algorithms and Data Structures</li>
+          <li>COE 328 – Digital Systems</li>
+          <li>ELE 639 – Control Systems</li>
+        </ul>
+      </section>
+
+      <section id="links">
+        <h2>🔗 Links</h2>
+        <ul class="links">
+          <li><a href="https://www.linkedin.com/in/andrewarizaga/" target="_blank" rel="noopener">🔗 LinkedIn</a></li>
+          <li><a href="https://drive.google.com/file/d/1k_nh88C-noH8WQqBYJzij5lrl7eRnMFc/view?usp=sharing" target="_blank" rel="noopener">📄 Resume (PDF)</a></li>
+          <li><a href="https://drive.google.com/file/d/1oro1ynD6lq4-LqjACUPD6eOAZzR5PlN-/view?usp=sharing" target="_blank" rel="noopener">📁 Engineering Portfolio</a></li>
+          <li><a href="mailto:andrew.arizaga@torontomu.ca">📧 Email Me</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2025 Andrew Arizaga</p>
+      </footer>
+
     </div>
   </div>
-
-  <!-- 2. Face & Voice Recognition AutoDoor -->
-  <div class="project-card reverse">
-    <img src="Project_02_2.png" alt="Face & Voice Recognition AutoDoor">
-    <div>
-      <h3>Face & Voice Recognition AutoDoor</h3>
-      <ul class="project-bullets">
-        <li>Created a dual-authentication access control system using ESP32-CAM for facial recognition and a voice command module.</li>
-        <li>Programmed embedded C firmware with state-machine architecture to manage door motor sequencing and voice detection events.</li>
-        <li>Designed and fabricated a 4-layer PCB using KiCAD 7, integrating voltage regulation, signal routing, and modular I/O expansion.</li>
-        <li>Controlled a unipolar stepper motor via ULN2003 driver and optimized movement through current-limiting and PWM techniques.</li>
-        <li>Tested and debugged motor-sensor integration using serial monitors, ensuring reliable command execution and safe operation.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 3. Ladder Iterative Load Flow -->
-  <div class="project-card">
-    <img src="Project_03_1.png" alt="Python Load Flow Project">
-    <div>
-      <h3>Ladder Iterative Load Flow Analysis in Python</h3>
-      <ul class="project-bullets">
-        <li>Built a Python application to simulate radial power distribution systems using the Ladder Iterative Load Flow algorithm.</li>
-        <li>Processed IEEE-format Excel inputs with pandas, calculated voltage/power flow using numpy, and generated outputs with openpyxl.</li>
-        <li>Designed a tkinter GUI for file upload, execution, and result display, improving accessibility for academic and field use.</li>
-        <li>Implemented error-checking and input validation to detect data issues before algorithm execution.</li>
-        <li>Published codebase to GitHub with version control, modular architecture, and future support for cloud-based load flow extensions.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 4. FPGA-Based Processor -->
-  <div class="project-card reverse">
-    <img src="Project_04_1.png" alt="FPGA Processor Project">
-    <div>
-      <h3>FPGA-Based General-Purpose Processor</h3>
-      <ul class="project-bullets">
-        <li>Designed an 8-bit general-purpose processor using VHDL and Quartus II on an Altera FPGA board.</li>
-        <li>Implemented FSM-based control unit, ALU (ADD, AND, OR, XOR), registers, and opcode decoder for instruction handling.</li>
-        <li>Used 7-segment display to show signed 8-bit ALU outputs with custom sign-handling logic and clock synchronization.</li>
-        <li>Simulated timing and logic behavior using the Waveform Editor to optimize propagation delays and FSM transitions.</li>
-        <li>Employed modular VHDL architecture and Boolean optimization for resource-efficient implementation.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 5. Academic Intervention PSA -->
-  <div class="project-card">
-    <img src="Project_05_1.png" alt="Academic Analysis Project">
-    <div>
-      <h3>Academic Intervention Impact Analysis (R & SQL)</h3>
-      <ul class="project-bullets">
-        <li>Analyzed effectiveness of TMU's ACES academic support program using Propensity Score Analysis in R.</li>
-        <li>Connected and queried student demographic/outcome data via SQL; cleaned/preprocessed data in R with dplyr and tidyr.</li>
-        <li>Estimated causal effects using logistic regression and random forests, validated covariate balance with Love plots and SMDs.</li>
-        <li>Built interactive Power BI dashboards showing performance trends, regional analysis, and treatment impact.</li>
-        <li>Compiled technical findings into LaTeX reports for stakeholders with statistical visuals and actionable recommendations.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 6. TMU Baja Racing -->
-  <div class="project-card reverse">
-    <img src="Project_06_1.png" alt="Baja Racing Chassis Project">
-    <div>
-      <h3>TMU Baja Racing – Chassis Design & Manufacturing</h3>
-      <ul class="project-bullets">
-        <li>Led design, simulation, and fabrication of a high-strength, lightweight chassis for TMU's Baja SAE off-road vehicle.</li>
-        <li>Used SolidWorks to model the chassis and performed FEA simulations to analyze crash loads, torsional rigidity, and safety margins.</li>
-        <li>Managed welding operations and ensured manufacturing accuracy using Fusion 360 for angle validation and assembly planning.</li>
-        <li>Supervised integration of mechanical and electrical subsystems with ergonomic adjustments for driver safety and ease of maintenance.</li>
-        <li>Prepared detailed technical drawings and sourcing documentation for manufacturing and supplier coordination.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-    <section>
-  <h2>📚 Skills in the Field</h2>
-
-  <div class="skills-category">
-    <h3>Programming Languages</h3>
-    <ul>
-      <li>C/C++</li>
-      <li>Python</li>
-      <li>VHDL</li>
-      <li>MATLAB</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Microsoft VBA</li>
-      <li>Linux Bash</li>
-    </ul>
-  </div>
-
-  <div class="skills-category">
-    <h3>Engineering Tools</h3>
-    <ul>
-      <li>Altium Designer</li>
-      <li>KiCAD</li>
-      <li>SPICE</li>
-      <li>Quartus</li>
-      <li>MultiSim</li>
-      <li>PX4</li>
-      <li>Arduino</li>
-      <li>ESP32</li>
-      <li>STM32</li>
-      <li>PuTTY</li>
-    </ul>
-  </div>
-
-  <div class="skills-category">
-    <h3>Hardware</h3>
-    <ul>
-      <li>PCB Design</li>
-      <li>Sensor Integration</li>
-      <li>Microcontroller Programming</li>
-      <li>Digital Multimeters</li>
-      <li>Oscilloscopes</li>
-      <li>Soldering</li>
-    </ul>
-  </div>
-
-  <div class="skills-category">
-    <h3>CAD Software</h3>
-    <ul>
-      <li>SolidWorks (CSWA, CSWA-AM, CSWA-SD, CSWP)</li>
-      <li>Fusion 360</li>
-      <li>AutoCAD</li>
-      <li>AutoCAD Electrical</li>
-      <li>OnShape</li>
-    </ul>
-  </div>
-
-  <div class="skills-category">
-    <h3>Workspace Tools</h3>
-    <ul>
-      <li>Microsoft Excel</li>
-      <li>Microsoft Word</li>
-      <li>Microsoft PowerPoint</li>
-      <li>Microsoft SharePoint</li>
-      <li>Microsoft Outlook</li>
-      <li>Google Docs</li>
-      <li>Google Sheets</li>
-      <li>Google Slides</li>
-      <li>Google Drive</li>
-      <li>Slack</li>
-      <li>Microsoft Teams</li>
-    </ul>
-  </div>
-</section>
-
-    <section class="coursework">
-  <h2>📘 Coursework</h2>
-  <ul>
-    <li>COE 538 – Microprocessor Systems</li>
-    <li>ELE 635 – Communications Systems</li>
-    <li>ELE 531 – Electromagnetics</li>
-    <li>ELE 637 – Energy Conversion</li>
-    <li>ELE 532 – Signals and Systems I</li>
-    <li>ELE 504 – Electronic Circuits II</li>
-    <li>ELE 404 – Electronic Circuits I</li>
-    <li>COE 428 – Algorithms and Data Structures</li>
-    <li>COE 328 – Digital Systems</li>
-    <li>ELE 639 – Control Systems</li>
-  </ul>
-</section>
-
-<section>
-  <h2>🔗 Links</h2>
-  <ul class="links">
-    <li><a href="https://www.linkedin.com/in/andrewarizaga/" target="_blank">🔗 LinkedIn</a></li>
-    <li><a href="https://drive.google.com/file/d/1k_nh88C-noH8WQqBYJzij5lrl7eRnMFc/view?usp=sharing" target="_blank">📄 Resume (PDF)</a></li>
-    <li><a href="https://drive.google.com/file/d/1oro1ynD6lq4-LqjACUPD6eOAZzR5PlN-/view?usp=sharing" target="_blank">📁 Engineering Portfolio</a></li>
-    <li><a href="mailto:andrew.arizaga@torontomu.ca">📧 Email Me</a></li>
-  </ul>
-</section>
-
-    <footer>
-      <p>© 2025 Andrew Arizaga</p>
-    </footer>
-  </div>
-  </div>
-  </div>
-  </body>
+</body>
 </html>
